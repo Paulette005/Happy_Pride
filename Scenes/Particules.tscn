@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Particules.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0.0120482, 0.0572289, 0.114458, 0.165663, 0.216867, 0.340361, 0.400602, 0.463855, 0.518072, 0.572289, 0.623494, 0.680723, 0.879518, 0.912651, 0.915663, 0.954819, 1 )
+colors = PoolColorArray( 0.92549, 0.764706, 0.266667, 1, 0.537255, 0.4, 0.917647, 1, 0.937255, 0.211765, 0.113725, 1, 0.905882, 0.556863, 0.105882, 1, 0.976471, 0.376471, 0.8, 1, 0.937255, 0.211765, 0.113725, 1, 0.537255, 0.4, 0.917647, 1, 0.905882, 0.556863, 0.105882, 1, 0.976471, 0.376471, 0.8, 1, 0.92549, 0.764706, 0.266667, 1, 0.905882, 0.556863, 0.105882, 1, 0.976471, 0.376471, 0.8, 1, 0.937255, 0.211765, 0.113725, 0.705882, 0.976471, 0.376471, 0.8, 0.705882, 0.905882, 0.556863, 0.105882, 0.705882, 0.537255, 0.4, 0.917647, 0.705882, 0.92549, 0.764706, 0.266667, 0.705882 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+lifetime_randomness = 0.2
+emission_shape = 1
+emission_sphere_radius = 20.0
+flag_disable_z = true
+direction = Vector3( 0, -150, 0 )
+gravity = Vector3( 0, 90, 0 )
+initial_velocity = 6.0
+angular_velocity = 10.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel = 4.0
+scale_random = 0.3
+color_ramp = SubResource( 2 )
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 220.182, 113.832 )
+emitting = false
+amount = 100
+lifetime = 1.5
+one_shot = true
+speed_scale = 1.3
+explosiveness = 0.8
+randomness = 0.8
+process_material = SubResource( 3 )

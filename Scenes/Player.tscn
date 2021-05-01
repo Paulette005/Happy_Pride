@@ -1,0 +1,97 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0003.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0006.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0006.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0007.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0007.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0005.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0001.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0000.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0004.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0002.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0005.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0004.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0003.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0002.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0000.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Perso/walkGauche/marche profil g0001.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0001.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0005.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0004.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0000.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0002.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0007.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0003.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Perso/walkFace/marche face0006.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Perso/idleFace/idle face0000.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Perso/idleDos/idle dos0001.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Perso/idleGauche/idle gauche0001.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Perso/idleFace/idle face0001.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Perso/idleDroite/idle droite0001.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Perso/idleDos/idle dos0000.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Perso/idleGauche/idle gauche0000.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Perso/idleDroite/idle droite0000.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0001.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0006.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0004.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0005.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0007.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0003.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Perso/walkDos/marche dos0002.png" type="Texture" id=39]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 32 ), ExtResource( 32 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "IdleDroite",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "IdleGauche",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "WalkDroite",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "WalkFace",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "IdleDos",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "WalkGauche",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "WalkDos",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 25 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "IdleFace",
+"speed": 3.5
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "IdleFace"
+playing = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -5.04541, -43.7266 )
+polygon = PoolVector2Array( -55.5129, 314.243, -131.194, 468.967, 8.3952, 492.513, 156.393, 467.286, 82.394, 305.834 )
+
+[node name="Position2D" type="Position2D" parent="."]
