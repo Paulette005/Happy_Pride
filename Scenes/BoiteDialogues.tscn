@@ -9,13 +9,15 @@
 [ext_resource path="res://Assets/PNJ/Portraits/Judith.png" type="Texture" id=8]
 [ext_resource path="res://Assets/PNJ/Portraits/Noah.png" type="Texture" id=9]
 [ext_resource path="res://Assets/PNJ/Portraits/Elio.png" type="Texture" id=10]
-[ext_resource path="res://Assets/PNJ/Portraits/Raphael.png" type="Texture" id=11]
+[ext_resource path="res://Assets/PNJ/Portraits/Raphaël.png" type="Texture" id=11]
 [ext_resource path="res://Assets/PNJ/Portraits/Khadija.png" type="Texture" id=12]
 [ext_resource path="res://Assets/PNJ/Portraits/Thérèse.png" type="Texture" id=13]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 1.88776
+margin_bottom = 1.88776
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -86,6 +88,8 @@ texture = ExtResource( 10 )
 [node name="Fond" type="TextureRect" parent="BoiteDialogues"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 92.0
+margin_right = 92.0
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {
@@ -93,9 +97,9 @@ __meta__ = {
 }
 
 [node name="Prenoms" type="RichTextLabel" parent="BoiteDialogues"]
-margin_left = 54.7447
+margin_left = 146.745
 margin_top = 12.2703
-margin_right = 203.745
+margin_right = 295.745
 margin_bottom = 52.2703
 bbcode_text = "Prenom"
 text = "Prenom"
@@ -108,9 +112,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -369.0
+margin_left = -277.0
 margin_top = -30.898
-margin_right = 369.0
+margin_right = 461.0
 margin_bottom = 27.102
 bbcode_text = "Voici du texte !"
 text = "Voici du texte !"
@@ -119,12 +123,11 @@ __meta__ = {
 }
 
 [node name="Portrait" type="Sprite" parent="BoiteDialogues"]
-position = Vector2( -53.9395, -47.4966 )
-scale = Vector2( 2.68561, 4.0451 )
+position = Vector2( 28.3163, -115.153 )
 z_index = -1
 texture = ExtResource( 1 )
 
 [node name="Icone" type="Sprite" parent="BoiteDialogues"]
-position = Vector2( 791.336, 123.471 )
+position = Vector2( 883.336, 123.471 )
 scale = Vector2( 0.614155, 0.403692 )
 texture = ExtResource( 1 )

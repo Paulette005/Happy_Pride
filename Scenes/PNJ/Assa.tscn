@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ00/mec_trans01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ00/mec_trans02.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJ00/mec_trans03.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJ00/mec_trans04.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Idle",
+"speed": 5.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 292.082, 238.11 )
+script = ExtResource( 5 )
+prenomPNJ = "Assa"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 60.3213, -34.9225 )
+frames = SubResource( 1 )
+animation = "Idle"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 278.899, 86.3215 )
+scale = Vector2( 6.70661, 4.11588 )
+polygon = PoolVector2Array( -2.89861, -5.61916, 32.8103, -7.21015, 41.1188, 14.5334, 37.4355, 45.0339, 9.98737, 65.7602, -39.2184, 62.4876, -71.018, 45.0339, -62.6497, -7.32733 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

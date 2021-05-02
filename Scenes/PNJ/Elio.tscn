@@ -14,10 +14,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Elio" type="Node2D"]
 position = Vector2( 292.082, 238.11 )
 script = ExtResource( 5 )
-prenomPNJ = "Aa"
+prenomPNJ = "Elio"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 60.3213, -34.9225 )
