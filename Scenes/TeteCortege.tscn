@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -14,6 +14,9 @@
 [ext_resource path="res://Scenes/PNJ/Raphael.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/PNJ/Elio.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Shaders/sol.tres" type="Material" id=15]
+[ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
+[ext_resource path="res://Scripts/sol.gd" type="Script" id=17]
 
 [node name="Node2D" type="Node2D"]
 
@@ -48,6 +51,16 @@ posX = -580
 position = Vector2( -610.026, 10.6787 )
 polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
 
+[node name="decor" type="Node2D" parent="."]
+
+[node name="sol" type="Sprite" parent="decor"]
+material = ExtResource( 15 )
+position = Vector2( 464.322, -69.0405 )
+scale = Vector2( 5.45875, 3.86376 )
+z_index = -4000
+texture = ExtResource( 16 )
+script = ExtResource( 17 )
+
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Node2D"]
@@ -80,7 +93,9 @@ script = ExtResource( 8 )
 
 [node name="Camille" parent="PNJ" instance=ExtResource( 14 )]
 position = Vector2( -464.442, -811.164 )
+script = ExtResource( 8 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 9 )]
 position = Vector2( -812.21, -283.641 )
 script = ExtResource( 8 )
+[connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
