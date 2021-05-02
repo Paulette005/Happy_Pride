@@ -1,23 +1,23 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-droite.png" type="Texture" id=1]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-face.png" type="Texture" id=2]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-dos.png" type="Texture" id=3]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-gauche.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/PNJ.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-dos.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-face.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-droite.png" type="Texture" id=4]
+[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-gauche.png" type="Texture" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 5 ) ],
 "loop": false,
 "name": "Idle",
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Camille" type="Node2D"]
 position = Vector2( 292.082, 238.11 )
-script = ExtResource( 5 )
-prenomPNJ = "Assa"
+script = ExtResource( 1 )
+prenomPNJ = "Camille"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 60.3213, -34.9225 )

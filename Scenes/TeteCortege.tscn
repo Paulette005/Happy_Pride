@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Scenes/PNJ/Assa.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/PNJ/Raphael.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/PNJ/Elio.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=14]
 
 [node name="Node2D" type="Node2D"]
 
@@ -65,7 +66,7 @@ script = ExtResource( 8 )
 position = Vector2( 605.9, -287.21 )
 script = ExtResource( 8 )
 
-[node name="Elio2" parent="PNJ" instance=ExtResource( 12 )]
+[node name="Raphael" parent="PNJ" instance=ExtResource( 12 )]
 position = Vector2( -214.1, 536.79 )
 script = ExtResource( 8 )
 
@@ -76,6 +77,9 @@ script = ExtResource( 8 )
 [node name="Therese" parent="PNJ" instance=ExtResource( 10 )]
 position = Vector2( 393.9, 212.79 )
 script = ExtResource( 8 )
+
+[node name="Camille" parent="PNJ" instance=ExtResource( 14 )]
+position = Vector2( -464.442, -811.164 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 9 )]
 position = Vector2( -812.21, -283.641 )
