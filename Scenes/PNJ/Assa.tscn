@@ -1,10 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-droite.png" type="Texture" id=1]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-face.png" type="Texture" id=2]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-dos.png" type="Texture" id=3]
-[ext_resource path="res://Assets/PNJ/PNJ00/mme-trans-noire-gauche.png" type="Texture" id=4]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-noire-droite.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-noire-face.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-noire-dos.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-noire-gauche.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

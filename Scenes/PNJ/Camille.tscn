@@ -1,10 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=1]
-[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-dos.png" type="Texture" id=2]
-[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-face.png" type="Texture" id=3]
-[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-droite.png" type="Texture" id=4]
-[ext_resource path="res://Assets/PNJ/PNJ00/mx-fauteuil-gauche.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-dos.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-face.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-droite.png" type="Texture" id=4]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-gauche.png" type="Texture" id=5]
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
