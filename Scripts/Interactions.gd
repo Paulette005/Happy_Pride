@@ -5,6 +5,10 @@ var prenomPNJ
 var index_dialogueArray = 0
 var numArray = 0
 
+var nbframe = 0
+var randomTemps = 2
+var rdm = RandomNumberGenerator.new()
+
 # numArray indique le chiifre du tableau du dialogue, soit 0 ou 1
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
@@ -22,6 +26,17 @@ func on_body_exited(body):
 	if body.name == "Player":
 		playerZone = false
 		Dialogues.visible = false
+	
+func _on_Timer_timeout():
+	# Random entre plusieurs valeurs, le résultat est ensuite contenu dans la var nbframe qui permet de changer la frame du personnage.
+	rdm.randomize()
+	nbframe = rdm.randi_range(0, 3)
+	randomTemps = rdm.randi_range(2,6)
+	print("nombre de frame:", nbframe)
+	
+	$Timer.start(randomTemps)
+	$AnimatedSprite.set_frame(nbframe)
+
 
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
