@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/BoiteDialogues.gd" type="Script" id=2]
+[ext_resource path="res://Assets/PNJ/Portraits/Claude.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/Portraits/Agathe" type="Texture" id=4]
+[ext_resource path="res://Assets/PNJ/Portraits/Assa.png" type="Texture" id=5]
+[ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=6]
+[ext_resource path="res://Assets/PNJ/Portraits/Judith.png" type="Texture" id=8]
+[ext_resource path="res://Assets/PNJ/Portraits/Noah.png" type="Texture" id=9]
+[ext_resource path="res://Assets/PNJ/Portraits/Elio.png" type="Texture" id=10]
+[ext_resource path="res://Assets/PNJ/Portraits/Raphael.png" type="Texture" id=11]
+[ext_resource path="res://Assets/PNJ/Portraits/Khadija.png" type="Texture" id=12]
+[ext_resource path="res://Assets/PNJ/Portraits/Thérèse.png" type="Texture" id=13]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -22,6 +32,56 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Noah" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 45.2899, -156.384 )
+texture = ExtResource( 9 )
+
+[node name="Judith" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 99.6273, -200.322 )
+texture = ExtResource( 8 )
+
+[node name="Camille" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 51.6465, -182.609 )
+texture = ExtResource( 6 )
+
+[node name="Assa" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 21.2322, -185.89 )
+texture = ExtResource( 5 )
+
+[node name="Agathe" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 64.2742, -180.994 )
+texture = ExtResource( 4 )
+
+[node name="Claude" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 41.976, -191.41 )
+texture = ExtResource( 3 )
+
+[node name="Thérèse" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 50.5339, -184.46 )
+texture = ExtResource( 13 )
+
+[node name="Khadija" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 27.31, -189.44 )
+texture = ExtResource( 12 )
+
+[node name="Raphael" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 19.0694, -200.77 )
+texture = ExtResource( 11 )
+
+[node name="Elio" type="Sprite" parent="BoiteDialogues"]
+visible = false
+position = Vector2( 80.5, -195.115 )
+texture = ExtResource( 10 )
 
 [node name="Fond" type="TextureRect" parent="BoiteDialogues"]
 anchor_right = 1.0
