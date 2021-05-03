@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -6,77 +6,18 @@
 [ext_resource path="res://Scenes/Chars/CharCommercial01.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/foule/PNJ autres/banderole blanche pma.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scripts/Interactions.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/PNJ/Claude.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/PNJ/Therese.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/PNJ/Assa.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/foule/PNJ avancent/PB ace crie.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/foule/PNJ avancent/Boby pote.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Scenes/sol.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Shaders/sol.tres" type="Material" id=15]
+[ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
+[ext_resource path="res://Scripts/sol.gd" type="Script" id=17]
 [ext_resource path="res://Scenes/foule/PNJ avancent/discuteDrapeau.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/foule/PNJ avancent/interFauteuilRoux.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/foule/PNJ avancent/marcheTshirtNoir.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Scenes/foule/PNJ avancent/Marche chapeau paille.tscn" type="PackedScene" id=22]
-[ext_resource path="res://Scenes/foule/PNJ avancent/Boby.tscn" type="PackedScene" id=23]
-[ext_resource path="res://Scenes/foule/PNJ avancent/Roller casque rose.tscn" type="PackedScene" id=24]
-[ext_resource path="res://Scenes/foule/PNJ avancent/crie rose et vert.tscn" type="PackedScene" id=25]
-[ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=26]
-[ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=27]
-[ext_resource path="res://Scenes/foule/PNJ avancent/pantalon rouge.tscn" type="PackedScene" id=28]
-[ext_resource path="res://Scenes/foule/PNJ avancent/mmeRobeOrange.tscn" type="PackedScene" id=29]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tdsParapluie.tscn" type="PackedScene" id=30]
-[ext_resource path="res://Scenes/foule/PNJ avancent/caché masque casquette rose.tscn" type="PackedScene" id=31]
-[ext_resource path="res://Scenes/foule/PNJ avancent/pma pour toustes.tscn" type="PackedScene" id=32]
-[ext_resource path="res://Scenes/foule/PNJ avancent/jupe rayures jaunes.tscn" type="PackedScene" id=33]
-[ext_resource path="res://Scenes/foule/PNJ avancent/SoeurPaillettes.tscn" type="PackedScene" id=34]
-[ext_resource path="res://Scenes/foule/PNJ avancent/mec robe verte.tscn" type="PackedScene" id=35]
-[ext_resource path="res://Scenes/foule/PNJ avancent/mme torse nue.tscn" type="PackedScene" id=36]
-[ext_resource path="res://Scenes/foule/PNJ avancent/Roller rainbow.tscn" type="PackedScene" id=37]
-[ext_resource path="res://Scenes/foule/PNJ avancent/survet cheveux gris.tscn" type="PackedScene" id=38]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse casquette.tscn" type="PackedScene" id=39]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse drapeau.tscn" type="PackedScene" id=40]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse crete rose.tscn" type="PackedScene" id=41]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=42]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse dore.tscn" type="PackedScene" id=43]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe blanche.tscn" type="PackedScene" id=44]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe jaune.tscn" type="PackedScene" id=45]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse rouge.tscn" type="PackedScene" id=46]
-[ext_resource path="res://Scenes/foule/PNJ discutent/gayTShirtFleursMoche.tscn" type="PackedScene" id=47]
-[ext_resource path="res://Scenes/foule/PNJ dansent/Danse afro leve poing.tscn" type="PackedScene" id=48]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse mme noire.tscn" type="PackedScene" id=49]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse drapeau pan.tscn" type="PackedScene" id=50]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse tristan.tscn" type="PackedScene" id=51]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse tshirt rose.tscn" type="PackedScene" id=52]
-[ext_resource path="res://Scenes/foule/PNJ dansent/Danse tshirt etoiles.tscn" type="PackedScene" id=53]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse genderqueer.tscn" type="PackedScene" id=54]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse drapeau lesbienne.tscn" type="PackedScene" id=55]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse mm casquette verte.tscn" type="PackedScene" id=56]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse short rainbow.tscn" type="PackedScene" id=57]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse short rouge.tscn" type="PackedScene" id=58]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe bleue.tscn" type="PackedScene" id=59]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danseGrosShort.tscn" type="PackedScene" id=60]
-[ext_resource path="res://Scenes/foule/PNJ dansent/boy with boobs.tscn" type="PackedScene" id=61]
-[ext_resource path="res://Scenes/foule/PNJ dansent/Danse Bequille crete rose.tscn" type="PackedScene" id=62]
-[ext_resource path="res://Scenes/foule/PNJ autres/Chaine salopette.tscn" type="PackedScene" id=63]
-[ext_resource path="res://Scenes/foule/PNJ bisous/bisouLesbienneBie.tscn" type="PackedScene" id=64]
-[ext_resource path="res://Scenes/foule/PNJ bisous/lesbiennesBisou.tscn" type="PackedScene" id=65]
-[ext_resource path="res://Scenes/foule/PNJ autres/photographe roux.tscn" type="PackedScene" id=66]
-[ext_resource path="res://Scenes/foule/PNJ autres/cherche son pote poteau.tscn" type="PackedScene" id=67]
-[ext_resource path="res://Scenes/foule/PNJ autres/boboPied.tscn" type="PackedScene" id=68]
-[ext_resource path="res://Scenes/foule/PNJ autres/cherche son pote.tscn" type="PackedScene" id=69]
-[ext_resource path="res://Scenes/foule/PNJ autres/fille sur plot.tscn" type="PackedScene" id=70]
-[ext_resource path="res://Scenes/foule/PNJ dansent/couple gay.tscn" type="PackedScene" id=71]
-[ext_resource path="res://Scenes/foule/PNJ discutent/main rouse sac blanc.tscn" type="PackedScene" id=72]
-[ext_resource path="res://Scenes/foule/PNJ discutent/mecs discutent.tscn" type="PackedScene" id=73]
-[ext_resource path="res://Scenes/foule/PNJ discutent/parle tshirt vert.tscn" type="PackedScene" id=74]
-[ext_resource path="res://Scenes/foule/PNJ discutent/queenVerteDos.tscn" type="PackedScene" id=75]
-[ext_resource path="res://Scenes/foule/PNJ discutent/gaySalopetteRayee.tscn" type="PackedScene" id=76]
-[ext_resource path="res://Scenes/foule/PNJ discutent/main gouine is beautiful.tscn" type="PackedScene" id=77]
-[ext_resource path="res://Scenes/foule/PNJ discutent/angeDiscute.tscn" type="PackedScene" id=78]
-[ext_resource path="res://Scenes/foule/PNJ discutent/discutteChaussetetsPan.tscn" type="PackedScene" id=79]
 
 [node name="Node2D" type="Node2D"]
 
@@ -111,7 +52,13 @@ polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897
 
 [node name="decor" type="Node2D" parent="."]
 
-[node name="sol" parent="decor" instance=ExtResource( 15 )]
+[node name="sol" type="Sprite" parent="decor"]
+material = ExtResource( 15 )
+position = Vector2( -1178.96, -69.0405 )
+scale = Vector2( 10.9366, 3.864 )
+z_index = -4000
+texture = ExtResource( 16 )
+script = ExtResource( 17 )
 
 [node name="PNJ" type="Node2D" parent="."]
 
@@ -134,180 +81,17 @@ script = ExtResource( 8 )
 [node name="Foule" type="Node2D" parent="."]
 
 [node name="discuteDrapeau" parent="Foule" instance=ExtResource( 18 )]
-position = Vector2( -594.953, 199.113 )
 
 [node name="marcheTshirtNoir" parent="Foule" instance=ExtResource( 21 )]
-position = Vector2( -529.729, -259.835 )
+position = Vector2( -247.172, -259.835 )
 offset = Vector2( 2.37833, -140.326 )
 
 [node name="interFauteuilRoux" parent="Foule" instance=ExtResource( 20 )]
-position = Vector2( -688.276, -1.65814 )
 
 [node name="gayHappyFleurALasMain" parent="Foule" instance=ExtResource( 19 )]
-position = Vector2( -496.986, -3.71968 )
-
-[node name="banderole blanche pma" parent="Foule" instance=ExtResource( 7 )]
-
-[node name="Boby pote" parent="Foule" instance=ExtResource( 13 )]
-position = Vector2( -948.978, 181.956 )
-
-[node name="Boby" parent="Foule" instance=ExtResource( 23 )]
-position = Vector2( -950.978, 181.956 )
-
-[node name="Marche chapeau paille" parent="Foule" instance=ExtResource( 22 )]
-position = Vector2( -948.978, 183.956 )
-
-[node name="PB ace crie" parent="Foule" instance=ExtResource( 12 )]
-position = Vector2( -948.978, 181.956 )
-
-[node name="Roller casque rose" parent="Foule" instance=ExtResource( 24 )]
-position = Vector2( -946.978, 189.956 )
-
-[node name="Roller rainbow" parent="Foule" instance=ExtResource( 37 )]
-position = Vector2( -858.714, 61.7522 )
-
-[node name="caché masque casquette rose" parent="Foule" instance=ExtResource( 31 )]
-position = Vector2( -906.336, 310.974 )
-
-[node name="couple hijab rose" parent="Foule" instance=ExtResource( 26 )]
-position = Vector2( -809.504, 326.848 )
-
-[node name="jupe rayures jaunes" parent="Foule" instance=ExtResource( 33 )]
-position = Vector2( -809.504, 326.848 )
-
-[node name="mec robe verte" parent="Foule" instance=ExtResource( 35 )]
-position = Vector2( -708.326, 483.213 )
-
-[node name="mme torse nue" parent="Foule" instance=ExtResource( 36 )]
-position = Vector2( -806.33, 328.436 )
-
-[node name="mmeRobeOrange" parent="Foule" instance=ExtResource( 29 )]
-position = Vector2( -807.917, 328.436 )
-
-[node name="SoeurPaillettes" parent="Foule" instance=ExtResource( 34 )]
-position = Vector2( -811.092, 328.436 )
-
-[node name="pantalon rouge" parent="Foule" instance=ExtResource( 28 )]
-position = Vector2( -807.917, 330.023 )
-
-[node name="pma pour toustes" parent="Foule" instance=ExtResource( 32 )]
-position = Vector2( -811.092, 325.261 )
-
-[node name="survet cheveux gris" parent="Foule" instance=ExtResource( 38 )]
-position = Vector2( -809.504, 330.023 )
-
-[node name="tdsParapluie" parent="Foule" instance=ExtResource( 30 )]
-position = Vector2( -603.939, 326.848 )
-
-[node name="trans drapeau verte" parent="Foule" instance=ExtResource( 27 )]
-position = Vector2( -809.504, 334.785 )
-
-[node name="crie rose et vert" parent="Foule" instance=ExtResource( 25 )]
-position = Vector2( -809.504, 325.261 )
-
-[node name="dansent" type="Node2D" parent="Foule"]
-position = Vector2( -3919.57, 119.865 )
-
-[node name="Danse Bequille crete rose" parent="Foule/dansent" instance=ExtResource( 62 )]
-
-[node name="Danse afro leve poing" parent="Foule/dansent" instance=ExtResource( 48 )]
-
-[node name="Danse tshirt etoiles" parent="Foule/dansent" instance=ExtResource( 53 )]
-
-[node name="boy with boobs" parent="Foule/dansent" instance=ExtResource( 61 )]
-
-[node name="couple gay" parent="Foule/dansent" instance=ExtResource( 71 )]
-
-[node name="danse casquette" parent="Foule/dansent" instance=ExtResource( 39 )]
-
-[node name="danse crete rose" parent="Foule/dansent" instance=ExtResource( 41 )]
-
-[node name="danse dore" parent="Foule/dansent" instance=ExtResource( 43 )]
-
-[node name="danse drapeau lesbienne" parent="Foule/dansent" instance=ExtResource( 55 )]
-
-[node name="danse drapeau pan" parent="Foule/dansent" instance=ExtResource( 50 )]
-
-[node name="danse drapeau" parent="Foule/dansent" instance=ExtResource( 40 )]
-
-[node name="danse genderqueer" parent="Foule/dansent" instance=ExtResource( 54 )]
-
-[node name="danse mm casquette verte" parent="Foule/dansent" instance=ExtResource( 56 )]
-
-[node name="danse mme noire" parent="Foule/dansent" instance=ExtResource( 49 )]
-
-[node name="danse robe blanche" parent="Foule/dansent" instance=ExtResource( 44 )]
-
-[node name="danse robe bleue" parent="Foule/dansent" instance=ExtResource( 59 )]
-
-[node name="danse robe jaune" parent="Foule/dansent" instance=ExtResource( 45 )]
-
-[node name="danse rouge" parent="Foule/dansent" instance=ExtResource( 46 )]
-
-[node name="danse short rainbow" parent="Foule/dansent" instance=ExtResource( 57 )]
-
-[node name="danse short rouge" parent="Foule/dansent" instance=ExtResource( 58 )]
-
-[node name="danse tristan" parent="Foule/dansent" instance=ExtResource( 51 )]
-
-[node name="danse tshirt rose" parent="Foule/dansent" instance=ExtResource( 52 )]
-
-[node name="danseGrosShort" parent="Foule/dansent" instance=ExtResource( 60 )]
-
-[node name="danseViolet" parent="Foule/dansent" instance=ExtResource( 42 )]
-
-[node name="bisouLesbienneBie" parent="Foule" instance=ExtResource( 64 )]
-position = Vector2( -3143.2, 468.546 )
-
-[node name="lesbiennesBisou" parent="Foule" instance=ExtResource( 65 )]
-position = Vector2( -1200.16, 419.37 )
-
-[node name="Chaine salopette" parent="Foule" instance=ExtResource( 63 )]
-position = Vector2( -371.719, 469.019 )
-
-[node name="boboPied" parent="Foule" instance=ExtResource( 68 )]
-position = Vector2( -372.979, 470.279 )
-
-[node name="cherche son pote poteau" parent="Foule" instance=ExtResource( 67 )]
-position = Vector2( -372.979, 474.059 )
-
-[node name="cherche son pote" parent="Foule" instance=ExtResource( 69 )]
-position = Vector2( -376.759, 469.019 )
-
-[node name="fille sur plot" parent="Foule" instance=ExtResource( 70 )]
-position = Vector2( -378.019, 470.279 )
-
-[node name="photographe roux" parent="Foule" instance=ExtResource( 66 )]
-position = Vector2( -371.719, 471.539 )
-
-[node name="angeDiscute" parent="Foule" instance=ExtResource( 78 )]
-position = Vector2( -1515.69, 551.333 )
-
-[node name="discutteChaussetetsPan" parent="Foule" instance=ExtResource( 79 )]
-position = Vector2( -1515.69, 554.161 )
-
-[node name="gaySalopetteRayee" parent="Foule" instance=ExtResource( 76 )]
-position = Vector2( -1515.69, 552.747 )
-
-[node name="gayTShirtFleursMoche" parent="Foule" instance=ExtResource( 47 )]
-position = Vector2( -1518.52, 556.99 )
-
-[node name="main gouine is beautiful" parent="Foule" instance=ExtResource( 77 )]
-position = Vector2( -1517.1, 554.161 )
-
-[node name="main rouse sac blanc" parent="Foule" instance=ExtResource( 72 )]
-position = Vector2( -1514.27, 555.576 )
-
-[node name="mecs discutent" parent="Foule" instance=ExtResource( 73 )]
-position = Vector2( -1515.69, 549.919 )
-
-[node name="parle tshirt vert" parent="Foule" instance=ExtResource( 74 )]
-position = Vector2( -1518.52, 551.333 )
-
-[node name="queenVerteDos" parent="Foule" instance=ExtResource( 75 )]
-position = Vector2( -1514.27, 551.333 )
 
 [node name="Chars" type="Node2D" parent="."]
 
 [node name="CharCommercial01" parent="Chars" instance=ExtResource( 4 )]
 position = Vector2( -2416.31, 208.364 )
+[connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
