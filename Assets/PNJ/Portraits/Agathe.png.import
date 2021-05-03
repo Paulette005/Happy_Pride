@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mme-trans-detouree.png-fbde1dcca13fc7ff3958d9fdbe2e6954.stex"
+path="res://.import/Agathe.png-0d24d4fc632e21188a78a5324c2cf4e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PNJ/Portraits/mme-trans-detouree.png"
-dest_files=[ "res://.import/mme-trans-detouree.png-fbde1dcca13fc7ff3958d9fdbe2e6954.stex" ]
+source_file="res://Assets/PNJ/Portraits/Agathe.png"
+dest_files=[ "res://.import/Agathe.png-0d24d4fc632e21188a78a5324c2cf4e6.stex" ]
 
 [params]
 

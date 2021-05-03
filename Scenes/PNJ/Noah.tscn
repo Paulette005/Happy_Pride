@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec_trans04.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
@@ -18,7 +17,7 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 position = Vector2( 292.082, 238.11 )
 script = ExtResource( 5 )
-prenomPNJ = "Noah"
+prenomPNJ = "Agathe"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 60.3213, -34.9225 )

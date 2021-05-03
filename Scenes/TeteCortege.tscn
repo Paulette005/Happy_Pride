@@ -24,12 +24,8 @@
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 6 )]
 visible = false
-anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 0.5
-margin_left = -640.0
 margin_top = -804.0
-margin_right = 640.0
 margin_bottom = -84.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
