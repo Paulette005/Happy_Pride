@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
+[ext_resource path="res://Scripts/z_index.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=2]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-face.png" type="Texture" id=3]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-droite.png" type="Texture" id=4]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-dos.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-gauche.png" type="Texture" id=6]
-
+[ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/GestionCollisions.tscn" type="PackedScene" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,15 +22,13 @@ script = ExtResource( 2 )
 prenomPNJ = "Claude"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -10.905, -168.657 )
 frames = SubResource( 1 )
+script = ExtResource( 1 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" parent="." instance=ExtResource( 7 )]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2( 117.07, -100.048 )
-scale = Vector2( 6.70661, 4.11588 )
-polygon = PoolVector2Array( -2.89861, -5.61916, 32.8103, -7.21015, 41.1188, 14.5334, 37.4355, 45.0339, 9.98737, 65.7602, -39.2184, 62.4876, -71.018, 45.0339, -62.6497, -7.32733 )
+[node name="StaticBody2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2.99658, 92.895 )
 
 [node name="Timer" type="Timer" parent="."]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

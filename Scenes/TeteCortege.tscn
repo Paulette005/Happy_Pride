@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Shaders/sol.tres" type="Material" id=15]
 [ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
 [ext_resource path="res://Scripts/sol.gd" type="Script" id=17]
+[ext_resource path="res://Assets/decor/char01_redi.png" type="Texture" id=18]
 
 [node name="Node2D" type="Node2D"]
 
@@ -57,6 +58,10 @@ z_index = -4000
 texture = ExtResource( 16 )
 script = ExtResource( 17 )
 
+[node name="Char_Commerce01" type="Sprite" parent="decor"]
+position = Vector2( 2193.56, -215.203 )
+texture = ExtResource( 18 )
+
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Node2D"]
@@ -68,23 +73,23 @@ offset = Vector2( -18.363, 32 )
 [node name="PNJ" type="Node2D" parent="."]
 
 [node name="Noah" parent="PNJ" instance=ExtResource( 7 )]
-position = Vector2( -861.08, 127.575 )
+position = Vector2( -615.673, 218.187 )
 script = ExtResource( 8 )
 
 [node name="Assa" parent="PNJ" instance=ExtResource( 11 )]
-position = Vector2( 605.9, -287.21 )
+position = Vector2( 1281.71, 211.156 )
 script = ExtResource( 8 )
 
 [node name="Raphael" parent="PNJ" instance=ExtResource( 12 )]
-position = Vector2( -214.1, 536.79 )
+position = Vector2( -433.079, 1212.6 )
 script = ExtResource( 8 )
 
 [node name="Elio" parent="PNJ" instance=ExtResource( 13 )]
-position = Vector2( 289.9, -651.21 )
+position = Vector2( 58.5167, 1196.39 )
 script = ExtResource( 8 )
 
 [node name="Therese" parent="PNJ" instance=ExtResource( 10 )]
-position = Vector2( 393.9, 212.79 )
+position = Vector2( 1911.65, 209.015 )
 script = ExtResource( 8 )
 
 [node name="Camille" parent="PNJ" instance=ExtResource( 14 )]

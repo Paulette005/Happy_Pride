@@ -36,6 +36,9 @@ func _physics_process(delta):
 	get_input()
 	velocite = move_and_slide(velocite)
 	
+		# Lien avec le script Zindex
+	z_index = global_position.y / 2
+	
 	if velocite.x == 0 && velocite.y == 0:
 		$AnimatedSprite.play("Idle"+direction)
 	else:
@@ -46,5 +49,3 @@ func _physics_process(delta):
 		partInstance.lancer_particules(global_position)
 		get_parent().add_child(partInstance)
 		
-	# Lien avec le script Zindex
-	#z_index = global_position.y / 2
