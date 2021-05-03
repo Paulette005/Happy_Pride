@@ -37,7 +37,6 @@ func _on_Timer_timeout():
 	$Timer.start(randomTemps)
 	$AnimatedSprite.set_frame(nbframe)
 
-
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
 		lancement_dialogue()

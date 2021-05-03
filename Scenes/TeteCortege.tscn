@@ -1,18 +1,14 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=5]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/PNJ/Noah.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scripts/Interactions.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/PNJ/Claude.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/PNJ/Therese.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/PNJ/Assa.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/PNJ/Raphael.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/PNJ/Elio.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Shaders/sol.tres" type="Material" id=15]
 [ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
@@ -44,11 +40,10 @@ script = ExtResource( 3 )
 vitesse = 300
 
 [node name="ChangementScene" type="Area2D" parent="."]
-script = ExtResource( 5 )
-posX = -580
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( -610.026, 10.6787 )
+position = Vector2( -1593.3, -56.6691 )
 polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
 
 [node name="decor" type="Node2D" parent="."]
@@ -71,28 +66,16 @@ offset = Vector2( -18.363, 32 )
 
 [node name="PNJ" type="Node2D" parent="."]
 
-[node name="Noah" parent="PNJ" instance=ExtResource( 7 )]
-position = Vector2( -861.08, 127.575 )
-script = ExtResource( 8 )
-
 [node name="Assa" parent="PNJ" instance=ExtResource( 11 )]
 position = Vector2( 605.9, -287.21 )
 script = ExtResource( 8 )
 
-[node name="Raphael" parent="PNJ" instance=ExtResource( 12 )]
-position = Vector2( -214.1, 536.79 )
-script = ExtResource( 8 )
-
-[node name="Elio" parent="PNJ" instance=ExtResource( 13 )]
-position = Vector2( 289.9, -651.21 )
-script = ExtResource( 8 )
-
 [node name="Therese" parent="PNJ" instance=ExtResource( 10 )]
-position = Vector2( 393.9, 212.79 )
+position = Vector2( 498.171, 276.698 )
 script = ExtResource( 8 )
 
 [node name="Camille" parent="PNJ" instance=ExtResource( 14 )]
-position = Vector2( -464.442, -811.164 )
+position = Vector2( -467.806, -632.894 )
 script = ExtResource( 8 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 9 )]

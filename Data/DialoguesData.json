@@ -3,13 +3,20 @@
   "Prenom": "Claude",
   "Dial": [
     [
-    "discours A, blabla00",
-    "discours A, blabla001"
+    "Qu’est ce que je connais sur l’histoire de la Pride ? Et bien déjà, que c’est une histoire peu connue du grand public et même de certain·es participant·es !",
+    "En général, on marche au mois de juin. C’est le mois de la Pride ! Avant de s’appeler la marche des fiertés, on l’appelait Gay Pride, d’ailleurs certain·es puristes continuent à la nommer ainsi...",
+	"Ouais, en terme de représentation et d’inclusion c’est pas terrible.",
+	"M’enfin, le pire c’est de voir que malgré les années, la marche est toujours perçue comme une fête. Une fête, dans laquelle il n’y a que, je-cite: “des comportements exubérant”.",
+	"Comme si ce n’était pas politique d’être exubérant !",
+	"Il y a aussi une question qui reste sans réponse pour le reste de la population. Pourquoi sommes-nous  fièr·es d’être qui on est ? Ahahah"
     ],
     [
-    "discours A2, blabla00",
-    "discours A2, blabla001",
-    "discours A2, blabla0012"
+    "Qu’est ce que je connais sur l’histoire de la Pride ? Et bien déjà, que c’est une histoire peu connue du grand public et même de certain·es participant·es !",
+    "En général, on marche au mois de juin. C’est le mois de la Pride ! Avant de s’appeler la marche des fiertés, on l’appelait Gay Pride, d’ailleurs certain·es puristes continuent à la nommer ainsi...",
+	"Ouais, en terme de représentation et d’inclusion c’est pas terrible.",
+	"M’enfin, le pire c’est de voir que malgré les années, la marche est toujours perçue comme une fête. Une fête, dans laquelle il n’y a que, je-cite: “des comportements exubérant”.",
+	"Comme si ce n’était pas politique d’être exubérant !",
+	"Il y a aussi une question qui reste sans réponse pour le reste de la population. Pourquoi sommes-nous  fièr·es d’être qui on est ? Ahahah"
     ]
   ]
 },
@@ -17,14 +24,18 @@
   "Prenom": "Assa",
   "Dial": [
     [
-    "discours B, blabla00",
-    "discours B, blabla001",
-    "discours B, blabla0012"
+    "Bien. A l’origine, tout a commencé au Stonewall Inn, un bar gay dans le quartier de Greenwich de New York.",
+    "Le lieu était connu pour sa clientèle marginalisée, des personnes trans, des travesti·es, des gays, des lesbiennes ainsi qu’un melting-pot de communautés blanches, noires, hispaniques... ",
+    "Le bar ne respectait pas la législation de l’époque et permettait aux homos de consommer de l’alcool et de se travestir.",
+	"Cool, hein ? Ouais, sauf que le bar était tenu par la mafia. Elle filait de l’argent aux flics lors des descentes pour que le bar puisse rester ouvert.",
+	"Ça permettait également aux flics de ficher les personnes se travestissent, de les arrêter et au passage de les frapper."
     ],
     [
-    "discours B2, blabla00",
-    "discours B2, blabla001",
-    "discours B2, blabla0012"
+    "Bien. A l’origine, tout a commencé au Stonewall Inn, un bar gay dans le quartier de Greenwich de New York.",
+    "Le lieu était connu pour sa clientèle marginalisée, des personnes trans, des travesti·es, des gays, des lesbiennes ainsi qu’un melting-pot de communautés blanches, noires, hispaniques... ",
+    "Le bar ne respectait pas la législation de l’époque et permettait aux homos de consommer de l’alcool et de se travestir.",
+	"Cool, hein ? Ouais, sauf que le bar était tenu par la mafia. Elle filait de l’argent aux flics lors des descentes pour que le bar puisse rester ouvert.",
+	"Ça permettait également aux flics de ficher les personnes se travestissent, de les arrêter et au passage de les frapper."
     ]
   ]
 },
@@ -92,14 +103,20 @@
   "Prenom": "Thérèse",
   "Dial": [
     [
-    "discours B, blabla00",
-    "discours B, blabla001",
-    "discours B, blabla0012"
+    "Que s’est-il passé pour que cela change ?",
+    "Un RAS-DE-BOL !",
+    " Y a eu une descente dans la nuit du 28 au 29 juin 1969. Cependant les flics se sont retrouvés face à une opposition.",
+	"D’après la plupart des récits, ce sont les personnes travesti·es qui sont les premières à s’être opposées aux flics. Avant que le reste du bar suive.",
+	"Iels ont commencé à balancer des projectiles sur les flics, qui ont fini par se barricader dans le bar en attendant des renforts.",
+	"La révolte a durée toute la nuit puis pendant plusieurs jours."
     ],
     [
-    "discours B2, blabla00",
-    "discours B2, blabla001",
-    "discours B2, blabla0012"
+    "Que s’est-il passé pour que cela change ?",
+    "Un RAS-DE-BOL !",
+    " Y a eu une descente dans la nuit du 28 au 29 juin 1969. Cependant les flics se sont retrouvés face à une opposition.",
+	"D’après la plupart des récits, ce sont les personnes travesti·es qui sont les premières à s’être opposées aux flics. Avant que le reste du bar suive.",
+	"Iels ont commencé à balancer des projectiles sur les flics, qui ont fini par se barricader dans le bar en attendant des renforts.",
+	"La révolte a durée toute la nuit puis pendant plusieurs jours."
     ]
   ]
 },
@@ -137,14 +154,12 @@
   "Prenom": "Camille",
   "Dial": [
     [
-    "discours B, blabla00",
-    "discours B, blabla001",
-    "discours B, blabla0012"
+    "Hey ! Si tu veux des informations pour ton zine sur l’histoire de la marche, n’hésite pas à échanger avec d’autres personnes.",
+    "Tu peux aussi, juste profiter !"
     ],
     [
-    "discours B2, blabla00",
-    "discours B2, blabla001",
-    "discours B2, blabla0012"
+    "Hey ! Si tu veux des informations pour ton zine sur l’histoire de la marche, n’hésite pas à échanger avec d’autres personnes.",
+    "Tu peux aussi, juste profiter !"
     ]
   ]
 }

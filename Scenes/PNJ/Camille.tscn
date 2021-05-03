@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-dos.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-fauteuil-gauche.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/z_index.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/GestionCollisions.tscn" type="PackedScene" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -24,12 +23,11 @@ prenomPNJ = "Camille"
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
+offset = Vector2( 0, -150 )
 script = ExtResource( 6 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
-
-[node name="StaticBody2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2.24487, 89.7969 )
+position = Vector2( -4.48987, -143.675 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
