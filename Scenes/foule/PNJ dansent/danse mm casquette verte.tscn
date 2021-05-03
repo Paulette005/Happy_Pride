@@ -4,6 +4,6 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse mm casquette verte.png" type="Texture" id=2]
 
 [node name="danse mm casquette verte" type="Sprite"]
-position = Vector2( 6.41968, -150.96 )
 texture = ExtResource( 2 )
+offset = Vector2( 0, -140 )
 script = ExtResource( 1 )
