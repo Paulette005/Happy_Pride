@@ -9,9 +9,10 @@
 [ext_resource path="res://Assets/PNJ/Portraits/Judith.png" type="Texture" id=8]
 [ext_resource path="res://Assets/PNJ/Portraits/Noah.png" type="Texture" id=9]
 [ext_resource path="res://Assets/PNJ/Portraits/Elio.png" type="Texture" id=10]
-[ext_resource path="res://Assets/PNJ/Portraits/Raphael.png" type="Texture" id=11]
+[ext_resource path="res://Assets/PNJ/Portraits/Raphaël.png" type="Texture" id=11]
 [ext_resource path="res://Assets/PNJ/Portraits/Khadija.png" type="Texture" id=12]
 [ext_resource path="res://Assets/PNJ/Portraits/Thérèse.png" type="Texture" id=13]
+
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
