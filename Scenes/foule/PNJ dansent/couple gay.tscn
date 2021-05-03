@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/couple gay.png" type="Texture" id=2]
 
 [node name="couple gay" type="Sprite"]
-position = Vector2( 1.65747, -147.785 )
+position = Vector2( -6.31525, -7.05219 )
 texture = ExtResource( 2 )
+offset = Vector2( 7.97272, -140.733 )
 script = ExtResource( 1 )
