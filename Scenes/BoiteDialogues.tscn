@@ -25,32 +25,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Prenoms" type="RichTextLabel" parent="BoiteDialogues"]
-margin_left = 54.7447
-margin_top = 12.2703
-margin_right = 203.745
-margin_bottom = 52.2703
-bbcode_text = "Prenom"
-text = "Prenom"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Texte" type="RichTextLabel" parent="BoiteDialogues"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -369.0
-margin_top = -30.898
-margin_right = 369.0
-margin_bottom = 27.102
-bbcode_text = "Voici du texte !"
-text = "Voici du texte !"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Icone" type="Sprite" parent="BoiteDialogues"]
 position = Vector2( 791.336, 123.471 )
 scale = Vector2( 0.614155, 0.403692 )
@@ -75,6 +49,34 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 3 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Prenoms" type="RichTextLabel" parent="BoiteDialogues"]
+margin_left = 54.7447
+margin_top = 21.0897
+margin_right = 203.745
+margin_bottom = 61.0897
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "Prenom"
+text = "Prenom"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texte" type="RichTextLabel" parent="BoiteDialogues"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -370.26
+margin_top = -23.3385
+margin_right = 367.74
+margin_bottom = 34.6615
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "Voici du texte !"
+text = "Voici du texte !"
 __meta__ = {
 "_edit_use_anchors_": false
 }
