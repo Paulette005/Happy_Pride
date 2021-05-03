@@ -6,7 +6,7 @@
 [ext_resource path="res://Shaders/flou.shader" type="Shader" id=4]
 [ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=6]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 4 )
 shader_param/amount = 2.0
 
@@ -18,7 +18,7 @@ __meta__ = {
 }
 
 [node name="flou" type="TextureRect" parent="."]
-material = SubResource( 1 )
+material = SubResource( 2 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
