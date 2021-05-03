@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ autres/banderole blanche pma.png" type="Texture" id=2]
+
+[node name="banderole blanche pma" type="Sprite"]
+position = Vector2( 157.022, 113.956 )
+texture = ExtResource( 2 )
+offset = Vector2( -0.807129, -345.313 )
+script = ExtResource( 1 )
+add_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( -24, 24, -44, -28, -24, -512, 48, -504, 34, -18, 28, 24 )

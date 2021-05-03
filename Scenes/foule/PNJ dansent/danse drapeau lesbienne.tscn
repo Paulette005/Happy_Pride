@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ dansent/danse drapeau lesbienne.png" type="Texture" id=2]
+
+[node name="danse drapeau lesbienne" type="Sprite"]
+position = Vector2( 30.2307, -246.204 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ autres/fille sur plot.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+[node name="fille sur plot" type="Sprite"]
+position = Vector2( -4.66638, -0.420105 )
+texture = ExtResource( 1 )
+offset = Vector2( -2.51984, -70.5556 )
+script = ExtResource( 2 )
+add_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( -71.8156, -25.1984, 61.7361, -35.2778, 66.7758, -1.25992, 25.1984, 3.77979, -16.379, 56.6965, -64.256, 39.0576 )

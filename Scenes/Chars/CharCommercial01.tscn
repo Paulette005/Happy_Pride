@@ -11,6 +11,7 @@ extents = Vector2( 1191.09, 134.459 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, -400 )
 script = ExtResource( 1 )
+add_collision = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

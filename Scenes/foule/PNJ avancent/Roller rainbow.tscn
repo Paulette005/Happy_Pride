@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/Roller rainbow.PNG" type="Texture" id=2]
+
+[node name="Roller rainbow" type="Sprite"]
+position = Vector2( -3.10474, -1.74387 )
+texture = ExtResource( 2 )
+offset = Vector2( 2.12708, -134.3 )
+script = ExtResource( 1 )

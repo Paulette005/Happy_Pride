@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/pma pour toustes.png" type="Texture" id=2]
+
+[node name="pma pour toustes" type="Sprite"]
+position = Vector2( -3.10474, -3.33127 )
+texture = ExtResource( 2 )
+offset = Vector2( -3.68835, -166.387 )
+script = ExtResource( 1 )

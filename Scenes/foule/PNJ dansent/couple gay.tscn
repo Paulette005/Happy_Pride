@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ dansent/couple gay.png" type="Texture" id=2]
+
+[node name="couple gay" type="Sprite"]
+position = Vector2( 1.65747, -147.785 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

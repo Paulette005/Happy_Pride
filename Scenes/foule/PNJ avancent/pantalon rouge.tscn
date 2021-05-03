@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/pantalon rouge.png" type="Texture" id=2]
+
+[node name="pantalon rouge" type="Sprite"]
+position = Vector2( 0.0700684, 1.43094 )
+texture = ExtResource( 2 )
+offset = Vector2( 4.9093, -144.24 )
+script = ExtResource( 1 )

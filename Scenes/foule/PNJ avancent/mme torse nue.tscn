@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/mme torse nue.png" type="Texture" id=2]
+
+[node name="mme torse nue" type="Sprite"]
+position = Vector2( 1.65747, -0.156464 )
+texture = ExtResource( 2 )
+offset = Vector2( -0.041626, -166.198 )
+script = ExtResource( 1 )

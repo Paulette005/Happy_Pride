@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ dansent/boy with boobs.png" type="Texture" id=2]
+
+[node name="boy with boobs" type="Sprite"]
+position = Vector2( -4.69214, -162.071 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

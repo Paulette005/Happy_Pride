@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ dansent/Danse afro leve poing.PNG" type="Texture" id=2]
+
+[node name="Danse afro leve poing" type="Sprite"]
+position = Vector2( -7.86694, -208.106 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
