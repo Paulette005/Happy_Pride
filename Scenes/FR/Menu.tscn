@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/BoutonsMenu.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/rectangle-menu.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -15,9 +15,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -87.8057
 margin_top = -20.0
-margin_right = 44.0
+margin_right = 131.194
 margin_bottom = 284.0
 alignment = 1
 __meta__ = {
@@ -25,9 +25,8 @@ __meta__ = {
 }
 
 [node name="Commencer" type="TextureButton" parent="VBoxContainer"]
-margin_top = 18.0
-margin_right = 64.0
-margin_bottom = 82.0
+margin_right = 219.0
+margin_bottom = 73.0
 focus_neighbour_bottom = NodePath("../Options")
 texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
@@ -41,6 +40,7 @@ margin_left = -40.0
 margin_top = -13.5
 margin_right = 40.0
 margin_bottom = 13.5
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Commencer"
 text = "Commencer"
 __meta__ = {
@@ -48,8 +48,8 @@ __meta__ = {
 }
 
 [node name="Options" type="TextureButton" parent="VBoxContainer"]
-margin_top = 86.0
-margin_right = 64.0
+margin_top = 77.0
+margin_right = 219.0
 margin_bottom = 150.0
 focus_neighbour_top = NodePath("../Commencer")
 focus_neighbour_bottom = NodePath("../Credits")
@@ -65,6 +65,7 @@ margin_left = -28.0
 margin_top = -9.0
 margin_right = 28.0
 margin_bottom = 9.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Options"
 text = "Options"
 __meta__ = {
@@ -73,8 +74,8 @@ __meta__ = {
 
 [node name="Credits" type="TextureButton" parent="VBoxContainer"]
 margin_top = 154.0
-margin_right = 64.0
-margin_bottom = 218.0
+margin_right = 219.0
+margin_bottom = 227.0
 focus_neighbour_top = NodePath("../Options")
 focus_neighbour_bottom = NodePath("../Quitter")
 texture_normal = ExtResource( 2 )
@@ -89,6 +90,7 @@ margin_left = -25.5
 margin_top = -8.5
 margin_right = 25.5
 margin_bottom = 8.5
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Crédits"
 text = "Crédits"
 __meta__ = {
@@ -96,9 +98,9 @@ __meta__ = {
 }
 
 [node name="Quitter" type="TextureButton" parent="VBoxContainer"]
-margin_top = 222.0
-margin_right = 64.0
-margin_bottom = 286.0
+margin_top = 231.0
+margin_right = 219.0
+margin_bottom = 304.0
 focus_neighbour_top = NodePath("../Credits")
 texture_normal = ExtResource( 2 )
 script = ExtResource( 1 )
@@ -112,6 +114,7 @@ margin_left = -25.5
 margin_top = -8.5
 margin_right = 25.5
 margin_bottom = 8.5
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Quitter"
 text = "Quitter"
 __meta__ = {
