@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -14,9 +14,7 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/PB ace crie.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/foule/PNJ avancent/Boby pote.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Shaders/sol.tres" type="Material" id=15]
-[ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
-[ext_resource path="res://Scripts/sol.gd" type="Script" id=17]
+[ext_resource path="res://Scenes/sol.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Scenes/foule/PNJ avancent/discuteDrapeau.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/foule/PNJ avancent/interFauteuilRoux.tscn" type="PackedScene" id=20]
@@ -113,13 +111,7 @@ polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897
 
 [node name="decor" type="Node2D" parent="."]
 
-[node name="sol" type="Sprite" parent="decor"]
-material = ExtResource( 15 )
-position = Vector2( -1178.96, -69.0405 )
-scale = Vector2( 10.9366, 3.864 )
-z_index = -4000
-texture = ExtResource( 16 )
-script = ExtResource( 17 )
+[node name="sol" parent="decor" instance=ExtResource( 15 )]
 
 [node name="PNJ" type="Node2D" parent="."]
 
@@ -184,7 +176,7 @@ position = Vector2( -809.504, 326.848 )
 position = Vector2( -809.504, 326.848 )
 
 [node name="mec robe verte" parent="Foule" instance=ExtResource( 35 )]
-position = Vector2( -809.504, 325.261 )
+position = Vector2( -708.326, 483.213 )
 
 [node name="mme torse nue" parent="Foule" instance=ExtResource( 36 )]
 position = Vector2( -806.33, 328.436 )
@@ -205,7 +197,7 @@ position = Vector2( -811.092, 325.261 )
 position = Vector2( -809.504, 330.023 )
 
 [node name="tdsParapluie" parent="Foule" instance=ExtResource( 30 )]
-position = Vector2( -809.504, 326.848 )
+position = Vector2( -603.939, 326.848 )
 
 [node name="trans drapeau verte" parent="Foule" instance=ExtResource( 27 )]
 position = Vector2( -809.504, 334.785 )
@@ -319,5 +311,3 @@ position = Vector2( -1514.27, 551.333 )
 
 [node name="CharCommercial01" parent="Chars" instance=ExtResource( 4 )]
 position = Vector2( -2416.31, 208.364 )
-add_collision = false
-[connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]

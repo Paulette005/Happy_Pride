@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/sol.gd" type="Script" id=1]
+[ext_resource path="res://Shaders/sol.tres" type="Material" id=2]
+[ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=3]
+
+[node name="sol" type="Sprite"]
+material = ExtResource( 2 )
+position = Vector2( -1178.96, -69.0405 )
+scale = Vector2( 10.9366, 3.864 )
+z_index = -4000
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+[connection signal="item_rect_changed" from="." to="." method="calculate_size"]
