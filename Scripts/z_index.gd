@@ -8,4 +8,3 @@ func _ready():
 	z_as_relative = false
 	var zone_c = zone_coll.instance()
 	add_child(zone_c)
-	print("teet")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=3]
-[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Chars/CharCommercial01.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Interactions.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/PNJ/Claude.tscn" type="PackedScene" id=9]
@@ -21,6 +22,9 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Interactions" parent="CanvasLayer" instance=ExtResource( 5 )]
+visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 6 )]
 visible = false
@@ -51,18 +55,10 @@ polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897
 [node name="sol" type="Sprite" parent="decor"]
 material = ExtResource( 15 )
 position = Vector2( 464.322, -69.0405 )
-scale = Vector2( 5.45875, 3.86376 )
+scale = Vector2( 5.459, 3.864 )
 z_index = -4000
 texture = ExtResource( 16 )
 script = ExtResource( 17 )
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Node2D"]
-position = Vector2( 1775.46, 882.12 )
-scale = Vector2( 63.0597, 1 )
-texture = ExtResource( 4 )
-offset = Vector2( -18.363, 32 )
 
 [node name="PNJ" type="Node2D" parent="."]
 
@@ -93,4 +89,9 @@ offset = Vector2( 2.37833, -140.326 )
 [node name="interFauteuilRoux" parent="Foule" instance=ExtResource( 20 )]
 
 [node name="gayHappyFleurALasMain" parent="Foule" instance=ExtResource( 19 )]
+
+[node name="Chars" type="Node2D" parent="."]
+
+[node name="CharCommercial01" parent="Chars" instance=ExtResource( 4 )]
+position = Vector2( -2416.31, 208.364 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]

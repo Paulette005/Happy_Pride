@@ -44,8 +44,8 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite.play("Walk"+direction)
 	
-	if Input.is_action_just_pressed("ui_accept"):
-		var partInstance = LancerParticules.instance()
-		partInstance.lancer_particules(global_position)
-		get_parent().add_child(partInstance)
+	#if Input.is_action_just_pressed("ui_accept"):
+	#	var partInstance = LancerParticules.instance()
+	#	partInstance.lancer_particules(global_position)
+	#	get_parent().add_child(partInstance)
 		
