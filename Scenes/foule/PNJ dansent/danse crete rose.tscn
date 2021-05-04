@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse crete rose.png" type="Texture" id=2]
 
 [node name="danse crete rose" type="Sprite"]
+position = Vector2( -3.01208, -6.35681 )
 texture = ExtResource( 2 )
-offset = Vector2( 0, -120 )
+offset = Vector2( 7.84437, -120.792 )
 script = ExtResource( 1 )

@@ -4,6 +4,7 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 [node name="danse rouge" type="Sprite"]
+position = Vector2( 2.65027, -6.35657 )
 texture = ExtResource( 1 )
-offset = Vector2( 0, -130 )
+offset = Vector2( -16.8669, -117.617 )
 script = ExtResource( 2 )

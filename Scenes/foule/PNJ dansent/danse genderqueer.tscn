@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse genderqueer.png" type="Texture" id=2]
 
 [node name="danse genderqueer" type="Sprite"]
-position = Vector2( 1.65747, -212.868 )
+position = Vector2( -4.8999, 3.08203 )
 texture = ExtResource( 2 )
+offset = Vector2( 6.55737, -215.95 )
 script = ExtResource( 1 )

@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse drapeau.png" type="Texture" id=2]
 
 [node name="danse drapeau" type="Sprite"]
-position = Vector2( -6.27954, -270.015 )
+position = Vector2( 8.31299, -2.58112 )
 texture = ExtResource( 2 )
+offset = Vector2( -14.5925, -267.434 )
 script = ExtResource( 1 )

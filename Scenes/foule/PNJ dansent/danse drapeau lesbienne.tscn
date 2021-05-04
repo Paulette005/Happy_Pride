@@ -4,6 +4,7 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse drapeau lesbienne.png" type="Texture" id=2]
 
 [node name="danse drapeau lesbienne" type="Sprite"]
-position = Vector2( 30.2307, -246.204 )
+position = Vector2( 0.76355, 1.1944 )
 texture = ExtResource( 2 )
+offset = Vector2( 29.4671, -247.398 )
 script = ExtResource( 1 )
