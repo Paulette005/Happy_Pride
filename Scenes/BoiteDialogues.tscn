@@ -6,7 +6,7 @@
 [ext_resource path="res://Shaders/flou.shader" type="Shader" id=4]
 [ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=6]
 
-[sub_resource type="ShaderMaterial" id=2]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 4 )
 shader_param/amount = 2.0
 
@@ -18,9 +18,10 @@ __meta__ = {
 }
 
 [node name="flou" type="TextureRect" parent="."]
-material = SubResource( 2 )
+material = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = 6.10352e-05
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {
@@ -33,8 +34,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -424.0
-margin_top = -146.0
+margin_top = -184.0
 margin_right = 424.0
+margin_bottom = -38.0
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -51,10 +53,11 @@ anchor_top = -3.711
 anchor_right = -0.269
 anchor_bottom = -3.711
 margin_left = -0.305344
-margin_top = 0.022583
+margin_top = -6.97742
 margin_right = 564.695
-margin_bottom = 771.023
+margin_bottom = 764.023
 texture = ExtResource( 6 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

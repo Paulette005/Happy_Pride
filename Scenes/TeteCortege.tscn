@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=2]
@@ -18,22 +18,6 @@
 [ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=16]
 [ext_resource path="res://Scripts/sol.gd" type="Script" id=17]
 [ext_resource path="res://Scenes/foule/PNJ avancent/discuteDrapeau.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse drapeau pan.tscn" type="PackedScene" id=52]
-[ext_resource path="res://Scenes/foule/PNJ discutent/mecs discutent.tscn" type="PackedScene" id=53]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe bleue.tscn" type="PackedScene" id=54]
-[ext_resource path="res://Scenes/foule/PNJ avancent/PB ace crie.tscn" type="PackedScene" id=56]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse rouge.tscn" type="PackedScene" id=57]
-[ext_resource path="res://Scenes/foule/PNJ pink block/PB couple filles afrofrem.tscn" type="PackedScene" id=58]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse mm casquette verte.tscn" type="PackedScene" id=59]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danseGrosShort.tscn" type="PackedScene" id=60]
-[ext_resource path="res://Scenes/foule/PNJ pink block/mme fauteuil cretye rose.tscn" type="PackedScene" id=61]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse dore.tscn" type="PackedScene" id=62]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tdsParapluie.tscn" type="PackedScene" id=64]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse crete rose.tscn" type="PackedScene" id=66]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse mme noire.tscn" type="PackedScene" id=67]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=68]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe jaune.tscn" type="PackedScene" id=69]
-[ext_resource path="res://Scenes/foule/PNJ dansent/danse tristan.tscn" type="PackedScene" id=70]
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/foule/PNJ avancent/interFauteuilRoux.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/foule/PNJ avancent/marcheTshirtNoir.tscn" type="PackedScene" id=21]
@@ -68,6 +52,18 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/couple gay.tscn" type="PackedScene" id=50]
 [ext_resource path="res://Scenes/foule/PNJ dansent/Danse Bequille crete rose.tscn" type="PackedScene" id=51]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse crete rose.tscn" type="PackedScene" id=52]
+[ext_resource path="res://Scenes/foule/PNJ discutent/mecs discutent.tscn" type="PackedScene" id=53]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danse robe bleue.tscn" type="PackedScene" id=54]
+[ext_resource path="res://Scenes/foule/PNJ avancent/PB ace crie.tscn" type="PackedScene" id=56]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danse rouge.tscn" type="PackedScene" id=57]
+[ext_resource path="res://Scenes/foule/PNJ pink block/PB couple filles afrofrem.tscn" type="PackedScene" id=58]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danseGrosShort.tscn" type="PackedScene" id=60]
+[ext_resource path="res://Scenes/foule/PNJ pink block/mme fauteuil cretye rose.tscn" type="PackedScene" id=61]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danse dore.tscn" type="PackedScene" id=62]
+[ext_resource path="res://Scenes/foule/PNJ avancent/tdsParapluie.tscn" type="PackedScene" id=64]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danse mme noire.tscn" type="PackedScene" id=67]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=68]
+[ext_resource path="res://Scenes/foule/PNJ dansent/danse tristan.tscn" type="PackedScene" id=70]
 
 [node name="Node2D" type="Node2D"]
 
@@ -78,9 +74,6 @@ visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 6 )]
 visible = false
-anchor_top = 1.0
-margin_top = -804.0
-margin_bottom = -84.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -125,7 +118,7 @@ position = Vector2( -4679.4, 349.376 )
 script = ExtResource( 8 )
 
 [node name="Therese" parent="PNJ" instance=ExtResource( 10 )]
-position = Vector2( -5948.81, -205.611 ))
+position = Vector2( -5948.81, -205.611 )
 script = ExtResource( 8 )
 
 [node name="Camille" parent="PNJ" instance=ExtResource( 14 )]
@@ -277,9 +270,6 @@ position = Vector2( -2464.27, -613.065 )
 [node name="main rouse sac blanc" parent="Foule" instance=ExtResource( 46 )]
 position = Vector2( -2582.92, -613.065 )
 
--[node name="discuteDrapeau2" parent="Foule" instance=ExtResource( 18 )]
-position = Vector2( -5716.4, 308.202 )
-
 [node name="survet cheveux gris3" parent="Foule" instance=ExtResource( 32 )]
 position = Vector2( -6567.73, 930.776 )
 
@@ -303,9 +293,6 @@ position = Vector2( -4936.56, -397.322 )
 
 [node name="dansent" type="Node2D" parent="Foule"]
 position = Vector2( -3900.94, -103.827 )
-
--[node name="danse robe jaune" parent="Foule/dansent" instance=ExtResource( 69 )]
-position = Vector2( -431.39, 885.409 )
 
 [node name="danse drapeau pan" parent="Foule/dansent" instance=ExtResource( 52 )]
 position = Vector2( -625.18, -157.933 )
@@ -331,9 +318,6 @@ position = Vector2( -241.515, 170.938 )
 [node name="danse casquette" parent="Foule/dansent" instance=ExtResource( 48 )]
 position = Vector2( -163.115, 412.496 )
 
--[node name="danse mm casquette verte" parent="Foule/dansent" instance=ExtResource( 59 )]
-position = Vector2( -2650.71, -355.661 )
-
 [node name="danse robe bleue" parent="Foule/dansent" instance=ExtResource( 54 )]
 position = Vector2( -1427.94, 186.1 )
 
@@ -346,14 +330,11 @@ position = Vector2( -1200.56, 234.391 )
 [node name="danse crete rose" parent="Foule/dansent" instance=ExtResource( 52 )]
 position = Vector2( -30.4741, 152.215 )
 
-[node name="danse crete rose" parent="Foule/dansent" instance=ExtResource( 66 )]
+[node name="danse crete rose" parent="Foule/dansent" instance=ExtResource( 52 )]
 position = Vector2( -39.9478, -326.151 )
 
 [node name="danseViolet" parent="Foule/dansent" instance=ExtResource( 68 )]
 position = Vector2( -1162.28, -7.04703 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Foule/StaticBody2D"]
-polygon = PoolVector2Array( 37.7543, -247.414, 56.7816, 18.9681, 13.5571, 677.789, -88.7146, 670.653, -98.2283, 73.6716, -19.7407, -245.036 )
 
 [node name="Chars" type="Node2D" parent="."]
 

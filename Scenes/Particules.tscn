@@ -29,7 +29,6 @@ scale = Vector2( 2, 2 )
 script = ExtResource( 1 )
 
 [node name="Particles2D" type="Particles2D" parent="."]
-position = Vector2( 220.182, 113.832 )
 emitting = false
 amount = 100
 lifetime = 1.5

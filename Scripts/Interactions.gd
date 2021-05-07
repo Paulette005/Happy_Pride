@@ -4,12 +4,12 @@ var playerZone = false
 var prenomPNJ
 var index_dialogueArray = 0
 var numArray = 0
-
 var nbframe = 0
 var randomTemps = 2
 var rdm = RandomNumberGenerator.new()
-
-# numArray indique le chiifre du tableau du dialogue, soit 0 ou 1
+#Gestion de la direction pour gérer direction PNJ lors des dialogues
+var dirPlayer
+onready var directionsPlayer = get_node("/root/Node2D/Player")
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
@@ -32,16 +32,21 @@ func on_body_exited(body):
 	
 func _on_Timer_timeout():
 	# Random entre plusieurs valeurs, le résultat est ensuite contenu dans la var nbframe qui permet de changer la frame du personnage.
-	rdm.randomize()
-	nbframe = rdm.randi_range(0, 3)
-	randomTemps = rdm.randi_range(2,6)
+	if Dialogues.visible == false:
+		rdm.randomize()
+		nbframe = rdm.randi_range(0, 3)
+		randomTemps = rdm.randi_range(2,6)
 	
-	$Timer.start(randomTemps)
-	$AnimatedSprite.set_frame(nbframe)
-
+		$Timer.start(randomTemps)
+		$AnimatedSprite.set_frame(nbframe)
+		
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
 		Interactions.visible = false
+		if directionsPlayer.dirPlayer <= 1:
+			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)+2)
+		else:
+			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)-2)
 		lancement_dialogue()
 		
 func lancement_dialogue():
