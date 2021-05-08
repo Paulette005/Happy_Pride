@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ avancent/gay harnais gothique.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="gay harnais gothique" type="Sprite"]
+position = Vector2( -2.05096, -0.156647 )
+texture = ExtResource( 1 )
+offset = Vector2( -9.96466, -168.335 )
+script = ExtResource( 2 )

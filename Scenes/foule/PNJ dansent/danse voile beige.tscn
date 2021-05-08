@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ dansent/danse voile beige.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="danse voile beige" type="Sprite"]
+position = Vector2( -1.19244, 1.56046 )
+texture = ExtResource( 1 )
+offset = Vector2( 9.34479, -147.364 )
+script = ExtResource( 2 )

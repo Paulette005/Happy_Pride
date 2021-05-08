@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ drapeau/bear drapeau.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="bear drapeau" type="Sprite"]
+position = Vector2( -1.93164, 0.414795 )
+texture = ExtResource( 1 )
+offset = Vector2( -5.04199, -244.537 )
+script = ExtResource( 2 )

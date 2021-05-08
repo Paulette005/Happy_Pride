@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ dansent/danse short rose.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+
+
+
+[node name="dane hort rose" type="Sprite"]
+position = Vector2( -2.05096, -0.156647 )
+texture = ExtResource( 1 )
+offset = Vector2( -4.92267, -170.856 )
+script = ExtResource( 2 )

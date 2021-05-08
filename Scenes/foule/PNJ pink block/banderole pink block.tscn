@@ -1,17 +1,17 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
-[ext_resource path="res://Assets/PNJ/PNJ pink block/banderole pink block.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJ pink block/banderole pink block.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 [node name="banderole pink block" type="Sprite"]
 position = Vector2( -0.979553, 17.3816 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 offset = Vector2( 28.5732, -320.655 )
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 add_collision = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 visible = false
-polygon = PoolVector2Array( 24.0726, 35.7433, -36.5085, 37.5251, -45.4175, -5.23804, -2.65436, -507.705, 81.0901, -502.36, 40.1088, 32.1797 )
+polygon = PoolVector2Array( 24.0726, 35.7433, -36.5085, 37.5251, -32.054, -4.34718, -1.76349, -510.378, 81.0901, -502.36, 40.1088, 32.1797 )

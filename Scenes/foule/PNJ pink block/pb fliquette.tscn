@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ pink block/pb fliquette.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="pb fliquette" type="Sprite"]
+position = Vector2( 0.524658, 2.41901 )
+texture = ExtResource( 1 )
+offset = Vector2( 15.1907, -148.222 )
+script = ExtResource( 2 )

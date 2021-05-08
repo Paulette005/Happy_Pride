@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ chaine/chaine camion rousse.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="chaine camion rousse" type="Sprite"]
+position = Vector2( 0.524658, -0.156647 )
+texture = ExtResource( 1 )
+offset = Vector2( -17.5823, -138.083 )
+script = ExtResource( 2 )
