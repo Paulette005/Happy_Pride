@@ -10,7 +10,7 @@ var LancerParticules = preload("res://Scenes/Particules.tscn")
 
 func _ready():
 	var singleton = get_node("/root/Singleton")
-	global_position = singleton.posPlayerSingleton
+	#global_position = singleton.posPlayerSingleton
 	print(global_position)
 
 func get_input():
