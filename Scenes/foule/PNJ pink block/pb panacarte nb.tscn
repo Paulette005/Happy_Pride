@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ pink block/pb panacarte nb.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="pb panacarte nb" type="Sprite"]
+position = Vector2( -2.41614, 1.14917 )
+texture = ExtResource( 1 )
+offset = Vector2( 18.2015, -207.043 )
+script = ExtResource( 2 )

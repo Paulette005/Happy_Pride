@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ dyacishets/straight chemise rayures rouges.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="straight chemise rayures rouges" type="Sprite"]
+position = Vector2( -2.41614, -3.40125 )
+texture = ExtResource( 1 )
+offset = Vector2( -2.27527, -152.438 )
+script = ExtResource( 2 )

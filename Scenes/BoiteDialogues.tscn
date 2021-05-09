@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://Scripts/BoiteDialogues.gd" type="Script" id=2]
-[ext_resource path="res://Assets/rectangle-dialogue.png" type="Texture" id=3]
-[ext_resource path="res://Shaders/flou.shader" type="Shader" id=4]
-[ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=6]
+[ext_resource path="res://Shaders/flou.shader" type="Shader" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/BoiteDialogues.gd" type="Script" id=3]
+[ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=4]
+[ext_resource path="res://Assets/rectangle-dialogue.png" type="Texture" id=5]
 
 [sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 4 )
+shader = ExtResource( 1 )
 shader_param/amount = 2.0
 
 [node name="Control" type="Control"]
@@ -21,8 +21,8 @@ __meta__ = {
 material = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_bottom = 6.10352e-05
-texture = ExtResource( 1 )
+margin_bottom = 6.10352e-005
+texture = ExtResource( 2 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -37,7 +37,7 @@ margin_left = -424.0
 margin_top = -184.0
 margin_right = 424.0
 margin_bottom = -38.0
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,18 +45,14 @@ __meta__ = {
 [node name="Icone" type="Sprite" parent="BoiteDialogues"]
 position = Vector2( 791.336, 123.471 )
 scale = Vector2( 0.614155, 0.403692 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 
 [node name="Portraits" type="TextureRect" parent="BoiteDialogues"]
-anchor_left = -0.269
-anchor_top = -3.711
-anchor_right = -0.269
-anchor_bottom = -3.711
-margin_left = -0.305344
-margin_top = -6.97742
-margin_right = 564.695
-margin_bottom = 764.023
-texture = ExtResource( 6 )
+margin_left = -216.062
+margin_top = -588.32
+margin_right = 348.939
+margin_bottom = 182.68
+texture = ExtResource( 4 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -65,7 +61,7 @@ __meta__ = {
 [node name="Fond" type="TextureRect" parent="BoiteDialogues"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false

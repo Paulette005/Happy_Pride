@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ avancent/su stevonie.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="su stevonie" type="Sprite"]
+position = Vector2( -11.517, -1.12598 )
+texture = ExtResource( 1 )
+offset = Vector2( -45.5039, -179.741 )
+script = ExtResource( 2 )

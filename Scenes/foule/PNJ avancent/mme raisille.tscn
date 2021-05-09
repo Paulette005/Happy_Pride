@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ avancent/mme raisille.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="mme raisille" type="Sprite"]
+position = Vector2( -4.69141, -3.40125 )
+texture = ExtResource( 1 )
+offset = Vector2( -11.376, -163.814 )
+script = ExtResource( 2 )

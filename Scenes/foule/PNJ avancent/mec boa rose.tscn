@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ avancent/mec boa rose.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="mec boa rose" type="Sprite"]
+position = Vector2( -6.96655, -12.502 )
+texture = ExtResource( 1 )
+offset = Vector2( -15.9264, -145.613 )
+script = ExtResource( 2 )

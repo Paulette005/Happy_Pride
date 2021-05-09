@@ -31,6 +31,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="foule" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 0, -14.2866 )
 
 [node name="PB nos corps nos choix" parent="foule" instance=ExtResource( 1 )]

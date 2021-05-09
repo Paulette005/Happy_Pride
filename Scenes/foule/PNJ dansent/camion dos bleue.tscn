@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ dansent/camion dos bleue.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="camion dos bleue" type="Sprite"]
+position = Vector2( 2.13428, -7.95166 )
+texture = ExtResource( 1 )
+offset = Vector2( -13.6512, -145.613 )
+script = ExtResource( 2 )
