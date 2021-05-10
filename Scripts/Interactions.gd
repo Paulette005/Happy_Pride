@@ -9,8 +9,10 @@ var randomTemps = 2
 var rdm = RandomNumberGenerator.new()
 #Gestion de la direction pour gérer direction PNJ lors des dialogues
 var dirPlayer
-onready var directionsPlayer = get_node("/root/Node2D/Player")
 
+export var interactionPNJ = false
+
+onready var directionsPlayer = get_node("/root/Node2D/Player")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
@@ -65,5 +67,7 @@ func parle():
 	else:
 		Dialogues.visible = false
 		index_dialogueArray = 0
+		interactionPNJ = true
 		if numArray == 0:
 			numArray += 1
+		print(interactionPNJ)
