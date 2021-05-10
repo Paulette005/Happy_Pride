@@ -8,6 +8,8 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-gauche.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=7]
 
+
+
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],

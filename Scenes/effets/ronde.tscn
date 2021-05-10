@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/note.gd" type="Script" id=1]
 [ext_resource path="res://Assets/effets/ronde.png" type="Texture" id=2]
 
+
+
 [node name="ronde" type="Sprite"]
 position = Vector2( -2.6427, -0.103394 )
 z_index = 3900

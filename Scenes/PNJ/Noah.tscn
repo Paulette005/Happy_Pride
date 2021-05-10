@@ -16,10 +16,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Noah" type="Node2D"]
 position = Vector2( 1.5874, 1.5874 )
 script = ExtResource( 5 )
-prenomPNJ = "Agathe"
+prenomPNJ = "Noah"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -28,7 +28,7 @@ offset = Vector2( 0, -150 )
 script = ExtResource( 8 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1.5874, -136.517 )
+position = Vector2( 0.4126, -2.517 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

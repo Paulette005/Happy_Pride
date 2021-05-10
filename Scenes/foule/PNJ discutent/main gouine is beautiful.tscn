@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ discutent/main gouine is beautiful.png" type="Texture" id=2]
 
+
+
 [node name="main gouine is beautiful" type="Sprite"]
 position = Vector2( -0.7229, -1.13196 )
 texture = ExtResource( 2 )

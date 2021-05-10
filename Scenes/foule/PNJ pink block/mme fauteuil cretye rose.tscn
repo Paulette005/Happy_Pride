@@ -3,6 +3,8 @@
 [ext_resource path="res://Assets/PNJ/PNJ pink block/mme fauteuil cretye rose.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
+
+
 [node name="mme fauteuil cretye rose" type="Sprite"]
 position = Vector2( 0.607849, 11.032 )
 texture = ExtResource( 1 )

@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ avancent/SoeurPaillettes.png" type="Texture" id=2]
 
+
+
 [node name="SoeurPaillettes" type="Sprite"]
 position = Vector2( -3.10474, -0.156464 )
 texture = ExtResource( 2 )

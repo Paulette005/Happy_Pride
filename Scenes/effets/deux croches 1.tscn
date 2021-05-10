@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/note.gd" type="Script" id=1]
 [ext_resource path="res://Assets/effets/deux croches 1.png" type="Texture" id=2]
 
+
+
 [node name="deux croches 1" type="Sprite"]
 position = Vector2( -2.6427, -10.7821 )
 z_index = 3900

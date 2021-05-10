@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="danse robe verte" type="Sprite"]
 position = Vector2( 0.524658, 1.56046 )
 texture = ExtResource( 1 )

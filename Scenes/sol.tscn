@@ -4,6 +4,8 @@
 [ext_resource path="res://Shaders/sol.tres" type="Material" id=2]
 [ext_resource path="res://Assets/decor/fond.jpg" type="Texture" id=3]
 
+
+
 [node name="sol" type="Sprite"]
 material = ExtResource( 2 )
 position = Vector2( -1178.96, -69.0405 )

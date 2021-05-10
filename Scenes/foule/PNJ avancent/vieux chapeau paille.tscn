@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="vieux chapeau paille" type="Sprite"]
 position = Vector2( 2.13428, -3.40125 )
 texture = ExtResource( 1 )

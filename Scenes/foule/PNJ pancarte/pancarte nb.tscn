@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="pancarte nb" type="Sprite"]
 position = Vector2( -0.333862, 3.27756 )
 texture = ExtResource( 1 )
