@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="discutent coupe" type="Sprite"]
 position = Vector2( -2.41614, -5.67639 )
 texture = ExtResource( 1 )

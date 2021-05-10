@@ -1,17 +1,19 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec_trans01.png" type="Texture" id=1]
-[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec_trans02.png" type="Texture" id=2]
-[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec_trans03.png" type="Texture" id=3]
-[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec_trans04.png" type="Texture" id=4]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-inter-droite.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-inter-face.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-inter-gauche.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-inter-dos.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=6]
 
+
+
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "Idle",
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -20,8 +22,10 @@ script = ExtResource( 5 )
 prenomPNJ = "Raphael"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -3.95374, -2.50635 )
 frames = SubResource( 1 )
-animation = "Idle"
+animation = "idle"
+offset = Vector2( 0.957153, -144.328 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
 

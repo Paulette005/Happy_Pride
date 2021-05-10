@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="bear drapeau" type="Sprite"]
 position = Vector2( -1.93164, 0.414795 )
 texture = ExtResource( 1 )

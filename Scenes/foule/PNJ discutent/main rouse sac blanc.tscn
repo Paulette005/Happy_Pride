@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ discutent/main rouse sac blanc.png" type="Texture" id=2]
 
+
+
 [node name="main rouse sac blanc" type="Sprite"]
 position = Vector2( 2.10547, 0.282288 )
 texture = ExtResource( 2 )

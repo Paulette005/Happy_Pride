@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/decor/plot2.png" type="Texture" id=2]
 
+
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 68.0356, 15.1191 )
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mme jupe verte dos.png-e31bcecf01041fc303de6ae69778fb41.stex"
+path="res://.import/mec-inter-dos.png-eac0c013b35fda3f0859fc82024a3659.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PNJ/PNJQuiParlent/mme jupe verte dos.png"
-dest_files=[ "res://.import/mme jupe verte dos.png-e31bcecf01041fc303de6ae69778fb41.stex" ]
+source_file="res://Assets/PNJ/PNJQuiParlent/mec-inter-dos.png"
+dest_files=[ "res://.import/mec-inter-dos.png-eac0c013b35fda3f0859fc82024a3659.stex" ]
 
 [params]
 

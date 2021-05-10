@@ -6,6 +6,8 @@
 [ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=4]
 [ext_resource path="res://Assets/rectangle-dialogue.png" type="Texture" id=5]
 
+
+
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
 shader_param/amount = 2.0

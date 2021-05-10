@@ -8,6 +8,8 @@
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/z_index.gd" type="Script" id=8]
 
+
+
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],

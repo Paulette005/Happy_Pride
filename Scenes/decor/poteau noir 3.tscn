@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/decor/poteau noir 3.png" type="Texture" id=2]
 
+
+
 [node name="poteau noir 3" type="Sprite"]
 position = Vector2( -130.902, 9.34468 )
 texture = ExtResource( 2 )

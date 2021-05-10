@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ avancent/mec robe verte.png" type="Texture" id=2]
 
+
+
 [node name="mec robe verte" type="Sprite"]
 position = Vector2( -1.51733, -3.33127 )
 texture = ExtResource( 2 )

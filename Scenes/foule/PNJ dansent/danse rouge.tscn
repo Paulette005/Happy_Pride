@@ -3,6 +3,8 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse rouge.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
+
+
 [node name="danse rouge" type="Sprite"]
 position = Vector2( 2.65027, -6.35657 )
 texture = ExtResource( 1 )

@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="pancarte pink washing" type="Sprite"]
 position = Vector2( 0.524658, -1.0152 )
 texture = ExtResource( 1 )

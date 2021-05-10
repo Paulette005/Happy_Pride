@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ pink block/PB nos corps nos choix.PNG" type="Texture" id=2]
 
+
+
 [node name="PB nos corps nos choix" type="Sprite"]
 position = Vector2( -0.979553, 15.7942 )
 texture = ExtResource( 2 )

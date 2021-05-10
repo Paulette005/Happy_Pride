@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="inter afro" type="Sprite"]
 position = Vector2( -1.19244, 1.56046 )
 texture = ExtResource( 1 )

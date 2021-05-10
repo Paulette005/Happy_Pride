@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="mec boa rose" type="Sprite"]
 position = Vector2( -6.96655, -12.502 )
 texture = ExtResource( 1 )

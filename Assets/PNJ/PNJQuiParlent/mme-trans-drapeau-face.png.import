@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mme jupe verte d.png-d22aca667fcd51d858556e536784a08f.stex"
+path="res://.import/mme-trans-drapeau-face.png-7f08281f311978e58f5e4605c17da7e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PNJ/PNJQuiParlent/mme jupe verte d.png"
-dest_files=[ "res://.import/mme jupe verte d.png-d22aca667fcd51d858556e536784a08f.stex" ]
+source_file="res://Assets/PNJ/PNJQuiParlent/mme-trans-drapeau-face.png"
+dest_files=[ "res://.import/mme-trans-drapeau-face.png-7f08281f311978e58f5e4605c17da7e0.stex" ]
 
 [params]
 

@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
 
+
+
 [node name="grand pere" type="Sprite"]
 position = Vector2( -0.140991, -7.95166 )
 texture = ExtResource( 1 )

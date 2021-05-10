@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ pink block/PB petite avec cane.png" type="Texture" id=2]
 
+
+
 [node name="PB petite avec cane" type="Sprite"]
 position = Vector2( -2.56696, 15.7942 )
 texture = ExtResource( 2 )

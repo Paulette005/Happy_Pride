@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ pink block/PB tds pancarte.PNG" type="Texture" id=2]
 
+
+
 [node name="PB tds pancarte" type="Sprite"]
 position = Vector2( 2.19525, 14.2068 )
 texture = ExtResource( 2 )

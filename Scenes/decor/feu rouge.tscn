@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/decor/feu rouge.png" type="Texture" id=2]
 
+
+
 [node name="feu rouge" type="Sprite"]
 position = Vector2( 7272.09, 964.769 )
 texture = ExtResource( 2 )
