@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/decor/panneau dos.png" type="Texture" id=2]
+
+[node name="panneau dos" type="Sprite"]
+position = Vector2( 1342.67, -712.82 )
+texture = ExtResource( 2 )
+offset = Vector2( -3.63379, -180.396 )
+script = ExtResource( 1 )
+add_collision = false

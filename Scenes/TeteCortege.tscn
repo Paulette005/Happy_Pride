@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -67,16 +67,23 @@
 [ext_resource path="res://Scenes/effets/effet-enceinte-jaune2.tscn" type="PackedScene" id=65]
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 01 Roller Fever.wav" type="AudioStream" id=66]
 [ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=67]
-[ext_resource path="res://Assets/decor/poteau noir 4.png" type="Texture" id=68]
-[ext_resource path="res://Assets/decor/poteau noir 3.png" type="Texture" id=69]
-[ext_resource path="res://Assets/decor/poteau noir 1.png" type="Texture" id=70]
-[ext_resource path="res://Assets/decor/poteau noir 2.png" type="Texture" id=71]
+[ext_resource path="res://Scenes/decor/poteau noir 2.tscn" type="PackedScene" id=68]
+[ext_resource path="res://Scenes/decor/poteau noir 4.tscn" type="PackedScene" id=69]
+[ext_resource path="res://Scenes/decor/feu rouge.tscn" type="PackedScene" id=70]
+[ext_resource path="res://Scenes/decor/panneau dos.tscn" type="PackedScene" id=71]
 [ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=72]
 [ext_resource path="res://Assets/decor/passage pieton.png" type="Texture" id=73]
 [ext_resource path="res://Assets/decor/trottoir bas.png" type="Texture" id=74]
 [ext_resource path="res://Assets/decor/egout grille grande.png" type="Texture" id=75]
-[ext_resource path="res://Assets/decor/feu rouge.png" type="Texture" id=76]
+[ext_resource path="res://Scenes/decor/poteau noir 3.tscn" type="PackedScene" id=76]
 [ext_resource path="res://Scenes/effets/pop notes.tscn" type="PackedScene" id=77]
+[ext_resource path="res://Assets/decor/trottoir angle.png" type="Texture" id=78]
+[ext_resource path="res://Scenes/decor/poubelle.tscn" type="PackedScene" id=79]
+[ext_resource path="res://Scenes/decor/poteau noir 1.tscn" type="PackedScene" id=80]
+[ext_resource path="res://Scenes/foule/PNJ autres/fille sur plot.tscn" type="PackedScene" id=81]
+[ext_resource path="res://Scenes/decor/plot2.tscn" type="PackedScene" id=82]
+[ext_resource path="res://Scenes/decor/plot3.tscn" type="PackedScene" id=83]
+[ext_resource path="res://Scenes/decor/plot1.tscn" type="PackedScene" id=84]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -124,6 +131,17 @@ script = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="trottoir angle" type="Sprite" parent="decor"]
+position = Vector2( 1246.16, -867.071 )
+z_index = -3900
+texture = ExtResource( 78 )
+
+[node name="trottoir angle2" type="Sprite" parent="decor"]
+position = Vector2( 290.41, -869.741 )
+rotation = 3.14159
+z_index = -3900
+texture = ExtResource( 78 )
 
 [node name="trottoires" type="Node2D" parent="decor"]
 position = Vector2( 7139.6, -597.038 )
@@ -203,21 +221,13 @@ texture = ExtResource( 74 )
 [node name="poteaux" type="Node2D" parent="decor"]
 position = Vector2( 7508.75, -675.752 )
 
-[node name="poteau noir 1" type="Sprite" parent="decor/poteaux"]
-position = Vector2( 344.871, -63.9727 )
-texture = ExtResource( 70 )
+[node name="poteau noir 1" parent="decor/poteaux" instance=ExtResource( 80 )]
 
-[node name="poteau noir 2" type="Sprite" parent="decor/poteaux"]
-position = Vector2( 107.551, -63.9727 )
-texture = ExtResource( 71 )
+[node name="poteau noir 2" parent="decor/poteaux" instance=ExtResource( 68 )]
 
-[node name="poteau noir 3" type="Sprite" parent="decor/poteaux"]
-position = Vector2( -138.249, -63.9727 )
-texture = ExtResource( 69 )
+[node name="poteau noir 3" parent="decor/poteaux" instance=ExtResource( 76 )]
 
-[node name="poteau noir 4" type="Sprite" parent="decor/poteaux"]
-position = Vector2( -341.659, -63.9727 )
-texture = ExtResource( 68 )
+[node name="poteau noir 4" parent="decor/poteaux" instance=ExtResource( 69 )]
 
 [node name="bandes blanches" type="Node2D" parent="decor"]
 position = Vector2( 16.9514, 118.66 )
@@ -266,10 +276,17 @@ texture = ExtResource( 73 )
 position = Vector2( 2680.38, -550.264 )
 texture = ExtResource( 75 )
 
-[node name="feu rouge" type="Sprite" parent="decor"]
-position = Vector2( 7272.09, 964.769 )
-texture = ExtResource( 76 )
-offset = Vector2( -21.5122, -314.695 )
+[node name="panneau dos" parent="decor" instance=ExtResource( 71 )]
+
+[node name="poubelle" parent="decor" instance=ExtResource( 79 )]
+
+[node name="feu rouge" parent="decor" instance=ExtResource( 70 )]
+
+[node name="plot3" parent="decor" instance=ExtResource( 83 )]
+
+[node name="plot1" parent="decor" instance=ExtResource( 84 )]
+
+[node name="plot2" parent="decor" instance=ExtResource( 82 )]
 
 [node name="PNJ" type="Node2D" parent="."]
 
@@ -455,7 +472,7 @@ position = Vector2( 1777.11, 941.679 )
 position = Vector2( 2543.27, -397.322 )
 
 [node name="dansent" type="Node2D" parent="Foule"]
-position = Vector2( 3578.89, -103.827 )
+position = Vector2( 3577.55, -106.497 )
 
 [node name="pop notes" parent="Foule/dansent" instance=ExtResource( 77 )]
 position = Vector2( -267.103, -420.814 )
@@ -504,6 +521,9 @@ position = Vector2( -39.9478, -326.151 )
 
 [node name="danseViolet" parent="Foule/dansent" instance=ExtResource( 63 )]
 position = Vector2( -1162.28, -7.04703 )
+
+[node name="fille sur plot" parent="Foule" instance=ExtResource( 81 )]
+position = Vector2( -2812.49, -671.949 )
 
 [node name="Chars" type="Node2D" parent="."]
 

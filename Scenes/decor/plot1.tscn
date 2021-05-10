@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/decor/plot1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 68.0356, 15.1191 )
+
+[node name="plot1" type="Sprite"]
+position = Vector2( -1757.14, -681.343 )
+texture = ExtResource( 2 )
+offset = Vector2( -0.128296, -28.7473 )
+script = ExtResource( 1 )
+add_collision = false
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 0.128174, -6.5304 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 1 )
