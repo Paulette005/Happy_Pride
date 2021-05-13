@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ pancartes/pancarte gpa.png" type="Texture" id=2]
+
+
+[node name="pancarte gpa" type="Sprite"]
+position = Vector2( -2.70276, -3.28796 )
+texture = ExtResource( 2 )
+offset = Vector2( 17.9796, -197.777 )
+script = ExtResource( 1 )
