@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -41,6 +41,7 @@
 [ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=39]
 [ext_resource path="res://Assets/decor/trottoir bas.png" type="Texture" id=40]
 [ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=41]
+[ext_resource path="res://Scenes/foule/PNJ pink block/pb sono.tscn" type="PackedScene" id=42]
 
 [node name="Node2D" type="Node2D"]
 
@@ -65,94 +66,98 @@ script = ExtResource( 26 )
 position = Vector2( 0, -14.2866 )
 
 [node name="pb silence = mort" parent="foule" instance=ExtResource( 28 )]
-position = Vector2( -879.765, -26.7723 )
+position = Vector2( -1128.67, -70.4989 )
 
 [node name="PB nos corps nos choix" parent="foule" instance=ExtResource( 1 )]
-position = Vector2( -267.208, -56.5333 )
+position = Vector2( -243.663, -43.079 )
 
 [node name="pb bretelles" parent="foule" instance=ExtResource( 2 )]
-position = Vector2( 57.6615, -160.555 )
+position = Vector2( 202.296, -79.8289 )
 
 [node name="banderole pink block" parent="foule" instance=ExtResource( 3 )]
-position = Vector2( 437.819, 391.014 )
+position = Vector2( 720.36, 434.74 )
 
 [node name="PB Boa plummes rouge" parent="foule" instance=ExtResource( 4 )]
-position = Vector2( -38.2351, 3.84869 )
+position = Vector2( -19.9641, -15.7976 )
 scale = Vector2( 1, 1.00636 )
 
 [node name="PB boots et bandeau rose" parent="foule" instance=ExtResource( 5 )]
-position = Vector2( -454.109, 496.35 )
+position = Vector2( -544.926, 503.077 )
 
 [node name="PB chapeau rose photo" parent="foule" instance=ExtResource( 6 )]
-position = Vector2( -219.99, 92.0741 )
+position = Vector2( -162.809, 92.0741 )
 
 [node name="PB chemise blanche triangles" parent="foule" instance=ExtResource( 7 )]
-position = Vector2( 72.6251, 45.6617 )
+position = Vector2( 263.279, 28.156 )
 
 [node name="PB couple filles afrofrem" parent="foule" instance=ExtResource( 8 )]
-position = Vector2( 2.46008, 234.005 )
+position = Vector2( 100.004, 223.914 )
 
 [node name="pb barbe rose" parent="foule" instance=ExtResource( 16 )]
-position = Vector2( -469.751, 17.6247 )
+position = Vector2( -584.113, -26.1019 )
 
 [node name="PB nb robe noire" parent="foule" instance=ExtResource( 9 )]
-position = Vector2( -404.316, 102.375 )
+position = Vector2( -515.314, 75.4663 )
 
 [node name="PB petite avec cane" parent="foule" instance=ExtResource( 10 )]
-position = Vector2( 166.968, 311.905 )
+position = Vector2( 348.602, 318.632 )
 
 [node name="PB poping levé sac riot not diet" parent="foule" instance=ExtResource( 11 )]
-position = Vector2( 197.161, 19.3177 )
+position = Vector2( 429.248, 5.86335 )
 
 [node name="PB tds pancarte" parent="foule" instance=ExtResource( 12 )]
-position = Vector2( 274.499, 184.594 )
+position = Vector2( 513.313, 198.048 )
 
 [node name="kimonoRose" parent="foule" instance=ExtResource( 13 )]
-position = Vector2( -907.898, 129.316 )
+position = Vector2( -1281.26, 99.0437 )
 rotation = -3.14159
 scale = Vector2( 1, -1 )
 
 [node name="mme fauteuil cretye rose" parent="foule" instance=ExtResource( 14 )]
-position = Vector2( 267.309, 533.771 )
+position = Vector2( 482.578, 527.044 )
 
 [node name="pb bandana et collants" parent="foule" instance=ExtResource( 15 )]
-position = Vector2( -558.841, 179.768 )
+position = Vector2( -824.564, 169.677 )
 
 [node name="pb boa rose" parent="foule" instance=ExtResource( 17 )]
-position = Vector2( -580.222, 418.529 )
+position = Vector2( -711.402, 415.165 )
 
 [node name="pb fleurs" parent="foule" instance=ExtResource( 18 )]
-position = Vector2( -307.607, 553.946 )
+position = Vector2( -290.789, 567.4 )
 
 [node name="pb fliquette" parent="foule" instance=ExtResource( 19 )]
-position = Vector2( -729.893, 55.0427 )
+position = Vector2( -945.163, 38.2248 )
 
 [node name="pb pancarte trans lives" parent="foule" instance=ExtResource( 20 )]
-position = Vector2( -754.838, 352.603 )
+position = Vector2( -1077.74, 366.057 )
 
 [node name="pb punk" parent="foule" instance=ExtResource( 21 )]
-position = Vector2( -660.403, 509.401 )
+position = Vector2( -922.763, 536.31 )
 
 [node name="pb tutu" parent="foule" instance=ExtResource( 22 )]
-position = Vector2( -594.476, -126.701 )
+position = Vector2( -779.473, -140.155 )
 
 [node name="pb tshirt triangle" parent="foule" instance=ExtResource( 23 )]
-position = Vector2( -240.791, 471.968 )
+position = Vector2( -203.791, 458.514 )
 
 [node name="pb panthere rose" parent="foule" instance=ExtResource( 30 )]
-position = Vector2( -879.765, 415.228 )
+position = Vector2( -1189.21, 418.592 )
 
 [node name="pb salopette noire" parent="foule" instance=ExtResource( 32 )]
-position = Vector2( -475.765, 641.228 )
+position = Vector2( -576.673, 651.319 )
 
 [node name="pb pancarte poilue" parent="foule" instance=ExtResource( 31 )]
-position = Vector2( -81.7651, 657.228 )
+position = Vector2( -31.3112, 660.592 )
 
 [node name="pb panacarte nb" parent="foule" instance=ExtResource( 29 )]
-position = Vector2( 20.2349, 495.228 )
+position = Vector2( 215.323, 498.592 )
 
 [node name="decor" type="Node2D" parent="."]
 position = Vector2( -1096.53, 33.6357 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="sol" parent="decor" instance=ExtResource( 24 )]
 position = Vector2( 1136.56, 112.312 )
@@ -183,15 +188,19 @@ z_index = -3990
 texture = ExtResource( 41 )
 
 [node name="PNJs" type="Node2D" parent="."]
+position = Vector2( 6.72705, 0 )
 
 [node name="Raphael" parent="PNJs" instance=ExtResource( 34 )]
-position = Vector2( -1033.77, 250.942 )
+position = Vector2( -1413.86, 254.306 )
 script = ExtResource( 33 )
 
 [node name="Khadija" parent="PNJs" instance=ExtResource( 35 )]
-position = Vector2( -145.765, 198.942 )
+position = Vector2( -213.801, 188.851 )
 script = ExtResource( 33 )
 
 [node name="Noah" parent="PNJs" instance=ExtResource( 36 )]
-position = Vector2( 292.235, -203.058 )
+position = Vector2( 547.868, -172.786 )
 script = ExtResource( 33 )
+
+[node name="pb sono" parent="." instance=ExtResource( 42 )]
+position = Vector2( -354.648, 193.691 )
