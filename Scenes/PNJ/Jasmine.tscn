@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/tds-g.png" type="Texture" id=1]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/tds-d.png" type="Texture" id=2]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/tds-face.png" type="Texture" id=3]
+[ext_resource path="res://Assets/PNJ/PNJQuiParlent/tds-dos.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/PNJ.gd" type="Script" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[node name="Jasmine" type="Node2D"]
+script = ExtResource( 6 )
+prenomPNJ = "Jasmine"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.936401, 0.608215 )
+frames = SubResource( 1 )
+animation = "idle"
+offset = Vector2( -0.0617714, -176.161 )
+
+[node name="Area2D" parent="." instance=ExtResource( 5 )]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

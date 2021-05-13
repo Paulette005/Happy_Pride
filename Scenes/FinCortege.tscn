@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -42,6 +42,18 @@
 [ext_resource path="res://Assets/decor/trottoir bas.png" type="Texture" id=40]
 [ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=41]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb sono.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Assets/effets/effet-enceinte-rose-clair.png" type="Texture" id=44]
+[ext_resource path="res://Assets/effets/effet-enceinte-rose-fonce.png" type="Texture" id=45]
+[ext_resource path="res://Audio/pink_bloc2.wav" type="AudioStream" id=46]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
 
 [node name="Node2D" type="Node2D"]
 
@@ -59,7 +71,7 @@ zoom = Vector2( 1.5, 1.5 )
 script = ExtResource( 27 )
 
 [node name="Player" parent="." instance=ExtResource( 25 )]
-position = Vector2( 887.428, -65.5345 )
+position = Vector2( -432.572, 380.466 )
 script = ExtResource( 26 )
 
 [node name="foule" type="Node2D" parent="."]
@@ -149,6 +161,21 @@ position = Vector2( -576.673, 651.319 )
 [node name="pb pancarte poilue" parent="foule" instance=ExtResource( 31 )]
 position = Vector2( -31.3112, 660.592 )
 
+[node name="pb sono" parent="foule" instance=ExtResource( 42 )]
+position = Vector2( -409.74, 203.739 )
+
+[node name="effet-enceinte-jaune2" parent="foule/pb sono" instance=ExtResource( 43 )]
+position = Vector2( -255.628, -134.395 )
+rotation = 0.359166
+frames = SubResource( 1 )
+animation = "New Anim"
+is_pink_block = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="foule/pb sono"]
+position = Vector2( -208.542, -104.271 )
+stream = ExtResource( 46 )
+autoplay = true
+
 [node name="pb panacarte nb" parent="foule" instance=ExtResource( 29 )]
 position = Vector2( 215.323, 498.592 )
 
@@ -195,12 +222,9 @@ position = Vector2( -1413.86, 254.306 )
 script = ExtResource( 33 )
 
 [node name="Khadija" parent="PNJs" instance=ExtResource( 35 )]
-position = Vector2( -213.801, 188.851 )
+position = Vector2( -255.626, 208.424 )
 script = ExtResource( 33 )
 
 [node name="Noah" parent="PNJs" instance=ExtResource( 36 )]
 position = Vector2( 547.868, -172.786 )
 script = ExtResource( 33 )
-
-[node name="pb sono" parent="." instance=ExtResource( 42 )]
-position = Vector2( -354.648, 193.691 )

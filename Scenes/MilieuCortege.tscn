@@ -1,12 +1,23 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=4]
 [ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/sol.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Interactions" parent="CanvasLayer" instance=ExtResource( 7 )]
+visible = false
+
+[node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -21,6 +32,11 @@ script = ExtResource( 1 )
 position = Vector2( 1711.38, 14.743 )
 scale = Vector2( 16.0429, 27.0243 )
 texture = ExtResource( 5 )
+
+[node name="Decor" type="Node2D" parent="."]
+
+[node name="sol" parent="Decor" instance=ExtResource( 6 )]
+position = Vector2( 0, 1.88776 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
 position = Vector2( 958.467, 265.933 )

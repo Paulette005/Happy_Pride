@@ -64,7 +64,7 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/danseGrosShort.tscn" type="PackedScene" id=62]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=63]
 [ext_resource path="res://Scenes/Chars/CharCommercial01.tscn" type="PackedScene" id=64]
-[ext_resource path="res://Scenes/effets/effet-enceinte-jaune2.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=65]
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 01 Roller Fever.wav" type="AudioStream" id=66]
 [ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=67]
 [ext_resource path="res://Scenes/decor/poteau noir 2.tscn" type="PackedScene" id=68]
@@ -118,7 +118,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1084.23, 487.463 )
+position = Vector2( 3522.3, -58.6245 )
 script = ExtResource( 5 )
 vitesse = 300
 
@@ -469,10 +469,16 @@ position = Vector2( -4854.02, -276.68 )
 position = Vector2( -3819.74, 14.1453 )
 
 [node name="pop notes" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
-position = Vector2( -267.103, -420.814 )
+position = Vector2( -119.103, -344.814 )
+tempo = 65
+
+[node name="pop notes3" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
+position = Vector2( -605.103, -362.814 )
+tempo = 65
 
 [node name="pop notes2" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
-position = Vector2( -960.06, -420.814 )
+position = Vector2( -1156.06, -354.814 )
+tempo = 65
 
 [node name="danse drapeau pan" parent="Foule/cortege 1/dansent" instance=ExtResource( 52 )]
 position = Vector2( -625.18, -157.933 )
@@ -554,10 +560,12 @@ z_index = -2000
 
 [node name="effet-enceinte-jaune2" parent="Chars" instance=ExtResource( 65 )]
 position = Vector2( 3739.99, -304.733 )
+tempo = 65
 
 [node name="effet-enceinte-jaune3" parent="Chars" instance=ExtResource( 65 )]
 position = Vector2( 3732.58, -63.8218 )
 rotation = -0.0758624
+tempo = 65
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chars"]
 position = Vector2( 4258.88, -118.974 )

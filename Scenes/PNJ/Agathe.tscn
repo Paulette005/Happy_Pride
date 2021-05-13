@@ -7,8 +7,6 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-drapeau-gauche.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-drapeau-face.png" type="Texture" id=6]
 
-
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
@@ -19,7 +17,7 @@ animations = [ {
 
 [node name="Agathe" type="Node2D"]
 script = ExtResource( 2 )
-prenomPNJ = "Raphael"
+prenomPNJ = "Agathe"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -0.957153, 3.48688 )
