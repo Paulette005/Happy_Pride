@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=2]
+[gd_scene load_steps=89 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -87,6 +87,7 @@
 [ext_resource path="res://Scenes/Zine/Zine.tscn" type="PackedScene" id=85]
 [ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte gpa.tscn" type="PackedScene" id=86]
 [ext_resource path="res://Scenes/anges dansent.tscn" type="PackedScene" id=87]
+[ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav" type="AudioStream" id=88]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -118,7 +119,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 3522.3, -58.6245 )
+position = Vector2( -1552.26, 58.9742 )
 script = ExtResource( 5 )
 vitesse = 300
 
@@ -570,6 +571,18 @@ tempo = 65
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chars"]
 position = Vector2( 4258.88, -118.974 )
 stream = ExtResource( 66 )
+autoplay = true
+max_distance = 3000.0
+attenuation = 0.5
+
+[node name="effet-enceinte-jaune4" parent="Chars" instance=ExtResource( 65 )]
+position = Vector2( -1796.1, -183.781 )
+scale = Vector2( 0.902601, 0.902601 )
+tempo = 60
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Chars"]
+position = Vector2( -1821.5, -5.58118 )
+stream = ExtResource( 88 )
 autoplay = true
 max_distance = 3000.0
 attenuation = 0.5

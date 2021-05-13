@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://Scenes/sol.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=9]
+[ext_resource path="res://Assets/chars/char-handi.png" type="Texture" id=10]
+[ext_resource path="res://Assets/decor/trottoir bas.png" type="Texture" id=11]
+[ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=12]
 
 [node name="Node2D" type="Node2D"]
 
@@ -34,9 +38,57 @@ scale = Vector2( 16.0429, 27.0243 )
 texture = ExtResource( 5 )
 
 [node name="Decor" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="sol" parent="Decor" instance=ExtResource( 6 )]
 position = Vector2( 0, 1.88776 )
+
+[node name="bande blanche" type="Sprite" parent="Decor"]
+position = Vector2( -1824.47, 7.99878 )
+z_index = -3900
+texture = ExtResource( 9 )
+
+[node name="bande blanche2" type="Sprite" parent="Decor"]
+position = Vector2( 1934.5, 7.99878 )
+z_index = -3900
+texture = ExtResource( 9 )
+
+[node name="trottoir bas" type="Sprite" parent="Decor"]
+position = Vector2( -2106.15, 918.969 )
+z_index = -3900
+texture = ExtResource( 11 )
+
+[node name="trottoir bas2" type="Sprite" parent="Decor/trottoir bas"]
+position = Vector2( 2366.23, 0 )
+z_index = -3900
+z_as_relative = false
+texture = ExtResource( 11 )
+
+[node name="trottoir bas3" type="Sprite" parent="Decor/trottoir bas"]
+position = Vector2( 4720.88, 0 )
+z_index = -3900
+z_as_relative = false
+texture = ExtResource( 11 )
+
+[node name="trottoir" type="Sprite" parent="Decor"]
+position = Vector2( -2094.16, -657.249 )
+z_index = -3900
+texture = ExtResource( 12 )
+
+[node name="trottoir2" type="Sprite" parent="Decor/trottoir"]
+position = Vector2( 2363.15, 0 )
+z_index = -3900
+z_as_relative = false
+texture = ExtResource( 12 )
+
+[node name="trottoir3" type="Sprite" parent="Decor/trottoir"]
+position = Vector2( 4723.69, 0 )
+z_index = -3900
+z_as_relative = false
+texture = ExtResource( 12 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
 position = Vector2( 958.467, 265.933 )
@@ -57,3 +109,7 @@ posX = -3150
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene2"]
 position = Vector2( -3200.7, -272.954 )
 polygon = PoolVector2Array( 233.082, -576.348, 222.132, 29.1613, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
+
+[node name="char-handi" type="Sprite" parent="."]
+position = Vector2( -781.646, -201.764 )
+texture = ExtResource( 10 )
