@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -27,7 +27,7 @@
 [ext_resource path="res://Scenes/foule/PNJ discutent/mecs discutent.tscn" type="PackedScene" id=25]
 [ext_resource path="res://Scenes/foule/PNJ discutent/main rouse sac blanc.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Scenes/foule/PNJ avancent/Boby.tscn" type="PackedScene" id=27]
-[ext_resource path="res://Scenes/foule/PNJ pink block/mme fauteuil cretye rose.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Scripts/Parametres.gd" type="Script" id=28]
 [ext_resource path="res://Scenes/foule/PNJ avancent/caché masque casquette rose.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Scenes/foule/PNJ avancent/crie rose et vert.tscn" type="PackedScene" id=31]
@@ -42,14 +42,12 @@
 [ext_resource path="res://Scenes/foule/PNJ discutent/angeDiscute.tscn" type="PackedScene" id=40]
 [ext_resource path="res://Scenes/foule/PNJ discutent/discutteChaussetetsPan.tscn" type="PackedScene" id=41]
 [ext_resource path="res://Scenes/foule/PNJ avancent/survet cheveux gris.tscn" type="PackedScene" id=42]
-[ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=43]
 [ext_resource path="res://Scenes/foule/PNJ autres/photographe roux.tscn" type="PackedScene" id=44]
 [ext_resource path="res://Scenes/foule/PNJ avancent/SoeurPaillettes.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Scenes/foule/PNJ discutent/gayTShirtFleursMoche.tscn" type="PackedScene" id=46]
 [ext_resource path="res://Scenes/foule/PNJ discutent/parle tshirt vert.tscn" type="PackedScene" id=47]
 [ext_resource path="res://Scenes/foule/PNJ discutent/queenVerteDos.tscn" type="PackedScene" id=48]
 [ext_resource path="res://Scenes/foule/PNJ avancent/PB ace crie.tscn" type="PackedScene" id=49]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tdsParapluie.tscn" type="PackedScene" id=50]
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB couple filles afrofrem.tscn" type="PackedScene" id=51]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse crete rose.tscn" type="PackedScene" id=52]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse mme noire.tscn" type="PackedScene" id=53]
@@ -64,8 +62,7 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/danseGrosShort.tscn" type="PackedScene" id=62]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=63]
 [ext_resource path="res://Scenes/Chars/CharCommercial01.tscn" type="PackedScene" id=64]
-[ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=65]
-[ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 01 Roller Fever.wav" type="AudioStream" id=66]
+[ext_resource path="res://Scenes/Chars/CharCommercial02.tscn" type="PackedScene" id=66]
 [ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=67]
 [ext_resource path="res://Scenes/decor/poteau noir 2.tscn" type="PackedScene" id=68]
 [ext_resource path="res://Scenes/decor/poteau noir 4.tscn" type="PackedScene" id=69]
@@ -87,10 +84,10 @@
 [ext_resource path="res://Scenes/Zine/Zine.tscn" type="PackedScene" id=85]
 [ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte gpa.tscn" type="PackedScene" id=86]
 [ext_resource path="res://Scenes/anges dansent.tscn" type="PackedScene" id=87]
-[ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav" type="AudioStream" id=88]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
+script = ExtResource( 28 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -119,7 +116,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1552.26, 58.9742 )
+position = Vector2( -1899.87, 910.012 )
 script = ExtResource( 5 )
 vitesse = 300
 
@@ -353,12 +350,6 @@ position = Vector2( -596.391, -121.801 )
 [node name="gaySalopetteRayee2" parent="Foule/cortege 1" instance=ExtResource( 23 )]
 position = Vector2( -5670.46, 1009.8 )
 
-[node name="main gouine is beautiful2" parent="Foule/cortege 1" instance=ExtResource( 24 )]
-position = Vector2( -4941, 848.716 )
-
-[node name="main rouse sac blanc2" parent="Foule/cortege 1" instance=ExtResource( 26 )]
-position = Vector2( -5056.4, 842.258 )
-
 [node name="Boby" parent="Foule/cortege 1" instance=ExtResource( 27 )]
 position = Vector2( -650.271, -79.1467 )
 
@@ -407,9 +398,6 @@ position = Vector2( -3067.86, 585.904 )
 [node name="survet cheveux gris" parent="Foule/cortege 1" instance=ExtResource( 42 )]
 position = Vector2( -483.9, 301.56 )
 
-[node name="trans drapeau verte" parent="Foule/cortege 1" instance=ExtResource( 43 )]
-position = Vector2( -2022.44, -534.786 )
-
 [node name="photographe roux" parent="Foule/cortege 1" instance=ExtResource( 44 )]
 position = Vector2( -603.261, 455.869 )
 rotation = 3.14159
@@ -435,9 +423,6 @@ position = Vector2( -887.491, 579.913 )
 
 [node name="pantalon rouge2" parent="Foule/cortege 1" instance=ExtResource( 36 )]
 position = Vector2( -2003.5, 619.913 )
-
-[node name="trans drapeau verte2" parent="Foule/cortege 1" instance=ExtResource( 43 )]
-position = Vector2( -2059.5, 721.913 )
 
 [node name="jupe rayures jaunes2" parent="Foule/cortege 1" instance=ExtResource( 32 )]
 position = Vector2( -1283.81, -343.503 )
@@ -535,12 +520,6 @@ position = Vector2( -718.887, 766.713 )
 [node name="PB ace crie" parent="Foule/cortege 2" instance=ExtResource( 49 )]
 position = Vector2( -630.926, 651.946 )
 
-[node name="mme fauteuil cretye rose" parent="Foule/cortege 2" instance=ExtResource( 28 )]
-position = Vector2( -610.376, 268.334 )
-
-[node name="tdsParapluie" parent="Foule/cortege 2" instance=ExtResource( 50 )]
-position = Vector2( -724.123, 168.083 )
-
 [node name="mecs discutent" parent="Foule/cortege 2" instance=ExtResource( 25 )]
 position = Vector2( -219.436, 571.457 )
 scale = Vector2( 1.26555, 1.26555 )
@@ -552,38 +531,14 @@ position = Vector2( -560.706, -214.343 )
 position = Vector2( -12.6459, 337.161 )
 
 [node name="anges dansent" parent="Foule/cortege 2" instance=ExtResource( 87 )]
+position = Vector2( -2839.66, 868.957 )
 
 [node name="Chars" type="Node2D" parent="."]
 
-[node name="CharCommercial01" parent="Chars" instance=ExtResource( 64 )]
+[node name="Char01" parent="Chars" instance=ExtResource( 64 )]
 position = Vector2( 5063.52, 208.364 )
 z_index = -2000
 
-[node name="effet-enceinte-jaune2" parent="Chars" instance=ExtResource( 65 )]
-position = Vector2( 3739.99, -304.733 )
-tempo = 65
-
-[node name="effet-enceinte-jaune3" parent="Chars" instance=ExtResource( 65 )]
-position = Vector2( 3732.58, -63.8218 )
-rotation = -0.0758624
-tempo = 65
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Chars"]
-position = Vector2( 4258.88, -118.974 )
-stream = ExtResource( 66 )
-autoplay = true
-max_distance = 3000.0
-attenuation = 0.5
-
-[node name="effet-enceinte-jaune4" parent="Chars" instance=ExtResource( 65 )]
-position = Vector2( -1796.1, -183.781 )
-scale = Vector2( 0.902601, 0.902601 )
-tempo = 60
-
-[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Chars"]
-position = Vector2( -1821.5, -5.58118 )
-stream = ExtResource( 88 )
-autoplay = true
-max_distance = 3000.0
-attenuation = 0.5
+[node name="Char02" parent="Chars" instance=ExtResource( 66 )]
+position = Vector2( -1180.26, 412.167 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]

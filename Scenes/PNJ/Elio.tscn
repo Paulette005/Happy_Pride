@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-stimtoy-face.png" type="Texture" id=1]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-stimtoy-d.png" type="Texture" id=2]
@@ -6,8 +6,7 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mx-stimtoy-dos.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=5]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=6]
-
-
+[ext_resource path="res://Scripts/z_index.gd" type="Script" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -26,6 +25,7 @@ position = Vector2( -0.922729, -0.208466 )
 frames = SubResource( 1 )
 animation = "idle"
 offset = Vector2( -3.5722, -146.626 )
+script = ExtResource( 7 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
 

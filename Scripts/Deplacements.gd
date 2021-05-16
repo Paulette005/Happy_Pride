@@ -8,6 +8,8 @@ var velocite = Vector2 ()
 var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 
+onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
+
 func _ready():
 	var singleton = get_node("/root/Singleton")
 	#global_position = singleton.posPlayerSingleton
@@ -15,25 +17,25 @@ func _ready():
 
 func get_input():
 	velocite = Vector2 ()
-	
-	if Input.is_action_pressed("ui_up"):
-		velocite.y -= 1
-		direction = "Dos"
-		dirPlayer = 2
-	if Input.is_action_pressed("ui_down"):
-		velocite.y += 1
-		direction = "Face"
-		dirPlayer = 0
-	if Input.is_action_pressed("ui_left"):
-		velocite.x -= 1
-		direction = "Gauche"
-		dirPlayer = 3
-	if Input.is_action_pressed("ui_right"):
-		velocite.x += 1
-		direction = "Droite"
-		dirPlayer = 1
+	if ZineInteractions.visible == false:
+		if Input.is_action_pressed("ui_up"):
+			velocite.y -= 1
+			direction = "Dos"
+			dirPlayer = 2
+		if Input.is_action_pressed("ui_down"):
+			velocite.y += 1
+			direction = "Face"
+			dirPlayer = 0
+		if Input.is_action_pressed("ui_left"):
+			velocite.x -= 1
+			direction = "Gauche"
+			dirPlayer = 3
+		if Input.is_action_pressed("ui_right"):
+			velocite.x += 1
+			direction = "Droite"
+			dirPlayer = 1
 
-	velocite = velocite.normalized() * vitesse
+		velocite = velocite.normalized() * vitesse
 	
 	
 func _physics_process(delta):

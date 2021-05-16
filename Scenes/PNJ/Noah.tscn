@@ -28,7 +28,7 @@ offset = Vector2( 0, -150 )
 script = ExtResource( 8 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( 0.4126, -2.517 )
+position = Vector2( 0.413, -150 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

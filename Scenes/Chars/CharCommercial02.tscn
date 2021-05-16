@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/chars/char02_redi.png" type="Texture" id=2]
+[ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav" type="AudioStream" id=3]
+[ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1175.34, 185.739 )
+
+[node name="CharCommercial02" type="Sprite"]
+texture = ExtResource( 2 )
+offset = Vector2( 0, -400 )
+script = ExtResource( 1 )
+add_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 15.2039, -13.4708 )
+shape = SubResource( 1 )
+
+[node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1341.46, -493.841 )
+
+[node name="effet-enceinte-jaune3" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1347.8, -247.861 )
+rotation = -0.0698132
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -800.429, -325.985 )
+stream = ExtResource( 3 )
+autoplay = true
+max_distance = 3000.0
+attenuation = 0.5

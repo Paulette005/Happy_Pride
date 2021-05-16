@@ -150,6 +150,38 @@
     ]
   ]
 },
+},
+  "Kim": {
+  "Prenom": "Kim",
+  "Dial": [
+    [
+    "discours B, blabla00",
+    "discours B, blabla001",
+    "discours B, blabla0012"
+    ],
+    [
+    "discours B2, blabla00",
+    "discours B2, blabla001",
+    "discours B2, blabla0012"
+    ]
+  ]
+},
+},
+  "Jasmine": {
+  "Prenom": "Jasmine",
+  "Dial": [
+    [
+    "discours B, blabla00",
+    "discours B, blabla001",
+    "discours B, blabla0012"
+    ],
+    [
+    "discours B2, blabla00",
+    "discours B2, blabla001",
+    "discours B2, blabla0012"
+    ]
+  ]
+},
   "Camille": {
   "Prenom": "Camille",
   "Dial": [

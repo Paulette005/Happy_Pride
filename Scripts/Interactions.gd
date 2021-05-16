@@ -16,6 +16,7 @@ onready var directionsPlayer = get_node("/root/Node2D/Player")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
+onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
