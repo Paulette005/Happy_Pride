@@ -1,12 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/note.gd" type="Script" id=1]
-[ext_resource path="res://Assets/effets/croche1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/effets/ronderose.png" type="Texture" id=2]
 
-[node name="croche1" type="Sprite"]
-position = Vector2( 1.36908, 2.04932 )
-z_index = 3900
-z_as_relative = false
+[node name="ronderose" type="Sprite"]
+position = Vector2( 0.182617, -2.57031 )
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
 
