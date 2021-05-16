@@ -9,7 +9,7 @@
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=9]
-[ext_resource path="res://Assets/chars/char-handi.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Chars/CharHandi.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/decor/trottoir bas.png" type="Texture" id=11]
 [ext_resource path="res://Assets/decor/trottoir.png" type="Texture" id=12]
 
@@ -110,6 +110,5 @@ posX = -3150
 position = Vector2( -3200.7, -272.954 )
 polygon = PoolVector2Array( 233.082, -576.348, 222.132, 29.1613, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
 
-[node name="char-handi" type="Sprite" parent="."]
-position = Vector2( -781.646, -201.764 )
-texture = ExtResource( 10 )
+[node name="CharHandi" parent="." instance=ExtResource( 10 )]
+position = Vector2( -288.59, 286.22 )
