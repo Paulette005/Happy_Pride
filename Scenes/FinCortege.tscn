@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -46,6 +46,7 @@
 [ext_resource path="res://Assets/effets/effet-enceinte-rose-clair.png" type="Texture" id=44]
 [ext_resource path="res://Assets/effets/effet-enceinte-rose-fonce.png" type="Texture" id=45]
 [ext_resource path="res://Audio/pink_bloc2.wav" type="AudioStream" id=46]
+[ext_resource path="res://Scenes/effets/pop notes.tscn" type="PackedScene" id=47]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -238,3 +239,7 @@ script = ExtResource( 33 )
 [node name="Noah" parent="PNJs" instance=ExtResource( 36 )]
 position = Vector2( 547.868, -172.786 )
 script = ExtResource( 33 )
+
+[node name="pop notes" parent="." instance=ExtResource( 47 )]
+position = Vector2( -960.121, -248.112 )
+is_pink_block = true

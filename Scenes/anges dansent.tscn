@@ -29,11 +29,11 @@ position = Vector2( -2689.83, 101.824 )
 script = ExtResource( 1 )
 
 [node name="ailes bleues" type="AnimatedSprite" parent="."]
-position = Vector2( -264.924, -183.107 )
+position = Vector2( -239.979, -183.107 )
 frames = SubResource( 1 )
 
 [node name="ailes oranges" type="AnimatedSprite" parent="."]
-position = Vector2( 303.59, -194.42 )
+position = Vector2( 234.1, -235.401 )
 frames = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]
