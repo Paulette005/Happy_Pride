@@ -1,4 +1,4 @@
-[gd_scene load_steps=116 format=2]
+[gd_scene load_steps=119 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -115,6 +115,9 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse robe jaune.tscn" type="PackedScene" id=113]
 [ext_resource path="res://Scenes/foule/PNJ dansent/queen dansent.tscn" type="PackedScene" id=114]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse voile beige.tscn" type="PackedScene" id=115]
+[ext_resource path="res://Scenes/foule/PNJ avancent/tshint vioet etoile.tscn" type="PackedScene" id=116]
+[ext_resource path="res://Scenes/foule/PNJ avancent/trans pedale douce.tscn" type="PackedScene" id=117]
+[ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=118]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -147,7 +150,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1899.87, 910.012 )
+position = Vector2( -1539.95, 635.615 )
 script = ExtResource( 5 )
 vitesse = 300
 
@@ -341,7 +344,7 @@ position = Vector2( 2542.63, 674.112 )
 script = ExtResource( 10 )
 
 [node name="Therese" parent="PNJ" instance=ExtResource( 11 )]
-position = Vector2( 1531.02, -205.611 )
+position = Vector2( 344.422, -163.233 )
 script = ExtResource( 10 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 13 )]
@@ -382,7 +385,7 @@ position = Vector2( -35.8906, 360.372 )
 position = Vector2( -596.391, -121.801 )
 
 [node name="gaySalopetteRayee2" parent="Foule/cortege 1" instance=ExtResource( 23 )]
-position = Vector2( -5670.46, 1009.8 )
+position = Vector2( -5667.63, 1055.05 )
 
 [node name="Boby" parent="Foule/cortege 1" instance=ExtResource( 27 )]
 position = Vector2( -650.271, -79.1467 )
@@ -483,7 +486,7 @@ position = Vector2( -2490.86, -543.22 )
 position = Vector2( -833.15, 752.31 )
 
 [node name="parle tshirt vert2" parent="Foule/cortege 1" instance=ExtResource( 47 )]
-position = Vector2( -5620.18, 1062.32 )
+position = Vector2( -5611.69, 1107.57 )
 
 [node name="photographe roux2" parent="Foule/cortege 1" instance=ExtResource( 44 )]
 position = Vector2( -4876.47, -357.497 )
@@ -661,7 +664,6 @@ position = Vector2( -630.926, 651.946 )
 
 [node name="mecs discutent" parent="Foule/cortege 2" instance=ExtResource( 25 )]
 position = Vector2( -219.436, 571.457 )
-scale = Vector2( 1.26555, 1.26555 )
 
 [node name="PB couple filles afrofrem" parent="Foule/cortege 2" instance=ExtResource( 51 )]
 position = Vector2( -560.706, -214.343 )
@@ -669,8 +671,14 @@ position = Vector2( -560.706, -214.343 )
 [node name="banderole blanche pma2" parent="Foule/cortege 2" instance=ExtResource( 21 )]
 position = Vector2( -12.6459, 337.161 )
 
-[node name="anges dansent" parent="Foule/cortege 2" instance=ExtResource( 87 )]
-position = Vector2( -3047.21, 184.508 )
+[node name="trans drapeau verte2" parent="Foule/cortege 2" instance=ExtResource( 118 )]
+position = Vector2( -2100.29, 597.9 )
+
+[node name="trans pedale douce2" parent="Foule/cortege 2" instance=ExtResource( 117 )]
+position = Vector2( -2132.37, 708.372 )
+
+[node name="tshint vioet etoile" parent="Foule/cortege 2" instance=ExtResource( 116 )]
+position = Vector2( -999.143, 537.319 )
 
 [node name="Chars" type="Node2D" parent="."]
 
@@ -681,4 +689,7 @@ z_index = -2000
 [node name="Char02" parent="Chars" instance=ExtResource( 66 )]
 position = Vector2( -1180.26, 136.478 )
 z_index = -1
+
+[node name="anges dansent" parent="Chars/Char02" instance=ExtResource( 87 )]
+position = Vector2( -181.825, 2.74261 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
