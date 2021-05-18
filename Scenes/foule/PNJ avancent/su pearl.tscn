@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="su pearl" type="Sprite"]
 position = Vector2( -9.2417, -1.12598 )
 texture = ExtResource( 1 )

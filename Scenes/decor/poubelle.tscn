@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="poubelle" type="Sprite"]
 position = Vector2( 3109.85, 945.593 )
 texture = ExtResource( 2 )

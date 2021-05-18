@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="pb salopette noire" type="Sprite"]
 position = Vector2( -2.41614, -1.12598 )
 texture = ExtResource( 1 )

@@ -4,6 +4,8 @@
 [ext_resource path="res://Assets/PNJ/PNJ dansent/danse duo.png" type="Texture" id=2]
 
 
+
+
 [node name="danse duo" type="Sprite"]
 position = Vector2( 0.124141, -4.1651 )
 texture = ExtResource( 2 )

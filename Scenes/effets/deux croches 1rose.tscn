@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/note.gd" type="Script" id=1]
 [ext_resource path="res://Assets/effets/deux croches 1rose.png" type="Texture" id=2]
 
+
+
 [node name="deux croches 1rose" type="Sprite"]
 position = Vector2( 1.02353, -3.41119 )
 texture = ExtResource( 2 )

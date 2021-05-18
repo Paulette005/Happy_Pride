@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="interFauteuilRoux" type="Sprite"]
 position = Vector2( -0.931549, -1.65814 )
 texture = ExtResource( 2 )

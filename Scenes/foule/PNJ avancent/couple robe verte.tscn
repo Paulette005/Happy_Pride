@@ -4,6 +4,8 @@
 [ext_resource path="res://Assets/PNJ/PNJ avancent/couple robe verte.png" type="Texture" id=2]
 
 
+
+
 [node name="couple robe verte" type="Sprite"]
 position = Vector2( -1.2901, -5.57935 )
 texture = ExtResource( 2 )

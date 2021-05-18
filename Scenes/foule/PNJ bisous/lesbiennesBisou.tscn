@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="lesbiennesBisou" type="Sprite"]
 position = Vector2( -1.51733, -0.156464 )
 texture = ExtResource( 1 )

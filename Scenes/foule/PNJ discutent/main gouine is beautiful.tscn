@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="main gouine is beautiful" type="Sprite"]
 position = Vector2( -0.7229, -1.13196 )
 texture = ExtResource( 2 )

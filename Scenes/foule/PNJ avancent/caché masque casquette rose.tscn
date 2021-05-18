@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="caché masque casquette rose" type="Sprite"]
 position = Vector2( -1.51733, 4.60571 )
 texture = ExtResource( 2 )

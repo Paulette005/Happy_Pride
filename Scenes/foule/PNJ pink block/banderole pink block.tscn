@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="banderole pink block" type="Sprite"]
 position = Vector2( -0.979553, 17.3816 )
 texture = ExtResource( 1 )

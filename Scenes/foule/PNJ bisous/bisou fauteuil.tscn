@@ -7,6 +7,8 @@
 
 
 
+
+
 [node name="bisou fauteuil" type="Sprite"]
 position = Vector2( -0.140991, -7.95166 )
 texture = ExtResource( 1 )

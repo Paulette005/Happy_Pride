@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="danse casquette" type="Sprite"]
 position = Vector2( 2.16162, -2.81378 )
 texture = ExtResource( 2 )

@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="mec robe verte" type="Sprite"]
 position = Vector2( -1.51733, -3.33127 )
 texture = ExtResource( 2 )

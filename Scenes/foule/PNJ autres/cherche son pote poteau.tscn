@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="cherche son pote poteau" type="Sprite"]
 position = Vector2( 0.373291, 3.35968 )
 texture = ExtResource( 1 )

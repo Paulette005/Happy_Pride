@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="pb bandana et collants" type="Sprite"]
 position = Vector2( -2.90955, 0.701904 )
 texture = ExtResource( 1 )

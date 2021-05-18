@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ chaine/chaine droite.png" type="Texture" id=2]
 
+
+
 [node name="chaine droite" type="Sprite"]
 position = Vector2( -0.0217896, 56.3466 )
 texture = ExtResource( 2 )

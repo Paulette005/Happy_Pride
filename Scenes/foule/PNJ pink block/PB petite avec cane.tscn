@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="PB petite avec cane" type="Sprite"]
 position = Vector2( -2.56696, 15.7942 )
 texture = ExtResource( 2 )

@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="farandole" type="Sprite"]
 position = Vector2( -1.19244, -1.0152 )
 texture = ExtResource( 1 )

@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="sol" type="Sprite"]
 material = ExtResource( 2 )
 position = Vector2( -1178.96, -69.0405 )

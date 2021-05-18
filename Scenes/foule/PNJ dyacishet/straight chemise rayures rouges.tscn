@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="straight chemise rayures rouges" type="Sprite"]
 position = Vector2( -2.41614, -3.40125 )
 texture = ExtResource( 1 )

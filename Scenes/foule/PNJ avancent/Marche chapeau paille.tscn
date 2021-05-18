@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="Marche chapeau paille" type="Sprite"]
 position = Vector2( -0.977661, -0.0435791 )
 texture = ExtResource( 2 )

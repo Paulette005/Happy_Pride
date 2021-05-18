@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="main rouse sac blanc" type="Sprite"]
 position = Vector2( 2.10547, 0.282288 )
 texture = ExtResource( 2 )

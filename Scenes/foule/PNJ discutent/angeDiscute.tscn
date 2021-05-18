@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="angeDiscute" type="Sprite"]
 position = Vector2( 0.691284, -3.96039 )
 texture = ExtResource( 2 )

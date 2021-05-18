@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="danse tshirt rose" type="Sprite"]
 position = Vector2( 6.42664, -4.46875 )
 texture = ExtResource( 1 )

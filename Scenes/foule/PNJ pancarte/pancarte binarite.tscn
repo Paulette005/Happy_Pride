@@ -7,6 +7,8 @@
 
 
 
+
+
 [node name="pancarte binarite" type="Sprite"]
 position = Vector2( -1.19244, 0.701904 )
 texture = ExtResource( 1 )

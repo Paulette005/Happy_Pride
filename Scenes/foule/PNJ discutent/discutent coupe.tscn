@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="discutent coupe" type="Sprite"]
 position = Vector2( -2.41614, -5.67639 )
 texture = ExtResource( 1 )

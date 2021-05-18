@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="danse genderqueer" type="Sprite"]
 position = Vector2( -4.8999, 3.08203 )
 texture = ExtResource( 2 )

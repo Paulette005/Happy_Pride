@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="discuteDrapeau" type="Sprite"]
 position = Vector2( 8.25933, -2.48715 )
 texture = ExtResource( 2 )

@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="queenVerteDos" type="Sprite"]
 position = Vector2( 2.10547, -3.96039 )
 texture = ExtResource( 2 )

@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="poteau noir 1" type="Sprite"]
 position = Vector2( 347.098, 11.3447 )
 texture = ExtResource( 2 )

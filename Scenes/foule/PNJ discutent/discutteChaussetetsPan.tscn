@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="discutteChaussetetsPan" type="Sprite"]
 position = Vector2( 0.691284, -1.13196 )
 texture = ExtResource( 2 )

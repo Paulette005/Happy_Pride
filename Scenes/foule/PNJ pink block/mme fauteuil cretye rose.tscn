@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="mme fauteuil cretye rose" type="Sprite"]
 position = Vector2( 0.607849, 11.032 )
 texture = ExtResource( 1 )

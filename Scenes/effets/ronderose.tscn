@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/note.gd" type="Script" id=1]
 [ext_resource path="res://Assets/effets/ronderose.png" type="Texture" id=2]
 
+
+
 [node name="ronderose" type="Sprite"]
 position = Vector2( 0.182617, -2.57031 )
 texture = ExtResource( 2 )

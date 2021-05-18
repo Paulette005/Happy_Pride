@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="SoeurPaillettes" type="Sprite"]
 position = Vector2( -3.10474, -0.156464 )
 texture = ExtResource( 2 )

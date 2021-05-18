@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="danse tshirt etoile" type="Sprite"]
 position = Vector2( -6.96655, -3.40125 )
 texture = ExtResource( 1 )

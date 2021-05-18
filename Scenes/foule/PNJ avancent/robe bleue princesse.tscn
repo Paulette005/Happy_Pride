@@ -7,6 +7,8 @@
 
 
 
+
+
 [node name="robe bleue princesse" type="Sprite"]
 position = Vector2( -4.69141, -3.40125 )
 texture = ExtResource( 1 )

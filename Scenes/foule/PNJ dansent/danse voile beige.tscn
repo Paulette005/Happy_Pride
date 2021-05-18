@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="danse voile beige" type="Sprite"]
 position = Vector2( -1.19244, 1.56046 )
 texture = ExtResource( 1 )

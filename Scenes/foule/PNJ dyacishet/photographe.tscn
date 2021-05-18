@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="photographe" type="Sprite"]
 position = Vector2( -9.2417, -5.67639 )
 texture = ExtResource( 1 )

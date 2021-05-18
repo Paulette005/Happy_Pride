@@ -5,6 +5,8 @@
 [ext_resource path="res://Audio/char handi.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=4]
 
+
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 740.206, 185.739 )
 

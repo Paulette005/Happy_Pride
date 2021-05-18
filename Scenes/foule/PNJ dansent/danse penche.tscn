@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="danse penche" type="Sprite"]
 position = Vector2( -2.05096, 0.701904 )
 texture = ExtResource( 1 )

@@ -4,6 +4,8 @@
 [ext_resource path="res://Assets/PNJ/PNJ chaine/chaine tshirt rainbow.png" type="Texture" id=2]
 
 
+
+
 [node name="chaine tshirt rainbow" type="Sprite"]
 position = Vector2( 2.95257, -2.75092 )
 texture = ExtResource( 2 )

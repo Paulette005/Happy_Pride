@@ -48,6 +48,8 @@
 [ext_resource path="res://Audio/pink_bloc2.wav" type="AudioStream" id=46]
 [ext_resource path="res://Scenes/effets/pop notes.tscn" type="PackedScene" id=47]
 
+
+
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 44 ) ],

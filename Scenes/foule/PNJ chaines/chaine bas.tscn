@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/PNJ/PNJ chaine/chaine bas.png" type="Texture" id=2]
 
+
+
 [node name="chaine bas" type="Sprite"]
 texture = ExtResource( 2 )
 offset = Vector2( 14.2539, -110.471 )

@@ -7,6 +7,8 @@
 
 
 
+
+
 [node name="dane debardeur rose" type="Sprite"]
 position = Vector2( -0.333862, -0.156647 )
 texture = ExtResource( 1 )

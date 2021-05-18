@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="hetero 1 " type="Sprite"]
 position = Vector2( -0.333862, 0.701904 )
 texture = ExtResource( 1 )

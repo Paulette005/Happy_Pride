@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="gamine masque" type="Sprite"]
 position = Vector2( -0.140991, -10.2268 )
 texture = ExtResource( 1 )

@@ -5,6 +5,8 @@
 
 
 
+
+
 [node name="parle tshirt vert" type="Sprite"]
 position = Vector2( -2.13715, -3.96039 )
 texture = ExtResource( 2 )

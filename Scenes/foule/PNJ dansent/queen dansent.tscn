@@ -7,6 +7,8 @@
 
 
 
+
+
 [node name="queen dansent" type="Sprite"]
 position = Vector2( -0.333862, 1.56046 )
 texture = ExtResource( 1 )

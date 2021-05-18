@@ -6,6 +6,8 @@
 
 
 
+
+
 [node name="pb panthere rose" type="Sprite"]
 position = Vector2( -2.41614, 3.42444 )
 texture = ExtResource( 1 )
