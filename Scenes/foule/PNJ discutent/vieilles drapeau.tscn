@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ discutent/vieilles drapeau.png" type="Texture" id=2]
+
+
+[node name="vieilles drapeau" type="Sprite"]
+position = Vector2( 0.124141, -5.57935 )
+texture = ExtResource( 2 )
+offset = Vector2( -4.24268, -148.492 )
+script = ExtResource( 1 )

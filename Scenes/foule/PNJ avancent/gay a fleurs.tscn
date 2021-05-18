@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/gay a fleurs.png" type="Texture" id=2]
+
+
+[node name="gay a fleurs" type="Sprite"]
+position = Vector2( -2.70429, -2.75092 )
+texture = ExtResource( 2 )
+offset = Vector2( -36.7696, -165.463 )
+script = ExtResource( 1 )

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ discutent/mme salopette face.png" type="Texture" id=2]
+
+
+[node name="mme salopette face" type="Sprite"]
+position = Vector2( -1.2901, -6.99353 )
+texture = ExtResource( 2 )
+offset = Vector2( -11.3137, -144.25 )
+script = ExtResource( 1 )
