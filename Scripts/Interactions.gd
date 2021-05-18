@@ -18,7 +18,7 @@ onready var directionsPlayer = get_node("/root/Node2D/Player")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
-onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
+#onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var fragmentsZine = get_node("/root/Node2D")
 
 func _ready():

@@ -10,6 +10,7 @@ var LancerParticules = preload("res://Scenes/Particules.tscn")
 
 onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
+onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	var singleton = get_node("/root/Singleton")
@@ -55,4 +56,9 @@ func _physics_process(delta):
 #		var partInstance = LancerParticules.instance()
 #		partInstance.lancer_particules(global_position)
 #		get_parent().add_child(partInstance)
-		
+
+	if Input.is_action_just_pressed("consultationZine"):
+		if consultationZine.visible == false:
+			consultationZine.visible = true
+		else:
+			consultationZine.visible = false
