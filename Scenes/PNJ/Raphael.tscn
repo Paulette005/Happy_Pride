@@ -8,8 +8,6 @@
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/z_index.gd" type="Script" id=7]
 
-
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ) ],
@@ -30,6 +28,7 @@ offset = Vector2( 0.957153, -144.328 )
 script = ExtResource( 7 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 0, -3.16595 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
