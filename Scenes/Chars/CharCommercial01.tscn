@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1191.09, 134.459 )
 
-[node name="CharCommercial01" type="Sprite"]
+[node name="Char" type="Sprite"]
 texture = ExtResource( 2 )
 offset = Vector2( 0, -400 )
 script = ExtResource( 1 )
@@ -22,13 +22,11 @@ shape = SubResource( 1 )
 
 [node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1341.46, -493.841 )
-scale = Vector2( 0.902601, 0.902601 )
 tempo = 65
 
 [node name="effet-enceinte-jaune3" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1347.8, -247.861 )
 rotation = -0.0698132
-scale = Vector2( 0.902601, 0.902601 )
 tempo = 65
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -37,3 +35,4 @@ stream = ExtResource( 3 )
 autoplay = true
 max_distance = 3000.0
 attenuation = 0.5
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]

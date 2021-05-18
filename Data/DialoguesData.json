@@ -150,7 +150,6 @@
     ]
   ]
 },
-},
   "Kim": {
   "Prenom": "Kim",
   "Dial": [
@@ -165,7 +164,6 @@
     "discours B2, blabla0012"
     ]
   ]
-},
 },
   "Jasmine": {
   "Prenom": "Jasmine",
@@ -192,6 +190,21 @@
     [
     "Hey ! Si tu veux des informations pour ton zine sur l'histoire de la marche, n'hésite pas à échanger avec d'autres personnes.",
     "Tu peux aussi, juste profiter !"
+    ]
+  ]
+},
+  "Alex": {
+  "Prenom": "Alex",
+  "Dial": [
+    [
+    "Je crois que j'ai réussi à completer le Zine !",
+    "discours B, blabla001",
+    "discours B, blabla0012"
+    ],
+    [
+    "discours B2, blabla00",
+    "discours B2, blabla001",
+    "discours B2, blabla0012"
     ]
   ]
 }

@@ -9,6 +9,8 @@ var randomTemps = 2
 var rdm = RandomNumberGenerator.new()
 #Gestion de la direction pour gérer direction PNJ lors des dialogues
 var dirPlayer
+var messagefin = 0
+var prenomFin = "Alex"
 
 export var interactionPNJ = false
 
@@ -17,23 +19,27 @@ onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
 onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
+onready var fragmentsZine = get_node("/root/Node2D")
 
 func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
+	$Timer.connect("timeout", self, "chang_directions")
 	
 func on_body_entered(body):
 	if body.name == "Player":
 		playerZone = true
 		Interactions.visible = true
+		print(prenomPNJ)
 		
 func on_body_exited(body):
 	if body.name == "Player":
 		playerZone = false
-		Dialogues.visible = false
 		Interactions.visible = false
+		if fragmentsZine.fragmentsZine == 12 && messagefin == 0:
+			afficher_message_fin()
 	
-func _on_Timer_timeout():
+func chang_directions():
 	# Random entre plusieurs valeurs, le résultat est ensuite contenu dans la var nbframe qui permet de changer la frame du personnage.
 	if Dialogues.visible == false:
 		rdm.randomize()
@@ -50,17 +56,32 @@ func _input(event):
 			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)+2)
 		else:
 			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)-2)
+			
 		lancement_dialogue()
 		
+	if event.is_action_pressed("ui_accept") && messagefin == 1:
+		lancement_dialogue()
+	
+func afficher_message_fin():
+	messagefin += 1
+	parle()
+	
 func lancement_dialogue():
-	BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomPNJ].Dial[numArray]
+	if messagefin == 1:
+		BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
+	else:
+		BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomPNJ].Dial[numArray]
 	parle()
 	
 func parle():
 	if index_dialogueArray < BoiteDialogues.DialoguesArray.size():
-		BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomPNJ].Prenom
-		BoiteDialogues.DialoguesPNJ = ImportData.dialogues_data[prenomPNJ].Dial[numArray][index_dialogueArray]
-
+		if messagefin == 1:
+			BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomFin].Prenom	
+			BoiteDialogues.DialoguesPNJ = ImportData.dialogues_data[prenomFin].Dial[numArray][index_dialogueArray]
+		else:
+			BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomPNJ].Prenom	
+			BoiteDialogues.DialoguesPNJ = ImportData.dialogues_data[prenomPNJ].Dial[numArray][index_dialogueArray]
+			
 		index_dialogueArray += 1
 		Dialogues.visible = true
 		BoiteDialogues.chargement_dialogue()
@@ -68,7 +89,11 @@ func parle():
 	else:
 		Dialogues.visible = false
 		index_dialogueArray = 0
-		interactionPNJ = true
-		if numArray == 0:
-			numArray += 1
-		print(interactionPNJ)
+		if interactionPNJ == false:
+			fragmentsZine.fragmentsZine += 1
+			interactionPNJ = true
+		if Dialogues.visible == false && messagefin == 1:
+			fragmentsZine.fragmentsZine += 1
+			messagefin += 1
+		#if numArray == 0:
+		#	numArray += 1

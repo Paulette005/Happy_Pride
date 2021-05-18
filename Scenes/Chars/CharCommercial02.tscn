@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1175.34, 185.739 )
 
-[node name="CharCommercial02" type="Sprite"]
+[node name="Char" type="Sprite"]
 texture = ExtResource( 2 )
 offset = Vector2( 0, -400 )
 script = ExtResource( 1 )
@@ -33,3 +33,4 @@ stream = ExtResource( 3 )
 autoplay = true
 max_distance = 3000.0
 attenuation = 0.5
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]
