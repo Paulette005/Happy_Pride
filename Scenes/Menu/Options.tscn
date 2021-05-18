@@ -1,0 +1,265 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/fond-menu2.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/Happy_pride.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/BoutonsOptions.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/0_LangueOptions.gd" type="Script" id=6]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -287.5
+margin_top = 36.0
+margin_right = 287.5
+margin_bottom = 387.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.12
+anchor_right = 0.5
+anchor_bottom = 0.12
+margin_left = -492.0
+margin_top = -42.4
+margin_right = 484.0
+margin_bottom = 38.6
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Langues" type="TextureButton" parent="VBoxContainer"]
+margin_left = 44.0
+margin_right = 263.0
+margin_bottom = 81.0
+focus_neighbour_right = NodePath("../Graphismes")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
+
+[node name="Langues" type="RichTextLabel" parent="VBoxContainer/Langues"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -53.5
+margin_top = -22.5
+margin_right = 75.5
+margin_bottom = 23.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Langues"
+text = "Langues"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Graphismes" type="TextureButton" parent="VBoxContainer"]
+margin_left = 267.0
+margin_right = 486.0
+margin_bottom = 81.0
+focus_neighbour_top = NodePath("../Commencer")
+focus_neighbour_bottom = NodePath("../Credits")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Graphismes" type="RichTextLabel" parent="VBoxContainer/Graphismes"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -78.5
+margin_top = -21.5
+margin_right = 78.5
+margin_bottom = 21.5
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "Graphismes"
+text = "Graphismes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Audio" type="TextureButton" parent="VBoxContainer"]
+margin_left = 490.0
+margin_right = 709.0
+margin_bottom = 81.0
+focus_neighbour_top = NodePath("../Options")
+focus_neighbour_bottom = NodePath("../Quitter")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Audio" type="RichTextLabel" parent="VBoxContainer/Audio"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -38.0
+margin_top = -21.5
+margin_right = 38.0
+margin_bottom = 21.5
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "Audio"
+text = "Audio"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retour" type="TextureButton" parent="VBoxContainer"]
+margin_left = 713.0
+margin_right = 932.0
+margin_bottom = 81.0
+focus_neighbour_top = NodePath("../Credits")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Retour" type="RichTextLabel" parent="VBoxContainer/Retour"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -46.0
+margin_top = -22.0
+margin_right = 46.0
+margin_bottom = 22.0
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_text = "Retour"
+text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GestionLangues" type="VBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -109.5
+margin_top = -75.0
+margin_right = 109.5
+margin_bottom = 75.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Francais" type="TextureButton" parent="GestionLangues"]
+margin_right = 219.0
+margin_bottom = 73.0
+focus_neighbour_bottom = NodePath("../Anglais")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Francais" type="RichTextLabel" parent="GestionLangues/Francais"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -53.5
+margin_top = -23.0
+margin_right = 53.5
+margin_bottom = 23.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Français"
+text = "Français"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Anglais" type="TextureButton" parent="GestionLangues"]
+margin_top = 77.0
+margin_right = 219.0
+margin_bottom = 150.0
+focus_neighbour_top = NodePath("../Francais")
+focus_neighbour_bottom = NodePath("../Retour2")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Anglais" type="RichTextLabel" parent="GestionLangues/Anglais"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -23.0
+margin_right = 48.0
+margin_bottom = 23.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Anglais"
+text = "Anglais"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retour2" type="TextureButton" parent="GestionLangues"]
+margin_top = 154.0
+margin_right = 219.0
+margin_bottom = 227.0
+focus_neighbour_top = NodePath("../Anglais")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Retour2" type="RichTextLabel" parent="GestionLangues/Retour2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -23.0
+margin_right = 48.0
+margin_bottom = 23.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Retour"
+text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Langues" to="VBoxContainer/Langues" method="_on_Langues_pressed"]
+[connection signal="pressed" from="GestionLangues/Francais" to="VBoxContainer/Langues" method="_on_Francais_pressed"]
+[connection signal="pressed" from="GestionLangues/Anglais" to="VBoxContainer/Langues" method="_on_Anglais_pressed"]
+[connection signal="pressed" from="GestionLangues/Retour2" to="VBoxContainer/Langues" method="_on_Retour2_pressed"]
