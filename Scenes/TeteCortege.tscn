@@ -780,11 +780,11 @@ z_index = -2000
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Chars/Char01/StaticBody2D2"]
 visible = false
-polygon = PoolVector2Array( -1222.43, -297.252, -1360.33, -300.615, -1351.92, 30.6979, -1203.93, 35.7432 )
+polygon = PoolVector2Array( -1225.66, -243.174, -1351.71, -250.309, -1351.92, 30.6979, -1203.93, 35.7432 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Chars/Char01/StaticBody2D2"]
 visible = false
-polygon = PoolVector2Array( 1224.58, -320.797, 1377.63, -322.479, 1392.76, 118.151, 1197.67, 121.515, 1103.49, 7.15273 )
+polygon = PoolVector2Array( 1216.98, -240.796, 1376.33, -247.931, 1392.76, 118.151, 1197.67, 121.515, 1103.49, 7.15273 )
 
 [node name="chaine char courone fleurs" parent="Chars/Char01" instance=ExtResource( 139 )]
 position = Vector2( 1301.19, 136.28 )
@@ -799,10 +799,10 @@ position = Vector2( -31.5205, -12.9116 )
 position = Vector2( -1254.29, 94.8108 )
 
 [node name="chaine danse" parent="Chars/Char01" instance=ExtResource( 120 )]
-position = Vector2( -1302.71, -293.304 )
+position = Vector2( -1305.09, -250.493 )
 
 [node name="chaine camion rousse" parent="Chars/Char01" instance=ExtResource( 138 )]
-position = Vector2( 1305.98, -306.273 )
+position = Vector2( 1301.22, -246.812 )
 
 [node name="chanie gauche" parent="Chars/Char01" instance=ExtResource( 142 )]
 position = Vector2( -1356.88, 71.634 )
@@ -818,11 +818,13 @@ z_index = -1
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Chars/Char02"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Chars/Char02/StaticBody2D2"]
-polygon = PoolVector2Array( 1225.14, -212.526, 1396.26, -206.869, 1404.74, 184.868, 1246.7, 261.788, 1132.21, 174.236 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Chars/Char02/StaticBody2D2/CollisionPolygon2D"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Chars/Char02/StaticBody2D2"]
+visible = false
 polygon = PoolVector2Array( -1198.83, -143.229, -1343.08, -140.401, -1345.9, 177.797, -1159.23, 167.898, -1160.64, -143.229 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Chars/Char02/StaticBody2D2"]
+visible = false
+polygon = PoolVector2Array( 1219.55, -142.605, 1393.17, -137.848, 1404.74, 184.868, 1246.7, 261.788, 1132.21, 174.236 )
 
 [node name="anges dansent" parent="Chars/Char02" instance=ExtResource( 87 )]
 position = Vector2( -181.825, 2.74261 )
@@ -834,7 +836,7 @@ position = Vector2( 1315.99, 286.795 )
 position = Vector2( -11.0879, 236.144 )
 
 [node name="chaine danse2" parent="Chars/Char02" instance=ExtResource( 120 )]
-position = Vector2( -1287.92, -142.789 )
+position = Vector2( -1287.92, -95.2207 )
 
 [node name="chaine tshirt rainbow" parent="Chars/Char02" instance=ExtResource( 143 )]
 position = Vector2( 7.62097, 247.803 )
@@ -851,5 +853,5 @@ position = Vector2( -1279.1, 259.695 )
 position = Vector2( 1401.55, 274.023 )
 
 [node name="Chaine salopette" parent="." instance=ExtResource( 145 )]
-position = Vector2( 115.587, -81.7047 )
+position = Vector2( 117.966, -19.8659 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
