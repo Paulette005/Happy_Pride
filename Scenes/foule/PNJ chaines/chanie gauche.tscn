@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ chaine/chanie gauche.png" type="Texture" id=2]
+
+[node name="chanie gauche" type="Sprite"]
+position = Vector2( 0.799606, -0.236115 )
+texture = ExtResource( 2 )
+offset = Vector2( -1.21377, -358.31 )
+script = ExtResource( 1 )

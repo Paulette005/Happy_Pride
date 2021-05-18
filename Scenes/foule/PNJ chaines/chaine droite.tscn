@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ chaine/chaine droite.png" type="Texture" id=2]
+
+[node name="chaine droite" type="Sprite"]
+position = Vector2( -0.0217896, 56.3466 )
+texture = ExtResource( 2 )
+offset = Vector2( -2.48218, -391.327 )
+script = ExtResource( 1 )
+add_collision = false
