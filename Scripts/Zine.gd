@@ -30,3 +30,4 @@ func _process(delta):
 		p2.visible = false
 	else:
 		p2.visible = true
+
