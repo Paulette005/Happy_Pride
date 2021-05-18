@@ -8,4 +8,4 @@ func _ready():
 	$Timer.start(2)
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://Scenes/FR/Menu.tscn")
+	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")

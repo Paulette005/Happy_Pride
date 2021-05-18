@@ -8,10 +8,10 @@ func _on_Commencer_pressed():
 	get_tree().change_scene("res://Scenes/TeteCortege.tscn")
 
 func _on_Options_pressed():
-	get_tree().change_scene("res://Scenes/FR/Options.tscn")
+	get_tree().change_scene("res://Scenes/Menu/Options.tscn")
 
 func _on_Credits_pressed():
-	get_tree().change_scene("res://Scenes/FR/Credits.tscn")
+	get_tree().change_scene("res://Scenes/Menu/Credits.tscn")
 
 func _on_Quitter_pressed():
 	get_tree().quit()
