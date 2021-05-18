@@ -9,6 +9,7 @@ var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 
 onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
+onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 
 func _ready():
 	var singleton = get_node("/root/Singleton")

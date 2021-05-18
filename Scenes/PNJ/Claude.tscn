@@ -8,10 +8,6 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-ailes-gauche.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=7]
 
-
-
-
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
@@ -36,4 +32,3 @@ position = Vector2( 2.9967, -152.827 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

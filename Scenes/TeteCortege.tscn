@@ -365,6 +365,7 @@ texture = ExtResource( 75 )
 
 [node name="Kim" parent="PNJ" instance=ExtResource( 91 )]
 position = Vector2( 7717.53, -8.7041 )
+script = ExtResource( 10 )
 
 [node name="Assa" parent="PNJ" instance=ExtResource( 9 )]
 position = Vector2( 2542.63, 674.112 )

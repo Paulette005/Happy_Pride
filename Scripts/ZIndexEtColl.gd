@@ -12,7 +12,5 @@ func _ready():
 		var zone_c = zone_coll.instance()
 		add_child(zone_c)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_AudioStreamPlayer2D_finished():
+	$AudioStreamPlayer2D.play()
