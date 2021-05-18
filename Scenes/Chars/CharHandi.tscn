@@ -5,8 +5,6 @@
 [ext_resource path="res://Audio/char handi.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=4]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 740.206, 185.739 )
 
@@ -23,10 +21,10 @@ position = Vector2( 15.2039, -13.4708 )
 shape = SubResource( 1 )
 
 [node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -997.46, -513.841 )
+position = Vector2( -898.682, -714.067 )
 
 [node name="effet-enceinte-jaune3" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1011.8, -127.861 )
+position = Vector2( -891.664, -490.937 )
 rotation = -0.0698132
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

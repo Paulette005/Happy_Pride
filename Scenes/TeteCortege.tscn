@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=2]
+[gd_scene load_steps=147 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -30,7 +30,7 @@
 [ext_resource path="res://Scripts/Parametres.gd" type="Script" id=28]
 [ext_resource path="res://Scenes/foule/PNJ avancent/caché masque casquette rose.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=30]
-[ext_resource path="res://Scenes/foule/PNJ avancent/crie rose et vert.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Scenes/foule/PNJ drapeau/bear drapeau.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Scenes/foule/PNJ avancent/jupe rayures jaunes.tscn" type="PackedScene" id=32]
 [ext_resource path="res://Scenes/foule/PNJ avancent/mme torse nue.tscn" type="PackedScene" id=33]
 [ext_resource path="res://Scenes/foule/PNJ avancent/mmeRobeOrange.tscn" type="PackedScene" id=34]
@@ -145,6 +145,7 @@
 [ext_resource path="res://Scenes/foule/PNJ chaines/chaine tshirt rainbow.tscn" type="PackedScene" id=143]
 [ext_resource path="res://Scenes/foule/PNJ chaines/chaine nb.tscn" type="PackedScene" id=144]
 [ext_resource path="res://Scenes/foule/PNJ chaines/Chaine salopette.tscn" type="PackedScene" id=145]
+[ext_resource path="res://Scenes/foule/PNJ drapeau/mec drapeau chapeau noir.tscn" type="PackedScene" id=146]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -365,7 +366,6 @@ texture = ExtResource( 75 )
 
 [node name="Kim" parent="PNJ" instance=ExtResource( 91 )]
 position = Vector2( 7717.53, -8.7041 )
-script = ExtResource( 10 )
 
 [node name="Assa" parent="PNJ" instance=ExtResource( 9 )]
 position = Vector2( 2542.63, 674.112 )
@@ -424,8 +424,8 @@ position = Vector2( -1655.96, -503.897 )
 [node name="couple hijab rose" parent="Foule/cortege 1" instance=ExtResource( 30 )]
 position = Vector2( -1577.44, -584.385 )
 
-[node name="crie rose et vert" parent="Foule/cortege 1" instance=ExtResource( 31 )]
-position = Vector2( -220.57, -142.935 )
+[node name="mec drapeau chapeau noir" parent="Foule/cortege 1" instance=ExtResource( 146 )]
+position = Vector2( -204.038, -122.379 )
 
 [node name="jupe rayures jaunes" parent="Foule/cortege 1" instance=ExtResource( 32 )]
 position = Vector2( -415.451, 30.5949 )
@@ -678,6 +678,9 @@ position = Vector2( -1574.14, 413.192 )
 [node name="queen dansent" parent="Foule/cortege 1/dansent" instance=ExtResource( 114 )]
 position = Vector2( -1711.18, -65.2081 )
 
+[node name="bear drapeau" parent="Foule/cortege 1" instance=ExtResource( 31 )]
+position = Vector2( -5925.14, 673.008 )
+
 [node name="cortege 2" type="Node2D" parent="Foule"]
 position = Vector2( 1273.13, -49.2874 )
 
@@ -799,18 +802,18 @@ position = Vector2( -31.5205, -12.9116 )
 position = Vector2( -1254.29, 94.8108 )
 
 [node name="chaine danse" parent="Chars/Char01" instance=ExtResource( 120 )]
-position = Vector2( -1305.09, -250.493 )
+position = Vector2( -1302.26, -204.243 )
 
 [node name="chaine camion rousse" parent="Chars/Char01" instance=ExtResource( 138 )]
-position = Vector2( 1301.22, -246.812 )
+position = Vector2( 1304.59, -194.056 )
 
 [node name="chanie gauche" parent="Chars/Char01" instance=ExtResource( 142 )]
-position = Vector2( -1356.88, 71.634 )
+position = Vector2( -1359.71, 117.884 )
 scale = Vector2( 1, 0.883721 )
 add_collision = false
 
 [node name="chaine droite" parent="Chars/Char01" instance=ExtResource( 141 )]
-position = Vector2( 1386.76, 123.508 )
+position = Vector2( 1392.37, 175.141 )
 
 [node name="Char02" parent="Chars" instance=ExtResource( 66 )]
 position = Vector2( -1180.26, 136.478 )

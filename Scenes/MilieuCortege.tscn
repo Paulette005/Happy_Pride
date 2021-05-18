@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -39,6 +39,16 @@
 [ext_resource path="res://Scenes/foule/PNJ autres/paillettes soeur lance.tscn" type="PackedScene" id=37]
 [ext_resource path="res://Scenes/foule/PNJ autres/photographe roux.tscn" type="PackedScene" id=38]
 [ext_resource path="res://Scenes/foule/PNJ autres/soeur en blanc.tscn" type="PackedScene" id=39]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte gpa.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/inter afro.tscn" type="PackedScene" id=41]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte nb.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte pink washing.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte PMA cheveux rouges.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/camion binarite.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte trans.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/robe verte inter.tscn" type="PackedScene" id=47]
+[ext_resource path="res://Scenes/foule/PNJ pancarte/pancarte binarite.tscn" type="PackedScene" id=48]
+[ext_resource path="res://Scenes/foule/PNJ drapeau/mec drapeau chapeau noir.tscn" type="PackedScene" id=49]
 
 [node name="Node2D" type="Node2D"]
 
@@ -73,8 +83,8 @@ __meta__ = {
 }
 
 [node name="sol" parent="Decor" instance=ExtResource( 6 )]
-position = Vector2( 347.059, -10.1122 )
-scale = Vector2( 17.2548, 4.328 )
+position = Vector2( -191.509, -10.1122 )
+scale = Vector2( 19.05, 4.328 )
 
 [node name="bande blanche" type="Sprite" parent="Decor"]
 position = Vector2( -3216.32, 12.4886 )
@@ -259,16 +269,22 @@ position = Vector2( 2561.5, -755.933 )
 position = Vector2( 2951.83, -755.933 )
 
 [node name="barrriere5" parent="Decor" instance=ExtResource( 34 )]
-position = Vector2( 3969.02, -755.933 )
+position = Vector2( -3011.51, -746.058 )
 
 [node name="barrriere6" parent="Decor" instance=ExtResource( 34 )]
-position = Vector2( 4379.14, -755.933 )
+position = Vector2( -2601.38, -746.058 )
 
 [node name="barrriere7" parent="Decor" instance=ExtResource( 34 )]
-position = Vector2( 4763.81, -755.933 )
+position = Vector2( -2216.72, -746.058 )
 
 [node name="barrriere8" parent="Decor" instance=ExtResource( 34 )]
-position = Vector2( 5154.13, -755.933 )
+position = Vector2( -1826.4, -746.058 )
+
+[node name="barrriere9" parent="Decor" instance=ExtResource( 34 )]
+position = Vector2( -3777.42, -746.058 )
+
+[node name="barrriere10" parent="Decor" instance=ExtResource( 34 )]
+position = Vector2( -3387.1, -746.058 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
 position = Vector2( 4493.12, 255.254 )
@@ -287,7 +303,7 @@ nomScene = "FinCortege"
 posX = -3150
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene2"]
-position = Vector2( -2337.15, -285.653 )
+position = Vector2( -2828.6, -297.64 )
 polygon = PoolVector2Array( 233.082, -576.348, 222.132, 29.1613, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
 
 [node name="CharHandi" parent="." instance=ExtResource( 10 )]
@@ -303,6 +319,9 @@ position = Vector2( -184.697, 314.182 )
 
 [node name="boboPied" parent="foule/cortege 1" instance=ExtResource( 17 )]
 position = Vector2( -2734.82, 640.434 )
+
+[node name="pancarte gpa" parent="foule/cortege 1" instance=ExtResource( 40 )]
+position = Vector2( -565.115, -277.967 )
 
 [node name="caddie pancartes" parent="foule/cortege 1" instance=ExtResource( 13 )]
 position = Vector2( -1069.3, -41.3401 )
@@ -320,8 +339,26 @@ add_collision = false
 [node name="paillettes recoivent" parent="foule/cortege 1" instance=ExtResource( 36 )]
 position = Vector2( -3235.33, -436.12 )
 
+[node name="pancarte PMA cheveux rouges" parent="foule/cortege 1" instance=ExtResource( 44 )]
+position = Vector2( -669.883, -46.2065 )
+
 [node name="paillettes soeur lance" parent="foule/cortege 1" instance=ExtResource( 37 )]
 position = Vector2( -3445.58, -439.684 )
+
+[node name="robe verte inter" parent="foule/cortege 1" instance=ExtResource( 47 )]
+position = Vector2( -839.712, 136.974 )
+
+[node name="inter afro" parent="foule/cortege 1" instance=ExtResource( 41 )]
+position = Vector2( -825.289, 326.082 )
+
+[node name="pancarte nb" parent="foule/cortege 1" instance=ExtResource( 42 )]
+position = Vector2( -409.55, -116.052 )
+
+[node name="pancarte pink washing" parent="foule/cortege 1" instance=ExtResource( 43 )]
+position = Vector2( -460.347, 280.798 )
+
+[node name="camion binarite" parent="foule/cortege 1" instance=ExtResource( 45 )]
+position = Vector2( -1874.44, -797.126 )
 
 [node name="cortege 2" type="Node2D" parent="foule"]
 position = Vector2( 0, 32.0361 )
@@ -340,3 +377,15 @@ position = Vector2( -451.464, 787.904 )
 
 [node name="banderole blanche pma" parent="foule/cortege 2" instance=ExtResource( 19 )]
 position = Vector2( 28.8775, 271.467 )
+
+[node name="pancarte trans" parent="foule/cortege 2" instance=ExtResource( 46 )]
+position = Vector2( -307.464, -218.118 )
+
+[node name="robe verte inter" parent="foule/cortege 2" instance=ExtResource( 47 )]
+position = Vector2( -434.6, 197.192 )
+
+[node name="pancarte binarite" parent="foule/cortege 2" instance=ExtResource( 48 )]
+position = Vector2( -197.28, -99.458 )
+
+[node name="mec drapeau chapeau noir" parent="." instance=ExtResource( 49 )]
+position = Vector2( 3969.46, 473.975 )
