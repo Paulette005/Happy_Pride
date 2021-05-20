@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=2]
+[gd_scene load_steps=94 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -74,8 +74,31 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=72]
 [ext_resource path="res://Scenes/foule/PNJ avancent/cheveux bleus.tscn" type="PackedScene" id=73]
 [ext_resource path="res://Assets/chars/char-3.png" type="Texture" id=74]
+[ext_resource path="res://Scripts/Parametres.gd" type="Script" id=75]
+[ext_resource path="res://Scenes/foule/PNJ avancent/Boby.tscn" type="PackedScene" id=76]
+[ext_resource path="res://Scenes/foule/PNJ avancent/Boby pote.tscn" type="PackedScene" id=77]
+[ext_resource path="res://Scenes/foule/PNJ avancent/drapeau et fleur.tscn" type="PackedScene" id=78]
+[ext_resource path="res://Scenes/foule/PNJ avancent/crie rose et vert.tscn" type="PackedScene" id=79]
+[ext_resource path="res://Scenes/foule/PNJ dyacishet/catho mere fils.tscn" type="PackedScene" id=80]
+[ext_resource path="res://Scenes/foule/PNJ dyacishet/catho pere.tscn" type="PackedScene" id=81]
+[ext_resource path="res://Scenes/foule/PNJ avancent/jupe rayures jaunes.tscn" type="PackedScene" id=82]
+[ext_resource path="res://Scenes/foule/PNJ avancent/couple robe verte.tscn" type="PackedScene" id=83]
+[ext_resource path="res://Scenes/foule/PNJ avancent/Marche chapeau paille.tscn" type="PackedScene" id=84]
+[ext_resource path="res://Scenes/foule/PNJ avancent/marcheTshirtNoir.tscn" type="PackedScene" id=85]
+[ext_resource path="res://Scenes/foule/PNJ avancent/gay noirs harnais.tscn" type="PackedScene" id=86]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mme raisille.tscn" type="PackedScene" id=87]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mec boa rose.tscn" type="PackedScene" id=88]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mmeRobeOrange.tscn" type="PackedScene" id=89]
+[ext_resource path="res://Scenes/foule/PNJ avancent/pantalon rouge.tscn" type="PackedScene" id=90]
+[ext_resource path="res://Scenes/foule/PNJ avancent/megaphone.tscn" type="PackedScene" id=91]
+[ext_resource path="res://Scenes/foule/PNJ avancent/orange a carreaux.tscn" type="PackedScene" id=92]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mme shoes a fleurs.tscn" type="PackedScene" id=93]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 75 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -93,13 +116,13 @@ current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = -4000
 limit_top = -1000
-limit_right = 6200
+limit_right = 6300
 limit_bottom = 1000
 editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 904.65, -104.062 )
+position = Vector2( 6234.12, -168.065 )
 script = ExtResource( 1 )
 
 [node name="Decor" type="Node2D" parent="."]
@@ -391,8 +414,23 @@ position = Vector2( -3445.58, -439.684 )
 [node name="robe verte inter" parent="foule/cortege 1" instance=ExtResource( 47 )]
 position = Vector2( -159.115, 302.885 )
 
+[node name="jupe rayures jaunes" parent="foule/cortege 1" instance=ExtResource( 82 )]
+position = Vector2( 1427.07, -273.904 )
+
+[node name="mme short a fleurs" parent="foule/cortege 1" instance=ExtResource( 52 )]
+position = Vector2( 1422.03, -147.912 )
+
+[node name="mmeRobeOrange" parent="foule/cortege 1" instance=ExtResource( 89 )]
+position = Vector2( 1530.02, 258.285 )
+
+[node name="marcheTshirtNoir" parent="foule/cortege 1" instance=ExtResource( 85 )]
+position = Vector2( 1205.32, 189.363 )
+
+[node name="Marche chapeau paille" parent="foule/cortege 1" instance=ExtResource( 84 )]
+position = Vector2( 1215.39, 308.787 )
+
 [node name="pancarte nb" parent="foule/cortege 1" instance=ExtResource( 42 )]
-position = Vector2( 276.704, -39.2357 )
+position = Vector2( 290.958, -42.7993 )
 
 [node name="pancarte pink washing" parent="foule/cortege 1" instance=ExtResource( 43 )]
 position = Vector2( 248.534, 366.1 )
@@ -410,10 +448,13 @@ position = Vector2( -744.119, 302.934 )
 position = Vector2( -797.857, 407.586 )
 
 [node name="PB tds pancarte" parent="foule/cortege 1" instance=ExtResource( 57 )]
-position = Vector2( -390.146, 437.843 )
+position = Vector2( -486.255, 437.843 )
+
+[node name="megaphone" parent="foule/cortege 1" instance=ExtResource( 91 )]
+position = Vector2( 378.381, 601.138 )
 
 [node name="gay a fleurs" parent="foule/cortege 1" instance=ExtResource( 54 )]
-position = Vector2( 890.712, -395.687 )
+position = Vector2( 804.855, -431.606 )
 
 [node name="su connie" parent="foule/cortege 1" instance=ExtResource( 62 )]
 position = Vector2( 177.953, 54.0334 )
@@ -428,7 +469,7 @@ position = Vector2( -953.437, 899.308 )
 position = Vector2( -877.023, 983.213 )
 
 [node name="tdsParapluie" parent="foule/cortege 1" instance=ExtResource( 65 )]
-position = Vector2( -424.502, 574.465 )
+position = Vector2( -520.611, 571.795 )
 
 [node name="kimonoRose" parent="foule/cortege 1" instance=ExtResource( 69 )]
 position = Vector2( -2577.66, 618.143 )
@@ -440,13 +481,22 @@ position = Vector2( -2141.16, -708.305 )
 position = Vector2( -2068.2, -581.399 )
 
 [node name="couple hijab rose" parent="foule/cortege 1" instance=ExtResource( 72 )]
-position = Vector2( 1237.56, -469.445 )
+position = Vector2( 1177.09, -459.366 )
 
 [node name="cheveux bleus" parent="foule/cortege 1" instance=ExtResource( 73 )]
-position = Vector2( 1264.26, -287.907 )
+position = Vector2( 1172.35, -255.379 )
 
 [node name="mec drapeau chapeau noir" parent="foule/cortege 1" instance=ExtResource( 49 )]
 position = Vector2( 95.9038, 582.827 )
+
+[node name="mme shoes a fleurs" parent="foule/cortege 1" instance=ExtResource( 93 )]
+position = Vector2( -1265.87, 508.401 )
+
+[node name="orange a carreaux" parent="foule/cortege 1" instance=ExtResource( 92 )]
+position = Vector2( -1333.05, 581.259 )
+
+[node name="pantalon rouge" parent="foule/cortege 1" instance=ExtResource( 90 )]
+position = Vector2( 96.8052, 680.61 )
 
 [node name="gayTShirtFleursMoche" parent="foule/cortege 1" instance=ExtResource( 67 )]
 position = Vector2( -1543.77, 845.369 )
@@ -458,10 +508,13 @@ position = Vector2( 0, 32.0361 )
 position = Vector2( -1341.09, 536.814 )
 
 [node name="farandole" parent="foule/cortege 2" instance=ExtResource( 16 )]
-position = Vector2( -813.008, -361.702 )
+position = Vector2( -829.026, -359.032 )
+
+[node name="cheveux bleus" parent="foule/cortege 2/farandole" instance=ExtResource( 73 )]
+position = Vector2( -410.997, -186.179 )
 
 [node name="PB ace crie" parent="foule/cortege 2" instance=ExtResource( 53 )]
-position = Vector2( -529.21, -169.525 )
+position = Vector2( -539.889, -164.186 )
 
 [node name="gouter sur plot" parent="foule/cortege 2" instance=ExtResource( 14 )]
 position = Vector2( -451.464, 787.904 )
@@ -470,7 +523,7 @@ position = Vector2( -451.464, 787.904 )
 position = Vector2( 28.8775, 271.467 )
 
 [node name="pancarte trans" parent="foule/cortege 2" instance=ExtResource( 46 )]
-position = Vector2( -364.097, -221.893 )
+position = Vector2( -377.445, -221.893 )
 
 [node name="robe verte inter" parent="foule/cortege 2" instance=ExtResource( 47 )]
 position = Vector2( -579.079, 188.967 )
@@ -479,16 +532,55 @@ position = Vector2( -579.079, 188.967 )
 position = Vector2( -570.057, 350.331 )
 
 [node name="pancarte binarite" parent="foule/cortege 2" instance=ExtResource( 48 )]
-position = Vector2( -197.28, -99.458 )
+position = Vector2( -218.637, -102.128 )
 
 [node name="pma pour toustes" parent="foule/cortege 2" instance=ExtResource( 51 )]
-position = Vector2( -127.567, 136.363 )
+position = Vector2( -138.246, 136.363 )
 
 [node name="mme torse nue" parent="foule/cortege 2" instance=ExtResource( 41 )]
-position = Vector2( -336.873, 110.363 )
+position = Vector2( -358.23, 110.363 )
 
 [node name="mme short a fleurs" parent="foule/cortege 2" instance=ExtResource( 52 )]
-position = Vector2( -352.873, 250.363 )
+position = Vector2( -374.23, 250.363 )
 
 [node name="soeur en blanc" parent="foule/cortege 2" instance=ExtResource( 39 )]
 position = Vector2( -173.614, 523.978 )
+
+[node name="Boby" parent="foule/cortege 2" instance=ExtResource( 76 )]
+position = Vector2( -884.956, -53.9903 )
+
+[node name="Boby pote" parent="foule/cortege 2" instance=ExtResource( 77 )]
+position = Vector2( -892.965, 58.1363 )
+
+[node name="crie rose et vert" parent="." instance=ExtResource( 79 )]
+position = Vector2( 4349.58, 343.337 )
+
+[node name="drapeau et fleur" parent="." instance=ExtResource( 78 )]
+position = Vector2( 4349.58, 455.463 )
+
+[node name="couple hijab rose" parent="." instance=ExtResource( 72 )]
+position = Vector2( 3855.68, 551.572 )
+
+[node name="catho mere fils" parent="." instance=ExtResource( 80 )]
+position = Vector2( 4528.44, -825.982 )
+
+[node name="catho pere" parent="." instance=ExtResource( 81 )]
+position = Vector2( 4296.18, -812.634 )
+
+[node name="drapeau et fleur2" parent="." instance=ExtResource( 78 )]
+position = Vector2( 4459.03, -526.979 )
+
+[node name="jupe rayures jaunes" parent="." instance=ExtResource( 82 )]
+position = Vector2( 4432.33, -393.495 )
+
+[node name="couple robe verte" parent="." instance=ExtResource( 83 )]
+position = Vector2( 3196.27, -508.291 )
+
+[node name="mme raisille" parent="." instance=ExtResource( 87 )]
+position = Vector2( 5556.24, 485.29 )
+
+[node name="mec boa rose" parent="." instance=ExtResource( 88 )]
+position = Vector2( 4466.32, -177.199 )
+
+[node name="gay noirs harnais" parent="." instance=ExtResource( 86 )]
+position = Vector2( 5596.55, 606.243 )

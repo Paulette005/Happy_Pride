@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=70 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -55,6 +55,19 @@
 [ext_resource path="res://Scenes/decor/poteau noir 1.tscn" type="PackedScene" id=53]
 [ext_resource path="res://Scenes/decor/poteau noir 4.tscn" type="PackedScene" id=54]
 [ext_resource path="res://Scenes/decor/poteau noir 3.tscn" type="PackedScene" id=55]
+[ext_resource path="res://Scenes/Zine/Zine.tscn" type="PackedScene" id=56]
+[ext_resource path="res://Scripts/Parametres.gd" type="Script" id=57]
+[ext_resource path="res://Scenes/foule/PNJ avancent/cheveux bleus.tscn" type="PackedScene" id=58]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mme short a fleurs.tscn" type="PackedScene" id=59]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mec kipa.tscn" type="PackedScene" id=60]
+[ext_resource path="res://Scenes/foule/PNJ avancent/marcheTshirtNoir.tscn" type="PackedScene" id=61]
+[ext_resource path="res://Scenes/foule/PNJ avancent/Roller casque rose.tscn" type="PackedScene" id=62]
+[ext_resource path="res://Scenes/foule/PNJ avancent/Roller rainbow.tscn" type="PackedScene" id=63]
+[ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=64]
+[ext_resource path="res://Scenes/foule/PNJ avancent/trans pedale douce.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Scenes/foule/PNJ bisous/bisou fauteuil.tscn" type="PackedScene" id=66]
+[ext_resource path="res://Scenes/foule/PNJ avancent/vieux chapeau paille.tscn" type="PackedScene" id=67]
+[ext_resource path="res://Scenes/foule/PNJ avancent/tdsParapluie.tscn" type="PackedScene" id=68]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -65,6 +78,7 @@ animations = [ {
 } ]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 57 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -72,6 +86,9 @@ animations = [ {
 visible = false
 
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 37 )]
+visible = false
+
+[node name="Zine" parent="CanvasLayer" instance=ExtResource( 56 )]
 visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -106,7 +123,7 @@ position = Vector2( 202.296, -79.8289 )
 position = Vector2( 720.36, 434.74 )
 
 [node name="PB Boa plummes rouge" parent="foule/pink block" instance=ExtResource( 4 )]
-position = Vector2( -19.9641, -15.7976 )
+position = Vector2( -19.9641, -29.7976 )
 scale = Vector2( 1, 1.00636 )
 
 [node name="PB boots et bandeau rose" parent="foule/pink block" instance=ExtResource( 5 )]
@@ -150,9 +167,6 @@ position = Vector2( -824.564, 169.677 )
 [node name="pb boa rose" parent="foule/pink block" instance=ExtResource( 17 )]
 position = Vector2( -711.402, 415.165 )
 
-[node name="pb fleurs" parent="foule/pink block" instance=ExtResource( 18 )]
-position = Vector2( -290.789, 567.4 )
-
 [node name="pb fliquette" parent="foule/pink block" instance=ExtResource( 19 )]
 position = Vector2( -945.163, 38.2248 )
 
@@ -170,6 +184,9 @@ position = Vector2( -203.791, 458.514 )
 
 [node name="pb panthere rose" parent="foule/pink block" instance=ExtResource( 30 )]
 position = Vector2( -1189.21, 418.592 )
+
+[node name="pb fleurs" parent="foule/pink block" instance=ExtResource( 18 )]
+position = Vector2( -287.614, 592.798 )
 
 [node name="pb salopette noire" parent="foule/pink block" instance=ExtResource( 32 )]
 position = Vector2( -576.673, 651.319 )
@@ -207,9 +224,43 @@ position = Vector2( -314.852, 54.8275 )
 [node name="robe verte inter" parent="foule/fin cortege précédent" instance=ExtResource( 50 )]
 position = Vector2( -227.976, 258.244 )
 
+[node name="bisou fauteuil" parent="foule/fin cortege précédent" instance=ExtResource( 66 )]
+position = Vector2( 262.232, -460.84 )
+
+[node name="cheveux bleus" parent="foule/fin cortege précédent" instance=ExtResource( 58 )]
+position = Vector2( 109.842, -203.681 )
+
+[node name="marcheTshirtNoir" parent="foule/fin cortege précédent" instance=ExtResource( 61 )]
+position = Vector2( 84.4432, -117.961 )
+
+[node name="mec kipa" parent="foule/fin cortege précédent" instance=ExtResource( 60 )]
+position = Vector2( 322.553, 148.722 )
+
+[node name="mme short a fleurs" parent="foule/fin cortege précédent" instance=ExtResource( 59 )]
+position = Vector2( 325.728, 259.84 )
+
+[node name="Roller casque rose" parent="foule/fin cortege précédent" instance=ExtResource( 62 )]
+position = Vector2( 389.224, 494.775 )
+
+[node name="Roller rainbow" parent="foule/fin cortege précédent" instance=ExtResource( 63 )]
+position = Vector2( 341.602, 612.243 )
+
+[node name="trans pedale douce" parent="foule/fin cortege précédent" instance=ExtResource( 65 )]
+position = Vector2( -620.363, -289.401 )
+
+[node name="trans drapeau verte" parent="foule/fin cortege précédent" instance=ExtResource( 64 )]
+position = Vector2( -648.936, -143.36 )
+
+[node name="vieux chapeau paille" parent="foule/fin cortege précédent" instance=ExtResource( 67 )]
+position = Vector2( 71.744, 142.372 )
+
+[node name="tdsParapluie" parent="foule/fin cortege précédent" instance=ExtResource( 68 )]
+position = Vector2( 595.017, 29.8363 )
+
 [node name="decor" type="Node2D" parent="."]
 position = Vector2( -1096.53, 33.6357 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_lock_": true
 }
 

@@ -118,8 +118,8 @@ animations = [ {
 "speed": 3.5
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 56.0184, 37.7704 )
+[sub_resource type="CircleShape2D" id=2]
+radius = 36.4725
 
 [node name="Player" type="KinematicBody2D"]
 
@@ -131,7 +131,7 @@ playing = true
 offset = Vector2( 0.968384, -168.887 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8.91907, -27.9464 )
+position = Vector2( -8.16992, -19.7057 )
 shape = SubResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
