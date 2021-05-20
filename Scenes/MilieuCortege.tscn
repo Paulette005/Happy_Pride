@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=2]
+[gd_scene load_steps=95 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -93,6 +93,7 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/megaphone.tscn" type="PackedScene" id=91]
 [ext_resource path="res://Scenes/foule/PNJ avancent/orange a carreaux.tscn" type="PackedScene" id=92]
 [ext_resource path="res://Scenes/foule/PNJ avancent/mme shoes a fleurs.tscn" type="PackedScene" id=93]
+[ext_resource path="res://Assets/decor/dechets.png" type="Texture" id=94]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 75 )
@@ -135,6 +136,46 @@ __meta__ = {
 [node name="sol" parent="Decor" instance=ExtResource( 6 )]
 position = Vector2( -191.509, -10.1122 )
 scale = Vector2( 19.05, 4.328 )
+
+[node name="dechets" type="Sprite" parent="Decor/sol"]
+position = Vector2( 223.134, -66.4607 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets2" type="Sprite" parent="Decor/sol"]
+position = Vector2( 162.625, 11.873 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets3" type="Sprite" parent="Decor/sol"]
+position = Vector2( 36.2681, -72.3357 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets4" type="Sprite" parent="Decor/sol"]
+position = Vector2( -20.6815, 41.2481 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets5" type="Sprite" parent="Decor/sol"]
+position = Vector2( -106.106, 72.5816 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets6" type="Sprite" parent="Decor/sol"]
+position = Vector2( -209.772, -54.7107 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets7" type="Sprite" parent="Decor/sol"]
+position = Vector2( -187.971, 78.4566 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
+
+[node name="dechets8" type="Sprite" parent="Decor/sol"]
+position = Vector2( -262.666, 75.0895 )
+scale = Vector2( 0.0524934, 0.231054 )
+texture = ExtResource( 94 )
 
 [node name="bande blanche" type="Sprite" parent="Decor"]
 position = Vector2( -3216.32, 12.4886 )
