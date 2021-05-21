@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=2]
+[gd_scene load_steps=166 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -164,6 +164,7 @@
 [ext_resource path="res://Scenes/foule/PNJ dyacishet/grand pere.tscn" type="PackedScene" id=162]
 [ext_resource path="res://Scenes/foule/PNJ dyacishet/photographe.tscn" type="PackedScene" id=163]
 [ext_resource path="res://Scenes/foule/PNJ dansent/boy with boobs.tscn" type="PackedScene" id=164]
+[ext_resource path="res://Assets/chars/char02_redi_raccord.png" type="Texture" id=165]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -1043,6 +1044,10 @@ polygon = PoolVector2Array( 1219.55, -142.605, 1429.33, -132.765, 1434.67, 184.9
 
 [node name="anges dansent" parent="Chars/Char02" instance=ExtResource( 87 )]
 position = Vector2( -181.825, 2.74261 )
+
+[node name="Sprite" type="Sprite" parent="Chars/Char02/anges dansent"]
+position = Vector2( 238.155, -198.327 )
+texture = ExtResource( 165 )
 
 [node name="chaine char courone fleurs2" parent="Chars/Char02" instance=ExtResource( 139 )]
 position = Vector2( 1315.99, 286.795 )
