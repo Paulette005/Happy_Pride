@@ -1045,7 +1045,7 @@ polygon = PoolVector2Array( 1219.55, -142.605, 1429.33, -132.765, 1434.67, 184.9
 [node name="anges dansent" parent="Chars/Char02" instance=ExtResource( 87 )]
 position = Vector2( -181.825, 2.74261 )
 
-[node name="Sprite" type="Sprite" parent="Chars/Char02/anges dansent"]
+[node name="Raccord" type="Sprite" parent="Chars/Char02/anges dansent"]
 position = Vector2( 238.155, -198.327 )
 texture = ExtResource( 165 )
 

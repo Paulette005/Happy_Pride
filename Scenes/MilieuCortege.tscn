@@ -73,7 +73,7 @@
 [ext_resource path="res://Scenes/foule/PNJ discutent/parle tshirt vert.tscn" type="PackedScene" id=71]
 [ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=72]
 [ext_resource path="res://Scenes/foule/PNJ avancent/cheveux bleus.tscn" type="PackedScene" id=73]
-[ext_resource path="res://Assets/chars/char-3.png" type="Texture" id=74]
+[ext_resource path="res://Scenes/Chars/CharAsso.tscn" type="PackedScene" id=74]
 [ext_resource path="res://Scripts/Parametres.gd" type="Script" id=75]
 [ext_resource path="res://Scenes/foule/PNJ avancent/Boby.tscn" type="PackedScene" id=76]
 [ext_resource path="res://Scenes/foule/PNJ avancent/Boby pote.tscn" type="PackedScene" id=77]
@@ -125,6 +125,34 @@ script = ExtResource( 3 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 6234.12, -168.065 )
 script = ExtResource( 1 )
+
+[node name="ChangementScene" type="Area2D" parent="."]
+position = Vector2( 4493.12, 255.254 )
+script = ExtResource( 4 )
+nomScene = "TeteCortege"
+posX = 50
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
+position = Vector2( 1547.36, -330.01 )
+polygon = PoolVector2Array( 233.082, -576.348, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
+
+[node name="ChangementScene2" type="Area2D" parent="."]
+position = Vector2( -1552.5, 321.347 )
+script = ExtResource( 4 )
+nomScene = "FinCortege"
+posX = -3150
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene2"]
+position = Vector2( -2828.6, -297.64 )
+polygon = PoolVector2Array( 233.082, -576.348, 222.132, 29.1613, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
+
+[node name="Chars" type="Node2D" parent="."]
+
+[node name="CharAsso" parent="Chars" instance=ExtResource( 74 )]
+position = Vector2( 2763.96, 249.399 )
+
+[node name="CharHandi" parent="Chars" instance=ExtResource( 10 )]
+position = Vector2( -1901.39, 182.91 )
 
 [node name="Decor" type="Node2D" parent="."]
 position = Vector2( 1264.96, 0 )
@@ -376,33 +404,6 @@ position = Vector2( -3777.42, -746.058 )
 
 [node name="barrriere10" parent="Decor" instance=ExtResource( 34 )]
 position = Vector2( -3387.1, -746.058 )
-
-[node name="ChangementScene" type="Area2D" parent="."]
-position = Vector2( 4493.12, 255.254 )
-script = ExtResource( 4 )
-nomScene = "TeteCortege"
-posX = 50
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( 1547.36, -330.01 )
-polygon = PoolVector2Array( 233.082, -576.348, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
-
-[node name="ChangementScene2" type="Area2D" parent="."]
-position = Vector2( -1552.5, 321.347 )
-script = ExtResource( 4 )
-nomScene = "FinCortege"
-posX = -3150
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene2"]
-position = Vector2( -2828.6, -297.64 )
-polygon = PoolVector2Array( 233.082, -576.348, 222.132, 29.1613, 241.558, 627.202, 432.261, 631.44, 398.358, -610.251 )
-
-[node name="char-3" type="Sprite" parent="."]
-position = Vector2( 2733.72, -127.89 )
-texture = ExtResource( 74 )
-
-[node name="CharHandi" parent="." instance=ExtResource( 10 )]
-position = Vector2( -1901.39, 182.91 )
 
 [node name="foule" type="Node2D" parent="."]
 
