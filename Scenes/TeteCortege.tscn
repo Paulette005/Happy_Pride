@@ -1,4 +1,4 @@
-[gd_scene load_steps=175 format=2]
+[gd_scene load_steps=184 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -171,6 +171,14 @@
 [ext_resource path="res://Assets/decor/batiments/resto vert.png" type="Texture" id=169]
 [ext_resource path="res://Assets/decor/batiments/resto chandelier.png" type="Texture" id=170]
 [ext_resource path="res://Assets/decor/batiments/vetements.png" type="Texture" id=171]
+[ext_resource path="res://Assets/decor/batiments/kebab.png" type="Texture" id=172]
+[ext_resource path="res://Assets/decor/batiments/magasin logo rose.png" type="Texture" id=173]
+[ext_resource path="res://Assets/decor/batiments/banque.png" type="Texture" id=174]
+[ext_resource path="res://Assets/decor/batiments/porte grande.png" type="Texture" id=175]
+[ext_resource path="res://Assets/decor/batiments/olivier.png" type="Texture" id=176]
+[ext_resource path="res://Assets/decor/batiments/porte moyenne.png" type="Texture" id=177]
+[ext_resource path="res://Assets/decor/batiments/legumes.png" type="Texture" id=178]
+[ext_resource path="res://Assets/decor/batiments/porte bleue.png" type="Texture" id=180]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -180,6 +188,9 @@ extents = Vector2( 3719.77, 246.181 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 7596.15, 50 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 47.653
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -225,11 +236,11 @@ polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897
 
 [node name="decor" type="Node2D" parent="."]
 __meta__ = {
-"_edit_group_": true,
 "_edit_lock_": true
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
+visible = false
 position = Vector2( 0, -1003.24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="decor/StaticBody2D"]
@@ -272,6 +283,71 @@ texture = ExtResource( 169 )
 [node name="vetements" type="Sprite" parent="decor/batimentss"]
 position = Vector2( -4620.41, -1121.9 )
 texture = ExtResource( 171 )
+
+[node name="porte grande" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 2039.2, -1188.26 )
+texture = ExtResource( 175 )
+
+[node name="kebab" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 4565.5, -1152.77 )
+texture = ExtResource( 172 )
+
+[node name="porte moyenne2" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 6533.6, -1186.85 )
+texture = ExtResource( 177 )
+
+[node name="pharmacie2" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 7242.81, -1157.87 )
+texture = ExtResource( 167 )
+
+[node name="banque" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 5724.46, -1150.37 )
+texture = ExtResource( 174 )
+
+[node name="porte gris vert2" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 5037.89, -1160.48 )
+texture = ExtResource( 166 )
+
+[node name="legumes" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 3731.23, -1144.14 )
+scale = Vector2( 1, 1.02176 )
+texture = ExtResource( 178 )
+
+[node name="magasin logo rose" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 2792.76, -1174.32 )
+texture = ExtResource( 173 )
+
+[node name="porte moyenne" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -5409.2, -1168.65 )
+texture = ExtResource( 177 )
+
+[node name="olivier" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -1078.28, -1034.46 )
+texture = ExtResource( 176 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="decor/batimentss/olivier"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="decor/batimentss/olivier/StaticBody2D"]
+position = Vector2( -16.8921, 159.029 )
+shape = SubResource( 4 )
+
+[node name="olivier2" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 6334.45, -1037.65 )
+texture = ExtResource( 176 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="decor/batimentss/olivier2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="decor/batimentss/olivier2/StaticBody2D2"]
+position = Vector2( -16.8921, 159.029 )
+shape = SubResource( 4 )
+
+[node name="resto vert2" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 8717.41, -1149.41 )
+texture = ExtResource( 169 )
+
+[node name="porte bleue" type="Sprite" parent="decor/batimentss"]
+position = Vector2( 7966.09, -1221.15 )
+texture = ExtResource( 180 )
 
 [node name="sol" type="Sprite" parent="decor"]
 material = ExtResource( 6 )
