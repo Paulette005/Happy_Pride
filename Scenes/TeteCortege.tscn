@@ -1,4 +1,4 @@
-[gd_scene load_steps=166 format=2]
+[gd_scene load_steps=175 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -165,6 +165,21 @@
 [ext_resource path="res://Scenes/foule/PNJ dyacishet/photographe.tscn" type="PackedScene" id=163]
 [ext_resource path="res://Scenes/foule/PNJ dansent/boy with boobs.tscn" type="PackedScene" id=164]
 [ext_resource path="res://Assets/chars/char02_redi_raccord.png" type="Texture" id=165]
+[ext_resource path="res://Assets/decor/batiments/porte gris vert.png" type="Texture" id=166]
+[ext_resource path="res://Assets/decor/batiments/pharmacie.png" type="Texture" id=167]
+[ext_resource path="res://Assets/decor/batiments/barbier.png" type="Texture" id=168]
+[ext_resource path="res://Assets/decor/batiments/resto vert.png" type="Texture" id=169]
+[ext_resource path="res://Assets/decor/batiments/resto chandelier.png" type="Texture" id=170]
+[ext_resource path="res://Assets/decor/batiments/vetements.png" type="Texture" id=171]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2950.03, 246.181 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 3719.77, 246.181 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 7596.15, 50 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 4.55042, 6.82556 )
@@ -189,7 +204,7 @@ visible = false
 current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = -5600
-limit_top = -920
+limit_top = -1380
 limit_right = 9000
 limit_bottom = 1000
 limit_smoothed = true
@@ -214,55 +229,100 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="StaticBody2D" type="StaticBody2D" parent="decor"]
+position = Vector2( 0, -1003.24 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( -3014.8, -142.544 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 5423.79, -149.671 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 1521.02, 2191.36 )
+z_index = 100
+z_as_relative = false
+shape = SubResource( 3 )
+
+[node name="batimentss" type="Node2D" parent="decor"]
+z_index = -3890
+
+[node name="porte gris vert" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -1982.95, -1153.18 )
+texture = ExtResource( 166 )
+
+[node name="pharmacie" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -1306.71, -1153.18 )
+texture = ExtResource( 167 )
+
+[node name="barbier" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -433.917, -1143.71 )
+texture = ExtResource( 168 )
+
+[node name="resto chandelier" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -3630.62, -1151.66 )
+texture = ExtResource( 170 )
+
+[node name="resto vert" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -2692.18, -1134.85 )
+texture = ExtResource( 169 )
+
+[node name="vetements" type="Sprite" parent="decor/batimentss"]
+position = Vector2( -4620.41, -1121.9 )
+texture = ExtResource( 171 )
+
 [node name="sol" type="Sprite" parent="decor"]
 material = ExtResource( 6 )
-position = Vector2( 1625.76, 36.1009 )
-scale = Vector2( 25, 3.8338 )
+position = Vector2( 1606.88, -201.755 )
+scale = Vector2( 25.0629, 4.78523 )
 z_index = -4000
 texture = ExtResource( 7 )
 script = ExtResource( 8 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_lock_": true
 }
 
 [node name="dechets3" type="Sprite" parent="decor/sol"]
-position = Vector2( 135.247, 114.933 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( 135.661, 141.788 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets" type="Sprite" parent="decor/sol"]
-position = Vector2( 30.4612, 114.762 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( 31.1379, 141.651 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets2" type="Sprite" parent="decor/sol"]
-position = Vector2( 68.7629, -88.9916 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( 69.3435, -21.5914 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets4" type="Sprite" parent="decor/sol"]
-position = Vector2( -21.681, -57.3086 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( -20.8734, 3.7922 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets5" type="Sprite" parent="decor/sol"]
-position = Vector2( -67.6949, 100.614 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( -66.7717, 130.316 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets6" type="Sprite" parent="decor/sol"]
-position = Vector2( -135.268, 98.215 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( -134.175, 128.394 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets7" type="Sprite" parent="decor/sol"]
-position = Vector2( -193.043, -40.9152 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( -191.805, 16.9262 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets8" type="Sprite" parent="decor/sol"]
-position = Vector2( -235.995, 74.6549 )
-scale = Vector2( 0.04, 0.260838 )
+position = Vector2( -234.649, 109.518 )
+scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="trottoir angle" type="Sprite" parent="decor"]
@@ -272,6 +332,17 @@ texture = ExtResource( 78 )
 
 [node name="trottoir angle2" type="Sprite" parent="decor"]
 position = Vector2( 290.41, -869.741 )
+rotation = 3.14159
+z_index = -3900
+texture = ExtResource( 78 )
+
+[node name="trottoir angle3" type="Sprite" parent="decor"]
+position = Vector2( 1249.91, -1361.81 )
+z_index = -3900
+texture = ExtResource( 78 )
+
+[node name="trottoir angle4" type="Sprite" parent="decor"]
+position = Vector2( 296.403, -1368.97 )
 rotation = 3.14159
 z_index = -3900
 texture = ExtResource( 78 )
@@ -986,6 +1057,24 @@ position = Vector2( -460.383, 503.459 )
 [node name="danse jupe verte etoilee" parent="Foule/cortege 2/dansent" instance=ExtResource( 110 )]
 position = Vector2( -1191.87, -11.7891 )
 
+[node name="danse robe bleue" parent="Foule/cortege 2/dansent" instance=ExtResource( 100 )]
+position = Vector2( -242.32, 620.394 )
+
+[node name="danse robe bleue2" parent="Foule/cortege 2/dansent" instance=ExtResource( 60 )]
+position = Vector2( -382.01, 604.52 )
+
+[node name="danse robe jaune" parent="Foule/cortege 2/dansent" instance=ExtResource( 113 )]
+position = Vector2( -702.67, 385.459 )
+
+[node name="danse robe verte" parent="Foule/cortege 2/dansent" instance=ExtResource( 108 )]
+position = Vector2( -483.61, -259.026 )
+
+[node name="danse rouge" parent="Foule/cortege 2/dansent" instance=ExtResource( 55 )]
+position = Vector2( -1328.1, 302.914 )
+
+[node name="dane hort rose" parent="Foule/cortege 2/dansent" instance=ExtResource( 95 )]
+position = Vector2( -1188.41, 448.955 )
+
 [node name="Chars" type="Node2D" parent="."]
 
 [node name="Char01" parent="Chars" instance=ExtResource( 64 )]
@@ -1082,22 +1171,4 @@ position = Vector2( 1409.03, 326.115 )
 
 [node name="Chaine salopette" parent="Chars/Char02" instance=ExtResource( 145 )]
 position = Vector2( 1301.7, -110.155 )
-
-[node name="danse robe bleue" parent="." instance=ExtResource( 100 )]
-position = Vector2( -2957.79, 594.028 )
-
-[node name="danse robe bleue2" parent="." instance=ExtResource( 60 )]
-position = Vector2( -3097.48, 578.154 )
-
-[node name="danse robe jaune" parent="." instance=ExtResource( 113 )]
-position = Vector2( -3418.14, 359.093 )
-
-[node name="danse robe verte" parent="." instance=ExtResource( 108 )]
-position = Vector2( -3199.08, -285.392 )
-
-[node name="danse rouge" parent="." instance=ExtResource( 55 )]
-position = Vector2( -4043.57, 276.548 )
-
-[node name="dane hort rose" parent="." instance=ExtResource( 95 )]
-position = Vector2( -3903.88, 422.589 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
