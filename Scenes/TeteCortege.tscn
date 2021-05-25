@@ -1,4 +1,4 @@
-[gd_scene load_steps=187 format=2]
+[gd_scene load_steps=189 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -180,6 +180,8 @@
 [ext_resource path="res://Assets/decor/batiments/legumes.png" type="Texture" id=178]
 [ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=179]
 [ext_resource path="res://Assets/decor/batiments/porte bleue.png" type="Texture" id=180]
+[ext_resource path="res://Scripts/danse saute.gd" type="Script" id=181]
+[ext_resource path="res://Scenes/danse manager.tscn" type="PackedScene" id=182]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -230,7 +232,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 8033.9, 114.983 )
+position = Vector2( 2292.19, 482.678 )
 script = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="Player"]
@@ -486,9 +488,6 @@ texture = ExtResource( 67 )
 
 [node name="trottoires bas" type="Node2D" parent="decor"]
 position = Vector2( 7135.08, 1135.92 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="trottoir bas" type="Sprite" parent="decor/trottoires bas"]
 texture = ExtResource( 74 )
@@ -787,6 +786,8 @@ position = Vector2( -1314.46, 915.835 )
 [node name="dansent" type="Node2D" parent="Foule/cortege 1"]
 position = Vector2( -3879.67, 14.1453 )
 
+[node name="danse manager" parent="Foule/cortege 1/dansent" instance=ExtResource( 182 )]
+
 [node name="pop notes" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -119.103, -344.814 )
 tempo = 65
@@ -807,6 +808,7 @@ position = Vector2( -1268.93, -83.1675 )
 
 [node name="danse robe blanche" parent="Foule/cortege 1/dansent" instance=ExtResource( 111 )]
 position = Vector2( -124.493, 94.0702 )
+script = ExtResource( 181 )
 
 [node name="danse bras levés" parent="Foule/cortege 1/dansent" instance=ExtResource( 90 )]
 position = Vector2( -517.498, -183.834 )
@@ -819,6 +821,7 @@ position = Vector2( -14.8511, 35.7964 )
 
 [node name="danse drapeau pan2" parent="Foule/cortege 1/dansent" instance=ExtResource( 112 )]
 position = Vector2( -369.921, 49.4161 )
+script = ExtResource( 181 )
 
 [node name="danse robe jaune" parent="Foule/cortege 1/dansent" instance=ExtResource( 113 )]
 position = Vector2( -568.988, -83.2788 )
@@ -846,6 +849,7 @@ position = Vector2( -1060.15, 150.305 )
 
 [node name="danse genderqueer" parent="Foule/cortege 1/dansent" instance=ExtResource( 103 )]
 position = Vector2( -402.864, 262.439 )
+script = ExtResource( 181 )
 
 [node name="danseGrosShort" parent="Foule/cortege 1/dansent" instance=ExtResource( 62 )]
 position = Vector2( -1200.56, 234.391 )
@@ -882,6 +886,7 @@ position = Vector2( -1140.05, 358.067 )
 
 [node name="danse drapeau lesbienne" parent="Foule/cortege 1/dansent" instance=ExtResource( 96 )]
 position = Vector2( -675.576, 241.199 )
+script = ExtResource( 181 )
 
 [node name="danse short rainbow" parent="Foule/cortege 1/dansent" instance=ExtResource( 101 )]
 position = Vector2( -31.9736, 318.674 )
@@ -928,8 +933,8 @@ position = Vector2( -1574.14, 413.192 )
 [node name="queen dansent" parent="Foule/cortege 1/dansent" instance=ExtResource( 114 )]
 position = Vector2( -1711.18, -65.2081 )
 
-[node name="bear drapeau" parent="Foule/cortege 1" instance=ExtResource( 31 )]
-position = Vector2( -5925.14, 673.008 )
+[node name="bear drapeau" parent="Foule/cortege 1/dansent" instance=ExtResource( 31 )]
+position = Vector2( -2045.47, 658.863 )
 
 [node name="cortege 2" type="Node2D" parent="Foule"]
 position = Vector2( 1273.13, -49.2874 )
