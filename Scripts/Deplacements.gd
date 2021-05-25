@@ -36,7 +36,8 @@ func _input(event):
 			consultationZine.visible = true
 		else:
 			consultationZine.visible = false
-			
+	if event.is_action_pressed("pause"):
+		print("test")
 func get_input():
 	velocite = Vector2 ()
 	if consultationZine.visible == false && Dialogues.visible == false:
