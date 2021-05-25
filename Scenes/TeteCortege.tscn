@@ -787,6 +787,7 @@ position = Vector2( -1314.46, 915.835 )
 position = Vector2( -3879.67, 14.1453 )
 
 [node name="danse manager" parent="Foule/cortege 1/dansent" instance=ExtResource( 182 )]
+tempo = 65
 
 [node name="pop notes" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -119.103, -344.814 )
@@ -825,6 +826,7 @@ script = ExtResource( 181 )
 
 [node name="danse robe jaune" parent="Foule/cortege 1/dansent" instance=ExtResource( 113 )]
 position = Vector2( -568.988, -83.2788 )
+script = ExtResource( 181 )
 
 [node name="danse rouge" parent="Foule/cortege 1/dansent" instance=ExtResource( 55 )]
 position = Vector2( -621.795, 14.2032 )
@@ -846,6 +848,7 @@ position = Vector2( -1493.04, 159.161 )
 
 [node name="danse tshirt rose" parent="Foule/cortege 1/dansent" instance=ExtResource( 102 )]
 position = Vector2( -1060.15, 150.305 )
+script = ExtResource( 181 )
 
 [node name="danse genderqueer" parent="Foule/cortege 1/dansent" instance=ExtResource( 103 )]
 position = Vector2( -402.864, 262.439 )
@@ -865,12 +868,14 @@ position = Vector2( -1164.95, -21.7303 )
 
 [node name="camion dos bleue" parent="Foule/cortege 1/dansent" instance=ExtResource( 107 )]
 position = Vector2( -808.9, 162.495 )
+script = ExtResource( 181 )
 
 [node name="Danse Bequille crete rose" parent="Foule/cortege 1/dansent" instance=ExtResource( 57 )]
 position = Vector2( -350.316, 362.809 )
 
 [node name="danse raye" parent="Foule/cortege 1/dansent" instance=ExtResource( 104 )]
 position = Vector2( -274.903, 354.481 )
+script = ExtResource( 181 )
 
 [node name="danse fauteuil rainbow" parent="Foule/cortege 1/dansent" instance=ExtResource( 105 )]
 position = Vector2( -272.658, 486.932 )
@@ -880,6 +885,7 @@ position = Vector2( -873.352, 382.04 )
 
 [node name="danse dore2" parent="Foule/cortege 1/dansent" instance=ExtResource( 54 )]
 position = Vector2( -765.474, 567.83 )
+script = ExtResource( 181 )
 
 [node name="danse drapeau" parent="Foule/cortege 1/dansent" instance=ExtResource( 106 )]
 position = Vector2( -1140.05, 358.067 )
@@ -890,6 +896,7 @@ script = ExtResource( 181 )
 
 [node name="danse short rainbow" parent="Foule/cortege 1/dansent" instance=ExtResource( 101 )]
 position = Vector2( -31.9736, 318.674 )
+script = ExtResource( 181 )
 
 [node name="danse drapeau pan" parent="Foule/cortege 1/dansent" instance=ExtResource( 52 )]
 position = Vector2( -697.18, 346.067 )
@@ -1064,6 +1071,8 @@ position = Vector2( -1279.27, -807.01 )
 [node name="dansent" type="Node2D" parent="Foule/cortege 2"]
 position = Vector2( -3988.6, 22.9213 )
 
+[node name="danse manager" parent="Foule/cortege 2/dansent" instance=ExtResource( 182 )]
+
 [node name="pop notes" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -47.7805, -145.042 )
 
@@ -1075,18 +1084,23 @@ position = Vector2( -987.879, -156.368 )
 
 [node name="danse raye" parent="Foule/cortege 2/dansent" instance=ExtResource( 104 )]
 position = Vector2( -778.074, -6.44979 )
+script = ExtResource( 181 )
 
 [node name="Danse afro leve poing" parent="Foule/cortege 2/dansent" instance=ExtResource( 56 )]
 position = Vector2( -583.188, -73.1917 )
+script = ExtResource( 181 )
 
 [node name="danse drapeau2" parent="Foule/cortege 2/dansent" instance=ExtResource( 97 )]
 position = Vector2( 28.1687, -107.898 )
+script = ExtResource( 181 )
 
 [node name="danse drapeau lesbienne" parent="Foule/cortege 2/dansent" instance=ExtResource( 96 )]
 position = Vector2( -743.369, 121.695 )
+script = ExtResource( 181 )
 
 [node name="danse drapeau pan" parent="Foule/cortege 2/dansent" instance=ExtResource( 112 )]
 position = Vector2( -449.704, 159.07 )
+script = ExtResource( 181 )
 
 [node name="danse boobs rainbow" parent="Foule/cortege 2/dansent" instance=ExtResource( 122 )]
 position = Vector2( -310.664, 91.2379 )
@@ -1105,9 +1119,11 @@ position = Vector2( -580.142, 351.294 )
 
 [node name="danse nb" parent="Foule/cortege 2/dansent" instance=ExtResource( 129 )]
 position = Vector2( 16.4514, 364.801 )
+script = ExtResource( 181 )
 
 [node name="danse genderqueer" parent="Foule/cortege 2/dansent" instance=ExtResource( 103 )]
 position = Vector2( -244.138, 276.536 )
+script = ExtResource( 181 )
 
 [node name="danse poisson" parent="Foule/cortege 2/dansent" instance=ExtResource( 130 )]
 position = Vector2( -215.811, 377.99 )
@@ -1147,6 +1163,7 @@ position = Vector2( -107.985, 506.129 )
 
 [node name="danse dore" parent="Foule/cortege 2/dansent" instance=ExtResource( 54 )]
 position = Vector2( 52.196, 193.776 )
+script = ExtResource( 181 )
 
 [node name="danse mme noire" parent="Foule/cortege 2/dansent" instance=ExtResource( 53 )]
 position = Vector2( 86.9016, 415.36 )
