@@ -1,11 +1,16 @@
 extends Control
 
+
+onready var fragmentsZine = get_node("/root/Node2D")
 onready var numPageCourant = -1
 onready var p1 = $Pages/PageGauche
 onready var p2 = $Pages/PageDroite
 
+onready var page = get_node("Pages/PageDroite/Page")
+onready var page2 = get_node("Pages/PageGauche/Page")
+
 var interactionPNJ
-var prenomPNJ
+var pages
 
 func _ready():
 	if interactionPNJ == true:
@@ -21,6 +26,8 @@ func _input(event):
 		print(numPageCourant)
 
 func _process(delta):
+	if interactionPNJ == true:
+		print("test")
 	if numPageCourant == -1:
 		p1.visible = false
 	else:
@@ -30,4 +37,11 @@ func _process(delta):
 		p2.visible = false
 	else:
 		p2.visible = true
+	
+func chargementPages():
+	pages = load ("res://Scenes/Zine/Page.tscn").instance()
+	page.chargImg()
+	print("compte:",fragmentsZine.fragmentsZine)
 
+
+	

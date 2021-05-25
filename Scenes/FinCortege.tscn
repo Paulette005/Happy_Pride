@@ -404,9 +404,11 @@ position = Vector2( 33.1558, -101.938 )
 
 [node name="Raphael" parent="PNJs" instance=ExtResource( 34 )]
 position = Vector2( 1866.85, -172.287 )
+script = ExtResource( 33 )
 
 [node name="Jasmine" parent="PNJs" instance=ExtResource( 51 )]
 position = Vector2( 2597.48, 308.518 )
+script = ExtResource( 33 )
 
 [node name="Khadija" parent="PNJs" instance=ExtResource( 35 )]
 position = Vector2( -255.626, 208.424 )

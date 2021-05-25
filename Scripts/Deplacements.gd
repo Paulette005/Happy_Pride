@@ -8,36 +8,20 @@ var velocite = Vector2 ()
 var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 var gestionAnimations = false
+var playerZone
 
-#onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	$AnimatedSprite.connect("animation_finished", self, "chang_anim")
 	#$AnimatedSprite.connect("frame_changed", self, "frame_changed")
-	#$Timer.connect("timeout", self, "dansedanse")
+	$Timer.connect("timeout", self, "dansedanse")
 	var singleton = get_node("/root/Singleton")
 	#global_position = singleton.posPlayerSingleton
 	print(global_position)
 	
-				
-func _input(event):
-	if Dialogues.visible == false && consultationZine.visible == false:
-		if event.is_action_pressed("ui_accept") && !gestionAnimations:
-			gestionAnimations = true
-			$AnimatedSprite.play("paillettes"+direction)
-			var partInstance = LancerParticules.instance()
-			partInstance.lancer_particules(global_position)
-			get_parent().add_child(partInstance)
-		
-	if event.is_action_pressed("consultationZine"):
-		if consultationZine.visible == false:
-			consultationZine.visible = true
-		else:
-			consultationZine.visible = false
-	if event.is_action_pressed("pause"):
-		print("test")
+	
 func get_input():
 	velocite = Vector2 ()
 	if consultationZine.visible == false && Dialogues.visible == false:
@@ -77,8 +61,21 @@ func _physics_process(delta):
 func chang_anim():
 	gestionAnimations = false
 
+#func gestiondanse():
+#	if consultationZine.visible == false && Dialogues.visible == false:
+#		$Timer.start(5)
+		
+func lancerpaillettes():
+	if !gestionAnimations:
+		gestionAnimations = true
+		$AnimatedSprite.play("paillettes"+direction)
+		if direction == "Gauche" || direction == "Droite":
+			var partInstance = LancerParticules.instance()
+			partInstance.lancer_particules(global_position)
+			get_parent().add_child(partInstance)
+		
 #func dansedanse():
 #	gestionAnimations = true
 #	$AnimatedSprite.play("WalkGauche")
-#	print("test")
+#	print("testanim")
 

@@ -1,6 +1,6 @@
 extends Node2D
 
-var playerZone = false
+
 var prenomPNJ
 var index_dialogueArray = 0
 var numArray = 0
@@ -11,14 +11,17 @@ var rdm = RandomNumberGenerator.new()
 var dirPlayer
 var messagefin = 0
 var prenomFin = "Alex"
+var playerZone = false
 
+#permet de débloquer les morceaux du zine. Var passe true lorqu'on parle une fois à un pnj
 export var interactionPNJ = false
 
-onready var directionsPlayer = get_node("/root/Node2D/Player")
+onready var Player = get_node("/root/Node2D/Player")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
-#onready var ZineInteractions = get_node("/root/Node2D/CanvasLayer/Zine")
+onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
+# Pour compter les morceaux de zine récoltés
 onready var fragmentsZine = get_node("/root/Node2D")
 
 func _ready():
@@ -30,7 +33,9 @@ func on_body_entered(body):
 	if body.name == "Player":
 		playerZone = true
 		Interactions.visible = true
+		$AnimatedSprite.set_material(preload("res://Shaders/Outline.tres"))
 		print(prenomPNJ)
+		print("morceauZine: ", interactionPNJ)
 		
 func on_body_exited(body):
 	if body.name == "Player":
@@ -52,12 +57,15 @@ func chang_directions():
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
 		Interactions.visible = false
-		if directionsPlayer.dirPlayer <= 1:
-			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)+2)
+		if Player.dirPlayer <= 1:
+			$AnimatedSprite.set_frame((Player.dirPlayer)+2)
 		else:
-			$AnimatedSprite.set_frame((directionsPlayer.dirPlayer)-2)
+			$AnimatedSprite.set_frame((Player.dirPlayer)-2)
 			
 		lancement_dialogue()
+		
+	if event.is_action_pressed("ui_accept") && Dialogues.visible == false && Interactions.visible == false && playerZone == false && consultationZine.visible == false:
+			Player.lancerpaillettes()
 		
 	if event.is_action_pressed("ui_accept") && messagefin == 1:
 		lancement_dialogue()
@@ -65,7 +73,7 @@ func _input(event):
 func afficher_message_fin():
 	messagefin += 1
 	parle()
-	
+
 func lancement_dialogue():
 	if messagefin == 1:
 		BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
@@ -92,6 +100,8 @@ func parle():
 		if interactionPNJ == false:
 			fragmentsZine.fragmentsZine += 1
 			interactionPNJ = true
+			consultationZine.chargementPages()
+
 		if Dialogues.visible == false && messagefin == 1:
 			fragmentsZine.fragmentsZine += 1
 			messagefin += 1
