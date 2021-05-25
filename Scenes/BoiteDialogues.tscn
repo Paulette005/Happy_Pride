@@ -1,14 +1,41 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Shaders/flou.shader" type="Shader" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/BoiteDialogues.gd" type="Script" id=3]
 [ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=4]
 [ext_resource path="res://Assets/UI/rectangle-dialogue.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/triangle/trianglenoir01.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/triangle/trianglenoir00.png" type="Texture" id=7]
+[ext_resource path="res://Assets/UI/triangle/trianglenoir02.png" type="Texture" id=8]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
 shader_param/amount = 2.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "triangle",
+"speed": 6.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "mouvTriangle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 806.687, 112.788 ), Vector2( 806.687, 118.788 ) ]
+}
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -42,10 +69,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Icone" type="Sprite" parent="BoiteDialogues"]
-position = Vector2( 791.336, 123.471 )
-scale = Vector2( 0.614155, 0.403692 )
-texture = ExtResource( 2 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="BoiteDialogues"]
+position = Vector2( 806.687, 115.926 )
+scale = Vector2( 0.334155, 0.323682 )
+z_index = 1
+frames = SubResource( 2 )
+animation = "triangle"
+frame = 2
+playing = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/AnimatedSprite"]
+anims/mouvTriangle = SubResource( 3 )
 
 [node name="Portraits" type="TextureRect" parent="BoiteDialogues"]
 margin_left = -216.062

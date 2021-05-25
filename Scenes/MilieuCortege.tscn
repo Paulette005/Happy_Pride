@@ -180,10 +180,6 @@ position = Vector2( -1901.39, 182.91 )
 
 [node name="Decor" type="Node2D" parent="."]
 position = Vector2( 1264.96, 0 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
 
 [node name="batiments" type="Node2D" parent="Decor"]
 z_index = -3850
@@ -519,7 +515,7 @@ position = Vector2( 3033.38, -1253.45 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Decor/StaticBody2D"]
-position = Vector2( 28.0928, -1725.54 )
+position = Vector2( -19.9072, -1479.54 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Decor/StaticBody2D"]

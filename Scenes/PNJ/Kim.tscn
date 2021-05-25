@@ -7,8 +7,6 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-asiat-g.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mec-asiat-face.png" type="Texture" id=6]
 
-
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ],

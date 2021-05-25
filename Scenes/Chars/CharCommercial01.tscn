@@ -5,8 +5,6 @@
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 01 Roller Fever.wav" type="AudioStream" id=3]
 [ext_resource path="res://Scenes/effets/effet-enceinte.tscn" type="PackedScene" id=4]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1191.09, 134.459 )
 

@@ -72,20 +72,25 @@ animations = [ {
 "name": "paillettesGauche",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 47 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 52 ), ExtResource( 46 ) ],
-"loop": false,
-"name": "paillettesDroite",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ) ],
 "loop": true,
-"name": "IdleGauche",
+"name": "IdleDos",
 "speed": 3.5
 }, {
 "frames": [ ExtResource( 25 ), ExtResource( 25 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "IdleFace",
 "speed": 3.5
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "IdleGauche",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "WalkDos",
+"speed": 7.0
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
@@ -102,15 +107,10 @@ animations = [ {
 "name": "WalkDroite",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 40 ), ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
-"loop": true,
-"name": "WalkDos",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ) ],
-"loop": true,
-"name": "IdleDos",
-"speed": 3.5
+"frames": [ ExtResource( 47 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 52 ), ExtResource( 46 ) ],
+"loop": false,
+"name": "paillettesDroite",
+"speed": 12.0
 }, {
 "frames": [ ExtResource( 32 ), ExtResource( 32 ), ExtResource( 29 ) ],
 "loop": true,
@@ -125,13 +125,12 @@ radius = 36.4725
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "paillettesGauche"
-frame = 11
-playing = true
+animation = "IdleDroite"
+frame = 1
 offset = Vector2( 0.968384, -168.887 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8.16992, -19.7057 )
 shape = SubResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
+position = Vector2( -6.71909, -12.7688 )

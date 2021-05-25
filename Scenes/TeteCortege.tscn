@@ -1,4 +1,4 @@
-[gd_scene load_steps=184 format=2]
+[gd_scene load_steps=187 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -178,6 +178,7 @@
 [ext_resource path="res://Assets/decor/batiments/olivier.png" type="Texture" id=176]
 [ext_resource path="res://Assets/decor/batiments/porte moyenne.png" type="Texture" id=177]
 [ext_resource path="res://Assets/decor/batiments/legumes.png" type="Texture" id=178]
+[ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=179]
 [ext_resource path="res://Assets/decor/batiments/porte bleue.png" type="Texture" id=180]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -189,7 +190,13 @@ extents = Vector2( 3719.77, 246.181 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 7596.15, 50 )
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 1086.73, 120.213 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 144.193, 1121.33 )
+
+[sub_resource type="CircleShape2D" id=6]
 radius = 47.653
 
 [node name="Node2D" type="Node2D"]
@@ -214,10 +221,10 @@ visible = false
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 1.5, 1.5 )
-limit_left = -5600
+limit_left = -5200
 limit_top = -1380
-limit_right = 9000
-limit_bottom = 1000
+limit_right = 8700
+limit_bottom = 1135
 limit_smoothed = true
 editor_draw_limits = true
 script = ExtResource( 3 )
@@ -225,13 +232,15 @@ script = ExtResource( 3 )
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 8033.9, 114.983 )
 script = ExtResource( 5 )
-vitesse = 300
+
+[node name="Timer" type="Timer" parent="Player"]
 
 [node name="ChangementScene" type="Area2D" parent="."]
-visible = false
+script = ExtResource( 179 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( -1593.3, -56.6691 )
+position = Vector2( -4429.92, -32.1148 )
+scale = Vector2( 1, 1.20727 )
 polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
 
 [node name="decor" type="Node2D" parent="."]
@@ -240,7 +249,6 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
-visible = false
 position = Vector2( 0, -1003.24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="decor/StaticBody2D"]
@@ -256,6 +264,14 @@ position = Vector2( 1521.02, 2191.36 )
 z_index = 100
 z_as_relative = false
 shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 686.315, -263.723 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 8809.25, 1204.81 )
+shape = SubResource( 5 )
 
 [node name="batimentss" type="Node2D" parent="decor"]
 z_index = -3890
@@ -303,6 +319,9 @@ texture = ExtResource( 167 )
 [node name="banque" type="Sprite" parent="decor/batimentss"]
 position = Vector2( 5724.46, -1150.37 )
 texture = ExtResource( 174 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="porte gris vert2" type="Sprite" parent="decor/batimentss"]
 position = Vector2( 5037.89, -1160.48 )
@@ -329,7 +348,7 @@ texture = ExtResource( 176 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="decor/batimentss/olivier/StaticBody2D"]
 position = Vector2( -16.8921, 159.029 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="olivier2" type="Sprite" parent="decor/batimentss"]
 position = Vector2( 6334.45, -1037.65 )
@@ -339,7 +358,7 @@ texture = ExtResource( 176 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="decor/batimentss/olivier2/StaticBody2D2"]
 position = Vector2( -16.8921, 159.029 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
 [node name="resto vert2" type="Sprite" parent="decor/batimentss"]
 position = Vector2( 8717.41, -1149.41 )
@@ -431,7 +450,7 @@ __meta__ = {
 }
 
 [node name="trottoir" type="Sprite" parent="decor/trottoires"]
-position = Vector2( -11844.6, 0 )
+position = Vector2( -12121, 3.12854 )
 z_index = -3980
 texture = ExtResource( 67 )
 
@@ -1026,10 +1045,10 @@ position = Vector2( -1625.19, 727.074 )
 position = Vector2( -1095.07, -159.849 )
 
 [node name="grand mere et fils" parent="Foule/cortege 2" instance=ExtResource( 161 )]
-position = Vector2( 447.461, -764.199 )
+position = Vector2( 447.461, -729.199 )
 
 [node name="grand pere" parent="Foule/cortege 2" instance=ExtResource( 162 )]
-position = Vector2( 649.626, -776.091 )
+position = Vector2( 649.626, -744.091 )
 
 [node name="hetero 1 " parent="Foule/cortege 2" instance=ExtResource( 160 )]
 position = Vector2( -1108.02, -804.632 )

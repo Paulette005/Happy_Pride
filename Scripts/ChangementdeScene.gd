@@ -1,7 +1,7 @@
 extends Area2D
 
 export var nomScene = "MilieuCortege"
-export var posX = 100
+export var posX = 10
 onready var posPlayer = (get_node("/root/Node2D/Player"))
 
 func _ready():
