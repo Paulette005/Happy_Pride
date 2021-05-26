@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ autres/banderole asso.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+[node name="banderole asso" type="Sprite"]
+position = Vector2( 3.61242, -1.16931 )
+texture = ExtResource( 1 )
+offset = Vector2( -6.73474, -464.699 )
+script = ExtResource( 2 )
+add_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( 91.0309, 1.84668, -72.103, 6.89209, -53.6033, -640.598, 85.9855, -637.235 )

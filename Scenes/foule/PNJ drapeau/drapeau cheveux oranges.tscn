@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PNJ/PNJ drapeau/drapeau cheveux oranges.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
+
+
+[node name="drapeau cheveux oranges" type="Sprite"]
+position = Vector2( 1.36743, -10.149 )
+texture = ExtResource( 1 )
+offset = Vector2( -15.7144, -215.513 )
+script = ExtResource( 2 )

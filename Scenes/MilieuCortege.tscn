@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=119 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -18,7 +18,7 @@
 [ext_resource path="res://Scenes/foule/PNJ autres/farandole.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Scenes/foule/PNJ autres/boboPied.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Scenes/foule/PNJ autres/cherche son pote.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Scenes/foule/PNJ autres/banderole blanche pma.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/foule/PNJ avancent/bouteille eau.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Scenes/decor/plot3.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Scenes/decor/plot1.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Scenes/decor/plot2.tscn" type="PackedScene" id=22]
@@ -106,6 +106,14 @@
 [ext_resource path="res://Assets/decor/batiments/magasin logo rose.png" type="Texture" id=104]
 [ext_resource path="res://Assets/decor/batiments/porte grande.png" type="Texture" id=105]
 [ext_resource path="res://Assets/decor/batiments/legumes.png" type="Texture" id=106]
+[ext_resource path="res://Scenes/foule/PNJ autres/banderole asso.tscn" type="PackedScene" id=107]
+[ext_resource path="res://Scenes/foule/PNJ avancent/caché masque casquette rose.tscn" type="PackedScene" id=108]
+[ext_resource path="res://Scenes/foule/PNJ avancent/robe jaune.tscn" type="PackedScene" id=109]
+[ext_resource path="res://Scenes/foule/PNJ drapeau/drapeau cheveux oranges.tscn" type="PackedScene" id=110]
+[ext_resource path="res://Scenes/foule/PNJ autres/banderole handi.tscn" type="PackedScene" id=111]
+[ext_resource path="res://Scenes/foule/PNJ drapeau/drapeau moustache.tscn" type="PackedScene" id=112]
+[ext_resource path="res://Scenes/foule/PNJ avancent/tshint vioet etoile.tscn" type="PackedScene" id=113]
+[ext_resource path="res://Scenes/foule/PNJ avancent/mec kipa.tscn" type="PackedScene" id=114]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -180,6 +188,10 @@ position = Vector2( -1901.39, 182.91 )
 
 [node name="Decor" type="Node2D" parent="."]
 position = Vector2( 1264.96, 0 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="batiments" type="Node2D" parent="Decor"]
 z_index = -3850
@@ -309,13 +321,13 @@ z_index = -3900
 texture = ExtResource( 9 )
 
 [node name="trottoir bas" type="Sprite" parent="Decor"]
-position = Vector2( -1656.66, 996.881 )
+position = Vector2( -1681.86, 996.881 )
 scale = Vector2( -1, 1 )
 z_index = -3900
 texture = ExtResource( 11 )
 
 [node name="trottoir bas2" type="Sprite" parent="Decor/trottoir bas"]
-position = Vector2( -3073.43, 0 )
+position = Vector2( -3117.19, 0.000244141 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 z_index = -3900
@@ -323,7 +335,15 @@ z_as_relative = false
 texture = ExtResource( 11 )
 
 [node name="trottoir bas3" type="Sprite" parent="Decor/trottoir bas"]
-position = Vector2( -5428.08, 0 )
+position = Vector2( -5471.84, 0.000244141 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+z_index = -3900
+z_as_relative = false
+texture = ExtResource( 11 )
+
+[node name="trottoir bas5" type="Sprite" parent="Decor/trottoir bas"]
+position = Vector2( -7783.65, 0.0119629 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 z_index = -3900
@@ -391,12 +411,12 @@ z_index = -3900
 texture = ExtResource( 31 )
 
 [node name="trottoir angle3" type="Sprite" parent="Decor"]
-position = Vector2( 237.197, 999.47 )
+position = Vector2( 253.603, 999.47 )
 z_index = -3900
 texture = ExtResource( 31 )
 
 [node name="trottoir angle4" type="Sprite" parent="Decor"]
-position = Vector2( -476.87, 1000.79 )
+position = Vector2( -502.068, 1000.79 )
 rotation = 3.14159
 z_index = -3900
 texture = ExtResource( 31 )
@@ -527,8 +547,9 @@ shape = SubResource( 4 )
 [node name="cortege 1" type="Node2D" parent="foule"]
 position = Vector2( 4559.81, -32.0361 )
 
-[node name="banderole blanche pma2" parent="foule/cortege 1" instance=ExtResource( 19 )]
-position = Vector2( 501.557, 390.998 )
+[node name="banderole asso" parent="foule/cortege 1" instance=ExtResource( 107 )]
+position = Vector2( 538.268, 444.521 )
+script = null
 
 [node name="boboPied" parent="foule/cortege 1" instance=ExtResource( 17 )]
 position = Vector2( -2734.82, 640.434 )
@@ -693,6 +714,18 @@ position = Vector2( -93.4902, -145.163 )
 [node name="gay noirs harnais" parent="foule/cortege 1" instance=ExtResource( 86 )]
 position = Vector2( 1036.74, 638.279 )
 
+[node name="drapeau moustache" parent="foule/cortege 1" instance=ExtResource( 112 )]
+position = Vector2( -2616, -551.937 )
+
+[node name="mec kipa" parent="foule/cortege 1" instance=ExtResource( 114 )]
+position = Vector2( -2612.22, -476.427 )
+
+[node name="gay a fleurs2" parent="foule/cortege 1" instance=ExtResource( 54 )]
+position = Vector2( -837.738, -551.937 )
+
+[node name="tshint vioet etoile" parent="foule/cortege 1" instance=ExtResource( 113 )]
+position = Vector2( -886.82, -468.876 )
+
 [node name="cortege 2" type="Node2D" parent="foule"]
 position = Vector2( 0, 32.0361 )
 
@@ -711,11 +744,11 @@ position = Vector2( -1240.02, -545.211 )
 [node name="gouter sur plot" parent="foule/cortege 2" instance=ExtResource( 14 )]
 position = Vector2( -451.464, 787.904 )
 
-[node name="banderole blanche pma" parent="foule/cortege 2" instance=ExtResource( 19 )]
-position = Vector2( 28.8775, 271.467 )
-
 [node name="pancarte trans" parent="foule/cortege 2" instance=ExtResource( 46 )]
 position = Vector2( -377.445, -221.893 )
+
+[node name="banderole handi" parent="foule/cortege 2" instance=ExtResource( 111 )]
+position = Vector2( 52.0056, 382.057 )
 
 [node name="robe verte inter" parent="foule/cortege 2" instance=ExtResource( 47 )]
 position = Vector2( -579.079, 188.967 )
@@ -743,3 +776,24 @@ position = Vector2( -884.956, -53.9903 )
 
 [node name="Boby pote" parent="foule/cortege 2" instance=ExtResource( 77 )]
 position = Vector2( -892.965, 58.1363 )
+
+[node name="drapeau cheveux oranges" parent="foule/cortege 2" instance=ExtResource( 110 )]
+position = Vector2( -835.245, 508.043 )
+
+[node name="robe jaune" parent="foule/cortege 2" instance=ExtResource( 109 )]
+position = Vector2( -882.813, 593.666 )
+
+[node name="couple hijab rose" parent="foule/cortege 2" instance=ExtResource( 72 )]
+position = Vector2( -437.458, 524.591 )
+
+[node name="bouteille eau" parent="foule/cortege 2" instance=ExtResource( 19 )]
+position = Vector2( -1777.82, 496.429 )
+
+[node name="caché masque casquette rose" parent="foule/cortege 2" instance=ExtResource( 108 )]
+position = Vector2( -1789.59, 597.336 )
+
+[node name="mmeRobeOrange" parent="foule/cortege 2" instance=ExtResource( 89 )]
+position = Vector2( -444.594, 669.674 )
+
+[node name="gamin tshirt licorne" parent="foule/cortege 2" instance=ExtResource( 58 )]
+position = Vector2( -1829.95, 684.79 )
