@@ -33,7 +33,7 @@ position = Vector2( -239.979, -183.107 )
 frames = SubResource( 1 )
 
 [node name="ailes oranges" type="AnimatedSprite" parent="."]
-position = Vector2( 234.1, -235.401 )
+position = Vector2( 182.428, -233.619 )
 frames = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]
