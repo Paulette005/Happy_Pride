@@ -20,10 +20,10 @@ func _ready():
 func _input(event):
 	if Input.is_action_just_pressed("ui_right") && numPageCourant < 5:
 		numPageCourant += 2
-		print(numPageCourant)
+		#print(numPageCourant)
 	if Input.is_action_just_pressed("ui_left") && numPageCourant > -1:
 		numPageCourant -= 2
-		print(numPageCourant)
+		#print(numPageCourant)
 
 func _process(delta):
 	if interactionPNJ == true:

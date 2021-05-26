@@ -71,7 +71,13 @@ func lancerpaillettes():
 		$AnimatedSprite.play("paillettes"+direction)
 		if direction == "Gauche" || direction == "Droite":
 			var partInstance = LancerParticules.instance()
-			partInstance.lancer_particules(global_position)
+			if direction == "Droite":
+				$Position2D.position.x = 138
+				partInstance.lancer_particules($Position2D.global_position)
+
+			if direction == "Gauche":
+				$Position2D.position.x = -138
+				partInstance.lancer_particules($Position2D.global_position)
 			get_parent().add_child(partInstance)
 		
 #func dansedanse():
