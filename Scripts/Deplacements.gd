@@ -8,15 +8,15 @@ var velocite = Vector2 ()
 var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 var gestionAnimations = false
-var playerZone
+var paillettes
+var dansedanse
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	$AnimatedSprite.connect("animation_finished", self, "chang_anim")
-	#$AnimatedSprite.connect("frame_changed", self, "frame_changed")
-	$Timer.connect("timeout", self, "dansedanse")
+	$Timer.connect("timeout", self, "actionPlayer")
 	var singleton = get_node("/root/Singleton")
 	#global_position = singleton.posPlayerSingleton
 	print(global_position)
@@ -44,7 +44,6 @@ func get_input():
 
 		velocite = velocite.normalized() * vitesse
 		
-	
 func _physics_process(delta):
 	if !gestionAnimations:
 		get_input()
@@ -57,31 +56,40 @@ func _physics_process(delta):
 			$AnimatedSprite.play("Idle"+direction)
 		else:
 			$AnimatedSprite.play("Walk"+direction)
-		
+			
 func chang_anim():
 	gestionAnimations = false
 
 #func gestiondanse():
 #	if consultationZine.visible == false && Dialogues.visible == false:
-#		$Timer.start(5)
+#		$Timer.start(3)
+#		dansedanse = true
 		
 func lancerpaillettes():
 	if !gestionAnimations:
 		gestionAnimations = true
+		$Timer.start(0.3)
 		$AnimatedSprite.play("paillettes"+direction)
+		paillettes = true
+		
+func actionPlayer():
+	if paillettes == true:
 		if direction == "Gauche" || direction == "Droite":
 			var partInstance = LancerParticules.instance()
 			if direction == "Droite":
 				$Position2D.position.x = 138
 				partInstance.lancer_particules($Position2D.global_position)
-
+				
 			if direction == "Gauche":
 				$Position2D.position.x = -138
 				partInstance.lancer_particules($Position2D.global_position)
 			get_parent().add_child(partInstance)
-		
-#func dansedanse():
-#	gestionAnimations = true
-#	$AnimatedSprite.play("WalkGauche")
-#	print("testanim")
+			paillettes = false
+		$Timer.stop()
+			
+	#if dansedanse == true:
+	#	gestionAnimations = true
+	#	$AnimatedSprite.play("WalkGauche")
+	#	$Timer.stop()
+
 

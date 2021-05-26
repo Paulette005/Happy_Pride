@@ -28,12 +28,14 @@ func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
 	$Timer.connect("timeout", self, "chang_directions")
+	$AnimatedSprite.set_material(preload("res://Shaders/Outline.tres"))
+	$AnimatedSprite.get_material().set_shader_param("width", 0.0)
 	
 func on_body_entered(body):
 	if body.name == "Player":
 		playerZone = true
 		Interactions.visible = true
-		$AnimatedSprite.set_material(preload("res://Shaders/Outline.tres"))
+		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
 		print(prenomPNJ)
 		print("morceauZine: ", interactionPNJ)
 		
@@ -41,6 +43,7 @@ func on_body_exited(body):
 	if body.name == "Player":
 		playerZone = false
 		Interactions.visible = false
+		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
 		if fragmentsZine.fragmentsZine == 12 && messagefin == 0:
 			afficher_message_fin()
 	
