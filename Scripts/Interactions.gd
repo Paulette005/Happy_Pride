@@ -1,6 +1,5 @@
 extends Node2D
 
-
 var prenomPNJ
 var index_dialogueArray = 0
 var numArray = 0
@@ -58,7 +57,7 @@ func chang_directions():
 		$AnimatedSprite.set_frame(nbframe)
 		
 func _input(event):
-	if event.is_action_pressed("ui_accept") && playerZone:
+	if event.is_action_pressed("ui_accept") && playerZone && consultationZine.visible == false:
 		Interactions.visible = false
 		if Player.dirPlayer <= 1:
 			$AnimatedSprite.set_frame((Player.dirPlayer)+2)
@@ -103,7 +102,7 @@ func parle():
 		if interactionPNJ == false:
 			fragmentsZine.fragmentsZine += 1
 			interactionPNJ = true
-			consultationZine.chargementPages()
+			#consultationZine.chargementPages()
 
 		if Dialogues.visible == false && messagefin == 1:
 			fragmentsZine.fragmentsZine += 1

@@ -1,15 +1,18 @@
 extends Control
 
 
+#var interactionPNJ
+
 onready var texture = $Background/Texture
-onready var fragmentsZine = get_node("/root/Node2D")
-onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
-var PrenomPNJ
+#onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
+onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	pass
 	
 func chargImg():
-	$Background/Texture.texture = load("res://Assets/Zine/%s" %BoiteDialogues.PrenomPNJ + ".png")
+	$Background/Texture.texture = load("res://Assets/Zine/%s" %consultationZine.numPageCourant + ".jpg")
 	print("chargee")
 
+func chargImg2():
+	$Background/Texture.texture = load("res://Assets/Zine/%s" %consultationZine.numPageCourant2 + ".jpg")

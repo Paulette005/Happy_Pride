@@ -1,22 +1,16 @@
 extends Node2D
 
-export var fragmentsZine = 0
-var prenomPNJ
+export var fragmentsZine = 1
 
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+
 func _input(event):
-	if event.is_action_pressed("consultationZine"):
+	if event.is_action_pressed("consultationZine") && Dialogues.visible == false:
 		if consultationZine.visible == false:
 			consultationZine.visible = true
 		else:
@@ -24,5 +18,4 @@ func _input(event):
 			
 	if event.is_action_pressed("pause"):
 		print("test")
-		print(prenomPNJ)
 

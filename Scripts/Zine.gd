@@ -1,47 +1,63 @@
 extends Control
 
+var couverture = false
+var interactionPNJ
 
-onready var fragmentsZine = get_node("/root/Node2D")
-onready var numPageCourant = -1
+export var numPageCourant = 0
+export var numPageCourant2 = 1
+
 onready var p1 = $Pages/PageGauche
 onready var p2 = $Pages/PageDroite
-
-onready var page = get_node("Pages/PageDroite/Page")
-onready var page2 = get_node("Pages/PageGauche/Page")
-
-var interactionPNJ
-var pages
+onready var pageD = get_node("Pages/PageDroite/Page")
+onready var pageG = get_node("Pages/PageGauche/Page")
+onready var fragmentsZine = get_node("/root/Node2D")
+onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
-	if interactionPNJ == true:
-		print("test")
+	pass
 	
-
 func _input(event):
-	if Input.is_action_just_pressed("ui_right") && numPageCourant < 5:
-		numPageCourant += 2
-		#print(numPageCourant)
-	if Input.is_action_just_pressed("ui_left") && numPageCourant > -1:
-		numPageCourant -= 2
-		#print(numPageCourant)
-
+	if consultationZine.visible == true:
+		if event.is_action_pressed("ui_right"):
+			if numPageCourant < fragmentsZine.fragmentsZine:
+				numPageCourant += 2
+				numPageCourant2 = (numPageCourant-1)
+				pageD.chargImg()
+				pageG.chargImg2()
+				print(fragmentsZine.fragmentsZine)
+				print(numPageCourant)
+				print("num page courant2:", numPageCourant2)
+			else:
+				#chargée un texture de page vide
+				if couverture == false:
+					couverture = true
+					
+		if event.is_action_pressed("ui_left"):
+			if numPageCourant > 0:
+				numPageCourant -= 2
+				numPageCourant2 = (numPageCourant-1)
+				if couverture == true:
+					couverture = false
+					numPageCourant += 2
+					numPageCourant2 += 2
+				pageD.chargImg()
+				pageG.chargImg2()
+				print(numPageCourant)
+				print("num page courant2:", numPageCourant2)
+			
 func _process(delta):
-	if interactionPNJ == true:
-		print("test")
-	if numPageCourant == -1:
+	if numPageCourant == 0:
 		p1.visible = false
 	else:
 		p1.visible = true
-		#$Pages/PageGauche.visible = false
-	if numPageCourant == 5:
+		
+	if couverture == true:
 		p2.visible = false
 	else:
 		p2.visible = true
 	
-func chargementPages():
-	pages = load ("res://Scenes/Zine/Page.tscn").instance()
-	page.chargImg()
-	print("compte:",fragmentsZine.fragmentsZine)
+#func chargementPages():
+#	print("compte:",fragmentsZine.fragmentsZine)
 
 
 	
