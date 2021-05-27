@@ -1,6 +1,6 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Shaders/flou.shader" type="Shader" id=1]
+[ext_resource path="res://Shaders/flou.tres" type="Material" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/BoiteDialogues.gd" type="Script" id=3]
 [ext_resource path="res://Assets/PNJ/Portraits/Camille.png" type="Texture" id=4]
@@ -24,10 +24,6 @@
 [ext_resource path="res://Assets/PNJ/Portraits/anim khadija/lsf0011.png" type="Texture" id=22]
 [ext_resource path="res://Assets/PNJ/Portraits/anim khadija/lsf0006.png" type="Texture" id=23]
 [ext_resource path="res://Assets/PNJ/Portraits/anim khadija/lsf0013.png" type="Texture" id=24]
-
-[sub_resource type="ShaderMaterial" id=1]
-shader = ExtResource( 1 )
-shader_param/amount = 2.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -78,7 +74,7 @@ __meta__ = {
 }
 
 [node name="flou" type="TextureRect" parent="."]
-material = SubResource( 1 )
+material = ExtResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -0.890869
@@ -109,7 +105,7 @@ scale = Vector2( 0.334155, 0.323682 )
 z_index = 1
 frames = SubResource( 2 )
 animation = "triangle"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/AnimatedSprite"]

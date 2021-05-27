@@ -1,10 +1,12 @@
 extends TextureButton
 
-onready var gestionLangues = get_node("/root/Control/GestionLangues")
+onready var gestionLangues2 = get_node("/root/Control/GestionLangues")
+onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options/GestionLangues")
 var langues  
 
 func _ready():
-	get_node("/root/Control/VBoxContainer/Langues").grab_focus()
+	#get_node("/root/Control/VBoxContainer/Langues").grab_focus()
+	
 	var singleton = get_node("/root/Singleton")
 	langues = singleton.langues
 	
@@ -12,7 +14,8 @@ func _on_Langues_pressed():
 	if gestionLangues.visible == false:
 		gestionLangues.visible = true
 		if langues == 0:
-			get_node("/root/Control/GestionLangues/Francais").grab_focus()
+			#get_node("/root/Control/GestionLangues/Francais").grab_focus()
+			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Francais").grab_focus()
 		else:
 			get_node("/root/Control/GestionLangues/Anglais").grab_focus()
 			
@@ -29,4 +32,6 @@ func enregistrementLangues():
 	
 func _on_Retour2_pressed():
 	gestionLangues.visible = false
-	get_node("/root/Control/VBoxContainer/Langues").grab_focus()
+	#get_node("/root/Control/VBoxContainer/Langues").grab_focus()
+	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
+

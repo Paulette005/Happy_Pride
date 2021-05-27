@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -78,8 +78,9 @@
 [ext_resource path="res://Assets/decor/batiments/resto vert.png" type="Texture" id=76]
 [ext_resource path="res://Assets/decor/dechets.png" type="Texture" id=77]
 [ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=78]
+[ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=79]
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 1100 )
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -88,7 +89,7 @@ extents = Vector2( 2838.86, 50 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 100, 1100 )
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 45 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 44 ) ],
 "loop": true,
@@ -102,6 +103,9 @@ script = ExtResource( 57 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 38 )]
+visible = false
+
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 79 )]
 visible = false
 
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 37 )]
@@ -126,7 +130,7 @@ script = ExtResource( 78 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChangemeentScene"]
 position = Vector2( -26.6973, 53.3936 )
-shape = SubResource( 4 )
+shape = SubResource( 1 )
 
 [node name="decor" type="Node2D" parent="."]
 position = Vector2( -1096.53, 33.6357 )
@@ -377,7 +381,7 @@ is_pink_block = true
 [node name="effet-enceinte-jaune2" parent="foule/pink block/pb sono" instance=ExtResource( 43 )]
 position = Vector2( -255.628, -134.395 )
 rotation = 0.359166
-frames = SubResource( 1 )
+frames = SubResource( 4 )
 animation = "New Anim"
 tempo = 65
 is_pink_block = true

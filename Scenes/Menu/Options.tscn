@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=1]
 [ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/fond-menu2.jpg" type="Texture" id=3]
-[ext_resource path="res://Assets/UI/Happy_pride.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/BoutonsOptions.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/0_LangueOptions.gd" type="Script" id=6]
 [ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
@@ -28,20 +27,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-visible = false
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -287.5
-margin_top = 36.0
-margin_right = 287.5
-margin_bottom = 387.0
-texture = ExtResource( 4 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="VBoxContainer" type="HBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.12
@@ -57,10 +42,10 @@ __meta__ = {
 }
 
 [node name="Langues" type="TextureButton" parent="VBoxContainer"]
-margin_left = 44.0
-margin_right = 263.0
+margin_left = 155.0
+margin_right = 374.0
 margin_bottom = 81.0
-focus_neighbour_right = NodePath("../Graphismes")
+focus_neighbour_right = NodePath("../Reglages")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
 script = ExtResource( 5 )
@@ -70,10 +55,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -53.5
-margin_top = -22.5
-margin_right = 75.5
-margin_bottom = 23.5
+margin_left = -55.0
+margin_top = -23.0
+margin_right = 71.0
+margin_bottom = 23.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
@@ -85,61 +70,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Graphismes" type="TextureButton" parent="VBoxContainer"]
-margin_left = 267.0
-margin_right = 486.0
+[node name="Reglages" type="TextureButton" parent="VBoxContainer"]
+margin_left = 378.0
+margin_right = 597.0
 margin_bottom = 81.0
 focus_neighbour_top = NodePath("../Commencer")
 focus_neighbour_bottom = NodePath("../Credits")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
 
-[node name="Graphismes" type="RichTextLabel" parent="VBoxContainer/Graphismes"]
+[node name="Reglages" type="RichTextLabel" parent="VBoxContainer/Reglages"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -78.5
+margin_left = -62.5
 margin_top = -21.5
-margin_right = 78.5
+margin_right = 62.5
 margin_bottom = 21.5
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode_text = "Graphismes"
-text = "Graphismes"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Audio" type="TextureButton" parent="VBoxContainer"]
-margin_left = 490.0
-margin_right = 709.0
-margin_bottom = 81.0
-focus_neighbour_top = NodePath("../Options")
-focus_neighbour_bottom = NodePath("../Quitter")
-texture_normal = ExtResource( 1 )
-texture_focused = ExtResource( 2 )
-
-[node name="Audio" type="RichTextLabel" parent="VBoxContainer/Audio"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -38.0
-margin_top = -21.5
-margin_right = 38.0
-margin_bottom = 21.5
-custom_fonts/normal_font = ExtResource( 7 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode_text = "Audio"
-text = "Audio"
+bbcode_text = "Réglages"
+text = "Réglages"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Retour" type="TextureButton" parent="VBoxContainer"]
-margin_left = 713.0
-margin_right = 932.0
+margin_left = 601.0
+margin_right = 820.0
 margin_bottom = 81.0
 focus_neighbour_top = NodePath("../Credits")
 texture_normal = ExtResource( 1 )
@@ -150,9 +109,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -46.0
+margin_left = -47.5
 margin_top = -22.0
-margin_right = 46.0
+margin_right = 47.5
 margin_bottom = 22.0
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
@@ -188,9 +147,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -53.5
+margin_left = -58.0
 margin_top = -23.0
-margin_right = 53.5
+margin_right = 58.0
 margin_bottom = 23.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -245,10 +204,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -48.0
-margin_top = -23.0
-margin_right = 48.0
-margin_bottom = 23.0
+margin_left = -47.0
+margin_top = -25.0
+margin_right = 47.0
+margin_bottom = 25.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
@@ -256,6 +215,20 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "Retour"
 text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnsembleReglages" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -346.631
+margin_top = -181.983
+margin_right = -306.631
+margin_bottom = 152.017
+rect_scale = Vector2( 17.2, 1.24 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

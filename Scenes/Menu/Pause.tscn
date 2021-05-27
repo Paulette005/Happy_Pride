@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/0_LanguePause.gd" type="Script" id=3]
+[ext_resource path="res://Shaders/flou.tres" type="Material" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="flou" type="TextureRect" parent="."]
+material = ExtResource( 4 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.891
+margin_bottom = -0.890991
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="VBoxContainer" parent="."]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -109.5
+margin_top = -113.5
+margin_right = 109.5
+margin_bottom = 113.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reprendre" type="TextureButton" parent="Pause"]
+margin_right = 219.0
+margin_bottom = 73.0
+focus_neighbour_bottom = NodePath("../Options")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Reprendre" type="RichTextLabel" parent="Pause/Reprendre"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -69.0
+margin_top = -23.0
+margin_right = 69.0
+margin_bottom = 23.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Reprendre"
+text = "Reprendre"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="TextureButton" parent="Pause"]
+margin_top = 77.0
+margin_right = 219.0
+margin_bottom = 150.0
+focus_neighbour_top = NodePath("../Reprendre")
+focus_neighbour_bottom = NodePath("../Quitter")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Options" type="RichTextLabel" parent="Pause/Options"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -47.5
+margin_top = -22.5
+margin_right = 58.5
+margin_bottom = 23.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Options"
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quitter" type="TextureButton" parent="Pause"]
+margin_top = 154.0
+margin_right = 219.0
+margin_bottom = 227.0
+focus_neighbour_top = NodePath("../Options")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Quitter" type="RichTextLabel" parent="Pause/Quitter"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -46.5
+margin_top = -24.5
+margin_right = 54.5
+margin_bottom = 25.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Quitter"
+text = "Quitter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Pause/Reprendre" to="." method="_on_Reprendre_pressed"]
+[connection signal="pressed" from="Pause/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="Pause/Quitter" to="." method="_on_Quitter_pressed"]

@@ -190,8 +190,8 @@
 [ext_resource path="res://Scenes/foule/PNJ drapeau/drapeau moustache.tscn" type="PackedScene" id=188]
 [ext_resource path="res://Scenes/foule/PNJ bisous/bisou fauteuil.tscn" type="PackedScene" id=189]
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=190]
-[ext_resource path="res://Scenes/foule/PNJ avancent/robe bleue princesse.tscn" type="PackedScene" id=191]
-[ext_resource path="res://Scenes/foule/PNJ dansent/vieux pointe du doigt.tscn" type="PackedScene" id=192]
+[ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=191]
+[ext_resource path="res://Scenes/Menu/Options.tscn" type="PackedScene" id=192]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -220,12 +220,20 @@ script = ExtResource( 28 )
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 1 )]
 visible = false
 
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
+pause_mode = 2
+visible = false
+
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
 visible = false
 margin_left = 4.55042
 margin_top = 6.82556
 margin_right = 4.55042
 margin_bottom = 6.82556
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
+pause_mode = 2
+visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
 visible = false
@@ -242,7 +250,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7858.53, 256.404 )
+position = Vector2( 2292.19, 482.678 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
@@ -254,6 +262,10 @@ scale = Vector2( 1, 1.20727 )
 polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
 
 [node name="decor" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 position = Vector2( 0, -1003.24 )
@@ -487,7 +499,7 @@ z_index = -3980
 texture = ExtResource( 67 )
 
 [node name="trottoir7" type="Sprite" parent="decor/trottoires"]
-position = Vector2( 2362.98, 0 )
+position = Vector2( 2374.75, 0 )
 z_index = -3980
 texture = ExtResource( 67 )
 
@@ -495,11 +507,10 @@ texture = ExtResource( 67 )
 position = Vector2( 7135.08, 1135.92 )
 
 [node name="trottoir bas" type="Sprite" parent="decor/trottoires bas"]
-position = Vector2( -7.55957, 0 )
 texture = ExtResource( 74 )
 
 [node name="trottoir bas2" type="Sprite" parent="decor/trottoires bas"]
-position = Vector2( 2359.87, 0 )
+position = Vector2( 2371.86, 0 )
 texture = ExtResource( 74 )
 
 [node name="trottoir bas3" type="Sprite" parent="decor/trottoires bas"]
@@ -532,18 +543,6 @@ position = Vector2( 7508.75, -675.752 )
 [node name="poteau noir 3" parent="decor/poteaux" instance=ExtResource( 76 )]
 
 [node name="poteau noir 4" parent="decor/poteaux" instance=ExtResource( 69 )]
-
-[node name="poteau noir 5" parent="decor/poteaux" instance=ExtResource( 80 )]
-position = Vector2( 1258.63, 11.3447 )
-
-[node name="poteau noir 6" parent="decor/poteaux" instance=ExtResource( 68 )]
-position = Vector2( 1020.63, 15.3447 )
-
-[node name="poteau noir 7" parent="decor/poteaux" instance=ExtResource( 76 )]
-position = Vector2( 780.63, 9.34468 )
-
-[node name="poteau noir 8" parent="decor/poteaux" instance=ExtResource( 69 )]
-position = Vector2( 568.63, 9.34468 )
 
 [node name="bandes blanches" type="Node2D" parent="decor"]
 position = Vector2( 16.9514, 118.66 )
@@ -809,17 +808,14 @@ tempo = 65
 
 [node name="pop notes" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -119.103, -344.814 )
-z_index = 3000
 tempo = 65
 
 [node name="pop notes3" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -605.103, -362.814 )
-z_index = 3000
 tempo = 65
 
 [node name="pop notes2" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -1156.06, -354.814 )
-z_index = 3000
 tempo = 65
 
 [node name="dane debardeur rose2" parent="Foule/cortege 1/dansent" instance=ExtResource( 109 )]
@@ -963,9 +959,6 @@ position = Vector2( -1711.18, -65.2081 )
 
 [node name="bear drapeau" parent="Foule/cortege 1/dansent" instance=ExtResource( 31 )]
 position = Vector2( -2045.47, 658.863 )
-
-[node name="vieux pointe du doigt" parent="Foule/cortege 1/dansent" instance=ExtResource( 192 )]
-position = Vector2( -1443.22, 501.964 )
 
 [node name="drapeau cheveux oranges2" parent="Foule/cortege 1" instance=ExtResource( 187 )]
 position = Vector2( -4170.6, 848.841 )
@@ -1134,17 +1127,17 @@ position = Vector2( -3981.22, 797.74 )
 [node name="jupe rayures jaunes" parent="Foule/cortege 2" instance=ExtResource( 32 )]
 position = Vector2( -4000.27, 867.585 )
 
-[node name="gamin tshirt licorne2" parent="Foule/cortege 2" instance=ExtResource( 158 )]
-position = Vector2( -5683.09, -108.35 )
-
-[node name="gayHappyFleurALasMain" parent="Foule/cortege 2" instance=ExtResource( 190 )]
-position = Vector2( -5710, -4.07899 )
-
 [node name="Marche chapeau paille" parent="Foule/cortege 2" instance=ExtResource( 19 )]
 position = Vector2( -5728.24, 451.84 )
 
-[node name="drapeau et fleur" parent="Foule/cortege 2" instance=ExtResource( 93 )]
-position = Vector2( -5737.56, 552.087 )
+[node name="drapeau et fleur" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 93 )]
+position = Vector2( -9.31543, 100.247 )
+
+[node name="gamin tshirt licorne" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 158 )]
+position = Vector2( 45.1523, -560.19 )
+
+[node name="gayHappyFleurALasMain" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 190 )]
+position = Vector2( 18.2441, -455.919 )
 
 [node name="dansent" type="Node2D" parent="Foule/cortege 2"]
 position = Vector2( -3988.6, 22.9213 )
@@ -1153,15 +1146,12 @@ position = Vector2( -3988.6, 22.9213 )
 
 [node name="pop notes" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -47.7805, -145.042 )
-z_index = 3000
 
 [node name="pop notes2" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -508.391, -156.368 )
-z_index = 3000
 
 [node name="pop notes3" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -987.879, -156.368 )
-z_index = 3000
 
 [node name="danse raye" parent="Foule/cortege 2/dansent" instance=ExtResource( 104 )]
 position = Vector2( -778.074, -6.44979 )
@@ -1272,15 +1262,6 @@ position = Vector2( -1328.1, 302.914 )
 
 [node name="dane hort rose" parent="Foule/cortege 2/dansent" instance=ExtResource( 95 )]
 position = Vector2( -1188.41, 448.955 )
-
-[node name="Boby" parent="Foule/cortege 2" instance=ExtResource( 27 )]
-position = Vector2( -2476.87, 860.763 )
-
-[node name="survet cheveux gris" parent="Foule/cortege 2" instance=ExtResource( 42 )]
-position = Vector2( -4702.4, -526.626 )
-
-[node name="pantalon rouge2" parent="Foule/cortege 2" instance=ExtResource( 36 )]
-position = Vector2( -4692.88, -421.857 )
 
 [node name="Chars" type="Node2D" parent="."]
 
@@ -1396,10 +1377,4 @@ position = Vector2( -4618.56, -809.334 )
 
 [node name="Boby" parent="." instance=ExtResource( 27 )]
 position = Vector2( -4631.27, -707.625 )
-
-[node name="robe bleue princesse" parent="." instance=ExtResource( 191 )]
-position = Vector2( -3978.51, 694.008 )
-
-[node name="Marche chapeau paille" parent="." instance=ExtResource( 19 )]
-position = Vector2( -4012.89, 768.825 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]

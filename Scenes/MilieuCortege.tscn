@@ -1,4 +1,4 @@
-[gd_scene load_steps=169 format=2]
+[gd_scene load_steps=170 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -164,6 +164,7 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/danseViolet.tscn" type="PackedScene" id=162]
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse shoes ailees.tscn" type="PackedScene" id=163]
 [ext_resource path="res://Scenes/foule/PNJ dansent/camion dos bleue.tscn" type="PackedScene" id=164]
+[ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=165]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -186,6 +187,9 @@ __meta__ = {
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 7 )]
+visible = false
+
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 165 )]
 visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 8 )]
