@@ -24,16 +24,18 @@ rotation = 0.0191219
 shape = SubResource( 1 )
 
 [node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1027.86, -633.69 )
+position = Vector2( -947.474, -610.145 )
+z_index = 3500
 
 [node name="effet-enceinte-jaune3" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1046.91, -366.521 )
+position = Vector2( -956.391, -347.907 )
 rotation = -0.0698132
+z_index = 3500
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-position = Vector2( -630.532, -529.862 )
+position = Vector2( -331.668, -483.879 )
 stream = ExtResource( 3 )
 autoplay = true
 max_distance = 3000.0
-attenuation = 0.5
+attenuation = 0.277393
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]
