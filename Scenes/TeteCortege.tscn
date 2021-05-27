@@ -798,14 +798,17 @@ tempo = 65
 
 [node name="pop notes" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -119.103, -344.814 )
+z_index = 3000
 tempo = 65
 
 [node name="pop notes3" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -605.103, -362.814 )
+z_index = 3000
 tempo = 65
 
 [node name="pop notes2" parent="Foule/cortege 1/dansent" instance=ExtResource( 77 )]
 position = Vector2( -1156.06, -354.814 )
+z_index = 3000
 tempo = 65
 
 [node name="dane debardeur rose2" parent="Foule/cortege 1/dansent" instance=ExtResource( 109 )]
@@ -1117,17 +1120,17 @@ position = Vector2( -3981.22, 797.74 )
 [node name="jupe rayures jaunes" parent="Foule/cortege 2" instance=ExtResource( 32 )]
 position = Vector2( -4000.27, 867.585 )
 
+[node name="drapeau et fleur" parent="Foule/cortege 2" instance=ExtResource( 93 )]
+position = Vector2( -5737.56, 552.087 )
+
+[node name="gamin tshirt licorne2" parent="Foule/cortege 2" instance=ExtResource( 158 )]
+position = Vector2( -5683.09, -108.35 )
+
+[node name="gayHappyFleurALasMain" parent="Foule/cortege 2" instance=ExtResource( 190 )]
+position = Vector2( -5710, -4.07899 )
+
 [node name="Marche chapeau paille" parent="Foule/cortege 2" instance=ExtResource( 19 )]
 position = Vector2( -5728.24, 451.84 )
-
-[node name="drapeau et fleur" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 93 )]
-position = Vector2( -9.31543, 100.247 )
-
-[node name="gamin tshirt licorne" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 158 )]
-position = Vector2( 45.1523, -560.19 )
-
-[node name="gayHappyFleurALasMain" parent="Foule/cortege 2/Marche chapeau paille" instance=ExtResource( 190 )]
-position = Vector2( 18.2441, -455.919 )
 
 [node name="dansent" type="Node2D" parent="Foule/cortege 2"]
 position = Vector2( -3988.6, 22.9213 )
@@ -1136,12 +1139,15 @@ position = Vector2( -3988.6, 22.9213 )
 
 [node name="pop notes" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -47.7805, -145.042 )
+z_index = 3000
 
 [node name="pop notes2" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -508.391, -156.368 )
+z_index = 3000
 
 [node name="pop notes3" parent="Foule/cortege 2/dansent" instance=ExtResource( 77 )]
 position = Vector2( -987.879, -156.368 )
+z_index = 3000
 
 [node name="danse raye" parent="Foule/cortege 2/dansent" instance=ExtResource( 104 )]
 position = Vector2( -778.074, -6.44979 )

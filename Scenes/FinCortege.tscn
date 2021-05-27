@@ -114,7 +114,7 @@ editor_draw_limits = true
 script = ExtResource( 27 )
 
 [node name="Player" parent="." instance=ExtResource( 25 )]
-position = Vector2( 1076.1, 113.481 )
+position = Vector2( -788.583, 264.671 )
 script = ExtResource( 26 )
 
 [node name="foule" type="Node2D" parent="."]
@@ -209,11 +209,18 @@ position = Vector2( -31.3112, 660.592 )
 [node name="pb sono" parent="foule/pink block" instance=ExtResource( 42 )]
 position = Vector2( -409.74, 203.739 )
 
+[node name="pop notes" parent="foule/pink block/pb sono" instance=ExtResource( 47 )]
+position = Vector2( -583.544, -250.319 )
+z_index = 4000
+tempo = 65
+is_pink_block = true
+
 [node name="effet-enceinte-jaune2" parent="foule/pink block/pb sono" instance=ExtResource( 43 )]
 position = Vector2( -255.628, -134.395 )
 rotation = 0.359166
 frames = SubResource( 1 )
 animation = "New Anim"
+tempo = 65
 is_pink_block = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="foule/pink block/pb sono"]
@@ -417,7 +424,3 @@ script = ExtResource( 33 )
 [node name="Noah" parent="PNJs" instance=ExtResource( 36 )]
 position = Vector2( 547.868, -172.786 )
 script = ExtResource( 33 )
-
-[node name="pop notes" parent="." instance=ExtResource( 47 )]
-position = Vector2( -960.121, -248.112 )
-is_pink_block = true
