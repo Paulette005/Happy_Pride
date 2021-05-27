@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -77,6 +77,16 @@
 [ext_resource path="res://Assets/decor/batiments/porte bleue.png" type="Texture" id=75]
 [ext_resource path="res://Assets/decor/batiments/resto vert.png" type="Texture" id=76]
 [ext_resource path="res://Assets/decor/dechets.png" type="Texture" id=77]
+[ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=78]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 100, 1100 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 2838.86, 50 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 100, 1100 )
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -85,9 +95,6 @@ animations = [ {
 "name": "New Anim",
 "speed": 5.0
 } ]
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 2838.86, 50 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 57 )
@@ -108,13 +115,165 @@ current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = -1800
 limit_top = -1380
-limit_right = 2500
+limit_right = 3200
 limit_bottom = 1000
 editor_draw_limits = true
 script = ExtResource( 27 )
 
+[node name="ChangemeentScene" type="Area2D" parent="."]
+position = Vector2( 3075.47, -10.6787 )
+script = ExtResource( 78 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChangemeentScene"]
+position = Vector2( -26.6973, 53.3936 )
+shape = SubResource( 4 )
+
+[node name="decor" type="Node2D" parent="."]
+position = Vector2( -1096.53, 33.6357 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="decor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 1696.63, -984.189 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( 1747.48, 1013.17 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
+position = Vector2( -805.192, -42.3785 )
+shape = SubResource( 3 )
+
+[node name="batiments" type="Node2D" parent="decor"]
+z_index = -3850
+
+[node name="resto vert" type="Sprite" parent="decor/batiments"]
+position = Vector2( 3042.32, -1181.69 )
+texture = ExtResource( 76 )
+
+[node name="presse" type="Sprite" parent="decor/batiments"]
+position = Vector2( 2244.4, -1174.3 )
+texture = ExtResource( 70 )
+
+[node name="porte petite" type="Sprite" parent="decor/batiments"]
+position = Vector2( 1838.32, -1177.69 )
+texture = ExtResource( 69 )
+
+[node name="barbier" type="Sprite" parent="decor/batiments"]
+position = Vector2( 1310.28, -1169.69 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 71 )
+
+[node name="magasin vert" type="Sprite" parent="decor/batiments"]
+position = Vector2( 713.63, -1208.5 )
+texture = ExtResource( 74 )
+
+[node name="kebab" type="Sprite" parent="decor/batiments"]
+position = Vector2( -221.313, -1181.54 )
+texture = ExtResource( 73 )
+
+[node name="porte bleue" type="Sprite" parent="decor/batiments"]
+position = Vector2( 294.104, -1241.47 )
+texture = ExtResource( 75 )
+
+[node name="pharmacie" type="Sprite" parent="decor/batiments"]
+position = Vector2( -1074.27, -1169.6 )
+texture = ExtResource( 72 )
+
+[node name="sol" parent="decor" instance=ExtResource( 24 )]
+position = Vector2( 1132.78, -53.9716 )
+scale = Vector2( 10.9366, 4.07989 )
+
+[node name="dechets" type="Sprite" parent="decor/sol"]
+position = Vector2( -138.358, -52.0899 )
+scale = Vector2( 0.0914361, 0.245105 )
+texture = ExtResource( 77 )
+
+[node name="dechets2" type="Sprite" parent="decor/sol"]
+position = Vector2( -71.0107, 86.4225 )
+scale = Vector2( 0.0914361, 0.245105 )
+texture = ExtResource( 77 )
+
+[node name="dechets3" type="Sprite" parent="decor/sol"]
+position = Vector2( 2.14277, -67.6531 )
+scale = Vector2( 0.0914361, 0.245105 )
+texture = ExtResource( 77 )
+
+[node name="dechets4" type="Sprite" parent="decor/sol"]
+position = Vector2( 97.9389, 66.1903 )
+scale = Vector2( 0.0914361, 0.245105 )
+texture = ExtResource( 77 )
+
+[node name="dechets5" type="Sprite" parent="decor/sol"]
+position = Vector2( 171.673, -64.5405 )
+scale = Vector2( 0.0914361, 0.245105 )
+texture = ExtResource( 77 )
+
+[node name="trottoir" type="Sprite" parent="decor"]
+position = Vector2( 468.991, -668.424 )
+z_index = -3980
+texture = ExtResource( 39 )
+
+[node name="trottoir2" type="Sprite" parent="decor"]
+position = Vector2( 2823.5, -668.424 )
+z_index = -3980
+texture = ExtResource( 39 )
+
+[node name="trottoir3" type="Sprite" parent="decor"]
+position = Vector2( 5167.48, -668.424 )
+z_index = -3980
+texture = ExtResource( 39 )
+
+[node name="trottoir bas2" type="Sprite" parent="decor"]
+position = Vector2( 2634.74, 913.629 )
+z_index = -3980
+texture = ExtResource( 40 )
+
+[node name="trottoir bas3" type="Sprite" parent="decor"]
+position = Vector2( 4973.38, 913.629 )
+z_index = -3980
+texture = ExtResource( 40 )
+
+[node name="trottoir bas" type="Sprite" parent="decor"]
+position = Vector2( 283.113, 913.064 )
+z_index = -3980
+texture = ExtResource( 40 )
+
+[node name="bande blanche" type="Sprite" parent="decor"]
+position = Vector2( 1157.96, -13.4637 )
+z_index = -3990
+texture = ExtResource( 41 )
+
+[node name="bande blanche2" type="Sprite" parent="decor"]
+position = Vector2( 5549.96, -13.4637 )
+z_index = -3990
+texture = ExtResource( 41 )
+
+[node name="poteau noir 3" parent="decor" instance=ExtResource( 55 )]
+position = Vector2( 1474.98, -739.336 )
+
+[node name="poteau noir 4" parent="decor" instance=ExtResource( 54 )]
+position = Vector2( 1200.58, -735.772 )
+
+[node name="poteau noir 2" parent="decor" instance=ExtResource( 52 )]
+position = Vector2( 1720.86, -732.209 )
+
+[node name="poteau noir 1" parent="decor" instance=ExtResource( 53 )]
+position = Vector2( 1977.44, -732.209 )
+
+[node name="poteau noir 6" parent="decor" instance=ExtResource( 52 )]
+position = Vector2( 687.422, -732.209 )
+
+[node name="poteau noir 7" parent="decor" instance=ExtResource( 53 )]
+position = Vector2( 944.001, -739.336 )
+
 [node name="Player" parent="." instance=ExtResource( 25 )]
-position = Vector2( -788.583, 264.671 )
+position = Vector2( 2334.94, -85.0572 )
 script = ExtResource( 26 )
 
 [node name="foule" type="Node2D" parent="."]
@@ -224,9 +383,11 @@ tempo = 65
 is_pink_block = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="foule/pink block/pb sono"]
-position = Vector2( -208.542, -104.271 )
+position = Vector2( -91.8059, -104.271 )
 stream = ExtResource( 46 )
 autoplay = true
+max_distance = 3000.0
+attenuation = 0.392292
 
 [node name="pb panacarte nb" parent="foule/pink block" instance=ExtResource( 29 )]
 position = Vector2( 215.323, 498.592 )
@@ -275,136 +436,6 @@ position = Vector2( 71.744, 142.372 )
 
 [node name="tdsParapluie" parent="foule/fin cortege précédent" instance=ExtResource( 68 )]
 position = Vector2( 595.017, 29.8363 )
-
-[node name="decor" type="Node2D" parent="."]
-position = Vector2( -1096.53, 33.6357 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="decor"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 965.14, -984.189 )
-shape = SubResource( 2 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 1015.99, 1013.17 )
-shape = SubResource( 2 )
-
-[node name="batiments" type="Node2D" parent="decor"]
-z_index = -3850
-
-[node name="resto vert" type="Sprite" parent="decor/batiments"]
-position = Vector2( 3042.32, -1181.69 )
-texture = ExtResource( 76 )
-
-[node name="presse" type="Sprite" parent="decor/batiments"]
-position = Vector2( 2244.4, -1174.3 )
-texture = ExtResource( 70 )
-
-[node name="porte petite" type="Sprite" parent="decor/batiments"]
-position = Vector2( 1838.32, -1177.69 )
-texture = ExtResource( 69 )
-
-[node name="barbier" type="Sprite" parent="decor/batiments"]
-position = Vector2( 1310.28, -1169.69 )
-scale = Vector2( -1, 1 )
-texture = ExtResource( 71 )
-
-[node name="magasin vert" type="Sprite" parent="decor/batiments"]
-position = Vector2( 713.63, -1208.5 )
-texture = ExtResource( 74 )
-
-[node name="kebab" type="Sprite" parent="decor/batiments"]
-position = Vector2( -221.313, -1181.54 )
-texture = ExtResource( 73 )
-
-[node name="porte bleue" type="Sprite" parent="decor/batiments"]
-position = Vector2( 294.104, -1241.47 )
-texture = ExtResource( 75 )
-
-[node name="pharmacie" type="Sprite" parent="decor/batiments"]
-position = Vector2( -1074.27, -1169.6 )
-texture = ExtResource( 72 )
-
-[node name="sol" parent="decor" instance=ExtResource( 24 )]
-position = Vector2( 1132.78, -53.9716 )
-scale = Vector2( 10.9366, 4.07989 )
-
-[node name="dechets" type="Sprite" parent="decor/sol"]
-position = Vector2( -138.358, -52.0899 )
-scale = Vector2( 0.0914361, 0.245105 )
-texture = ExtResource( 77 )
-
-[node name="dechets2" type="Sprite" parent="decor/sol"]
-position = Vector2( -71.0107, 86.4225 )
-scale = Vector2( 0.0914361, 0.245105 )
-texture = ExtResource( 77 )
-
-[node name="dechets3" type="Sprite" parent="decor/sol"]
-position = Vector2( 2.14277, -67.6531 )
-scale = Vector2( 0.0914361, 0.245105 )
-texture = ExtResource( 77 )
-
-[node name="dechets4" type="Sprite" parent="decor/sol"]
-position = Vector2( 97.9389, 66.1903 )
-scale = Vector2( 0.0914361, 0.245105 )
-texture = ExtResource( 77 )
-
-[node name="dechets5" type="Sprite" parent="decor/sol"]
-position = Vector2( 171.673, -64.5405 )
-scale = Vector2( 0.0914361, 0.245105 )
-texture = ExtResource( 77 )
-
-[node name="trottoir" type="Sprite" parent="decor"]
-position = Vector2( 468.991, -668.424 )
-z_index = -3980
-texture = ExtResource( 39 )
-
-[node name="trottoir2" type="Sprite" parent="decor"]
-position = Vector2( 2823.5, -668.424 )
-z_index = -3980
-texture = ExtResource( 39 )
-
-[node name="trottoir bas" type="Sprite" parent="decor"]
-position = Vector2( 314.542, 915.309 )
-z_index = -3980
-texture = ExtResource( 40 )
-
-[node name="trottoir bas2" type="Sprite" parent="decor"]
-position = Vector2( 2639.23, 913.629 )
-z_index = -3980
-texture = ExtResource( 40 )
-
-[node name="bande blanche" type="Sprite" parent="decor"]
-position = Vector2( 1157.96, -13.4637 )
-z_index = -3990
-texture = ExtResource( 41 )
-
-[node name="bande blanche2" type="Sprite" parent="decor"]
-position = Vector2( 5549.96, -13.4637 )
-z_index = -3990
-texture = ExtResource( 41 )
-
-[node name="poteau noir 3" parent="decor" instance=ExtResource( 55 )]
-position = Vector2( 1474.98, -739.336 )
-
-[node name="poteau noir 4" parent="decor" instance=ExtResource( 54 )]
-position = Vector2( 1200.58, -735.772 )
-
-[node name="poteau noir 2" parent="decor" instance=ExtResource( 52 )]
-position = Vector2( 1720.86, -732.209 )
-
-[node name="poteau noir 1" parent="decor" instance=ExtResource( 53 )]
-position = Vector2( 1977.44, -732.209 )
-
-[node name="poteau noir 6" parent="decor" instance=ExtResource( 52 )]
-position = Vector2( 687.422, -732.209 )
-
-[node name="poteau noir 7" parent="decor" instance=ExtResource( 53 )]
-position = Vector2( 944.001, -739.336 )
 
 [node name="PNJs" type="Node2D" parent="."]
 position = Vector2( 33.1558, -101.938 )

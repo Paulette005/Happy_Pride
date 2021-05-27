@@ -242,7 +242,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2292.19, 482.678 )
+position = Vector2( 7858.53, 256.404 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
@@ -254,10 +254,6 @@ scale = Vector2( 1, 1.20727 )
 polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
 
 [node name="decor" type="Node2D" parent="."]
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 position = Vector2( 0, -1003.24 )
@@ -499,10 +495,11 @@ texture = ExtResource( 67 )
 position = Vector2( 7135.08, 1135.92 )
 
 [node name="trottoir bas" type="Sprite" parent="decor/trottoires bas"]
+position = Vector2( -7.55957, 0 )
 texture = ExtResource( 74 )
 
 [node name="trottoir bas2" type="Sprite" parent="decor/trottoires bas"]
-position = Vector2( 2371.86, 0 )
+position = Vector2( 2359.87, 0 )
 texture = ExtResource( 74 )
 
 [node name="trottoir bas3" type="Sprite" parent="decor/trottoires bas"]

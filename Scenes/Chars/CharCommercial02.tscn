@@ -31,6 +31,6 @@ rotation = -0.0698132
 position = Vector2( -800.429, -325.985 )
 stream = ExtResource( 3 )
 autoplay = true
-max_distance = 3000.0
-attenuation = 0.5
+max_distance = 3300.0
+attenuation = 0.420448
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]
