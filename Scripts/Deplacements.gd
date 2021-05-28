@@ -68,9 +68,10 @@ func chang_anim():
 func lancerpaillettes():
 	if !gestionAnimations:
 		gestionAnimations = true
-		$Timer.start(0.3)
-		$AnimatedSprite.play("paillettes"+direction)
-		paillettes = true
+		if direction == "Gauche" || direction == "Droite":
+			$Timer.start(0.3)
+			$AnimatedSprite.play("paillettes"+ direction)
+			paillettes = true
 		
 func actionPlayer():
 	if paillettes == true:

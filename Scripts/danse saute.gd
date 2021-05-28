@@ -20,7 +20,6 @@ func _ready():
 	timer.set_name("Timer")
 	timer.one_shot = true
 	timer.connect("timeout",self,"descend")
-	print("ready")
 	
 	#print (timer.name)
 

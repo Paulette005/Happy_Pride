@@ -25,7 +25,7 @@
 [ext_resource path="res://Assets/PNJ/Portraits/anim khadija/lsf0006.png" type="Texture" id=23]
 [ext_resource path="res://Assets/PNJ/Portraits/anim khadija/lsf0013.png" type="Texture" id=24]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ) ],
 "loop": true,
@@ -33,7 +33,7 @@ animations = [ {
 "speed": 6.0
 } ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "mouvTriangle"
 loop = true
 tracks/0/type = "value"
@@ -49,7 +49,7 @@ tracks/0/keys = {
 "values": [ Vector2( 806.687, 130.788 ), Vector2( 806.687, 139.788 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 resource_name = "parle lsf"
 length = 4.0
 loop = true
@@ -103,13 +103,13 @@ __meta__ = {
 position = Vector2( 806.687, 130.788 )
 scale = Vector2( 0.334155, 0.323682 )
 z_index = 1
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "triangle"
-frame = 1
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/AnimatedSprite"]
-anims/mouvTriangle = SubResource( 3 )
+anims/mouvTriangle = SubResource( 2 )
 
 [node name="Portraits" type="TextureRect" parent="BoiteDialogues"]
 margin_left = -216.062
@@ -123,7 +123,7 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues"]
-"anims/parle lsf" = SubResource( 4 )
+"anims/parle lsf" = SubResource( 3 )
 
 [node name="khadija" type="TextureRect" parent="BoiteDialogues"]
 visible = false

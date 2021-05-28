@@ -191,7 +191,7 @@
 [ext_resource path="res://Scenes/foule/PNJ bisous/bisou fauteuil.tscn" type="PackedScene" id=189]
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=190]
 [ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=191]
-[ext_resource path="res://Scenes/Menu/Options.tscn" type="PackedScene" id=192]
+[ext_resource path="res://Scenes/Menu/Options02.tscn" type="PackedScene" id=192]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -232,8 +232,15 @@ margin_right = 4.55042
 margin_bottom = 6.82556
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
-pause_mode = 2
 visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = 640.0
+margin_bottom = 360.0
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
 visible = false

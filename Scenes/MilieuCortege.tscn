@@ -1,4 +1,4 @@
-[gd_scene load_steps=170 format=2]
+[gd_scene load_steps=176 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -165,6 +165,12 @@
 [ext_resource path="res://Scenes/foule/PNJ dansent/danse shoes ailees.tscn" type="PackedScene" id=163]
 [ext_resource path="res://Scenes/foule/PNJ dansent/camion dos bleue.tscn" type="PackedScene" id=164]
 [ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=165]
+[ext_resource path="res://Scenes/Menu/Options02.tscn" type="PackedScene" id=166]
+[ext_resource path="res://Scripts/Interactions.gd" type="Script" id=167]
+[ext_resource path="res://Scenes/PNJ/Elio.tscn" type="PackedScene" id=168]
+[ext_resource path="res://Scenes/PNJ/Judith.tscn" type="PackedScene" id=169]
+[ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=170]
+[ext_resource path="res://Scenes/PNJ/Agathe.tscn" type="PackedScene" id=171]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -193,6 +199,9 @@ visible = false
 visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource( 166 )]
 visible = false
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 5 )]
@@ -1127,3 +1136,21 @@ position = Vector2( -1148.5, 277.423 )
 
 [node name="dane hort rose" parent="foule/cortege 2/danse" instance=ExtResource( 153 )]
 position = Vector2( -587.19, 246.504 )
+
+[node name="PNJ" type="Node2D" parent="."]
+
+[node name="Judith" parent="PNJ" instance=ExtResource( 169 )]
+position = Vector2( 190.488, -609.562 )
+script = ExtResource( 167 )
+
+[node name="Agathe" parent="PNJ" instance=ExtResource( 171 )]
+position = Vector2( 2838.27, 507.969 )
+script = ExtResource( 167 )
+
+[node name="Elio" parent="PNJ" instance=ExtResource( 168 )]
+position = Vector2( -1123.88, 882.595 )
+script = ExtResource( 167 )
+
+[node name="Camille" parent="PNJ" instance=ExtResource( 170 )]
+position = Vector2( 895.294, 628.611 )
+script = ExtResource( 167 )

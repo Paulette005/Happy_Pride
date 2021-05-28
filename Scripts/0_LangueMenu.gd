@@ -1,25 +1,25 @@
 extends Control
 
-var langues 
-
+var langues
+var volume
+onready var singleton = get_node("/root/Singleton")
 
 func _ready():
+	langues = singleton.langues
+	volume = singleton.volume
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), log(get_node("/root/Singleton").volume)*10)
 	chargement_langue()
 	
 func chargement_langue():
 	if langues == 0:
-		$VBoxContainer/Commencer/Commencer.bbcode_text = "Commencer"
-		$VBoxContainer/Options/Options.bbcode_text = "Options"
-		$VBoxContainer/Credits/Credits.bbcode_text = "Crédits"
-		$VBoxContainer/Quitter/Quitter.bbcode_text = "Quitter"
-		$VBoxContainer/Commencer/Commencer.margin_left = -79
-		$VBoxContainer/Quitter/Quitter.margin_left = -50
+		$VBoxContainer/Commencer/Commencer.bbcode_text = "[center]Commencer[/center]"
+		$VBoxContainer/Options/Options.bbcode_text = "[center]Options[/center]"
+		$VBoxContainer/Credits/Credits.bbcode_text = "[center]Crédits[/center]"
+		$VBoxContainer/Quitter/Quitter.bbcode_text = "[center]Quitter[/center]"
 		
 	if langues == 1:
-		$VBoxContainer/Commencer/Commencer.bbcode_text = "Play"
-		$VBoxContainer/Options/Options.bbcode_text = "Options"
-		$VBoxContainer/Credits/Credits.bbcode_text = "Credits"
-		$VBoxContainer/Quitter/Quitter.bbcode_text = "Quit"
-		$VBoxContainer/Commencer/Commencer.margin_left = -28
-		$VBoxContainer/Quitter/Quitter.margin_left = -28
+		$VBoxContainer/Commencer/Commencer.bbcode_text = "[center]Play[/center]"
+		$VBoxContainer/Options/Options.bbcode_text = "[center]Options[/center]"
+		$VBoxContainer/Credits/Credits.bbcode_text = "[center]Credits[/center]"
+		$VBoxContainer/Quitter/Quitter.bbcode_text = "[center]Quit[/center]"
 		

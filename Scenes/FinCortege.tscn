@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -79,6 +79,7 @@
 [ext_resource path="res://Assets/decor/dechets.png" type="Texture" id=77]
 [ext_resource path="res://Scripts/ChangementdeScene.gd" type="Script" id=78]
 [ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=79]
+[ext_resource path="res://Scenes/Menu/Options02.tscn" type="PackedScene" id=80]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 1100 )
@@ -106,6 +107,9 @@ script = ExtResource( 57 )
 visible = false
 
 [node name="Pause" parent="CanvasLayer" instance=ExtResource( 79 )]
+visible = false
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource( 80 )]
 visible = false
 
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 37 )]
@@ -441,21 +445,21 @@ position = Vector2( 71.744, 142.372 )
 [node name="tdsParapluie" parent="foule/fin cortege précédent" instance=ExtResource( 68 )]
 position = Vector2( 595.017, 29.8363 )
 
-[node name="PNJs" type="Node2D" parent="."]
+[node name="PNJ" type="Node2D" parent="."]
 position = Vector2( 33.1558, -101.938 )
 
-[node name="Raphael" parent="PNJs" instance=ExtResource( 34 )]
+[node name="Raphael" parent="PNJ" instance=ExtResource( 34 )]
 position = Vector2( 1866.85, -172.287 )
 script = ExtResource( 33 )
 
-[node name="Jasmine" parent="PNJs" instance=ExtResource( 51 )]
+[node name="Jasmine" parent="PNJ" instance=ExtResource( 51 )]
 position = Vector2( 2597.48, 308.518 )
 script = ExtResource( 33 )
 
-[node name="Khadija" parent="PNJs" instance=ExtResource( 35 )]
+[node name="Khadija" parent="PNJ" instance=ExtResource( 35 )]
 position = Vector2( -255.626, 208.424 )
 script = ExtResource( 33 )
 
-[node name="Noah" parent="PNJs" instance=ExtResource( 36 )]
+[node name="Noah" parent="PNJ" instance=ExtResource( 36 )]
 position = Vector2( 547.868, -172.786 )
 script = ExtResource( 33 )

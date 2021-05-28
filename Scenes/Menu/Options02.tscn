@@ -1,0 +1,311 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=1]
+[ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/0_LangueOptions2.gd" type="Script" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/BoutonsOptions02.gd" type="Script" id=5]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Assets/UI/bonton_off_plein_ecran02.png" type="Texture" id=8]
+[ext_resource path="res://Assets/UI/bonton_on_plein_ecran02.png" type="Texture" id=9]
+[ext_resource path="res://Assets/UI/barre_son00.png" type="Texture" id=10]
+[ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 08 Last Energy For The Day.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/UI/bouton_audio00.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UI/bouton_audio01.png" type="Texture" id=13]
+[ext_resource path="res://Shaders/flou.tres" type="Material" id=14]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 432, 17 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 0 )
+border_color = Color( 1, 1, 1, 0 )
+corner_detail = 1
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 1, 1, 1, 0 )
+
+[node name="Control" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.88782
+margin_top = 2.88776
+margin_right = -1.88782
+margin_bottom = 2.88776
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="flou" type="TextureRect" parent="."]
+material = ExtResource( 14 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="VBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.12
+anchor_right = 0.5
+anchor_bottom = 0.12
+margin_left = -492.0
+margin_top = -42.4
+margin_right = 484.0
+margin_bottom = 38.6
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Langues" type="TextureButton" parent="VBoxContainer"]
+margin_left = 155.0
+margin_right = 374.0
+margin_bottom = 81.0
+focus_neighbour_right = NodePath("../Reglages")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
+
+[node name="Langues" type="RichTextLabel" parent="VBoxContainer/Langues"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Langues"
+text = "Langues"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reglages" type="TextureButton" parent="VBoxContainer"]
+margin_left = 378.0
+margin_right = 597.0
+margin_bottom = 81.0
+focus_neighbour_left = NodePath("../Langues")
+focus_neighbour_right = NodePath("../Retour")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
+
+[node name="Reglages" type="RichTextLabel" parent="VBoxContainer/Reglages"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -101.888
+margin_top = -26.25
+margin_right = 98.1123
+margin_bottom = 26.25
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Réglages"
+text = "Réglages"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retour" type="TextureButton" parent="VBoxContainer"]
+margin_left = 601.0
+margin_right = 820.0
+margin_bottom = 81.0
+focus_neighbour_left = NodePath("../Reglages")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
+
+[node name="Retour" type="RichTextLabel" parent="VBoxContainer/Retour"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Retour"
+text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GestionLangues" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -109.5
+margin_top = -113.5
+margin_right = 109.5
+margin_bottom = 113.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Francais" type="TextureButton" parent="GestionLangues"]
+margin_right = 219.0
+margin_bottom = 73.0
+focus_neighbour_top = NodePath("../../VBoxContainer/Langues")
+focus_neighbour_bottom = NodePath("../Anglais")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Francais" type="RichTextLabel" parent="GestionLangues/Francais"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Français"
+text = "Français"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Anglais" type="TextureButton" parent="GestionLangues"]
+margin_top = 77.0
+margin_right = 219.0
+margin_bottom = 150.0
+focus_neighbour_top = NodePath("../Francais")
+focus_neighbour_bottom = NodePath("../Retour2")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Anglais" type="RichTextLabel" parent="GestionLangues/Anglais"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Anglais"
+text = "Anglais"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Retour2" type="TextureButton" parent="GestionLangues"]
+margin_top = 154.0
+margin_right = 219.0
+margin_bottom = 227.0
+focus_neighbour_top = NodePath("../Anglais")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Retour2" type="RichTextLabel" parent="GestionLangues/Retour2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -103.5
+margin_top = -27.0
+margin_right = 96.5
+margin_bottom = 25.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Retour"
+text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnsembleReglages" type="VBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -247.0
+margin_top = -112.0
+margin_right = 247.0
+margin_bottom = 200.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton" type="CheckButton" parent="EnsembleReglages"]
+margin_right = 494.0
+margin_bottom = 52.0
+focus_neighbour_top = NodePath("../../VBoxContainer/Reglages")
+focus_neighbour_bottom = NodePath("../Musique")
+custom_icons/off = ExtResource( 8 )
+custom_icons/on = ExtResource( 9 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+pressed = true
+keep_pressed_outside = true
+text = "Plein Ecran"
+
+[node name="Volume" type="Label" parent="EnsembleReglages"]
+margin_top = 56.0
+margin_right = 494.0
+margin_bottom = 98.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Volume :"
+
+[node name="Musique" type="HSlider" parent="EnsembleReglages"]
+margin_top = 102.0
+margin_right = 494.0
+margin_bottom = 155.0
+custom_icons/grabber_disabled = ExtResource( 13 )
+custom_icons/grabber_highlight = ExtResource( 13 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+max_value = 1.0
+step = 0.1
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+[connection signal="pressed" from="VBoxContainer/Langues" to="." method="_on_Langues_pressed"]
+[connection signal="pressed" from="VBoxContainer/Reglages" to="VBoxContainer/Langues" method="_on_Reglages_pressed"]
+[connection signal="pressed" from="VBoxContainer/Retour" to="VBoxContainer/Langues" method="_on_Retour_pressed"]
+[connection signal="pressed" from="GestionLangues/Francais" to="VBoxContainer/Langues" method="_on_Francais_pressed"]
+[connection signal="pressed" from="GestionLangues/Anglais" to="VBoxContainer/Langues" method="_on_Anglais_pressed"]
+[connection signal="pressed" from="GestionLangues/Retour2" to="VBoxContainer/Langues" method="_on_Retour2_pressed"]
+[connection signal="toggled" from="EnsembleReglages/CheckButton" to="VBoxContainer/Langues" method="_on_CheckButton_toggled"]
+[connection signal="value_changed" from="EnsembleReglages/Musique" to="VBoxContainer/Langues" method="_on_Musique_value_changed"]

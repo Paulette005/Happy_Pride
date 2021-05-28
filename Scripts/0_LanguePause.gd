@@ -11,18 +11,14 @@ func _ready():
 	
 func chargement_langue():
 	if langues == 0:
-		$Pause/Reprendre/Reprendre.bbcode_text = "Reprendre"
-		$Pause/Options/Options.bbcode_text = "Options"
-		$Pause/Quitter/Quitter.bbcode_text = "Quitter"
-		$Pause/Reprendre/Reprendre.margin_left = -69
-		$Pause/Quitter/Quitter.margin_left = -50
+		$Pause/Reprendre/Reprendre.bbcode_text = "[center]Reprendre[/center]"
+		$Pause/Options/Options.bbcode_text = "[center]Options[/center]"
+		$Pause/Quitter/Quitter.bbcode_text = "[center]Quitter[/center]"
 		
 	if langues == 1:
-		$Pause/Reprendre/Reprendre.bbcode_text = "Resume"
-		$Pause/Options/Options.bbcode_text = "Options"
-		$Pause/Quitter/Quitter.bbcode_text = "Quit"
-		$Pause/Reprendre/Reprendre.margin_left = -54
-		$Pause/Quitter/Quitter.margin_left = -28
+		$Pause/Reprendre/Reprendre.bbcode_text = "[center]Resume[/center]"
+		$Pause/Options/Options.bbcode_text = "[center]Options[/center]"
+		$Pause/Quitter/Quitter.bbcode_text = "[center]Quit[/center]"
 		
 func _on_Reprendre_pressed():
 	Pause.visible = false
@@ -32,6 +28,6 @@ func _on_Quitter_pressed():
 	get_tree().quit()
 
 func _on_Options_pressed():
-	Options.visible = true
 	Pause.visible = false
+	Options.visible = true
 	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
