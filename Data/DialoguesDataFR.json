@@ -44,7 +44,7 @@
 	"Des volontaires pour pousser les fauteuils roulants des personnes qui préfèrent être dans d’autres cortèges. Des cortèges sans trop de bruit...",
 	"Avoir un parcours accessible en fauteuil roulant donc sans pavés, sans travaux avec un début et une fin près de stations de métro accessibles",
 	"Je pourrais continuer la liste encore longtemps mais tu vois l’idée.",
-	"D’ailleurs, une dernière chose. On préfère parler de “la pride” plutôt que de “la marche” des fiertés puisque certain.es personnes ne marchent pas."
+	"D’ailleurs, une dernière chose. On préfère parler de “la pride” plutôt que de “la marche” des fiertés puisque certain·es personnes ne marchent pas."
     ],
     [
     "discours B2, blabla00",
@@ -93,7 +93,7 @@
     "Si certaines personnes intersexes marchent dans des cortèges vénère et revendicatifs, on reste bien souvent totalement invisibilisé·es dans les luttes LGBTQI.",
     "Peu de personnes connaissent notre drapeau et on n’a pas de cortège dédié.",
     "Enfin ça... C’était avant la marche de 2019 à Paris !",
-	"Un cortège de personnes intersexes, composé de nombreux.ses membres du Collectif Intersexes et Allié.e.s – OII France, a pris la tête de la pride ! C’était génial !",
+	"Un cortège de personnes intersexes, composé de nombreux·ses membres du Collectif Intersexes et Allié·e·s – OII France, a pris la tête de la pride ! C’était génial !",
 	"Pour être sûre de vraiment donner de la visibilité à ce moment, on avait aussi un hashtag, #intersexEnTetePride2019.",
 	"Avec tout ça, on espère marquer un tournant, mais surtout que plus aucune personne intersexe ne passe de pride à ne pas se sentir à sa place !"
     ],
@@ -174,14 +174,16 @@
   "Prenom": "Jasmine",
   "Dial": [
     [
-    "discours B, blabla00",
-    "discours B, blabla001",
-    "discours B, blabla0012"
+    "En fait, en étant TDS et queer tu cumules… T’es encore plus opprimé·e par la société. Le gouvernement n’écoute ni nos besoins, ni nos revendications.",
+    "En 2019, le STRASS et Acceptess-T ont décidé de nous rendre visibles en partageant un char revendicatif, lors de la marche des fiertés de Paris.",
+    "discours B, blabla0012",
+	"C’était l’occasion de rappeler à la ville, qu’elle doit cesser sa politique de répressions envers les TDS. Notamment envers les TDS trans du Bois de Boulogne en les verbalisant.",
+	"Entre ça et les refus de régularisation ou de renouvellement de titres de séjour pour des TDS trans séropo…",
+	"Nous nous devons de défiler pour nos collègues tué·es, poussé·es au suicide et disparu·es à cause de cette société qui nous préfère mortes et malheureux·ses plutôt que vivant·es, belleaux et fièr·es."
     ],
     [
     "discours B2, blabla00",
-    "discours B2, blabla001",
-    "discours B2, blabla0012"
+    "discours B2, blabla001"
     ]
   ]
 },
@@ -206,14 +208,12 @@
   "Prenom": "Alex",
   "Dial": [
     [
-    "Je crois que j'ai réussi à completer le Zine !",
-    "discours B, blabla001",
-    "discours B, blabla0012"
+    "Bien, je crois que j’ai fait le tour. J’ai un zine complet maintenant !",
+    "Je peux continuer à me promener pour profiter encore un peu ou bien partir…"
     ],
     [
-    "discours B2, blabla00",
-    "discours B2, blabla001",
-    "discours B2, blabla0012"
+    "Bien, je crois que j’ai fait le tour. J’ai un zine complet maintenant !",
+    "Je peux continuer à me promener pour profiter encore un peu ou bien partir…"
     ]
   ]
 }
