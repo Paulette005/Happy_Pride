@@ -233,14 +233,6 @@ margin_bottom = 6.82556
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
 visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -640.0
-margin_top = -360.0
-margin_right = 640.0
-margin_bottom = 360.0
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
 visible = false
@@ -286,13 +278,13 @@ position = Vector2( 5423.79, -149.671 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 1521.02, 2191.36 )
+position = Vector2( 1521.02, 2200.36 )
 z_index = 100
 z_as_relative = false
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 686.315, -263.723 )
+position = Vector2( 686.315, -260.723 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="decor/StaticBody2D"]

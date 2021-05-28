@@ -24,7 +24,6 @@ func _ready():
 	#print (timer.name)
 
 func init(tempo):
-	print ("init")
 	$Timer.wait_time = 2 * 60.0/tempo
 	
 func saute():
