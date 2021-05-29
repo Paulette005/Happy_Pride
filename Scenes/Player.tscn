@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0003.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Perso/waklDroite/marche profil droite0006.png" type="Texture" id=2]
@@ -64,6 +64,30 @@
 [ext_resource path="res://Assets/Perso/paillettes gauche/paillettes g0014.png" type="Texture" id=62]
 [ext_resource path="res://Assets/Perso/paillettes gauche/paillettes g0015.png" type="Texture" id=63]
 [ext_resource path="res://Assets/Perso/paillettes gauche/paillettes g0021.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Perso/danse/danse0030.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Perso/danse/danse0022.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Perso/danse/danse0046.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Perso/danse/danse0014.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Perso/danse/danse0028.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Perso/danse/danse0026.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Perso/danse/danse0032.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Perso/danse/danse0044.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Perso/danse/danse0018.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Perso/danse/danse0038.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Perso/danse/danse0042.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Perso/danse/danse0012.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Perso/danse/danse0040.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Perso/danse/danse0024.png" type="Texture" id=78]
+[ext_resource path="res://Assets/Perso/danse/danse0016.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Perso/danse/danse0020.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Perso/danse/danse0034.png" type="Texture" id=81]
+[ext_resource path="res://Assets/Perso/danse/danse0036.png" type="Texture" id=82]
+[ext_resource path="res://Assets/Perso/danse/danse0004.png" type="Texture" id=83]
+[ext_resource path="res://Assets/Perso/danse/danse0006.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Perso/danse/danse0000.png" type="Texture" id=85]
+[ext_resource path="res://Assets/Perso/danse/danse0002.png" type="Texture" id=86]
+[ext_resource path="res://Assets/Perso/danse/danse0008.png" type="Texture" id=87]
+[ext_resource path="res://Assets/Perso/danse/danse0010.png" type="Texture" id=88]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -71,6 +95,11 @@ animations = [ {
 "loop": false,
 "name": "paillettesDroite",
 "speed": 12.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 32 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "IdleDroite",
+"speed": 3.5
 }, {
 "frames": [ ExtResource( 40 ), ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
 "loop": true,
@@ -81,11 +110,6 @@ animations = [ {
 "loop": false,
 "name": "paillettesGauche",
 "speed": 12.0
-}, {
-"frames": [ ExtResource( 32 ), ExtResource( 32 ), ExtResource( 29 ) ],
-"loop": true,
-"name": "IdleDroite",
-"speed": 3.5
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
@@ -102,9 +126,9 @@ animations = [ {
 "name": "IdleFace",
 "speed": 3.5
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 20 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "WalkDroite",
+"name": "WalkFace",
 "speed": 7.0
 }, {
 "frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
@@ -112,10 +136,15 @@ animations = [ {
 "name": "IdleGauche",
 "speed": 3.5
 }, {
-"frames": [ ExtResource( 20 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ) ],
 "loop": true,
-"name": "WalkFace",
+"name": "WalkDroite",
 "speed": 7.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 86 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 76 ), ExtResource( 68 ), ExtResource( 79 ), ExtResource( 73 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 78 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 65 ), ExtResource( 71 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 74 ), ExtResource( 77 ), ExtResource( 75 ), ExtResource( 72 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "danse",
+"speed": 6.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -125,8 +154,8 @@ radius = 36.4725
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "paillettesGauche"
-frame = 4
+animation = "danse"
+frame = 20
 offset = Vector2( 0.968384, -168.887 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
