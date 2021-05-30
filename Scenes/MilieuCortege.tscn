@@ -1,4 +1,4 @@
-[gd_scene load_steps=176 format=2]
+[gd_scene load_steps=180 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -171,6 +171,10 @@
 [ext_resource path="res://Scenes/PNJ/Judith.tscn" type="PackedScene" id=169]
 [ext_resource path="res://Scenes/PNJ/Camille.tscn" type="PackedScene" id=170]
 [ext_resource path="res://Scenes/PNJ/Agathe.tscn" type="PackedScene" id=171]
+[ext_resource path="res://Scenes/foule/PNJ bisous/bisou fauteuil.tscn" type="PackedScene" id=172]
+[ext_resource path="res://Scenes/foule/PNJ bisous/bisouLesbienneBie.tscn" type="PackedScene" id=173]
+[ext_resource path="res://Scenes/foule/PNJ avancent/discuteDrapeau.tscn" type="PackedScene" id=174]
+[ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=175]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -988,16 +992,16 @@ position = Vector2( -374.23, 250.363 )
 position = Vector2( -173.614, 523.978 )
 
 [node name="Boby" parent="foule/cortege 2" instance=ExtResource( 76 )]
-position = Vector2( -884.956, -53.9903 )
+position = Vector2( -958.371, -64.9048 )
 
 [node name="Boby pote" parent="foule/cortege 2" instance=ExtResource( 77 )]
-position = Vector2( -892.965, 58.1363 )
+position = Vector2( -966.38, 47.2218 )
 
 [node name="drapeau cheveux oranges" parent="foule/cortege 2" instance=ExtResource( 110 )]
-position = Vector2( -835.245, 508.043 )
+position = Vector2( -858.79, 511.407 )
 
 [node name="robe jaune" parent="foule/cortege 2" instance=ExtResource( 109 )]
-position = Vector2( -882.813, 593.666 )
+position = Vector2( -906.358, 597.03 )
 
 [node name="couple hijab rose" parent="foule/cortege 2" instance=ExtResource( 72 )]
 position = Vector2( -437.458, 524.591 )
@@ -1013,6 +1017,33 @@ position = Vector2( -444.594, 669.674 )
 
 [node name="gamin tshirt licorne" parent="foule/cortege 2" instance=ExtResource( 58 )]
 position = Vector2( -1829.95, 684.79 )
+
+[node name="bisou fauteuil" parent="foule/cortege 2" instance=ExtResource( 172 )]
+position = Vector2( -4044.94, -580.068 )
+
+[node name="discuteDrapeau" parent="foule/cortege 2" instance=ExtResource( 174 )]
+position = Vector2( -3793.17, 548.11 )
+
+[node name="couple robe verte" parent="foule/cortege 2" instance=ExtResource( 83 )]
+position = Vector2( -3191.68, -772.619 )
+
+[node name="cheveux bleus2" parent="foule/cortege 2" instance=ExtResource( 73 )]
+position = Vector2( -3801.25, 656.715 )
+
+[node name="drapeau et fleur" parent="foule/cortege 2" instance=ExtResource( 78 )]
+position = Vector2( -2723.55, 541.383 )
+
+[node name="jupe rayures jaunes" parent="foule/cortege 2" instance=ExtResource( 82 )]
+position = Vector2( -2737, 649.017 )
+
+[node name="bisouLesbienneBie" parent="foule/cortege 2" instance=ExtResource( 173 )]
+position = Vector2( -3995.86, 394.01 )
+
+[node name="mme shoes a fleurs" parent="foule/cortege 2" instance=ExtResource( 93 )]
+position = Vector2( -3255, 716.289 )
+
+[node name="mec kipa" parent="foule/cortege 2" instance=ExtResource( 114 )]
+position = Vector2( -3248.27, 820.56 )
 
 [node name="danse" type="Node2D" parent="foule/cortege 2"]
 position = Vector2( -2979.21, -55.092 )
@@ -1137,20 +1168,38 @@ position = Vector2( -1148.5, 277.423 )
 [node name="dane hort rose" parent="foule/cortege 2/danse" instance=ExtResource( 153 )]
 position = Vector2( -587.19, 246.504 )
 
+[node name="trans drapeau verte" parent="foule/cortege 2" instance=ExtResource( 175 )]
+position = Vector2( -1935.55, -579.097 )
+
 [node name="PNJ" type="Node2D" parent="."]
 
 [node name="Judith" parent="PNJ" instance=ExtResource( 169 )]
-position = Vector2( 190.488, -609.562 )
+position = Vector2( -740.229, -50.9568 )
 script = ExtResource( 167 )
 
 [node name="Agathe" parent="PNJ" instance=ExtResource( 171 )]
-position = Vector2( 2838.27, 507.969 )
+position = Vector2( 4626.96, -565.242 )
 script = ExtResource( 167 )
 
 [node name="Elio" parent="PNJ" instance=ExtResource( 168 )]
-position = Vector2( -1123.88, 882.595 )
+position = Vector2( -3481.75, 626.962 )
 script = ExtResource( 167 )
 
 [node name="Camille" parent="PNJ" instance=ExtResource( 170 )]
-position = Vector2( 895.294, 628.611 )
+position = Vector2( 1920.45, 415.037 )
 script = ExtResource( 167 )
+
+[node name="su garnet" parent="." instance=ExtResource( 63 )]
+position = Vector2( -2235.57, 598.329 )
+
+[node name="su pearl" parent="." instance=ExtResource( 64 )]
+position = Vector2( -2271.49, 667.922 )
+
+[node name="mmeRobeOrange" parent="." instance=ExtResource( 89 )]
+position = Vector2( -2354.45, -501.397 )
+
+[node name="interFauteuilRoux" parent="." instance=ExtResource( 50 )]
+position = Vector2( 2937.15, 393.254 )
+
+[node name="jupe rayures jaunes" parent="." instance=ExtResource( 82 )]
+position = Vector2( 2948.94, 492.123 )

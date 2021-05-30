@@ -123,17 +123,17 @@ current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = -1800
 limit_top = -1380
-limit_right = 3200
+limit_right = 3500
 limit_bottom = 1000
 editor_draw_limits = true
 script = ExtResource( 27 )
 
 [node name="ChangemeentScene" type="Area2D" parent="."]
-position = Vector2( 3075.47, -10.6787 )
+position = Vector2( 3535.82, -7.5039 )
 script = ExtResource( 78 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChangemeentScene"]
-position = Vector2( -26.6973, 53.3936 )
+position = Vector2( 8.09055, -1.13301 )
 shape = SubResource( 1 )
 
 [node name="decor" type="Node2D" parent="."]
@@ -194,32 +194,32 @@ position = Vector2( -1074.27, -1169.6 )
 texture = ExtResource( 72 )
 
 [node name="sol" parent="decor" instance=ExtResource( 24 )]
-position = Vector2( 1132.78, -53.9716 )
-scale = Vector2( 10.9366, 4.07989 )
+position = Vector2( 1908.67, -233.769 )
+scale = Vector2( 10.9666, 4.79908 )
 
 [node name="dechets" type="Sprite" parent="decor/sol"]
-position = Vector2( -138.358, -52.0899 )
-scale = Vector2( 0.0914361, 0.245105 )
+position = Vector2( -208.73, -6.81884 )
+scale = Vector2( 0.0911862, 0.208374 )
 texture = ExtResource( 77 )
 
 [node name="dechets2" type="Sprite" parent="decor/sol"]
-position = Vector2( -71.0107, 86.4225 )
-scale = Vector2( 0.0914361, 0.245105 )
+position = Vector2( -141.567, 110.936 )
+scale = Vector2( 0.0911862, 0.208374 )
 texture = ExtResource( 77 )
 
 [node name="dechets3" type="Sprite" parent="decor/sol"]
-position = Vector2( 2.14277, -67.6531 )
-scale = Vector2( 0.0914361, 0.245105 )
+position = Vector2( -68.6133, -20.0497 )
+scale = Vector2( 0.0911862, 0.208374 )
 texture = ExtResource( 77 )
 
 [node name="dechets4" type="Sprite" parent="decor/sol"]
-position = Vector2( 97.9389, 66.1903 )
-scale = Vector2( 0.0914361, 0.245105 )
+position = Vector2( 26.921, 93.736 )
+scale = Vector2( 0.0911862, 0.208374 )
 texture = ExtResource( 77 )
 
 [node name="dechets5" type="Sprite" parent="decor/sol"]
-position = Vector2( 171.673, -64.5405 )
-scale = Vector2( 0.0914361, 0.245105 )
+position = Vector2( 100.454, -17.4036 )
+scale = Vector2( 0.0911862, 0.208374 )
 texture = ExtResource( 77 )
 
 [node name="trottoir" type="Sprite" parent="decor"]
@@ -281,7 +281,7 @@ position = Vector2( 687.422, -732.209 )
 position = Vector2( 944.001, -739.336 )
 
 [node name="Player" parent="." instance=ExtResource( 25 )]
-position = Vector2( 2334.94, -85.0572 )
+position = Vector2( 2838.03, -184.232 )
 script = ExtResource( 26 )
 
 [node name="foule" type="Node2D" parent="."]

@@ -23,6 +23,8 @@ func _process(delta):
 		$GestionLangues/Retour2/Retour2.bbcode_text = "[center]Retour[/center]"
 		
 		$EnsembleReglages/CheckButton.text = "Plein Écran"
+		$EnsembleReglages/Azerty.text = "Clavier AZERTY"
+		$EnsembleReglages/Qwerty.text = "Clavier QWERTY"
 	if langues == 1:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Languages[/center]"
 		$VBoxContainer/Reglages/Reglages.bbcode_text = "[center]Settings[/center]"
@@ -33,4 +35,6 @@ func _process(delta):
 		$GestionLangues/Retour2/Retour2.bbcode_text = "[center]Back[/center]"
 		
 		$EnsembleReglages/CheckButton.text = "Full Screen"
+		$EnsembleReglages/Azerty.text = "AZERTY keyboard"
+		$EnsembleReglages/Qwerty.text = "QWERTY keyboard"
 		
