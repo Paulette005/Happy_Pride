@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/PNJ.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-drapeau-gauche.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-trans-drapeau-face.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/z_index.gd" type="Script" id=7]
+[ext_resource path="res://Shaders/Outline.tres" type="Material" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -21,6 +22,7 @@ script = ExtResource( 2 )
 prenomPNJ = "Agathe"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+material = ExtResource( 8 )
 position = Vector2( -0.957153, 3.48688 )
 frames = SubResource( 1 )
 animation = "idle"

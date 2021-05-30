@@ -638,7 +638,7 @@ position = Vector2( -1985.21, 504.162 )
 script = ExtResource( 10 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 13 )]
-position = Vector2( 5688.34, 645.224 )
+position = Vector2( 5688, 645 )
 script = ExtResource( 10 )
 
 [node name="Foule" type="Node2D" parent="."]
