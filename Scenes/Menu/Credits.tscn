@@ -1,8 +1,143 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
 
-[node name="Control" type="Control"]
+[ext_resource path="res://Assets/UI/fond-blanc.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/portrait-credit.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Fonts/prenomspnj.tres" type="DynamicFont" id=7]
+
+[node name="Credits" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 140.762
+margin_top = 101.913
+margin_right = 1089.76
+margin_bottom = 604.914
+custom_constants/separation = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="paulette" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 300.0
+margin_bottom = 503.0
+rect_min_size = Vector2( 300, 0 )
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nom" type="Label" parent="HBoxContainer/paulette"]
+margin_right = 300.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Paulette"
+align = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/paulette"]
+margin_top = 68.0
+margin_right = 300.0
+margin_bottom = 356.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="role" type="Label" parent="HBoxContainer/paulette"]
+margin_top = 371.0
+margin_right = 300.0
+margin_bottom = 503.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "programmation 
+game design
+narration"
+align = 1
+
+[node name="Axell" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 320.0
+margin_right = 629.0
+margin_bottom = 503.0
+rect_min_size = Vector2( 300, 0 )
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nom" type="Label" parent="HBoxContainer/Axell"]
+margin_right = 309.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Axell Boué"
+align = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Axell"]
+margin_top = 68.0
+margin_right = 309.0
+margin_bottom = 356.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="role" type="Label" parent="HBoxContainer/Axell"]
+margin_top = 371.0
+margin_right = 309.0
+margin_bottom = 503.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "graphisme
+animation
+soutient programmation"
+align = 1
+
+[node name="Rose" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 649.0
+margin_right = 949.0
+margin_bottom = 503.0
+rect_min_size = Vector2( 300, 0 )
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nom" type="Label" parent="HBoxContainer/Rose"]
+margin_right = 300.0
+margin_bottom = 53.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rrrrrose Azerty"
+align = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Rose"]
+margin_top = 68.0
+margin_right = 300.0
+margin_bottom = 356.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="role" type="Label" parent="HBoxContainer/Rose"]
+margin_top = 371.0
+margin_right = 300.0
+margin_bottom = 413.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "musiques"
+align = 1

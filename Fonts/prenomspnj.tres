@@ -4,5 +4,5 @@
 font_path = "res://Fonts/open_dyslexic/OpenDyslexic-Bold.otf"
 
 [resource]
-size = 20
+size = 30
 font_data = SubResource( 1 )

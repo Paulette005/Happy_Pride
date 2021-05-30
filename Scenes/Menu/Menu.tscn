@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/BoutonsMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Scripts/0_LangueMenu.gd" type="Script" id=6]
 [ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 08 Last Energy For The Day.wav" type="AudioStream" id=8]
+[ext_resource path="res://Scenes/Menu/Credits.tscn" type="PackedScene" id=9]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -167,7 +168,43 @@ __meta__ = {
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
 autoplay = true
+
+[node name="Credits" parent="." instance=ExtResource( 9 )]
+visible = false
+
+[node name="Retour" type="TextureButton" parent="Credits"]
+margin_left = 962.686
+margin_top = 598.162
+margin_right = 1181.69
+margin_bottom = 671.162
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="retour" type="RichTextLabel" parent="Credits/Retour"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center] Retour [/center]"
+text = " Retour "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="VBoxContainer/Commencer" to="VBoxContainer/Commencer" method="_on_Commencer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Options" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="VBoxContainer/Credits" method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitter" to="VBoxContainer/Quitter" method="_on_Quitter_pressed"]
+[connection signal="pressed" from="Credits/Retour" to="Credits/Retour" method="_on_retour_credit_pressed"]
