@@ -23,9 +23,9 @@ __meta__ = {
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 140.762
-margin_top = 101.913
+margin_top = 97.9085
 margin_right = 1089.76
-margin_bottom = 604.914
+margin_bottom = 600.909
 custom_constants/separation = 20
 __meta__ = {
 "_edit_use_anchors_": false
@@ -57,13 +57,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="role" type="Label" parent="HBoxContainer/paulette"]
+[node name="role fr" type="Label" parent="HBoxContainer/paulette"]
 margin_top = 371.0
 margin_right = 300.0
 margin_bottom = 503.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "programmation 
+game design
+narration"
+align = 1
+
+[node name="role en" type="Label" parent="HBoxContainer/paulette"]
+visible = false
+margin_top = 518.0
+margin_right = 300.0
+margin_bottom = 650.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "programming
 game design
 narration"
 align = 1
@@ -95,7 +107,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="role" type="Label" parent="HBoxContainer/Axell"]
+[node name="role fr" type="Label" parent="HBoxContainer/Axell"]
 margin_top = 371.0
 margin_right = 309.0
 margin_bottom = 503.0
@@ -104,6 +116,18 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "graphisme
 animation
 soutient programmation"
+align = 1
+
+[node name="role en" type="Label" parent="HBoxContainer/Axell"]
+visible = false
+margin_top = 518.0
+margin_right = 309.0
+margin_bottom = 650.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "art
+animation
+some programming"
 align = 1
 
 [node name="Rose" type="VBoxContainer" parent="HBoxContainer"]
@@ -133,11 +157,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="role" type="Label" parent="HBoxContainer/Rose"]
+[node name="role fr" type="Label" parent="HBoxContainer/Rose"]
 margin_top = 371.0
 margin_right = 300.0
 margin_bottom = 413.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "musiques"
+align = 1
+
+[node name="role en" type="Label" parent="HBoxContainer/Rose"]
+visible = false
+margin_top = 428.0
+margin_right = 300.0
+margin_bottom = 470.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "musics"
 align = 1

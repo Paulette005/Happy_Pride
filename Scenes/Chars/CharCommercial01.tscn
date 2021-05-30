@@ -22,11 +22,13 @@ shape = SubResource( 1 )
 
 [node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1341.46, -493.841 )
+z_index = 3500
 tempo = 65
 
 [node name="effet-enceinte-jaune3" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1347.8, -247.861 )
 rotation = -0.0698132
+z_index = 3500
 tempo = 65
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
