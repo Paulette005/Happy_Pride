@@ -226,10 +226,6 @@ visible = false
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
 visible = false
-margin_left = 4.55042
-margin_top = 6.82556
-margin_right = 4.55042
-margin_bottom = 6.82556
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
 visible = false

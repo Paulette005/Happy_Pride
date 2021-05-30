@@ -3,7 +3,7 @@ extends TextureButton
 onready var Pause = get_node("/root/Node2D/CanvasLayer/Pause")
 onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
 
-onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options//GestionLangues")
+onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options/GestionLangues")
 onready var ensembleReglages = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
 
 var langues
@@ -11,6 +11,7 @@ var volume
 
 func _ready():
 	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
+	gestionLangues.visible = true
 	var singleton = get_node("/root/Singleton")
 	langues = singleton.langues
 	
@@ -23,6 +24,8 @@ func _on_Langues_pressed():
 			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
+	print("test")
+
 	
 func _on_Francais_pressed():
 	langues = 0
@@ -40,6 +43,8 @@ func _on_Retour2_pressed():
 	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
 
 func _on_Retour_pressed():
+	gestionLangues.visible = true
+	ensembleReglages.visible = false
 	Options.visible = false
 	Pause.visible = true
 	get_node("/root/Node2D/CanvasLayer/Pause/Pause/Reprendre").grab_focus()
