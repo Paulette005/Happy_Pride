@@ -18,7 +18,7 @@ func _ready():
 	$AnimatedSprite.connect("animation_finished", self, "chang_anim")
 	$Timer.connect("timeout", self, "actionPlayer")
 	var singleton = get_node("/root/Singleton")
-	global_position = singleton.posPlayerSingleton
+	#global_position = singleton.posPlayerSingleton
 	print(global_position)
 	
 	

@@ -94,6 +94,7 @@ focus_neighbour_left = NodePath("../Langues")
 focus_neighbour_right = NodePath("../Retour")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
 
 [node name="Reglages" type="RichTextLabel" parent="VBoxContainer/Reglages"]
 anchor_left = 0.5
@@ -120,6 +121,7 @@ margin_bottom = 81.0
 focus_neighbour_left = NodePath("../Reglages")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
+script = ExtResource( 5 )
 
 [node name="Retour" type="RichTextLabel" parent="VBoxContainer/Retour"]
 anchor_left = 0.5
@@ -334,7 +336,7 @@ text = "ClavierQWERTY"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
-[connection signal="pressed" from="VBoxContainer/Langues" to="VBoxContainer/Langues" method="_on_Langues_pressed"]
+[connection signal="pressed" from="VBoxContainer/Langues" to="." method="_on_Langues_pressed"]
 [connection signal="pressed" from="VBoxContainer/Reglages" to="VBoxContainer/Langues" method="_on_Reglages_pressed"]
 [connection signal="pressed" from="VBoxContainer/Retour" to="VBoxContainer/Langues" method="_on_Retour_pressed"]
 [connection signal="pressed" from="GestionLangues/Francais" to="VBoxContainer/Langues" method="_on_Francais_pressed"]
