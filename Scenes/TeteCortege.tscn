@@ -245,7 +245,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 6328.98, 797.658 )
+position = Vector2( 7765.29, -472.342 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
@@ -782,10 +782,10 @@ position = Vector2( -2633.23, 835.907 )
 position = Vector2( -1273.23, 827.907 )
 
 [node name="robe jaune" parent="Foule/cortege 1" instance=ExtResource( 12 )]
-position = Vector2( -332.297, 522.295 )
+position = Vector2( -326.951, 522.295 )
 
 [node name="drapeau cheveux oranges" parent="Foule/cortege 1" instance=ExtResource( 187 )]
-position = Vector2( -371.748, 660.459 )
+position = Vector2( -373.529, 662.241 )
 
 [node name="drapeau et fleur" parent="Foule/cortege 1" instance=ExtResource( 93 )]
 position = Vector2( -1314.46, 915.835 )
