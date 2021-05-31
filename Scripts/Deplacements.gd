@@ -11,6 +11,8 @@ var gestionAnimations = false
 var paillettes
 var dansedanse = false
 var indicationDirection
+var proche_pnj = false
+var is_dancing = false
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
@@ -45,7 +47,13 @@ func get_input():
 			dirPlayer = 1
 			
 		velocite = velocite.normalized() * vitesse
-		
+
+func _input(event):
+	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && proche_pnj == false :
+		lancerpaillettes()
+	if event.is_action_pressed("ui_focus_next"):
+		gestionAnimations = false
+
 func _physics_process(delta):
 	if !gestionAnimations:
 		get_input()
@@ -54,21 +62,24 @@ func _physics_process(delta):
 		# Lien avec le script Zindex
 		z_index = global_position.y / 2
 	
-		if velocite.x == 0 && velocite.y == 0:
-			$AnimatedSprite.play("Idle"+direction)
-			if consultationZine.visible == false && Dialogues.visible == false:
-				if dansedanse == false:
-					dansedanse = true
-					gestiondanse()
-			else:
-				$Timer.stop()
+		if velocite.x == 0 && velocite.y == 0 :
+			if !is_dancing :
+				$AnimatedSprite.play("Idle"+direction)
+				if consultationZine.visible == false && Dialogues.visible == false:
+					if dansedanse == false:
+						dansedanse = true
+						gestiondanse()
+				else:
+					$Timer.stop()
 		else:
 			$AnimatedSprite.play("Walk"+direction)
 			dansedanse = false
+			is_dancing = false
 			$Timer.stop()
 			
 func chang_anim():
-	gestionAnimations = false
+	if $AnimatedSprite.animation == "paillettesDroite" || $AnimatedSprite.animation == "paillettesGauche" :
+		gestionAnimations = false
 
 func gestiondanse():
 	if consultationZine.visible == false && Dialogues.visible == false:
@@ -83,6 +94,7 @@ func lancerpaillettes():
 		if direction == "Dos":
 			direction = "Droite"
 		$Timer.start(0.3)
+		$AnimatedSprite.frame = 0
 		$AnimatedSprite.play("paillettes"+ direction)
 		paillettes = true
 		
@@ -101,7 +113,8 @@ func actionPlayer():
 	$Timer.stop()
 			
 	if !gestionAnimations:
-		gestionAnimations = true
+		#gestionAnimations = true
 		if dansedanse == true:
+			is_dancing = true
 			$AnimatedSprite.play("danse")
 		

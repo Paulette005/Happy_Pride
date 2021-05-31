@@ -31,6 +31,7 @@ func _ready():
 	
 func on_body_entered(body):
 	if body.name == "Player":
+		Player.proche_pnj = true
 		playerZone = true
 		Interactions.visible = true
 		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
@@ -39,6 +40,7 @@ func on_body_entered(body):
 		
 func on_body_exited(body):
 	if body.name == "Player":
+		Player.proche_pnj = false
 		playerZone = false
 		Interactions.visible = false
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
@@ -64,9 +66,6 @@ func _input(event):
 			$AnimatedSprite.set_frame((Player.dirPlayer)-2)
 			
 		lancement_dialogue()
-		
-	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && Interactions.visible == false && Dialogues.visible == false:
-		Player.lancerpaillettes()
 		
 	if event.is_action_pressed("ui_accept") && messagefin == 1:
 		lancement_dialogue()
