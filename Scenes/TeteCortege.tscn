@@ -269,7 +269,7 @@ script = ExtResource( 179 )
 posX = 6075
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Zones_specifiques/ChangementScene"]
-position = Vector2( -4699.02, 41.2427 )
+position = Vector2( -4699.02, 35.9034 )
 scale = Vector2( 0.831308, 1.23667 )
 polygon = PoolVector2Array( -744.737, -806.172, -777.898, 903.875, -531.163, 897.084, -535.299, -815.507 )
 
