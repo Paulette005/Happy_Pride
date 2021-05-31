@@ -245,7 +245,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7765.29, -472.342 )
+position = Vector2( 7967.33, -472.342 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]

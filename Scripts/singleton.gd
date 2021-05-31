@@ -1,6 +1,6 @@
 extends Node2D
 
-var posPlayerSingleton = Vector2 (7700.915, -6)
+var posPlayerSingleton = Vector2 (7967.333, -472.342)
 
 var langues = 0
 var volume = 0.2
