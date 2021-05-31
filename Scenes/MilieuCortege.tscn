@@ -659,7 +659,6 @@ position = Vector2( 121.139, -201.151 )
 
 [node name="caddie pancartes" parent="foule/cortege 1" instance=ExtResource( 13 )]
 position = Vector2( -411.33, 32.6478 )
-add_collision = false
 
 [node name="su pearl" parent="foule/cortege 1" instance=ExtResource( 64 )]
 position = Vector2( -786.542, -180.726 )

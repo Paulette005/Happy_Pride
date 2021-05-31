@@ -600,6 +600,8 @@ texture = ExtResource( 73 )
 
 [node name="egout grille grande" type="Sprite" parent="decor"]
 position = Vector2( 2680.38, -550.264 )
+z_index = -3899
+z_as_relative = false
 texture = ExtResource( 75 )
 
 [node name="panneau dos" parent="decor" instance=ExtResource( 71 )]
