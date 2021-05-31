@@ -1203,3 +1203,7 @@ position = Vector2( 2937.15, 393.254 )
 
 [node name="jupe rayures jaunes" parent="." instance=ExtResource( 82 )]
 position = Vector2( 2948.94, 492.123 )
+[connection signal="gestionCamera" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
+[connection signal="gestionCamera" from="Chars/CharHandi" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/CharHandi" to="Camera2D" method="_on_Char01_gestionCameraRetour"]

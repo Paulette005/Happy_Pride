@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
 [ext_resource path="res://Assets/chars/char-2-rempli.png" type="Texture" id=2]
@@ -7,6 +7,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1175.34, 185.739 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 14.9764
 
 [node name="Char" type="Sprite"]
 texture = ExtResource( 2 )
@@ -17,7 +20,7 @@ add_collision = false
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 15.2039, -13.4708 )
+position = Vector2( 15.2039, 10.5292 )
 shape = SubResource( 1 )
 
 [node name="effet-enceinte-jaune2" parent="." instance=ExtResource( 4 )]
@@ -33,6 +36,16 @@ z_index = 3500
 position = Vector2( -800.429, -325.985 )
 stream = ExtResource( 3 )
 autoplay = true
-max_distance = 3300.0
+max_distance = 3000.0
 attenuation = 0.420448
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2( 1.1338, 1.47555 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -4.00024, 165.502 )
+scale = Vector2( 88.0922, 8.28531 )
+shape = SubResource( 2 )
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_AudioStreamPlayer2D_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

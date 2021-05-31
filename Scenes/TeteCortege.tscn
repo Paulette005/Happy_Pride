@@ -1374,3 +1374,7 @@ position = Vector2( -4618.56, -809.334 )
 [node name="Boby" parent="." instance=ExtResource( 27 )]
 position = Vector2( -4631.27, -707.625 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
+[connection signal="gestionCamera" from="Chars/Char01" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/Char01" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
+[connection signal="gestionCamera" from="Chars/Char02" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/Char02" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
