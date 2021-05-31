@@ -14,4 +14,4 @@ add_collision = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 visible = false
-polygon = PoolVector2Array( 74.8571, 1.35449, -64.7318, 6.3999, -61.3682, -607.455, 81.5842, -600.727 )
+polygon = PoolVector2Array( 105.133, 6.39947, -64.7318, 6.3999, -61.3682, -607.455, 108.497, -604.091 )

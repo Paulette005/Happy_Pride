@@ -3,10 +3,6 @@
 [ext_resource path="res://Assets/PNJ/PNJ pink block/banderole pink block.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
-
-
-
-
 [node name="banderole pink block" type="Sprite"]
 position = Vector2( -0.979553, 17.3816 )
 texture = ExtResource( 1 )
@@ -18,4 +14,4 @@ add_collision = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 visible = false
-polygon = PoolVector2Array( 24.0726, 35.7433, -36.5085, 37.5251, -32.054, -4.34718, -1.76349, -510.378, 81.0901, -502.36, 40.1088, 32.1797 )
+polygon = PoolVector2Array( 24.0726, 35.7433, -36.5085, 37.5251, -32.054, -4.34718, -1.76349, -510.378, 101.581, -492.56, 65.9455, 41.9796 )
