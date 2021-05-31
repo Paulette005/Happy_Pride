@@ -238,7 +238,7 @@ nomScene = "TeteCortege"
 posX = -5006
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Zones_specifiques/ChangementScene"]
-position = Vector2( 1538.36, -330.01 )
+position = Vector2( 1548.36, -335.667 )
 polygon = PoolVector2Array( 230.189, -968.182, 246.905, 1099.47, 385.031, 1087.47, 363.674, -968.182 )
 
 [node name="ChangementScene2" type="Area2D" parent="Zones_specifiques"]
@@ -248,7 +248,7 @@ nomScene = "FinCortege"
 posX = 3346
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Zones_specifiques/ChangementScene2"]
-position = Vector2( -2949.6, -297.64 )
+position = Vector2( -2960.6, -297.64 )
 polygon = PoolVector2Array( 233.224, -1037.75, 222.132, 29.1613, 246.693, 1054.52, 448.736, 1108.4, 421.797, -1087.14 )
 
 [node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 177 )]

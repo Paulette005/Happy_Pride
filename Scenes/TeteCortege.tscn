@@ -266,9 +266,10 @@ scale = Vector2( 0.794727, 1.17238 )
 
 [node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 script = ExtResource( 179 )
+indicationDirection = "Droite"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Zones_specifiques/ChangementScene"]
-position = Vector2( -4685.02, 46.8996 )
+position = Vector2( -4699.02, 46.8996 )
 scale = Vector2( 0.831308, 1.23667 )
 polygon = PoolVector2Array( -744.737, -806.172, -777.898, 903.875, -531.163, 897.084, -535.299, -815.507 )
 

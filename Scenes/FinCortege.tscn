@@ -138,13 +138,13 @@ script = ExtResource( 27 )
 visible = false
 position = Vector2( -1782.46, -19.953 )
 
-[node name="ChangemeentScene" type="Area2D" parent="Zones_specifiques"]
+[node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 position = Vector2( 3535.82, -7.5039 )
 script = ExtResource( 78 )
 posX = -4302
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zones_specifiques/ChangemeentScene"]
-position = Vector2( 8.09055, -1.13301 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zones_specifiques/ChangementScene"]
+position = Vector2( 15.0905, -1.13301 )
 shape = SubResource( 1 )
 
 [node name="decor" type="Node2D" parent="."]
