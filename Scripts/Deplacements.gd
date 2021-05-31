@@ -78,25 +78,27 @@ func gestiondanse():
 func lancerpaillettes():
 	if !gestionAnimations:
 		gestionAnimations = true
-		if direction == "Gauche" || direction == "Droite":
-			$Timer.start(0.3)
-			$AnimatedSprite.play("paillettes"+ direction)
-			paillettes = true
+		if direction == "Face":
+			direction = "Gauche"
+		if direction == "Dos":
+			direction = "Droite"
+		$Timer.start(0.3)
+		$AnimatedSprite.play("paillettes"+ direction)
+		paillettes = true
 		
 func actionPlayer():
 	if paillettes == true:
-		if direction == "Gauche" || direction == "Droite":
-			var partInstance = LancerParticules.instance()
-			if direction == "Droite":
-				$Position2D.position.x = 138
-				partInstance.lancer_particules($Position2D.global_position)
+		var partInstance = LancerParticules.instance()
+		if direction == "Droite":
+			$Position2D.position.x = 138
+			partInstance.lancer_particules($Position2D.global_position)
 				
-			if direction == "Gauche":
-				$Position2D.position.x = -138
-				partInstance.lancer_particules($Position2D.global_position)
-			get_parent().add_child(partInstance)
-			paillettes = false
-		$Timer.stop()
+		if direction == "Gauche":
+			$Position2D.position.x = -138
+			partInstance.lancer_particules($Position2D.global_position)
+		get_parent().add_child(partInstance)
+		paillettes = false
+	$Timer.stop()
 			
 	if !gestionAnimations:
 		gestionAnimations = true
