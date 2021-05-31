@@ -205,8 +205,6 @@ visible = false
 [node name="Pause" parent="CanvasLayer" instance=ExtResource( 165 )]
 visible = false
 
-[node name="Partir" parent="CanvasLayer" instance=ExtResource( 176 )]
-
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 8 )]
 visible = false
 
