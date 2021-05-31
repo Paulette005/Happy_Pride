@@ -15,12 +15,11 @@ func _ready():
 	langues = singleton.langues
 	
 func _on_Langues_pressed():
-	if gestionLangues.visible == false:
-		gestionLangues.visible = true
-		if singleton.langues == 0:
-			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Francais").grab_focus()
-		else:
-			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Anglais").grab_focus()
+	gestionLangues.visible = true
+	if singleton.langues == 0:
+		get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Francais").grab_focus()
+	else:
+		get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
 	
