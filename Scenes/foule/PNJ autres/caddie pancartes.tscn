@@ -3,13 +3,15 @@
 [ext_resource path="res://Assets/PNJ/PNJ autres/caddie pancartes.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=2]
 
-
-
-
-
-
 [node name="caddie pancartes" type="Sprite"]
 position = Vector2( 0.524658, 1.56046 )
 texture = ExtResource( 1 )
 offset = Vector2( 20.2327, -197.783 )
 script = ExtResource( 2 )
+add_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( -168.275, -54.7787, -163.235, 1.91781, 6.85431, 22.0766, 212.221, 13.2571, 199.622, -76.1973, 108.908, -119.035, 39.6122, -117.775, 11.894, -79.9771, -25.9037, -59.8183 )

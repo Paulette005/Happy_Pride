@@ -1,4 +1,4 @@
-[gd_scene load_steps=183 format=2]
+[gd_scene load_steps=184 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -178,6 +178,7 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/tshirt rose.tscn" type="PackedScene" id=176]
 [ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=177]
 [ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=178]
+[ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=179]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -213,6 +214,8 @@ visible = false
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 5 )]
 visible = false
+
+[node name="Partir" parent="CanvasLayer" instance=ExtResource( 179 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -419,7 +422,7 @@ texture = ExtResource( 11 )
 position = Vector2( -5471.84, 0.000244141 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
-z_index = -3900
+z_index = -3901
 z_as_relative = false
 texture = ExtResource( 11 )
 
@@ -427,7 +430,7 @@ texture = ExtResource( 11 )
 position = Vector2( -7783.65, 0.0119629 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
-z_index = -3900
+z_index = -3902
 z_as_relative = false
 texture = ExtResource( 11 )
 
@@ -656,6 +659,7 @@ position = Vector2( 121.139, -201.151 )
 
 [node name="caddie pancartes" parent="foule/cortege 1" instance=ExtResource( 13 )]
 position = Vector2( -411.33, 32.6478 )
+add_collision = false
 
 [node name="su pearl" parent="foule/cortege 1" instance=ExtResource( 64 )]
 position = Vector2( -786.542, -180.726 )

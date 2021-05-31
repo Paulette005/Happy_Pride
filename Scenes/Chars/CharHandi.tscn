@@ -37,7 +37,7 @@ tempo = 69
 position = Vector2( -422.81, -299.315 )
 stream = ExtResource( 3 )
 autoplay = true
-max_distance = 2650.0
+max_distance = 2600.0
 attenuation = 0.378929
 
 [node name="Area2D" type="Area2D" parent="."]

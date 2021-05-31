@@ -1,4 +1,4 @@
-[gd_scene load_steps=106 format=2]
+[gd_scene load_steps=108 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -101,6 +101,8 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/couple hijab rose.tscn" type="PackedScene" id=99]
 [ext_resource path="res://Scenes/foule/PNJ avancent/Boby pote.tscn" type="PackedScene" id=100]
 [ext_resource path="res://Scenes/foule/PNJ discutent/angeDiscute.tscn" type="PackedScene" id=101]
+[ext_resource path="res://Assets/decor/batiments/magasin logo rose.png" type="Texture" id=102]
+[ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=103]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 1100 )
@@ -127,8 +129,6 @@ script = ExtResource( 57 )
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 38 )]
 visible = false
 
-[node name="Partir" parent="CanvasLayer" instance=ExtResource( 82 )]
-
 [node name="Pause" parent="CanvasLayer" instance=ExtResource( 79 )]
 visible = false
 
@@ -140,6 +140,8 @@ visible = false
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 56 )]
 visible = false
+
+[node name="Partir" parent="CanvasLayer" instance=ExtResource( 103 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -168,10 +170,6 @@ shape = SubResource( 1 )
 
 [node name="decor" type="Node2D" parent="."]
 position = Vector2( -1096.53, 33.6357 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 
@@ -188,6 +186,7 @@ position = Vector2( -805.192, -42.3785 )
 shape = SubResource( 3 )
 
 [node name="batiments" type="Node2D" parent="decor"]
+position = Vector2( 275.998, 0 )
 z_index = -3850
 
 [node name="resto vert" type="Sprite" parent="decor/batiments"]
@@ -222,6 +221,10 @@ texture = ExtResource( 75 )
 [node name="pharmacie" type="Sprite" parent="decor/batiments"]
 position = Vector2( -1074.27, -1169.6 )
 texture = ExtResource( 72 )
+
+[node name="magasin logo rose" type="Sprite" parent="decor/batiments"]
+position = Vector2( 4011.99, -1197.29 )
+texture = ExtResource( 102 )
 
 [node name="sol" parent="decor" instance=ExtResource( 24 )]
 position = Vector2( 1894.77, -238.531 )
