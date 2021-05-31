@@ -197,10 +197,10 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/chemise verte.tscn" type="PackedScene" id=196]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2950.03, 246.181 )
+extents = Vector2( 2956.38, 246.181 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 3811.85, 246.181 )
+extents = Vector2( 3818.38, 246.181 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 7596.15, 50 )
@@ -228,14 +228,14 @@ visible = false
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
 visible = false
 
-[node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
-visible = false
-
 [node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
 pause_mode = 2
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
+visible = false
+
+[node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
 visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -282,7 +282,7 @@ position = Vector2( -3014.8, -142.544 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 5496.58, -145.671 )
+position = Vector2( 5489.58, -146.671 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
@@ -598,6 +598,8 @@ texture = ExtResource( 73 )
 
 [node name="egout grille grande" type="Sprite" parent="decor"]
 position = Vector2( 2680.38, -550.264 )
+z_index = -3899
+z_as_relative = false
 texture = ExtResource( 75 )
 
 [node name="panneau dos" parent="decor" instance=ExtResource( 71 )]
@@ -1321,7 +1323,7 @@ polygon = PoolVector2Array( -1225.66, -243.174, -1351.71, -250.309, -1351.92, 30
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Chars/Char01/StaticBody2D2"]
 visible = false
-polygon = PoolVector2Array( 1216.98, -240.796, 1376.33, -247.931, 1392.76, 118.151, 1197.67, 121.515, 1103.49, 7.15273 )
+polygon = PoolVector2Array( 1216.98, -240.796, 1413.15, -246.684, 1415.53, 111.268, 1197.67, 121.515, 1103.49, 7.15273 )
 
 [node name="chaine char courone fleurs" parent="Chars/Char01" instance=ExtResource( 139 )]
 position = Vector2( 1301.19, 136.28 )
@@ -1347,7 +1349,8 @@ scale = Vector2( 1, 0.883721 )
 add_collision = false
 
 [node name="chaine droite" parent="Chars/Char01" instance=ExtResource( 141 )]
-position = Vector2( 1392.37, 175.141 )
+position = Vector2( 1393.77, 105.017 )
+offset = Vector2( -3.87866, -321.203 )
 
 [node name="Char02" parent="Chars" instance=ExtResource( 66 )]
 position = Vector2( -1180.26, 136.478 )
