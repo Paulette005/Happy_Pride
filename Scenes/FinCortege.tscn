@@ -126,6 +126,14 @@ script = ExtResource( 57 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Interactions" parent="CanvasLayer" instance=ExtResource( 37 )]
+visible = false
+
+[node name="Partir" parent="CanvasLayer" instance=ExtResource( 103 )]
+
+[node name="Zine" parent="CanvasLayer" instance=ExtResource( 56 )]
+visible = false
+
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 38 )]
 visible = false
 
@@ -134,14 +142,6 @@ visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 80 )]
 visible = false
-
-[node name="Interactions" parent="CanvasLayer" instance=ExtResource( 37 )]
-visible = false
-
-[node name="Zine" parent="CanvasLayer" instance=ExtResource( 56 )]
-visible = false
-
-[node name="Partir" parent="CanvasLayer" instance=ExtResource( 103 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

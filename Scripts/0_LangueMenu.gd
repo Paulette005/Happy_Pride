@@ -2,10 +2,11 @@ extends Control
 
 var volume
 onready var singleton = get_node("/root/Singleton")
+onready var samplePlayer = get_node("/root/Control/AudioStreamPlayer")
 
 func _ready():
 	volume = singleton.volume
-	singleton.samplePlayer
+	samplePlayer.play()
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), log(get_node("/root/Singleton").volume)*10)
 	chargement_langue()
 	

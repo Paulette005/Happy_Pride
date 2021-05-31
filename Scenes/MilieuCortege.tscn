@@ -203,19 +203,19 @@ __meta__ = {
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 7 )]
 visible = false
 
-[node name="Pause" parent="CanvasLayer" instance=ExtResource( 165 )]
+[node name="Partir" parent="CanvasLayer" instance=ExtResource( 179 )]
+
+[node name="Zine" parent="CanvasLayer" instance=ExtResource( 5 )]
 visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 8 )]
 visible = false
 
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 165 )]
+visible = false
+
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 166 )]
 visible = false
-
-[node name="Zine" parent="CanvasLayer" instance=ExtResource( 5 )]
-visible = false
-
-[node name="Partir" parent="CanvasLayer" instance=ExtResource( 179 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -422,7 +422,7 @@ texture = ExtResource( 11 )
 position = Vector2( -5471.84, 0.000244141 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
-z_index = -3901
+z_index = -3900
 z_as_relative = false
 texture = ExtResource( 11 )
 
@@ -430,7 +430,7 @@ texture = ExtResource( 11 )
 position = Vector2( -7783.65, 0.0119629 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
-z_index = -3902
+z_index = -3900
 z_as_relative = false
 texture = ExtResource( 11 )
 
@@ -1214,6 +1214,9 @@ position = Vector2( -2271.49, 635.886 )
 
 [node name="mmeRobeOrange2" parent="foule/cortege 2" instance=ExtResource( 89 )]
 position = Vector2( -2354.45, -533.433 )
+
+[node name="Partir" parent="foule" instance=ExtResource( 176 )]
+script = null
 
 [node name="PNJ" type="Node2D" parent="."]
 

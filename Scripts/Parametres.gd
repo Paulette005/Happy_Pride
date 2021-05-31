@@ -24,6 +24,7 @@ func _input(event):
 	if event.is_action_pressed("pause"):
 		get_tree().paused = true
 		Pause.visible = true
+		get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues/AnimatedSprite").visible = false
 		get_node("/root/Node2D/CanvasLayer/Pause/Pause/Reprendre").grab_focus()
 
 

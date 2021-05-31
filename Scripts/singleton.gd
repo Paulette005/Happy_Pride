@@ -7,8 +7,6 @@ var volume = 0.4
 var clavier = "azerty"
 var fragmentsZine = 0
 
-onready var samplePlayer = get_node("/root/Control/AudioStreamPlayer")
-
 #pour le changement de scene
 var loader
 var wait_frame
@@ -17,7 +15,6 @@ var current_scene
 
 func _ready():
 	set_process(false)
-	samplePlayer.play()
 
 func change_scene(var path):
 	var root = get_tree().get_root()
@@ -25,7 +22,6 @@ func change_scene(var path):
 	loader = ResourceLoader.load_interactive(path)
 	wait_frame = 1
 	set_process(true)
-
 	
 func _process(delta):
 	if loader == null:
