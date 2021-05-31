@@ -73,7 +73,7 @@ margin_top = 77.0
 margin_right = 219.0
 margin_bottom = 150.0
 focus_neighbour_top = NodePath("../Reprendre")
-focus_neighbour_bottom = NodePath("../Quitter")
+focus_neighbour_bottom = NodePath("../Retour")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
 
@@ -97,11 +97,40 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Quitter" type="TextureButton" parent="Pause"]
+[node name="Retour" type="TextureButton" parent="Pause"]
 margin_top = 154.0
 margin_right = 219.0
 margin_bottom = 227.0
 focus_neighbour_top = NodePath("../Options")
+focus_neighbour_bottom = NodePath("../Quitter")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 2 )
+
+[node name="Retour" type="RichTextLabel" parent="Pause/Retour"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -26.25
+margin_right = 100.0
+margin_bottom = 26.25
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/normal_font = ExtResource( 7 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Retour"
+text = "Retour"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quitter" type="TextureButton" parent="Pause"]
+margin_top = 231.0
+margin_right = 219.0
+margin_bottom = 304.0
+focus_neighbour_top = NodePath("../Retour")
 texture_normal = ExtResource( 1 )
 texture_focused = ExtResource( 2 )
 
@@ -126,4 +155,5 @@ __meta__ = {
 }
 [connection signal="pressed" from="Pause/Reprendre" to="." method="_on_Reprendre_pressed"]
 [connection signal="pressed" from="Pause/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="Pause/Retour" to="." method="_on_Retour_pressed"]
 [connection signal="pressed" from="Pause/Quitter" to="." method="_on_Quitter_pressed"]
