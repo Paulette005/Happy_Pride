@@ -8,4 +8,5 @@ position = Vector2( 0, -150 )
 scale = Vector2( 1.16, 1.12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 133.416 )
 shape = SubResource( 1 )

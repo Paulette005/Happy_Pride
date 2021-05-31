@@ -1,4 +1,4 @@
-[gd_scene load_steps=184 format=2]
+[gd_scene load_steps=185 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -179,6 +179,7 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=177]
 [ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=178]
 [ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=179]
+[ext_resource path="res://Scenes/zoneFin2.tscn" type="PackedScene" id=180]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -233,6 +234,13 @@ script = ExtResource( 1 )
 
 [node name="Zones_specifiques" type="Node2D" parent="."]
 
+[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 180 )]
+position = Vector2( 1177.84, -1298.43 )
+
+[node name="zoneFin2" parent="Zones_specifiques" instance=ExtResource( 180 )]
+position = Vector2( 1093.7, 1000 )
+scale = Vector2( 0.480002, 1 )
+
 [node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 position = Vector2( 4493.12, 255.254 )
 script = ExtResource( 4 )
@@ -252,15 +260,6 @@ posX = 3346
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Zones_specifiques/ChangementScene2"]
 position = Vector2( -2979.6, -297.64 )
 polygon = PoolVector2Array( 233.224, -1037.75, 222.132, 29.1613, 246.693, 1054.52, 448.736, 1108.4, 421.797, -1087.14 )
-
-[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 177 )]
-visible = false
-position = Vector2( 1242.17, -1313.64 )
-
-[node name="zoneFin2" parent="Zones_specifiques" instance=ExtResource( 177 )]
-visible = false
-position = Vector2( 1141.14, 988.662 )
-scale = Vector2( 0.359999, 1 )
 
 [node name="Chars" type="Node2D" parent="."]
 
