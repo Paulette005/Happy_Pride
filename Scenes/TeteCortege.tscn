@@ -236,7 +236,7 @@ visible = false
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 1.5, 1.5 )
-limit_left = -5200
+limit_left = -5050
 limit_top = -1380
 limit_right = 8700
 limit_bottom = 1135
@@ -249,6 +249,7 @@ position = Vector2( 7765.29, -472.342 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
+position = Vector2( 76.3677, 5.65686 )
 script = ExtResource( 179 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]

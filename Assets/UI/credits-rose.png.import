@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portrait-credit.png-6d6bd015b0b081675d9e096a29c4628e.stex"
+path="res://.import/credits-rose.png-a7f2e78154cf87a0a74c9bdebe389196.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/portrait-credit.png"
-dest_files=[ "res://.import/portrait-credit.png-6d6bd015b0b081675d9e096a29c4628e.stex" ]
+source_file="res://Assets/UI/credits-rose.png"
+dest_files=[ "res://.import/credits-rose.png-a7f2e78154cf87a0a74c9bdebe389196.stex" ]
 
 [params]
 
