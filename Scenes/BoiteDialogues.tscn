@@ -105,6 +105,7 @@ scale = Vector2( 0.334155, 0.323682 )
 z_index = 1
 frames = SubResource( 1 )
 animation = "triangle"
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/AnimatedSprite"]
@@ -155,6 +156,7 @@ margin_right = 197.0
 margin_bottom = 50.0
 custom_fonts/normal_font = ExtResource( 10 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
 bbcode_text = "Prenom"
 text = "Prenom"
 __meta__ = {
@@ -172,6 +174,7 @@ margin_right = 372.0
 margin_bottom = 89.0
 custom_fonts/normal_font = ExtResource( 9 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
 bbcode_text = "Voici du texte !"
 text = "Voici du texte !"
 __meta__ = {
