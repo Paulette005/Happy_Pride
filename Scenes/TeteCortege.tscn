@@ -1,4 +1,4 @@
-[gd_scene load_steps=203 format=2]
+[gd_scene load_steps=199 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -192,10 +192,6 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/gayHappyFleurALasMain.tscn" type="PackedScene" id=190]
 [ext_resource path="res://Scenes/Menu/Pause.tscn" type="PackedScene" id=191]
 [ext_resource path="res://Scenes/Menu/Options02.tscn" type="PackedScene" id=192]
-[ext_resource path="res://Scenes/foule/PNJ avancent/chemise verte.tscn" type="PackedScene" id=193]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tshirt rose.tscn" type="PackedScene" id=194]
-[ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=195]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=196]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -240,7 +236,7 @@ visible = false
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2( 1.5, 1.5 )
-limit_left = -5050
+limit_left = -5200
 limit_top = -1380
 limit_right = 8700
 limit_bottom = 1135
@@ -249,19 +245,21 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7765.29, -472.342 )
+position = Vector2( 7967.33, -472.342 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
-position = Vector2( 76.3677, 5.65686 )
 script = ExtResource( 179 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( -4429.92, -32.1148 )
-scale = Vector2( 1, 1.20727 )
-polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
+position = Vector2( -4685.02, 46.8996 )
+scale = Vector2( 0.831308, 1.23667 )
+polygon = PoolVector2Array( -744.737, -806.172, -777.898, 903.875, -531.163, 897.084, -535.299, -815.507 )
 
 [node name="decor" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 position = Vector2( 0, -1003.24 )
@@ -275,7 +273,7 @@ position = Vector2( 5423.79, -149.671 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 1521.02, 2200.36 )
+position = Vector2( 1521.02, 2184.36 )
 z_index = 100
 z_as_relative = false
 shape = SubResource( 3 )
@@ -643,7 +641,7 @@ position = Vector2( -1985.21, 504.162 )
 script = ExtResource( 10 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 13 )]
-position = Vector2( 5688.34, 645.224 )
+position = Vector2( 5688, 645 )
 script = ExtResource( 10 )
 
 [node name="Foule" type="Node2D" parent="."]
@@ -787,7 +785,7 @@ position = Vector2( -2633.23, 835.907 )
 position = Vector2( -1273.23, 827.907 )
 
 [node name="robe jaune" parent="Foule/cortege 1" instance=ExtResource( 12 )]
-position = Vector2( -315.637, 527.952 )
+position = Vector2( -326.951, 522.295 )
 
 [node name="drapeau cheveux oranges" parent="Foule/cortege 1" instance=ExtResource( 187 )]
 position = Vector2( -373.529, 662.241 )
@@ -957,12 +955,6 @@ position = Vector2( -1711.18, -65.2081 )
 
 [node name="bear drapeau" parent="Foule/cortege 1/dansent" instance=ExtResource( 31 )]
 position = Vector2( -2045.47, 658.863 )
-
-[node name="tshirt rose" parent="Foule/cortege 1" instance=ExtResource( 194 )]
-position = Vector2( -5235.48, 747.842 )
-
-[node name="sac etoiles" parent="Foule/cortege 1" instance=ExtResource( 195 )]
-position = Vector2( -5274.63, 843.428 )
 
 [node name="drapeau cheveux oranges2" parent="Foule/cortege 1" instance=ExtResource( 187 )]
 position = Vector2( -4170.6, 848.841 )
@@ -1267,39 +1259,6 @@ position = Vector2( -1328.1, 302.914 )
 [node name="dane hort rose" parent="Foule/cortege 2/dansent" instance=ExtResource( 95 )]
 position = Vector2( -1188.41, 448.955 )
 
-[node name="mec robe verte2" parent="Foule/cortege 2" instance=ExtResource( 35 )]
-position = Vector2( -6035.28, -329.697 )
-
-[node name="mme raisille2" parent="Foule/cortege 2" instance=ExtResource( 153 )]
-position = Vector2( -6045.96, -180.195 )
-
-[node name="queen discutent" parent="Foule/cortege 2" instance=ExtResource( 186 )]
-position = Vector2( -5450.2, -455.927 )
-
-[node name="bisou fauteuil" parent="Foule/cortege 2" instance=ExtResource( 189 )]
-position = Vector2( -6040.01, 227.373 )
-
-[node name="Boby pote" parent="Foule/cortege 2" instance=ExtResource( 22 )]
-position = Vector2( -5891.69, -760.047 )
-
-[node name="Boby" parent="Foule/cortege 2" instance=ExtResource( 27 )]
-position = Vector2( -5904.4, -658.338 )
-
-[node name="chemise verte" parent="Foule/cortege 2" instance=ExtResource( 193 )]
-position = Vector2( -5390.02, 793.108 )
-
-[node name="tatoo girl" parent="Foule/cortege 2" instance=ExtResource( 196 )]
-position = Vector2( -5435.43, 886.444 )
-
-[node name="discuteDrapeau" parent="Foule/cortege 2" instance=ExtResource( 15 )]
-position = Vector2( -2404.54, -274.885 )
-
-[node name="cheveux bleus" parent="Foule/cortege 2" instance=ExtResource( 43 )]
-position = Vector2( -2397.8, -173.975 )
-
-[node name="couple robe verte2" parent="Foule/cortege 2" instance=ExtResource( 121 )]
-position = Vector2( -2602.98, -517.061 )
-
 [node name="Chars" type="Node2D" parent="."]
 
 [node name="Char01" parent="Chars" instance=ExtResource( 64 )]
@@ -1396,4 +1355,26 @@ position = Vector2( 1409.03, 326.115 )
 
 [node name="Chaine salopette" parent="Chars/Char02" instance=ExtResource( 145 )]
 position = Vector2( 1301.7, -110.155 )
+
+[node name="mec robe verte" parent="." instance=ExtResource( 35 )]
+position = Vector2( -4762.15, -378.984 )
+
+[node name="mme raisille" parent="." instance=ExtResource( 153 )]
+position = Vector2( -4772.83, -229.482 )
+
+[node name="queen discutent" parent="." instance=ExtResource( 186 )]
+position = Vector2( -4177.07, -505.214 )
+
+[node name="bisou fauteuil" parent="." instance=ExtResource( 189 )]
+position = Vector2( -4766.88, 178.086 )
+
+[node name="Boby pote" parent="." instance=ExtResource( 22 )]
+position = Vector2( -4618.56, -809.334 )
+
+[node name="Boby" parent="." instance=ExtResource( 27 )]
+position = Vector2( -4631.27, -707.625 )
 [connection signal="item_rect_changed" from="decor/sol" to="decor/sol" method="calculate_size"]
+[connection signal="gestionCamera" from="Chars/Char01" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/Char01" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
+[connection signal="gestionCamera" from="Chars/Char02" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/Char02" to="Camera2D" method="_on_Char01_gestionCameraRetour"]

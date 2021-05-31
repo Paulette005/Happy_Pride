@@ -1,4 +1,4 @@
-[gd_scene load_steps=183 format=2]
+[gd_scene load_steps=180 format=2]
 
 [ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -175,9 +175,6 @@
 [ext_resource path="res://Scenes/foule/PNJ bisous/bisouLesbienneBie.tscn" type="PackedScene" id=173]
 [ext_resource path="res://Scenes/foule/PNJ avancent/discuteDrapeau.tscn" type="PackedScene" id=174]
 [ext_resource path="res://Scenes/foule/PNJ avancent/trans drapeau verte.tscn" type="PackedScene" id=175]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tshirt rose.tscn" type="PackedScene" id=176]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=177]
-[ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=178]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -949,24 +946,6 @@ position = Vector2( -1102.01, 133.062 )
 [node name="danse sarwel vert" parent="foule/cortege 1/danse" instance=ExtResource( 148 )]
 position = Vector2( -658.846, -235.354 )
 
-[node name="orange a carreaux2" parent="foule/cortege 1" instance=ExtResource( 92 )]
-position = Vector2( -4590.11, -810.724 )
-
-[node name="sac etoiles" parent="foule/cortege 1" instance=ExtResource( 178 )]
-position = Vector2( -4620.35, -714.97 )
-
-[node name="tatoo girl" parent="foule/cortege 1" instance=ExtResource( 177 )]
-position = Vector2( -3931.44, 590.556 )
-
-[node name="interFauteuilRoux" parent="foule/cortege 1" instance=ExtResource( 50 )]
-position = Vector2( -1622.66, 425.29 )
-
-[node name="jupe rayures jaunes3" parent="foule/cortege 1" instance=ExtResource( 82 )]
-position = Vector2( -1610.87, 524.159 )
-
-[node name="tshirt rose" parent="foule/cortege 1" instance=ExtResource( 176 )]
-position = Vector2( -3978.53, 714.455 )
-
 [node name="cortege 2" type="Node2D" parent="foule"]
 position = Vector2( 0, 32.0361 )
 
@@ -1192,15 +1171,6 @@ position = Vector2( -587.19, 246.504 )
 [node name="trans drapeau verte" parent="foule/cortege 2" instance=ExtResource( 175 )]
 position = Vector2( -1935.55, -579.097 )
 
-[node name="su garnet" parent="foule/cortege 2" instance=ExtResource( 63 )]
-position = Vector2( -2235.57, 566.293 )
-
-[node name="su pearl" parent="foule/cortege 2" instance=ExtResource( 64 )]
-position = Vector2( -2271.49, 635.886 )
-
-[node name="mmeRobeOrange2" parent="foule/cortege 2" instance=ExtResource( 89 )]
-position = Vector2( -2354.45, -533.433 )
-
 [node name="PNJ" type="Node2D" parent="."]
 
 [node name="Judith" parent="PNJ" instance=ExtResource( 169 )]
@@ -1218,3 +1188,22 @@ script = ExtResource( 167 )
 [node name="Camille" parent="PNJ" instance=ExtResource( 170 )]
 position = Vector2( 1920.45, 415.037 )
 script = ExtResource( 167 )
+
+[node name="su garnet" parent="." instance=ExtResource( 63 )]
+position = Vector2( -2235.57, 598.329 )
+
+[node name="su pearl" parent="." instance=ExtResource( 64 )]
+position = Vector2( -2271.49, 667.922 )
+
+[node name="mmeRobeOrange" parent="." instance=ExtResource( 89 )]
+position = Vector2( -2354.45, -501.397 )
+
+[node name="interFauteuilRoux" parent="." instance=ExtResource( 50 )]
+position = Vector2( 2937.15, 393.254 )
+
+[node name="jupe rayures jaunes" parent="." instance=ExtResource( 82 )]
+position = Vector2( 2948.94, 492.123 )
+[connection signal="gestionCamera" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
+[connection signal="gestionCamera" from="Chars/CharHandi" to="Camera2D" method="_on_Char01_gestionCamera"]
+[connection signal="gestionCameraRetour" from="Chars/CharHandi" to="Camera2D" method="_on_Char01_gestionCameraRetour"]

@@ -8,7 +8,6 @@ export var is_pink_block = false
 func _ready():
 	$Timer.wait_time = 60.0/tempo
 	$Timer.start()
-	print ($Timer.wait_time)
 
 
 func on_timer_timeout():
@@ -19,7 +18,6 @@ func on_timer_timeout():
 		i = 0
 	if is_pink_block && i >= 4 :
 		i = 0
-
 
 func _on_AudioStreamPlayer2D_finished():
 	pass # Replace with function body.
