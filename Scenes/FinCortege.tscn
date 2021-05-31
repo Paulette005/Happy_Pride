@@ -144,7 +144,7 @@ script = ExtResource( 78 )
 posX = -4302
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Zones_specifiques/ChangementScene"]
-position = Vector2( 15.0905, -1.13301 )
+position = Vector2( 37.0905, -6.78987 )
 shape = SubResource( 1 )
 
 [node name="decor" type="Node2D" parent="."]
