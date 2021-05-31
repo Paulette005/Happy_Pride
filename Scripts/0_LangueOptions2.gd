@@ -2,7 +2,7 @@ extends Control
 
 var volume
 onready var singleton = get_node("/root/Singleton")
-onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
+onready var Options = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
 
 func ready():
 	volume = singleton.volume

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/BoutonsMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=2]
@@ -9,12 +9,11 @@
 [ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 08 Last Energy For The Day.wav" type="AudioStream" id=8]
 [ext_resource path="res://Scenes/Menu/Credits.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Menu/Options.tscn" type="PackedScene" id=10]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 1.0
-margin_bottom = 1.0
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -204,6 +203,9 @@ text = " Retour "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Options" parent="." instance=ExtResource( 10 )]
+visible = false
 [connection signal="pressed" from="VBoxContainer/Commencer" to="VBoxContainer/Commencer" method="_on_Commencer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Options" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="VBoxContainer/Credits" method="_on_Credits_pressed"]

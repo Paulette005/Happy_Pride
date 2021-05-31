@@ -1,23 +1,22 @@
 extends TextureButton
 
-onready var gestionLangues = get_node("/root/Control/GestionLangues")
-onready var ensembleReglages = get_node("/root/Control/EnsembleReglages")
+onready var gestionLangues = get_node("/root/Control/Options/GestionLangues")
+onready var ensembleReglages = get_node("/root/Control/Options/EnsembleReglages")
+onready var gestionOptions = get_node("/root/Control/Options/VBoxContainer")
 onready var singleton = get_node("/root/Singleton")
 
 var langues
 var volume
 
 func _ready():
-	get_node("/root/Control/VBoxContainer/Langues").grab_focus()
 	langues = singleton.langues
 	
 func _on_Langues_pressed():
-	if gestionLangues.visible == false:
-		gestionLangues.visible = true
-		if singleton.langues == 0:
-			get_node("/root/Control/GestionLangues/Francais").grab_focus()
-		else:
-			get_node("/root/Control/GestionLangues/Anglais").grab_focus()
+	gestionLangues.visible = true
+	if singleton.langues == 0:
+		get_node("/root/Control/Options/GestionLangues/Francais").grab_focus()
+	else:
+		get_node("/root/Control/Options//GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
 	
@@ -34,10 +33,13 @@ func enregistrementLangues():
 	
 func _on_Retour2_pressed():
 	gestionLangues.visible = false
-	get_node("/root/Control/VBoxContainer/Langues").grab_focus()
+	get_node("/root/Control/Options/VBoxContainer/Langues").grab_focus()
 
 func _on_Retour_pressed():
-	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")
+	gestionLangues.visible = true
+	ensembleReglages.visible = false
+	get_node("/root/Control/Options").visible = false
+	get_node("/root/Control/VBoxContainer/Commencer").grab_focus()
 
 func _on_Reglages_pressed():
 	ensembleReglages.visible = true

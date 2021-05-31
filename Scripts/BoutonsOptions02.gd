@@ -6,6 +6,7 @@ onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
 onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options/GestionLangues")
 onready var ensembleReglages = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
 onready var singleton = get_node("/root/Singleton")
+
 var langues
 var volume
 

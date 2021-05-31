@@ -2,15 +2,16 @@ extends TextureButton
 
 
 func _ready():
-	get_node("/root/Control/VBoxContainer/Commencer").grab_focus()
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	if get_node("/root/Control/Options").visible == false:
+		get_node("/root/Control/VBoxContainer/Commencer").grab_focus()
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _on_Commencer_pressed():
 	get_tree().change_scene("res://Scenes/Menu/Controles.tscn")
-	print("test")
 
 func _on_Options_pressed():
-	get_tree().change_scene("res://Scenes/Menu/Options.tscn")
+	get_node("/root/Control/Options").visible = true
+	get_node("/root/Control/Options/VBoxContainer/Langues").grab_focus()
 
 func _on_Credits_pressed():
 	get_node("/root/Control/Credits").visible = true
