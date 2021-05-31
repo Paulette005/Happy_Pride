@@ -15,7 +15,8 @@ func _ready():
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		get_tree().change_scene("res://Scenes/TeteCortege.tscn")
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+		get_node("chargement").visible = true
+		get_node("chargement/AnimationPlayer").play("chargement")
+		get_node("/root/Singleton").change_scene("res://Scenes/TeteCortege.tscn")
+	
+

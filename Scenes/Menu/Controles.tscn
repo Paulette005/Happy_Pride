@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Controles.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/controles-qwerty.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/controles-en.jpg" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/controles-fr.jpg" type="Texture" id=4]
+[ext_resource path="res://Scenes/Menu/chargement.tscn" type="PackedScene" id=5]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -44,3 +45,6 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="chargement" parent="." instance=ExtResource( 5 )]
+visible = false
