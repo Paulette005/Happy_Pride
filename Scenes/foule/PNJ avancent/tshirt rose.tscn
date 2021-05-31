@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/ZIndexEtColl.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNJ/PNJ avancent/tshirt rose.png" type="Texture" id=2]
+
+
+[node name="tshirt rose" type="Sprite"]
+position = Vector2( 2.23016, 0.467804 )
+texture = ExtResource( 2 )
+offset = Vector2( 11.414, -152.126 )
+script = ExtResource( 1 )
