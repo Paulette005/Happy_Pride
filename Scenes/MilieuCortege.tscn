@@ -229,20 +229,20 @@ script = ExtResource( 1 )
 position = Vector2( 4493.12, 255.254 )
 script = ExtResource( 4 )
 nomScene = "TeteCortege"
-posX = 50
+posX = -5006
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( 1547.36, -330.01 )
-polygon = PoolVector2Array( 237.925, -952.389, 246.905, 1099.47, 435.479, 1077.02, 430.989, -965.859 )
+position = Vector2( 1538.36, -330.01 )
+polygon = PoolVector2Array( 230.189, -968.182, 246.905, 1099.47, 385.031, 1087.47, 363.674, -968.182 )
 
 [node name="ChangementScene2" type="Area2D" parent="."]
 position = Vector2( -1898.22, 280.938 )
 script = ExtResource( 4 )
 nomScene = "FinCortege"
-posX = -3150
+posX = 3346
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene2"]
-position = Vector2( -2828.6, -297.64 )
+position = Vector2( -2949.6, -297.64 )
 polygon = PoolVector2Array( 233.224, -1037.75, 222.132, 29.1613, 246.693, 1054.52, 448.736, 1108.4, 421.797, -1087.14 )
 
 [node name="Chars" type="Node2D" parent="."]
@@ -622,7 +622,7 @@ position = Vector2( -19.9072, -1479.54 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Decor/StaticBody2D"]
-position = Vector2( -230.738, 1220 )
+position = Vector2( -230.738, 1243 )
 shape = SubResource( 4 )
 
 [node name="foule" type="Node2D" parent="."]

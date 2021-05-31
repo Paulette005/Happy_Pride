@@ -245,7 +245,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7765.29, -472.342 )
+position = Vector2( 7967.33, -472.342 )
 script = ExtResource( 5 )
 
 [node name="ChangementScene" type="Area2D" parent="."]
@@ -253,11 +253,14 @@ position = Vector2( 76.3677, 5.65686 )
 script = ExtResource( 179 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ChangementScene"]
-position = Vector2( -4429.92, -32.1148 )
-scale = Vector2( 1, 1.20727 )
-polygon = PoolVector2Array( -744.737, -806.172, -798.131, 913.102, -531.163, 897.084, -477.769, -806.172 )
+position = Vector2( -4685.02, 46.8996 )
+scale = Vector2( 0.831308, 1.23667 )
+polygon = PoolVector2Array( -744.737, -806.172, -777.898, 903.875, -531.163, 897.084, -535.299, -815.507 )
 
 [node name="decor" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 position = Vector2( 0, -1003.24 )
@@ -271,7 +274,7 @@ position = Vector2( 5423.79, -149.671 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( 1521.02, 2200.36 )
+position = Vector2( 1521.02, 2184.36 )
 z_index = 100
 z_as_relative = false
 shape = SubResource( 3 )
@@ -639,7 +642,7 @@ position = Vector2( -1985.21, 504.162 )
 script = ExtResource( 10 )
 
 [node name="Claude" parent="PNJ" instance=ExtResource( 13 )]
-position = Vector2( 5688.34, 645.224 )
+position = Vector2( 5688, 645 )
 script = ExtResource( 10 )
 
 [node name="Foule" type="Node2D" parent="."]

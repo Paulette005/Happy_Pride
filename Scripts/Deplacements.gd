@@ -9,7 +9,7 @@ var direction = "Gauche"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 var gestionAnimations = false
 var paillettes
-var dansedanse
+var dansedanse = false
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
@@ -18,9 +18,8 @@ func _ready():
 	$AnimatedSprite.connect("animation_finished", self, "chang_anim")
 	$Timer.connect("timeout", self, "actionPlayer")
 	var singleton = get_node("/root/Singleton")
-	#global_position = singleton.posPlayerSingleton
+	global_position = singleton.posPlayerSingleton
 	print(global_position)
-	
 	
 func get_input():
 	velocite = Vector2 ()
@@ -41,7 +40,7 @@ func get_input():
 			velocite.x += 1
 			direction = "Droite"
 			dirPlayer = 1
-
+			
 		velocite = velocite.normalized() * vitesse
 		
 func _physics_process(delta):
@@ -54,16 +53,24 @@ func _physics_process(delta):
 	
 		if velocite.x == 0 && velocite.y == 0:
 			$AnimatedSprite.play("Idle"+direction)
+			if consultationZine.visible == false && Dialogues.visible == false:
+				if dansedanse == false:
+					dansedanse = true
+					gestiondanse()
+			else:
+				$Timer.stop()
 		else:
 			$AnimatedSprite.play("Walk"+direction)
+			dansedanse = false
+			$Timer.stop()
 			
 func chang_anim():
 	gestionAnimations = false
 
-#func gestiondanse():
-#	if consultationZine.visible == false && Dialogues.visible == false:
-#		$Timer.start(3)
-#		dansedanse = true
+func gestiondanse():
+	if consultationZine.visible == false && Dialogues.visible == false:
+		$Timer.wait_time = 2
+		$Timer.start(4)
 		
 func lancerpaillettes():
 	if !gestionAnimations:
@@ -88,9 +95,10 @@ func actionPlayer():
 			paillettes = false
 		$Timer.stop()
 			
-	#if dansedanse == true:
-	#	gestionAnimations = true
-	#	$AnimatedSprite.play("WalkGauche")
-	#	$Timer.stop()
+	if !gestionAnimations:
+		gestionAnimations = true
+		if dansedanse == true:
+			$AnimatedSprite.play("danse")
+		
 
 

@@ -131,6 +131,7 @@ script = ExtResource( 27 )
 [node name="ChangemeentScene" type="Area2D" parent="."]
 position = Vector2( 3535.82, -7.5039 )
 script = ExtResource( 78 )
+posX = -4302
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChangemeentScene"]
 position = Vector2( 8.09055, -1.13301 )
@@ -281,8 +282,9 @@ position = Vector2( 687.422, -732.209 )
 position = Vector2( 944.001, -739.336 )
 
 [node name="Player" parent="." instance=ExtResource( 25 )]
-position = Vector2( 2838.03, -184.232 )
+position = Vector2( 3346.49, 24.3365 )
 script = ExtResource( 26 )
+dirPlayer = 3
 
 [node name="foule" type="Node2D" parent="."]
 position = Vector2( 26.4287, -116.225 )

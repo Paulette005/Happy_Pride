@@ -105,7 +105,6 @@ scale = Vector2( 0.334155, 0.323682 )
 z_index = 1
 frames = SubResource( 1 )
 animation = "triangle"
-frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/AnimatedSprite"]
@@ -151,9 +150,9 @@ __meta__ = {
 
 [node name="Prenoms" type="RichTextLabel" parent="BoiteDialogues"]
 margin_left = 31.0
-margin_top = 3.0
-margin_right = 189.0
-margin_bottom = 47.0
+margin_top = -4.0
+margin_right = 197.0
+margin_bottom = 50.0
 custom_fonts/normal_font = ExtResource( 10 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Prenom"
@@ -168,9 +167,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -393.0
-margin_top = -37.0
+margin_top = -32.0
 margin_right = 372.0
-margin_bottom = 84.0
+margin_bottom = 89.0
 custom_fonts/normal_font = ExtResource( 9 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Voici du texte !"

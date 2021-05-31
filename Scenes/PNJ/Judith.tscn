@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-jupe-verte-d.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/ZoneDialogue.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-jupe-verte-face.png" type="Texture" id=5]
 [ext_resource path="res://Assets/PNJ/PNJQuiParlent/mme-jupe-verte-dos.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/z_index.gd" type="Script" id=7]
+[ext_resource path="res://Shaders/Outline.tres" type="Material" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -21,6 +22,7 @@ script = ExtResource( 3 )
 prenomPNJ = "Judith"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+material = ExtResource( 8 )
 position = Vector2( -3.95374, -2.50635 )
 frames = SubResource( 1 )
 animation = "idle"

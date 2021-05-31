@@ -30,8 +30,6 @@ func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
 	$Timer.connect("timeout", self, "chang_directions")
-	$AnimatedSprite.set_material(preload("res://Shaders/Outline.tres"))
-	$AnimatedSprite.get_material().set_shader_param("width", 0.0)
 	langues = singleton.langues
 	
 func on_body_entered(body):
