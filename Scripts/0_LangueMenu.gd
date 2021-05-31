@@ -1,11 +1,9 @@
 extends Control
 
-#var langues
 var volume
 onready var singleton = get_node("/root/Singleton")
 
 func _ready():
-	#langues = singleton.langues
 	volume = singleton.volume
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), log(get_node("/root/Singleton").volume)*10)
 	chargement_langue()

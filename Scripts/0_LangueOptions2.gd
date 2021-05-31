@@ -1,6 +1,5 @@
 extends Control
 
-var langues
 var volume
 onready var singleton = get_node("/root/Singleton")
 onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
@@ -9,11 +8,10 @@ func ready():
 	volume = singleton.volume
 	
 func _process(delta):
-	langues = singleton.langues
 	volume = singleton.volume
 	$EnsembleReglages/Musique.value = volume
 
-	if langues == 0:
+	if singleton.langues == 0:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Langues[/center]"
 		$VBoxContainer/Reglages/Reglages.bbcode_text = "[center]Réglages[/center]"
 		$VBoxContainer/Retour/Retour.bbcode_text = "[center]Retour[/center]"
@@ -26,7 +24,7 @@ func _process(delta):
 		$EnsembleReglages/Azerty.text = "Clavier AZERTY"
 		$EnsembleReglages/Qwerty.text = "Clavier QWERTY"
 		
-	if langues == 1:
+	else:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Languages[/center]"
 		$VBoxContainer/Reglages/Reglages.bbcode_text = "[center]Settings[/center]"
 		$VBoxContainer/Retour/Retour.bbcode_text = "[center]Back[/center]"

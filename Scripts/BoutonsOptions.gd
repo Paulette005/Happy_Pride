@@ -2,20 +2,19 @@ extends TextureButton
 
 onready var gestionLangues = get_node("/root/Control/GestionLangues")
 onready var ensembleReglages = get_node("/root/Control/EnsembleReglages")
+onready var singleton = get_node("/root/Singleton")
 
 var langues
 var volume
 
 func _ready():
 	get_node("/root/Control/VBoxContainer/Langues").grab_focus()
-	
-	var singleton = get_node("/root/Singleton")
 	langues = singleton.langues
 	
 func _on_Langues_pressed():
 	if gestionLangues.visible == false:
 		gestionLangues.visible = true
-		if langues == 0:
+		if singleton.langues == 0:
 			get_node("/root/Control/GestionLangues/Francais").grab_focus()
 		else:
 			get_node("/root/Control/GestionLangues/Anglais").grab_focus()

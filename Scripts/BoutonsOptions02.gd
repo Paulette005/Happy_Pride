@@ -5,27 +5,24 @@ onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
 
 onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options/GestionLangues")
 onready var ensembleReglages = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
-
+onready var singleton = get_node("/root/Singleton")
 var langues
 var volume
 
 func _ready():
 	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
 	gestionLangues.visible = true
-	var singleton = get_node("/root/Singleton")
 	langues = singleton.langues
 	
 func _on_Langues_pressed():
 	if gestionLangues.visible == false:
 		gestionLangues.visible = true
-		if langues == 0:
+		if singleton.langues == 0:
 			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Francais").grab_focus()
 		else:
 			get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
-	print("test")
-
 	
 func _on_Francais_pressed():
 	langues = 0

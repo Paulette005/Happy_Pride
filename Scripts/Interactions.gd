@@ -6,7 +6,6 @@ var numArray = 0
 var nbframe = 0
 var randomTemps = 2
 var rdm = RandomNumberGenerator.new()
-var langues
 #Gestion de la direction pour gérer direction PNJ lors des dialogues
 var dirPlayer
 var messagefin = 0
@@ -21,6 +20,7 @@ onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
+onready var Partir = get_node("/root/Node2D/CanvasLayer/Partir")
 # Pour compter les morceaux de zine récoltés
 onready var fragmentsZine = get_node("/root/Node2D")
 
@@ -30,7 +30,6 @@ func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
 	$Timer.connect("timeout", self, "chang_directions")
-	langues = singleton.langues
 	
 func on_body_entered(body):
 	if body.name == "Player":
@@ -73,41 +72,48 @@ func _input(event):
 		
 	if event.is_action_pressed("ui_accept") && messagefin == 1:
 		lancement_dialogue()
+		
+	if event.is_action_pressed("ui_accept") && Partir.visible == true:
+		if fragmentsZine.fragmentsZine == 13:
+			get_tree().change_scene("res://Scenes/Menu/Controles.tscn")
 	
 func afficher_message_fin():
 	messagefin += 1
 	parle()
 
 func lancement_dialogue():
-	if messagefin == 1:
-		if langues == 0:
-			BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
-		else:
-			BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomFin].Dial[numArray]
-	else:
-		if langues == 0:
+	if messagefin == 0:
+		if singleton.langues == 0:
 			BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomPNJ].Dial[numArray]
 		else:
 			BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomPNJ].Dial[numArray]
+			
+	if messagefin >= 1:
+		if singleton.langues == 0:
+			BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
+		else:
+			BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomFin].Dial[numArray]
+			
 	parle()
 	
 func parle():
 	if index_dialogueArray < BoiteDialogues.DialoguesArray.size():
 		if messagefin == 1:
-			if langues == 0:
-				BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomFin].Prenom	
+			if singleton.langues == 0:
+				BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomFin].Prenom
 				BoiteDialogues.DialoguesPNJ = ImportData.dialogues_data[prenomFin].Dial[numArray][index_dialogueArray]
 			else:
-				BoiteDialogues.PrenomPNJ = ImportData.dialogues_dataEN[prenomFin].Prenom	
+				BoiteDialogues.PrenomPNJ = ImportData.dialogues_dataEN[prenomFin].Prenom
 				BoiteDialogues.DialoguesPNJ = ImportData.dialogues_dataEN[prenomFin].Dial[numArray][index_dialogueArray]
-		else:
-			if langues == 0:
+				
+		if messagefin == 0:
+			if singleton.langues == 0:
 				BoiteDialogues.PrenomPNJ = ImportData.dialogues_data[prenomPNJ].Prenom	
 				BoiteDialogues.DialoguesPNJ = ImportData.dialogues_data[prenomPNJ].Dial[numArray][index_dialogueArray]
 			else:
 				BoiteDialogues.PrenomPNJ = ImportData.dialogues_dataEN[prenomPNJ].Prenom	
 				BoiteDialogues.DialoguesPNJ = ImportData.dialogues_dataEN[prenomPNJ].Dial[numArray][index_dialogueArray]
-			
+				
 		index_dialogueArray += 1
 		Dialogues.visible = true
 		BoiteDialogues.chargement_dialogue()
