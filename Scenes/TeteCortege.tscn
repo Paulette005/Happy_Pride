@@ -1,9 +1,10 @@
-[gd_scene load_steps=202 format=2]
+[gd_scene load_steps=203 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Deplacements.gd" type="Script" id=5]
 [ext_resource path="res://Shaders/sol.tres" type="Material" id=6]
 [ext_resource path="res://Assets/decor/fond-uni.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/sol.gd" type="Script" id=8]
@@ -251,17 +252,16 @@ script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 7967.33, -472.342 )
+script = ExtResource( 5 )
 
 [node name="Zones_specifiques" type="Node2D" parent="."]
 
-[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 193 )]
-visible = false
-position = Vector2( 8694.07, 113.826 )
-
 [node name="zoneFin2" parent="Zones_specifiques" instance=ExtResource( 195 )]
-visible = false
-position = Vector2( 757.335, -1247.37 )
-scale = Vector2( 0.794727, 1.17238 )
+position = Vector2( 788.775, -1237.75 )
+scale = Vector2( 0.72, 1 )
+
+[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 193 )]
+position = Vector2( 8694.07, 113.826 )
 
 [node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 script = ExtResource( 179 )
@@ -972,9 +972,6 @@ position = Vector2( -1711.18, -65.2081 )
 position = Vector2( -2045.47, 658.863 )
 
 [node name="tshirt rose" parent="Foule/cortege 1" instance=ExtResource( 194 )]
-
-[node name="sac etoiles" parent="Foule/cortege 1" instance=ExtResource( 195 )]
-position = Vector2( -6592.74, -1115.21 )
 
 [node name="drapeau cheveux oranges2" parent="Foule/cortege 1" instance=ExtResource( 187 )]
 position = Vector2( -4170.6, 848.841 )

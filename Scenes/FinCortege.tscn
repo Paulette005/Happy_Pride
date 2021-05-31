@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -103,6 +103,7 @@
 [ext_resource path="res://Scenes/foule/PNJ discutent/angeDiscute.tscn" type="PackedScene" id=101]
 [ext_resource path="res://Assets/decor/batiments/magasin logo rose.png" type="Texture" id=102]
 [ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=103]
+[ext_resource path="res://Scenes/zoneFin.tscn" type="PackedScene" id=104]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 1100 )
@@ -155,9 +156,8 @@ script = ExtResource( 27 )
 
 [node name="Zones_specifiques" type="Node2D" parent="."]
 
-[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 81 )]
-visible = false
-position = Vector2( -1782.46, -19.953 )
+[node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 104 )]
+position = Vector2( -1850, 0 )
 
 [node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 position = Vector2( 3535.82, -7.5039 )
@@ -227,7 +227,7 @@ position = Vector2( 4011.99, -1197.29 )
 texture = ExtResource( 102 )
 
 [node name="sol" parent="decor" instance=ExtResource( 24 )]
-position = Vector2( 1894.77, -238.531 )
+position = Vector2( 1890.28, -238.531 )
 scale = Vector2( 10.9666, 4.79908 )
 
 [node name="dechets" type="Sprite" parent="decor/sol"]
@@ -551,7 +551,7 @@ is_pink_block = true
 position = Vector2( -91.8059, -104.271 )
 stream = ExtResource( 46 )
 autoplay = true
-max_distance = 3000.0
+max_distance = 3050.0
 attenuation = 0.392292
 
 [node name="pb panacarte nb" parent="foule/pink block" instance=ExtResource( 29 )]
