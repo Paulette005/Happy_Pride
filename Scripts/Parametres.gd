@@ -2,7 +2,7 @@ extends Node2D
 
 var volume
 
-export var fragmentsZine = 13
+export var fragmentsZine = 11
 
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")

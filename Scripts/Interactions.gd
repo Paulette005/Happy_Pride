@@ -75,7 +75,7 @@ func _input(event):
 		
 	if event.is_action_pressed("ui_accept") && Partir.visible == true:
 		if fragmentsZine.fragmentsZine == 13:
-			get_tree().change_scene("res://Scenes/Menu/Controles.tscn")
+			get_tree().change_scene("res://Scenes/Menu/Credits.tscn")
 	
 func afficher_message_fin():
 	messagefin += 1

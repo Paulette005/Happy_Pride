@@ -1,15 +1,14 @@
 extends Control
 
-
 var singleton
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	singleton = get_node("/root/Singleton")
 	if singleton.langues == 1 :
 		$"controles fr".visible = false
 		$"controles en".visible = true
+		$indications.bbcode_text = "[wave]Press any key to start[/wave]"
 	if singleton.clavier == "qwerty":
 		$qwerty.visible = true
 
