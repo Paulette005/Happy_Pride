@@ -20,8 +20,9 @@ func change_scene(var path):
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count()-1)
 	loader = ResourceLoader.load_interactive(path)
-	set_process(true)
 	wait_frame = 1
+	set_process(true)
+
 	
 func _process(delta):
 	if loader == null:
@@ -42,14 +43,15 @@ func _process(delta):
 			set_new_scene(ressource)
 			break
 		elif err == OK:
-			update_progress()
+			pass
+		else :
+			#show_error()
+			print("error")
 			
 func set_new_scene(r):
 	current_scene.queue_free()
 	current_scene = r.instance()
 	get_node("/root").add_child(current_scene)
+	get_tree().set_current_scene(current_scene)
 		
-func update_progress():
-	pass
-	
 	

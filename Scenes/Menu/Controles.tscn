@@ -64,3 +64,4 @@ __meta__ = {
 }
 
 [node name="chargement" parent="." instance=ExtResource( 5 )]
+visible = false
