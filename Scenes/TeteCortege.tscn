@@ -196,9 +196,6 @@
 [ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=194]
 [ext_resource path="res://Scenes/zoneFin2.tscn" type="PackedScene" id=195]
 [ext_resource path="res://Scenes/foule/PNJ avancent/chemise verte.tscn" type="PackedScene" id=196]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tshirt rose.tscn" type="PackedScene" id=197]
-[ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=198]
-[ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=199]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -229,11 +226,11 @@ visible = false
 
 [node name="Partir" parent="CanvasLayer" instance=ExtResource( 194 )]
 
-[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
-pause_mode = 2
+[node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
 visible = false
 
-[node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
+pause_mode = 2
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]

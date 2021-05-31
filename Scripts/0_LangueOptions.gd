@@ -6,6 +6,7 @@ onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
 
 func ready():
 	volume = singleton.volume
+	singleton.samplePlayer
 	
 func _process(delta):
 	volume = singleton.volume

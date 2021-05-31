@@ -7,6 +7,7 @@ func _ready():
 
 func _on_Commencer_pressed():
 	get_tree().change_scene("res://Scenes/Menu/Controles.tscn")
+	print("test")
 
 func _on_Options_pressed():
 	get_tree().change_scene("res://Scenes/Menu/Options.tscn")

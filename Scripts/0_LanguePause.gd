@@ -35,4 +35,6 @@ func _on_Options_pressed():
 	get_node("/root/Node2D/CanvasLayer/Options/VBoxContainer/Langues").grab_focus()
 
 func _on_Retour_pressed():
+	Pause.visible = false
+	get_tree().paused = false
 	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")

@@ -21,8 +21,6 @@ onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteD
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var Partir = get_node("/root/Node2D/CanvasLayer/Partir")
-# Pour compter les morceaux de zine récoltés
-onready var fragmentsZine = get_node("/root/Node2D")
 
 onready var singleton = get_node("/root/Singleton")
 
@@ -44,7 +42,7 @@ func on_body_exited(body):
 		playerZone = false
 		Interactions.visible = false
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
-		if fragmentsZine.fragmentsZine == 12 && messagefin == 0:
+		if singleton.fragmentsZine == 12 && messagefin == 0:
 			afficher_message_fin()
 	
 func chang_directions():
@@ -74,7 +72,7 @@ func _input(event):
 		lancement_dialogue()
 		
 	if event.is_action_pressed("ui_accept") && Partir.visible == true:
-		if fragmentsZine.fragmentsZine == 13:
+		if singleton.fragmentsZine == 13:
 			get_tree().change_scene("res://Scenes/Menu/Credits.tscn")
 	
 func afficher_message_fin():
@@ -122,12 +120,13 @@ func parle():
 		Dialogues.visible = false
 		index_dialogueArray = 0
 		if interactionPNJ == false:
-			fragmentsZine.fragmentsZine += 1
+			singleton.fragmentsZine += 1
 			interactionPNJ = true
+			print(singleton.fragmentsZine)
 			#consultationZine.chargementPages()
 
 		if Dialogues.visible == false && messagefin == 1:
-			fragmentsZine.fragmentsZine += 1
+			singleton.fragmentsZine += 1
 			messagefin += 1
 		#if numArray == 0:
 		#	numArray += 1

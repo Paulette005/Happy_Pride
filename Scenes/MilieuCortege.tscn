@@ -178,8 +178,6 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/tshirt rose.tscn" type="PackedScene" id=176]
 [ext_resource path="res://Scenes/foule/PNJ avancent/tatoo girl.tscn" type="PackedScene" id=177]
 [ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=178]
-[ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=179]
-[ext_resource path="res://Scenes/zoneFin2.tscn" type="PackedScene" id=180]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -1233,7 +1231,6 @@ script = ExtResource( 167 )
 [node name="Camille" parent="PNJ" instance=ExtResource( 170 )]
 position = Vector2( 1920.45, 415.037 )
 script = ExtResource( 167 )
-
 [connection signal="gestionCamera" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCamera"]
 [connection signal="gestionCameraRetour" from="Chars/CharAsso" to="Camera2D" method="_on_Char01_gestionCameraRetour"]
 [connection signal="gestionCamera" from="Chars/CharHandi" to="Camera2D" method="_on_Char01_gestionCamera"]

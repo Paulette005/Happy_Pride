@@ -353,7 +353,6 @@ text = "Clavier QWERTY"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
-autoplay = true
 [connection signal="pressed" from="VBoxContainer/Langues" to="VBoxContainer/Langues" method="_on_Langues_pressed"]
 [connection signal="pressed" from="VBoxContainer/Reglages" to="VBoxContainer/Langues" method="_on_Reglages_pressed"]
 [connection signal="pressed" from="VBoxContainer/Retour" to="VBoxContainer/Langues" method="_on_Retour_pressed"]

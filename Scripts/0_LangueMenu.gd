@@ -5,6 +5,7 @@ onready var singleton = get_node("/root/Singleton")
 
 func _ready():
 	volume = singleton.volume
+	singleton.samplePlayer
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), log(get_node("/root/Singleton").volume)*10)
 	chargement_langue()
 	

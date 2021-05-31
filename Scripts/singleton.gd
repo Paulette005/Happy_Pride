@@ -3,8 +3,11 @@ extends Node2D
 var posPlayerSingleton = Vector2 (7967.333, -472.342)
 
 var langues = 0
-var volume = 0.2
+var volume = 0.4
 var clavier = "azerty"
+var fragmentsZine = 0
+
+onready var samplePlayer = get_node("/root/Control/AudioStreamPlayer")
 
 #pour le changement de scene
 var loader
@@ -14,7 +17,7 @@ var current_scene
 
 func _ready():
 	set_process(false)
-
+	samplePlayer.play()
 
 func change_scene(var path):
 	var root = get_tree().get_root()
