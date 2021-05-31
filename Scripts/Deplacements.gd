@@ -51,8 +51,6 @@ func get_input():
 func _input(event):
 	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && proche_pnj == false :
 		lancerpaillettes()
-	if event.is_action_pressed("ui_focus_next"):
-		gestionAnimations = false
 
 func _physics_process(delta):
 	if !gestionAnimations:
@@ -113,7 +111,6 @@ func actionPlayer():
 	$Timer.stop()
 			
 	if !gestionAnimations:
-		#gestionAnimations = true
 		if dansedanse == true:
 			is_dancing = true
 			$AnimatedSprite.play("danse")

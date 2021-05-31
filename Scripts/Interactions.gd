@@ -46,6 +46,8 @@ func on_body_exited(body):
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
 		if singleton.fragmentsZine == 12 && messagefin == 0:
 			afficher_message_fin()
+		if Dialogues.visible == true :
+			sortie_dialogues_imprevue()
 	
 func chang_directions():
 	# Random entre plusieurs valeurs, le résultat est ensuite contenu dans la var nbframe qui permet de changer la frame du personnage.
@@ -129,3 +131,7 @@ func parle():
 			messagefin += 1
 		#if numArray == 0:
 		#	numArray += 1
+
+func sortie_dialogues_imprevue():
+	Dialogues.visible = false
+	index_dialogueArray = 0
