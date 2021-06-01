@@ -173,10 +173,10 @@ stream = ExtResource( 8 )
 visible = false
 
 [node name="Retour" type="TextureButton" parent="Credits"]
-margin_left = 962.686
-margin_top = 598.162
-margin_right = 1181.69
-margin_bottom = 671.162
+margin_left = 980.504
+margin_top = 601.726
+margin_right = 1199.51
+margin_bottom = 674.726
 focus_neighbour_left = NodePath(".")
 focus_neighbour_top = NodePath(".")
 focus_neighbour_right = NodePath(".")

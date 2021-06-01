@@ -28,4 +28,5 @@ func chargement_langue():
 		get_node("/root/Control/Credits/HBoxContainer/Axell/role en").visible = true
 		get_node("/root/Control/Credits/HBoxContainer/Rose/role fr").visible = false
 		get_node("/root/Control/Credits/HBoxContainer/Rose/role en").visible = true
+		get_node("/root/Control/Credits/merci").text = "Thanks to Gabion, Ad and Erwan for their help"
 		$Credits/Retour/retour.bbcode_text= "[center]Back[/center]"

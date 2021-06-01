@@ -28,10 +28,10 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 140.762
-margin_top = 97.9085
-margin_right = 1089.76
-margin_bottom = 600.909
+margin_left = 142.097
+margin_top = 61.8679
+margin_right = 1091.1
+margin_bottom = 576.868
 custom_constants/separation = 20
 __meta__ = {
 "_edit_use_anchors_": false
@@ -181,6 +181,19 @@ custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "musics"
 align = 1
+
+[node name="merci" type="Label" parent="."]
+margin_left = 347.662
+margin_top = 614.56
+margin_right = 900.662
+margin_bottom = 746.56
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Mercr à Gabion, Ad et Erwan pour leur aide"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="retour" type="TextureButton" parent="."]
 visible = false
