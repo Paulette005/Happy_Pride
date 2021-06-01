@@ -28,7 +28,7 @@ func _input(event):
 				pageD.chargImg(str(numPageCourant))
 				pageG.chargImg2(str(numPageCourant2))
 				print(fragmentsZine.fragmentsZine)
-				print(str(numPageCourant))
+				print("num page courant1:",numPageCourant)
 				print("num page courant2:", numPageCourant2)
 			else:
 				#chargée un texture de page vide

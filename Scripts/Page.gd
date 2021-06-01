@@ -22,6 +22,6 @@ func chargImg(num_page):
 func chargImg2(num_page):
 	if singleton.langues == 0:
 		#$Background/Texture.texture = load("res://Assets/Zine/%s" %consultationZine.numPageCourant2 + ".jpg")
-		$Background/Texture.texture = load("res://Assets/Zine/FR/"+num_page+".png")
+		$Background.texture = load("res://Assets/Zine/FR/"+num_page+".png")
 	else:
-		$Background/Texture.texture = load("res://Assets/Zine/EN/"+num_page+".png")
+		$Background.texture = load("res://Assets/Zine/EN/"+num_page+".png")
