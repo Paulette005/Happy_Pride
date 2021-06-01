@@ -15,6 +15,7 @@ func _ready():
 	if add_collision :
 		var zone_c = zone_coll.instance()
 		add_child(zone_c)
+		zone_c.name = "coll"
 	timer = Timer.new()
 	add_child(timer)
 	timer.set_name("Timer")
@@ -30,8 +31,10 @@ func saute():
 	if !en_lair:
 		en_lair = true
 		position = Vector2(start_position.x,start_position.y - 50)
+		$coll.position = Vector2(0,50)
 		$Timer.start()
 
 func descend():
 	en_lair = false
 	position = start_position
+	$coll.position = Vector2(0,0)
