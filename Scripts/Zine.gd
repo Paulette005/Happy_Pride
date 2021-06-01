@@ -66,7 +66,7 @@ func gere_couvertures():
 	print("couverture = ",couverture)
 
 func charge_pages():
-	if fragmentsZine.pages_eues[numPageCourant] :
+	if numPageCourant<fragmentsZine.pages_eues.size() && fragmentsZine.pages_eues[numPageCourant] :
 		pageD.chargImg(str(numPageCourant))
 	else :
 		pageD.chargImg("fond_feuille")

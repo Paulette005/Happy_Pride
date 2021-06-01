@@ -21,6 +21,10 @@ func set_fragment_zine(num):
 	if num > fragmentsZine :
 		fragmentsZine = num
 	pages_eues[num] = true
+	# dernier pnj qui fait apparaitre deux pages
+	if num == 11 :
+		fragmentsZine = 12
+		pages_eues[12] = true
 	get_node("/root/Node2D/CanvasLayer/Zine").add_fragment()
 	get_node("/root/Node2D/CanvasLayer/Zine").charge_pages()
 	get_node("/root/Node2D/CanvasLayer/Zine").gere_couvertures()
