@@ -63,7 +63,7 @@ func gere_couvertures():
 		p2.visible = false
 	else:
 		p2.visible = true
-	print("couverture = ",couverture)
+	#print("couverture = ",couverture)
 
 func charge_pages():
 	if numPageCourant<fragmentsZine.pages_eues.size() && fragmentsZine.pages_eues[numPageCourant] :
@@ -74,7 +74,7 @@ func charge_pages():
 		pageG.chargImg2(str(numPageCourant2))
 	else :
 		pageG.chargImg2("fond_feuille")
-	print(fragmentsZine.fragmentsZine)
-	print("num page courant1:",numPageCourant)
-	print("num page courant2:", numPageCourant2)
+	#print(fragmentsZine.fragmentsZine)
+	#print("num page courant1:",numPageCourant)
+	#print("num page courant2:", numPageCourant2)
 			

@@ -17,8 +17,6 @@ func _ready():
 			get_node("/root/Credits/HBoxContainer/Rose/role en").visible = true
 			get_node("/root/Credits/merci").text = "Thanks to Gabion, Dilz and Erwan for their help"
 			$retour/retour.bbcode_text= "[center]Back[/center]"
-		else:
-			print("teeeee")
 
 func retour():
 	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")
