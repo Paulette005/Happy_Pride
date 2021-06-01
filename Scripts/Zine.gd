@@ -17,6 +17,9 @@ func _ready():
 	pass
 	
 func _input(event):
+	if event.is_action_pressed("ui_focus_next"):
+		fragmentsZine.fragmentsZine += 1
+	
 	if consultationZine.visible == true:
 		if event.is_action_pressed("ui_right"):
 			if numPageCourant < fragmentsZine.fragmentsZine:
