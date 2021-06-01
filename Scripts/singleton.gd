@@ -5,7 +5,7 @@ var posPlayerSingleton = Vector2 (7967.333, -472.342)
 var langues = 0
 var volume = 0.4
 var clavier = "azerty"
-var fragmentsZine = 11
+var fragmentsZine = 0
 
 #pour le changement de scene
 var loader
