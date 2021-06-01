@@ -59,7 +59,7 @@ func gere_couvertures():
 	else:
 		p1.visible = true
 	
-	if couverture == true || fragmentsZine.fragmentsZine == -1:
+	if couverture == true :
 		p2.visible = false
 	else:
 		p2.visible = true
