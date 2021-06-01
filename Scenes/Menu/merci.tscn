@@ -102,8 +102,8 @@ margin_bottom = 28.3689
 custom_fonts/normal_font = ExtResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Credits[/center]"
-text = "Credits"
+bbcode_text = "[center]Crédits[/center]"
+text = "Crédits"
 __meta__ = {
 "_edit_use_anchors_": false
 }

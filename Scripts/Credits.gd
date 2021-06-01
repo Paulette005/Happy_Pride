@@ -15,7 +15,7 @@ func _ready():
 			get_node("/root/Credits/HBoxContainer/Axell/role en").visible = true
 			get_node("/root/Credits/HBoxContainer/Rose/role fr").visible = false
 			get_node("/root/Credits/HBoxContainer/Rose/role en").visible = true
-			get_node("/root/Credits/merci").text = "Thanks to Gabion, Ad and Erwan for their help"
+			get_node("/root/Credits/merci").text = "Thanks to Gabion, Dilz and Erwan for their help"
 			$retour/retour.bbcode_text= "[center]Back[/center]"
 		
 
