@@ -19,8 +19,8 @@ func _ready():
 
 	
 func _input(event):
-	if event.is_action_pressed("ui_focus_next"):
-		fragmentsZine.set_fragment_zine(fragmentsZine.fragmentsZine+1)
+	#if event.is_action_pressed("ui_focus_next"):
+		#fragmentsZine.set_fragment_zine(fragmentsZine.fragmentsZine+1)
 	
 	if consultationZine.visible == true:
 		if event.is_action_pressed("ui_right"):
