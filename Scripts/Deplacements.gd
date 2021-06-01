@@ -5,7 +5,7 @@ export (NodePath) var positionPlayer
 export var dirPlayer = 0
 
 var velocite = Vector2 ()
-var direction = "Gauche"
+var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 var gestionAnimations = false
 var paillettes
@@ -13,6 +13,7 @@ var dansedanse = false
 var indicationDirection
 var proche_pnj = false
 var is_dancing = false
+var verif = false
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
@@ -23,8 +24,6 @@ func _ready():
 	$Timer.connect("timeout", self, "actionPlayer")
 	var singleton = get_node("/root/Singleton")
 	global_position = singleton.posPlayerSingleton
-	direction = changementDir.indicationDirection
-	print(direction)
 
 func get_input():
 	velocite = Vector2 ()
@@ -49,7 +48,7 @@ func get_input():
 		velocite = velocite.normalized() * vitesse
 
 func _input(event):
-	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && proche_pnj == false :
+	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && Dialogues.visible == false && proche_pnj == false :
 		lancerpaillettes()
 
 func _physics_process(delta):
@@ -114,4 +113,4 @@ func actionPlayer():
 		if dansedanse == true:
 			is_dancing = true
 			$AnimatedSprite.play("danse")
-		
+
