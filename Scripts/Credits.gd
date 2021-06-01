@@ -31,5 +31,6 @@ func set_langue():
 		get_node(path + "merci").text = "Merci à Gabion, Dilz et Erwan pour leur aide"
 		$retour/retour.bbcode_text= "[center]Retour[/center]"
 
+
 func retour():
 	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")

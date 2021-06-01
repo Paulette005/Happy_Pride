@@ -43,7 +43,7 @@ func on_body_exited(body):
 		playerZone = false
 		Interactions.visible = false
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
-		if singleton.fragmentsZine == 12 && messagefin == 0:
+		if singleton.comptefragmentsZine == 12 && messagefin == 0:
 			afficher_message_fin()
 		if Dialogues.visible == true:
 			if messagefin == 0:
@@ -73,11 +73,12 @@ func _input(event):
 		lancement_dialogue()
 		
 	if event.is_action_pressed("ui_accept") && Partir.visible == true:
-		if singleton.fragmentsZine == 13:
+		if singleton.comptefragmentsZine == 13:
 			get_tree().change_scene("res://Scenes/Menu/Credits.tscn")
 	
 func afficher_message_fin():
 	messagefin += 1
+	singleton.comptefragmentsZine += 1
 	lancement_dialogue()
 
 func lancement_dialogue():
@@ -120,9 +121,9 @@ func parle():
 	else:
 		Dialogues.visible = false
 		index_dialogueArray = 0
-		print(messagefin)
 		if interactionPNJ == false:
 			singleton.set_fragment_zine(zine)
+			singleton.comptefragmentsZine += 1
 			interactionPNJ = true
 			#consultationZine.chargementPages()
 

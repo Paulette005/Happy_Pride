@@ -6,6 +6,7 @@ var langues = 0
 var volume = 0.4
 var clavier = "azerty"
 var fragmentsZine = -1
+var comptefragmentsZine = 0
 var pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 
 #pour le changement de scene
