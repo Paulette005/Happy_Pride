@@ -21,6 +21,7 @@ animations = [ {
 position = Vector2( 1.5874, 1.5874 )
 script = ExtResource( 5 )
 prenomPNJ = "Noah"
+zine = 7
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 material = ExtResource( 7 )
