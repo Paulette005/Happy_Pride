@@ -25,10 +25,10 @@ func _input(event):
 			if numPageCourant < fragmentsZine.fragmentsZine:
 				numPageCourant += 2
 				numPageCourant2 = (numPageCourant-1)
-				pageD.chargImg()
-				pageG.chargImg2()
+				pageD.chargImg(str(numPageCourant))
+				pageG.chargImg2(str(numPageCourant2))
 				print(fragmentsZine.fragmentsZine)
-				print(numPageCourant)
+				print(str(numPageCourant))
 				print("num page courant2:", numPageCourant2)
 			else:
 				#chargée un texture de page vide
@@ -43,8 +43,8 @@ func _input(event):
 					couverture = false
 					numPageCourant += 2
 					numPageCourant2 += 2
-				pageD.chargImg()
-				pageG.chargImg2()
+				pageD.chargImg(str(numPageCourant))
+				pageG.chargImg2(str(numPageCourant2))
 				print(numPageCourant)
 				print("num page courant2:", numPageCourant2)
 			

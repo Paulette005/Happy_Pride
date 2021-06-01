@@ -11,17 +11,17 @@ onready var singleton = get_node("/root/Singleton")
 func _ready():
 	pass
 	
-func chargImg():
+func chargImg(num_page):
 	if singleton.langues == 0:
 		#$Background/Texture.texture = load("res://Assets/Zine/%s" %consultationZine.numPageCourant + ".jpg")
 		#$Background/Texture.texture = load("res://Assets/Zine/0.png")
-		$Background.texture = load("res://Assets/Zine/FR/0.png")
+		$Background.texture = load("res://Assets/Zine/FR/"+num_page+".png")
 	else:
-		$Background.texture = load("res://Assets/Zine/EN/0.png")
+		$Background.texture = load("res://Assets/Zine/EN/"+num_page+".png")
 
-func chargImg2():
+func chargImg2(num_page):
 	if singleton.langues == 0:
 		#$Background/Texture.texture = load("res://Assets/Zine/%s" %consultationZine.numPageCourant2 + ".jpg")
-		$Background/Texture.texture = load("res://Assets/Zine/FR/2.png")
+		$Background/Texture.texture = load("res://Assets/Zine/FR/"+num_page+".png")
 	else:
-		$Background/Texture.texture = load("res://Assets/Zine/EN/2.png")
+		$Background/Texture.texture = load("res://Assets/Zine/EN/"+num_page+".png")
