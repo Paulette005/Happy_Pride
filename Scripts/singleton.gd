@@ -6,6 +6,7 @@ var langues = 0
 var volume = 0.4
 var clavier = "azerty"
 var fragmentsZine = 0
+var pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 
 #pour le changement de scene
 var loader
@@ -15,6 +16,11 @@ var current_scene
 
 func _ready():
 	set_process(false)
+	
+func set_fragment_zine(num):
+	if num > fragmentsZine :
+		fragmentsZine = num
+	pages_eues[num] = true
 
 func change_scene(var path):
 	var root = get_tree().get_root()

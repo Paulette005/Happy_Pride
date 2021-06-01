@@ -14,19 +14,20 @@ onready var fragmentsZine = get_node("/root/Singleton")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
-	pass
+	charge_pages()
+	#couverture = true
 	
 func _input(event):
 	if event.is_action_pressed("ui_focus_next"):
 		fragmentsZine.fragmentsZine += 1
+		fragmentsZine.pages_eues[fragmentsZine.fragmentsZine] = true
 	
 	if consultationZine.visible == true:
 		if event.is_action_pressed("ui_right"):
 			if numPageCourant < fragmentsZine.fragmentsZine:
 				numPageCourant += 2
 				numPageCourant2 = (numPageCourant-1)
-				pageD.chargImg(str(numPageCourant))
-				pageG.chargImg2(str(numPageCourant2))
+				charge_pages()
 				print(fragmentsZine.fragmentsZine)
 				print("num page courant1:",numPageCourant)
 				print("num page courant2:", numPageCourant2)
@@ -43,8 +44,7 @@ func _input(event):
 					couverture = false
 					numPageCourant += 2
 					numPageCourant2 += 2
-				pageD.chargImg(str(numPageCourant))
-				pageG.chargImg2(str(numPageCourant2))
+				charge_pages()
 				print(numPageCourant)
 				print("num page courant2:", numPageCourant2)
 			
@@ -59,8 +59,12 @@ func _process(delta):
 	else:
 		p2.visible = true
 	
-#func chargementPages():
-#	print("compte:",fragmentsZine.fragmentsZine)
-
-
-	
+func charge_pages():
+	if fragmentsZine.pages_eues[numPageCourant] :
+		pageD.chargImg(str(numPageCourant))
+	else :
+		pageD.chargImg("fond_feuille")
+	if fragmentsZine.pages_eues[numPageCourant2] :
+		pageG.chargImg2(str(numPageCourant2))
+	else :
+		pageG.chargImg2("fond_feuille")

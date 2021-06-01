@@ -1,6 +1,7 @@
 extends Node2D
 
 var prenomPNJ
+var zine
 var index_dialogueArray = 0
 var numArray = 0
 var nbframe = 0
@@ -28,6 +29,7 @@ func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
 	$Timer.connect("timeout", self, "chang_directions")
+	print (name + str(zine))
 	
 func on_body_entered(body):
 	if body.name == "Player":
@@ -35,7 +37,6 @@ func on_body_entered(body):
 		playerZone = true
 		Interactions.visible = true
 		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
-		print(prenomPNJ)
 		print("morceauZine: ", interactionPNJ)
 		
 func on_body_exited(body):
@@ -123,12 +124,12 @@ func parle():
 		index_dialogueArray = 0
 		print(messagefin)
 		if interactionPNJ == false:
-			singleton.fragmentsZine += 1
+			singleton.set_fragment_zine(zine)
 			interactionPNJ = true
 			#consultationZine.chargementPages()
 
 		if Dialogues.visible == false && messagefin == 1:
-			singleton.fragmentsZine += 1
+			singleton.set_fragment_zine(zine)
 			messagefin += 1
 			if messagefin == 2:
 				messagefin = 0
