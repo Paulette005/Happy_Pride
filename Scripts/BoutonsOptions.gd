@@ -30,6 +30,7 @@ func _on_Anglais_pressed():
 	
 func enregistrementLangues():
 	get_node("/root/Singleton").langues = langues
+	get_node("/root/Control/Options").set_langue()
 	
 func _on_Retour2_pressed():
 	gestionLangues.visible = false

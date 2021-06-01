@@ -12,6 +12,8 @@ func _process(delta):
 	volume = singleton.volume
 	$EnsembleReglages/Musique.value = volume
 
+func set_langue():
+	get_node("/root/Control/Credits").set_langue()
 	if singleton.langues == 0:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Langues[/center]"
 		$VBoxContainer/Reglages/Reglages.bbcode_text = "[center]Réglages[/center]"

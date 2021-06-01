@@ -90,7 +90,7 @@ size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Langues"
+bbcode_text = "[center]Langues[/center]"
 text = "Langues"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -117,7 +117,7 @@ margin_bottom = 26.25
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Réglages"
+bbcode_text = "[center]Réglages[/center]"
 text = "Réglages"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -143,7 +143,7 @@ margin_bottom = 26.25
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Retour"
+bbcode_text = "[center]Retour[/center]"
 text = "Retour"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -184,7 +184,7 @@ size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Français"
+bbcode_text = "[center]Français[/center]"
 text = "Français"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -213,7 +213,7 @@ size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Anglais"
+bbcode_text = "[center]Anglais[/center]"
 text = "Anglais"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -241,7 +241,7 @@ size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Retour"
+bbcode_text = "[center]Retour[/center]"
 text = "Retour"
 __meta__ = {
 "_edit_use_anchors_": false
