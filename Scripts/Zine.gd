@@ -10,7 +10,7 @@ onready var p1 = $Pages/PageGauche
 onready var p2 = $Pages/PageDroite
 onready var pageD = get_node("Pages/PageDroite/Page")
 onready var pageG = get_node("Pages/PageGauche/Page")
-onready var fragmentsZine = get_node("/root/Node2D")
+onready var fragmentsZine = get_node("/root/Singleton")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
