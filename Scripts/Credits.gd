@@ -29,7 +29,7 @@ func set_langue():
 		get_node(path + "HBoxContainer/Rose/role fr").visible = true
 		get_node(path + "HBoxContainer/Rose/role en").visible = false
 		get_node(path + "merci").text = "Merci à Gabion, Dilz et Erwan pour leur aide"
-		$retour/retour.bbcode_text= "[center]Retour[/center]"
+		#$retour/retour.bbcode_text= "[center]Retour[/center]"
 
 
 func retour():
