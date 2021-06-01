@@ -189,7 +189,7 @@ margin_right = 900.662
 margin_bottom = 746.56
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Mercr à Gabion, Ad et Erwan pour leur aide"
+text = "Mercr à Gabion, Dilz et Erwan pour leur aide"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
