@@ -29,7 +29,6 @@ func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
 	get_node("Area2D").connect("body_exited", self, "on_body_exited")
 	$Timer.connect("timeout", self, "chang_directions")
-	print (name + str(zine))
 	
 func on_body_entered(body):
 	if body.name == "Player":
@@ -37,7 +36,6 @@ func on_body_entered(body):
 		playerZone = true
 		Interactions.visible = true
 		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
-		print("morceauZine: ", interactionPNJ)
 		
 func on_body_exited(body):
 	if body.name == "Player":

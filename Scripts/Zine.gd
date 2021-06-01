@@ -20,8 +20,7 @@ func _ready():
 	
 func _input(event):
 	if event.is_action_pressed("ui_focus_next"):
-		fragmentsZine.fragmentsZine += 1
-		fragmentsZine.pages_eues[fragmentsZine.fragmentsZine] = true
+		fragmentsZine.set_fragment_zine(fragmentsZine.fragmentsZine+1)
 	
 	if consultationZine.visible == true:
 		if event.is_action_pressed("ui_right"):
@@ -35,8 +34,9 @@ func _input(event):
 				print("num page courant2:", numPageCourant2)
 			else:
 				#chargée un texture de page vide
-				if couverture == false:
+				if couverture == false && fragmentsZine.fragmentsZine > 0:
 					couverture = true
+					#pageD.chargImg("couv")
 					
 		if event.is_action_pressed("ui_left"):
 			if numPageCourant > 0:
@@ -56,12 +56,12 @@ func _process(delta):
 	pass
 
 func gere_couvertures():
-	if numPageCourant == 0:
+	if numPageCourant <= 0:
 		p1.visible = false
 	else:
 		p1.visible = true
 		
-	if couverture == true:
+	if couverture == true || fragmentsZine.fragmentsZine == -1:
 		p2.visible = false
 	else:
 		p2.visible = true
