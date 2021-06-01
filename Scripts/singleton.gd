@@ -21,6 +21,8 @@ func set_fragment_zine(num):
 	if num > fragmentsZine :
 		fragmentsZine = num
 	pages_eues[num] = true
+	get_node("/root/Node2D/CanvasLayer/Zine").charge_pages()
+	get_node("/root/Node2D/CanvasLayer/Zine").gere_couvertures()
 
 func change_scene(var path):
 	var root = get_tree().get_root()

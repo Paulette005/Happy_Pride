@@ -15,7 +15,8 @@ onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 
 func _ready():
 	charge_pages()
-	#couverture = true
+	gere_couvertures()
+
 	
 func _input(event):
 	if event.is_action_pressed("ui_focus_next"):
@@ -28,6 +29,7 @@ func _input(event):
 				numPageCourant += 2
 				numPageCourant2 = (numPageCourant-1)
 				charge_pages()
+				gere_couvertures()
 				print(fragmentsZine.fragmentsZine)
 				print("num page courant1:",numPageCourant)
 				print("num page courant2:", numPageCourant2)
@@ -45,10 +47,15 @@ func _input(event):
 					numPageCourant += 2
 					numPageCourant2 += 2
 				charge_pages()
-				print(numPageCourant)
+				gere_couvertures()
+				print(fragmentsZine.fragmentsZine)
+				print("num page courant1:",numPageCourant)
 				print("num page courant2:", numPageCourant2)
 			
 func _process(delta):
+	pass
+
+func gere_couvertures():
 	if numPageCourant == 0:
 		p1.visible = false
 	else:
@@ -58,7 +65,7 @@ func _process(delta):
 		p2.visible = false
 	else:
 		p2.visible = true
-	
+
 func charge_pages():
 	if fragmentsZine.pages_eues[numPageCourant] :
 		pageD.chargImg(str(numPageCourant))
