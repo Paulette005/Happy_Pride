@@ -13,6 +13,7 @@ func _ready():
 	if singleton.langues == 1:
 		$merci.bbcode_text = "[wave]Thanks for playing[/wave]"
 		$VBoxContainer/retour/retour.bbcode_text = "[center]Back to menu[/center]"
+		$VBoxContainer/credits/credits.bbcode_text = "[center]Credits[/center]"
 	$VBoxContainer/credits.connect("button_down",self,"to_credits")
 	$VBoxContainer/retour.connect("button_down",self,"back_menu")
 		
