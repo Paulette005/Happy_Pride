@@ -28,15 +28,12 @@ func _input(event):
 				numPageCourant += 2
 				numPageCourant2 = (numPageCourant-1)
 				charge_pages()
-				gere_couvertures()
-				print(fragmentsZine.fragmentsZine)
-				print("num page courant1:",numPageCourant)
-				print("num page courant2:", numPageCourant2)
 			else:
 				#chargée un texture de page vide
 				if couverture == false && fragmentsZine.fragmentsZine > 0:
 					couverture = true
-					#pageD.chargImg("couv")
+					pageG.chargImg("couv")
+		gere_couvertures()
 					
 		if event.is_action_pressed("ui_left"):
 			if numPageCourant > 0:
@@ -48,23 +45,25 @@ func _input(event):
 					numPageCourant2 += 2
 				charge_pages()
 				gere_couvertures()
-				print(fragmentsZine.fragmentsZine)
-				print("num page courant1:",numPageCourant)
-				print("num page courant2:", numPageCourant2)
 			
 func _process(delta):
 	pass
+
+func add_fragment():
+	if (numPageCourant%2 == 1 && numPageCourant < fragmentsZine.fragmentsZine) || (numPageCourant%2 == 0 && numPageCourant <= fragmentsZine.fragmentsZine) :
+		couverture = false
 
 func gere_couvertures():
 	if numPageCourant <= 0:
 		p1.visible = false
 	else:
 		p1.visible = true
-		
+	
 	if couverture == true || fragmentsZine.fragmentsZine == -1:
 		p2.visible = false
 	else:
 		p2.visible = true
+	print("couverture = ",couverture)
 
 func charge_pages():
 	if fragmentsZine.pages_eues[numPageCourant] :
@@ -75,3 +74,7 @@ func charge_pages():
 		pageG.chargImg2(str(numPageCourant2))
 	else :
 		pageG.chargImg2("fond_feuille")
+	print(fragmentsZine.fragmentsZine)
+	print("num page courant1:",numPageCourant)
+	print("num page courant2:", numPageCourant2)
+			
