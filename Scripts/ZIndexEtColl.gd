@@ -14,8 +14,8 @@ func _ready():
 		var zone_c = zone_coll.instance()
 		add_child(zone_c)
 
-func _on_AudioStreamPlayer2D_ready():
-	$AudioStreamPlayer2D.play()
+#func _on_AudioStreamPlayer2D_ready():
+#		$AudioStreamPlayer2D.play()
 	
 func _on_AudioStreamPlayer2D_finished():
 	$AudioStreamPlayer2D.play()
@@ -27,5 +27,8 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	if body.name == "Player":
 		emit_signal("gestionCameraRetour")
+
+func _on_Timer_timeout():
+	$AudioStreamPlayer2D.play()
 
 

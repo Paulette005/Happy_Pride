@@ -392,6 +392,11 @@ texture = ExtResource( 169 )
 position = Vector2( 7966.09, -1221.15 )
 texture = ExtResource( 180 )
 
+[node name="egout grille grande" type="Sprite" parent="decor"]
+visible = false
+position = Vector2( 2680.38, -550.264 )
+texture = ExtResource( 75 )
+
 [node name="sol" type="Sprite" parent="decor"]
 material = ExtResource( 6 )
 position = Vector2( 1606.88, -201.755 )
@@ -593,10 +598,6 @@ texture = ExtResource( 73 )
 [node name="passage pieton2" type="Sprite" parent="decor/passage pieton"]
 position = Vector2( 0, 727.795 )
 texture = ExtResource( 73 )
-
-[node name="egout grille grande" type="Sprite" parent="decor"]
-position = Vector2( 2680.38, -550.264 )
-texture = ExtResource( 75 )
 
 [node name="panneau dos" parent="decor" instance=ExtResource( 71 )]
 

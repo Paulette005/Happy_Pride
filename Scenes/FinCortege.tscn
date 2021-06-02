@@ -181,7 +181,7 @@ position = Vector2( 1747.48, 1013.17 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="decor/StaticBody2D"]
-position = Vector2( -805.192, -42.3785 )
+position = Vector2( -782.192, -42.3785 )
 shape = SubResource( 3 )
 
 [node name="batiments" type="Node2D" parent="decor"]
@@ -226,7 +226,7 @@ position = Vector2( 4011.99, -1197.29 )
 texture = ExtResource( 102 )
 
 [node name="sol" parent="decor" instance=ExtResource( 24 )]
-position = Vector2( 1890.28, -238.531 )
+position = Vector2( 1891.28, -238.531 )
 scale = Vector2( 10.9666, 4.79908 )
 
 [node name="dechets" type="Sprite" parent="decor/sol"]
@@ -548,9 +548,13 @@ is_pink_block = true
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="foule/pink block/pb sono"]
 position = Vector2( -91.8059, -104.271 )
 stream = ExtResource( 46 )
-autoplay = true
-max_distance = 3050.0
+max_distance = 3075.0
 attenuation = 0.392292
+
+[node name="Timer" type="Timer" parent="foule/pink block/pb sono"]
+wait_time = 0.15
+one_shot = true
+autostart = true
 
 [node name="pb panacarte nb" parent="foule/pink block" instance=ExtResource( 29 )]
 position = Vector2( 215.323, 498.592 )
@@ -583,3 +587,5 @@ scale = Vector2( -1, 1 )
 
 [node name="mec kipa" parent="." instance=ExtResource( 60 )]
 position = Vector2( 3152.74, -168.345 )
+[connection signal="finished" from="foule/pink block/pb sono/AudioStreamPlayer2D" to="foule/pink block/pb sono" method="_on_AudioStreamPlayer2D_finished"]
+[connection signal="timeout" from="foule/pink block/pb sono/Timer" to="foule/pink block/pb sono" method="_on_Timer_timeout"]

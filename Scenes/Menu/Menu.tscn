@@ -1,22 +1,35 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/BoutonsMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=2]
 [ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=3]
-[ext_resource path="res://Assets/UI/Happy_Pride_Ecrantitre.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre03.png" type="Texture" id=4]
 [ext_resource path="res://Assets/UI/fond-menu2.jpg" type="Texture" id=5]
 [ext_resource path="res://Scripts/0_LangueMenu.gd" type="Script" id=6]
 [ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=7]
 [ext_resource path="res://Audio/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 08 Last Energy For The Day.wav" type="AudioStream" id=8]
 [ext_resource path="res://Scenes/Menu/Credits.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Menu/Options.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre02.png" type="Texture" id=11]
+[ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre_fond.png" type="Texture" id=12]
+[ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre01.png" type="Texture" id=13]
+[ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre00.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 6 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 642.39, 668.562, 649.266 ]
 }
 
 [node name="TextureRect2" type="TextureRect" parent="."]
@@ -157,14 +170,21 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -279.625
-margin_top = 34.7401
+margin_top = 17.7401
 margin_right = 295.375
-margin_bottom = 385.74
-texture = ExtResource( 4 )
+margin_bottom = 368.74
+texture = ExtResource( 12 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="HappyPride" type="AnimatedSprite" parent="TextureRect"]
+position = Vector2( 296.405, 164.393 )
+scale = Vector2( 0.838592, 0.838592 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )

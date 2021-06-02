@@ -74,7 +74,7 @@ func _input(event):
 		
 	if event.is_action_pressed("ui_accept") && Partir.visible == true:
 		if singleton.comptefragmentsZine == 13:
-			get_tree().change_scene("res://Scenes/Menu/Credits.tscn")
+			get_tree().change_scene("res://Scenes/Menu/merci.tscn")
 	
 func afficher_message_fin():
 	messagefin += 1
