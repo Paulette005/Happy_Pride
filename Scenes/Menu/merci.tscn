@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/merci.gd" type="Script" id=2]
+[ext_resource path="res://Assets/UI/fond-menu2.jpg" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=5]
-[ext_resource path="res://Assets/UI/fond-blanc.jpg" type="Texture" id=6]
 [ext_resource path="res://Fonts/prenomspnj.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=9]
 
@@ -12,22 +12,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 639.827 ]
 }
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 6 )
+texture = ExtResource( 3 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="merci" type="RichTextLabel" parent="."]
-margin_left = 467.482
+margin_left = 478.482
 margin_top = 197.357
-margin_right = 788.482
+margin_right = 799.482
 margin_bottom = 252.357
 rect_pivot_offset = Vector2( 1757.76, 693.597 )
 custom_fonts/normal_font = ExtResource( 8 )
@@ -40,9 +41,9 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 504.762
+margin_left = 528.762
 margin_top = 289.168
-margin_right = 723.762
+margin_right = 747.762
 margin_bottom = 456.168
 custom_constants/separation = 21
 __meta__ = {

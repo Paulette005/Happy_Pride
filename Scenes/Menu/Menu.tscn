@@ -183,7 +183,7 @@ __meta__ = {
 position = Vector2( 296.405, 164.393 )
 scale = Vector2( 0.838592, 0.838592 )
 frames = SubResource( 1 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
