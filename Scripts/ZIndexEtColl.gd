@@ -13,9 +13,6 @@ func _ready():
 	if add_collision :
 		var zone_c = zone_coll.instance()
 		add_child(zone_c)
-
-#func _on_AudioStreamPlayer2D_ready():
-#		$AudioStreamPlayer2D.play()
 	
 func _on_AudioStreamPlayer2D_finished():
 	$AudioStreamPlayer2D.play()
