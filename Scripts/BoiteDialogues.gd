@@ -6,6 +6,7 @@ var DialoguesArray = []
 
 var mouvTriange = false
 onready var Pause = get_node("/root/Node2D/CanvasLayer/Pause")
+onready var singleton = get_node("/root/Singleton")
 
 func _ready():
 	chargement_dialogue()
@@ -24,6 +25,8 @@ func chargement_dialogue():
 	else :
 		$khadija.visible = false
 		$Portraits.visible = true
-		$Portraits.texture = load("res://Assets/PNJ/Portraits/%s" %PrenomPNJ + ".png")
+		$Portraits.texture = load("res://Assets/PNJ/Portraits/%s" %PrenomPNJ+".png")
+		if PrenomPNJ == "Alex":
+			$Portraits.visible = false
 	mouvTriange = true
 	$AnimatedSprite/AnimationPlayer.play("mouvTriangle")
