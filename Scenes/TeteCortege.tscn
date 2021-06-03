@@ -393,8 +393,9 @@ position = Vector2( 7966.09, -1221.15 )
 texture = ExtResource( 180 )
 
 [node name="egout grille grande" type="Sprite" parent="decor"]
-visible = false
 position = Vector2( 2680.38, -550.264 )
+z_index = -3900
+z_as_relative = false
 texture = ExtResource( 75 )
 
 [node name="sol" type="Sprite" parent="decor"]
