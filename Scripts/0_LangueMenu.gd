@@ -35,3 +35,7 @@ func chargement_langue():
 		get_node("/root/Control/Credits/HBoxContainer/Rose/role en").visible = true
 		get_node("/root/Control/Credits/merci").text = "Thanks to Gabion, Dilz and Erwan for their help"
 		$Credits/Retour/retour.bbcode_text= "[center]Back[/center]"
+
+
+func _on_AudioStreamPlayer_finished():
+	samplePlayer.play()

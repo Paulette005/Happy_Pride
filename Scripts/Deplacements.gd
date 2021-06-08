@@ -2,10 +2,9 @@ extends KinematicBody2D
 
 export var vitesse = 275
 export (NodePath) var positionPlayer
-export var dirPlayer = 0
 
 var velocite = Vector2 ()
-var direction = "Face"
+export var direction = "Face"
 var LancerParticules = preload("res://Scenes/Particules.tscn")
 var gestionAnimations = false
 var paillettes
@@ -17,7 +16,7 @@ var verif = false
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
-onready var changementDir = get_node("/root/Node2D/Zones_specifiques/ChangementScene")
+#onready var changementDir = get_node("/root/Node2D/Zones_specifiques/ChangementScene")
 
 func _ready():
 	$AnimatedSprite.connect("animation_finished", self, "chang_anim")
@@ -31,19 +30,15 @@ func get_input():
 		if Input.is_action_pressed("ui_up"):
 			velocite.y -= 1
 			direction = "Dos"
-			dirPlayer = 2
 		if Input.is_action_pressed("ui_down"):
 			velocite.y += 1
 			direction = "Face"
-			dirPlayer = 0
 		if Input.is_action_pressed("ui_left"):
 			velocite.x -= 1
 			direction = "Gauche"
-			dirPlayer = 3
 		if Input.is_action_pressed("ui_right"):
 			velocite.x += 1
 			direction = "Droite"
-			dirPlayer = 1
 			
 		velocite = velocite.normalized() * vitesse
 

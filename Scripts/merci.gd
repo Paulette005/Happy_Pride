@@ -11,7 +11,7 @@ func _ready():
 	$VBoxContainer/retour.grab_focus()
 	var singleton = Singleton
 	if singleton.langues == 1:
-		$merci.bbcode_text = "[wave]Thanks for playing[/wave]"
+		$merci.bbcode_text = "[center][wave]Thanks for playing[/wave][/center]"
 		$VBoxContainer/retour/retour.bbcode_text = "[center]Back to menu[/center]"
 		$VBoxContainer/credits/credits.bbcode_text = "[center]Credits[/center]"
 	$VBoxContainer/credits.connect("button_down",self,"to_credits")

@@ -344,7 +344,6 @@ position = Vector2( 696.528, 734.342 )
 
 [node name="Player" parent="." instance=ExtResource( 25 )]
 position = Vector2( 3346.49, 24.3365 )
-dirPlayer = 3
 
 [node name="foule" type="Node2D" parent="."]
 position = Vector2( 26.4287, -116.225 )
@@ -560,22 +559,21 @@ autostart = true
 position = Vector2( 215.323, 498.592 )
 
 [node name="PNJ" type="Node2D" parent="."]
-position = Vector2( 33.1558, -101.938 )
 
 [node name="Raphael" parent="PNJ" instance=ExtResource( 34 )]
-position = Vector2( 1806.44, -172.287 )
+position = Vector2( 1842.44, -272.287 )
 script = ExtResource( 33 )
 
 [node name="Jasmine" parent="PNJ" instance=ExtResource( 51 )]
-position = Vector2( 2630.44, 122.728 )
+position = Vector2( 2663.44, 22.728 )
 script = ExtResource( 33 )
 
 [node name="Khadija" parent="PNJ" instance=ExtResource( 35 )]
-position = Vector2( -255.626, 208.424 )
+position = Vector2( -220.626, 108.424 )
 script = ExtResource( 33 )
 
 [node name="Noah" parent="PNJ" instance=ExtResource( 36 )]
-position = Vector2( 547.868, -172.786 )
+position = Vector2( 583.868, -272.786 )
 script = ExtResource( 33 )
 
 [node name="mec plot" parent="." instance=ExtResource( 98 )]

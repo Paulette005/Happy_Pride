@@ -169,10 +169,10 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -279.625
-margin_top = 17.7401
-margin_right = 295.375
-margin_bottom = 368.74
+margin_left = -287.5
+margin_top = 35.0
+margin_right = 287.5
+margin_bottom = 386.0
 texture = ExtResource( 12 )
 expand = true
 __meta__ = {
@@ -183,7 +183,7 @@ __meta__ = {
 position = Vector2( 296.405, 164.393 )
 scale = Vector2( 0.838592, 0.838592 )
 frames = SubResource( 1 )
-frame = 3
+frame = 1
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -236,4 +236,5 @@ visible = false
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Options" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="VBoxContainer/Credits" method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitter" to="VBoxContainer/Quitter" method="_on_Quitter_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
 [connection signal="pressed" from="Credits/Retour" to="Credits/Retour" method="_on_retour_credit_pressed"]

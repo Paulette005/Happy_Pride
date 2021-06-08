@@ -92,10 +92,10 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 40 ), ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
+"frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
 "loop": true,
-"name": "WalkDos",
-"speed": 7.0
+"name": "IdleGauche",
+"speed": 3.5
 }, {
 "frames": [ ExtResource( 47 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 52 ), ExtResource( 46 ) ],
 "loop": false,
@@ -112,14 +112,29 @@ animations = [ {
 "name": "IdleDroite",
 "speed": 3.5
 }, {
+"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 53 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 57 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 64 ) ],
+"loop": false,
+"name": "paillettesGauche",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "WalkGauche",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "IdleDos",
+"speed": 3.5
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 33 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "WalkDos",
+"speed": 7.0
+}, {
 "frames": [ ExtResource( 25 ), ExtResource( 25 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "IdleFace",
-"speed": 3.5
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 31 ), ExtResource( 27 ) ],
-"loop": true,
-"name": "IdleGauche",
 "speed": 3.5
 }, {
 "frames": [ ExtResource( 20 ), ExtResource( 17 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 22 ) ],
@@ -131,21 +146,6 @@ animations = [ {
 "loop": true,
 "name": "WalkDroite",
 "speed": 7.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "WalkGauche",
-"speed": 7.0
-}, {
-"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 53 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 57 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 58 ), ExtResource( 64 ) ],
-"loop": false,
-"name": "paillettesGauche",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ) ],
-"loop": true,
-"name": "IdleDos",
-"speed": 3.5
 } ]
 
 [sub_resource type="CircleShape2D" id=2]

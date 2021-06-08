@@ -24,10 +24,9 @@ zine = 11
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 material = ExtResource( 8 )
-position = Vector2( 0.936401, 0.608215 )
 frames = SubResource( 1 )
 animation = "idle"
-offset = Vector2( -0.0617714, -176.161 )
+offset = Vector2( 0, -150 )
 script = ExtResource( 7 )
 
 [node name="Area2D" parent="." instance=ExtResource( 5 )]

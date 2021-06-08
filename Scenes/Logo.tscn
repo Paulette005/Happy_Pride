@@ -1,15 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Logo.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/fond-blanc.jpg" type="Texture" id=2]
-[ext_resource path="res://Assets/LogoGamaturgie/Logo_Gama.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/animLogo/HappyPride_Gama00.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/animLogo/HappyPride_Gama01.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.5
+} ]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 640.903 ]
 }
 
 [node name="fond" type="TextureRect" parent="."]
@@ -21,20 +31,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -250.0
-margin_top = -250.0
-margin_right = 250.0
-margin_bottom = 250.0
-texture = ExtResource( 3 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Timer" type="Timer" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 640.549, 367.157 )
+scale = Vector2( 0.923966, 0.923966 )
+frames = SubResource( 1 )
+playing = true
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -8,7 +8,7 @@ var nbframe = 0
 var randomTemps = 2
 var rdm = RandomNumberGenerator.new()
 #Gestion de la direction pour gérer direction PNJ lors des dialogues
-var dirPlayer
+var direction
 var messagefin = 0
 var prenomFin = "Alex"
 var playerZone = false
@@ -22,6 +22,7 @@ onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteD
 onready var Interactions = get_node("/root/Node2D/CanvasLayer/Interactions")
 onready var consultationZine = get_node("/root/Node2D/CanvasLayer/Zine")
 onready var Partir = get_node("/root/Node2D/CanvasLayer/Partir")
+onready var PositionPNJ = get_node("/root/Node2D/PNJ/" + prenomPNJ)
 
 onready var singleton = get_node("/root/Singleton")
 
@@ -62,10 +63,25 @@ func chang_directions():
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone && consultationZine.visible == false:
 		Interactions.visible = false
-		if Player.dirPlayer <= 1:
-			$AnimatedSprite.set_frame((Player.dirPlayer)+2)
+		if Player.position.x > PositionPNJ.position.x:
+			$AnimatedSprite.set_frame(1)
+			Player.direction = "Gauche"
+			if Player.position.y > (PositionPNJ.position.y + 35):
+				$AnimatedSprite.set_frame(0)
+				Player.direction = "Dos"
+			if Player.position.y < (PositionPNJ.position.y - 25):
+				$AnimatedSprite.set_frame(2)
+				Player.direction = "Face"
+				
 		else:
-			$AnimatedSprite.set_frame((Player.dirPlayer)-2)
+			$AnimatedSprite.set_frame(3)
+			Player.direction = "Droite"
+			if Player.position.y > (PositionPNJ.position.y + 35):
+				$AnimatedSprite.set_frame(0)
+				Player.direction = "Dos"
+			if Player.position.y < (PositionPNJ.position.y - 25):
+				$AnimatedSprite.set_frame(2)
+				Player.direction = "Face"
 			
 		lancement_dialogue()
 		

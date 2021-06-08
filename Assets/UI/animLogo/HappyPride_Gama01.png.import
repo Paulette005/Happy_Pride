@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Happy_Pride_Ecrantitre00.jpg-226b741657731b77d7b163be81a88028.stex"
+path="res://.import/HappyPride_Gama01.png-1e793c36994f4d629ad431db5cc2808d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Happy_Pride_Ecrantitre00.jpg"
-dest_files=[ "res://.import/Happy_Pride_Ecrantitre00.jpg-226b741657731b77d7b163be81a88028.stex" ]
+source_file="res://Assets/UI/animLogo/HappyPride_Gama01.png"
+dest_files=[ "res://.import/HappyPride_Gama01.png-1e793c36994f4d629ad431db5cc2808d.stex" ]
 
 [params]
 
