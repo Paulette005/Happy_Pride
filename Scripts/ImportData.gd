@@ -11,7 +11,7 @@ func _ready():
 	dialogues_data = dialoguesdata_json.result
 	
 	var dialoguesdata_fileEN = File.new()
-	dialoguesdata_fileEN.open("res://Data/DialoguesDataFR.json",File.READ)
+	dialoguesdata_fileEN.open("res://Data/DialoguesDataEN.json",File.READ)
 	var dialoguesdataEN_json = JSON.parse(dialoguesdata_fileEN.get_as_text())
 	dialoguesdata_fileEN.close()
 	dialogues_dataEN = dialoguesdataEN_json.result

@@ -1,22 +1,20 @@
 extends Control
 
-var langues 
 onready var Pause = get_node("/root/Node2D/CanvasLayer/Pause")
 onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
+onready var singleton = get_node("/root/Singleton")
 
 func _ready():
-	var singleton = get_node("/root/Singleton")
-	langues = singleton.langues
-	chargement_langue()
+	pass
 	
-func chargement_langue():
-	if langues == 0:
+func _process(delta):
+	if singleton.langues == 0:
 		$Pause/Reprendre/Reprendre.bbcode_text = "[center]Reprendre[/center]"
 		$Pause/Options/Options.bbcode_text = "[center]Options[/center]"
 		$Pause/Retour/Retour.bbcode_text = "[center]Retour menu[/center]"
 		$Pause/Quitter/Quitter.bbcode_text = "[center]Quitter[/center]"
 		
-	if langues == 1:
+	if singleton.langues == 1:
 		$Pause/Reprendre/Reprendre.bbcode_text = "[center]Resume[/center]"
 		$Pause/Options/Options.bbcode_text = "[center]Options[/center]"
 		$Pause/Retour/Retour.bbcode_text = "[center]Back to menu[/center]"
