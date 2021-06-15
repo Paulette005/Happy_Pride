@@ -17,7 +17,9 @@ _global_script_class_icons={
 
 config/name="Happy Pride"
 run/main_scene="res://Scenes/Logo.tscn"
-config/icon="res://icon.png"
+config/icon="res://logo_happy_pride_png.png"
+config/macos_native_icon="res://logo_happy_pride_png.png"
+config/windows_native_icon="res://logo_happy_pride.ico"
 
 [autoload]
 
