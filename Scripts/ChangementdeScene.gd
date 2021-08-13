@@ -4,6 +4,7 @@ export var nomScene = "MilieuCortege"
 export var posX = 6174
 
 onready var posPlayer = get_node("/root/Node2D/Player")
+onready var singleton = get_node("/root/Singleton")
 
 func _ready():
 	connect("body_entered", self, "on_body_entered")

@@ -8,6 +8,7 @@ var clavier = "azerty"
 var fragmentsZine = -1
 var comptefragmentsZine = 0
 var pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
+var fullScreen = false
 
 #pour le changement de scene
 var loader
@@ -21,7 +22,10 @@ func _ready():
 func set_fragment_zine(num):
 	if num > fragmentsZine :
 		fragmentsZine = num
+	if pages_eues[num] == false:
+		comptefragmentsZine += 1
 	pages_eues[num] = true
+
 	# dernier pnj qui fait apparaitre deux pages
 	if num == 11 :
 		fragmentsZine = 12
@@ -29,6 +33,8 @@ func set_fragment_zine(num):
 	get_node("/root/Node2D/CanvasLayer/Zine").add_fragment()
 	get_node("/root/Node2D/CanvasLayer/Zine").charge_pages()
 	get_node("/root/Node2D/CanvasLayer/Zine").gere_couvertures()
+	
+	print(comptefragmentsZine)
 
 func change_scene(var path):
 	var root = get_tree().get_root()
@@ -60,6 +66,7 @@ func _process(delta):
 		else :
 			#show_error()
 			print("error")
+			
 			
 func set_new_scene(r):
 	current_scene.queue_free()

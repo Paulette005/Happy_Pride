@@ -343,7 +343,7 @@ stream = ExtResource( 11 )
 [connection signal="pressed" from="GestionLangues/Francais" to="VBoxContainer/Langues" method="_on_Francais_pressed"]
 [connection signal="pressed" from="GestionLangues/Anglais" to="VBoxContainer/Langues" method="_on_Anglais_pressed"]
 [connection signal="pressed" from="GestionLangues/Retour2" to="VBoxContainer/Langues" method="_on_Retour2_pressed"]
-[connection signal="toggled" from="EnsembleReglages/CheckButton" to="VBoxContainer/Langues" method="_on_CheckButton_toggled"]
+[connection signal="toggled" from="EnsembleReglages/CheckButton" to="VBoxContainer/Reglages" method="_on_CheckButton_toggled"]
 [connection signal="value_changed" from="EnsembleReglages/Musique" to="VBoxContainer/Langues" method="_on_Musique_value_changed"]
 [connection signal="toggled" from="EnsembleReglages/Azerty" to="EnsembleReglages" method="on_azerty_pressed"]
 [connection signal="toggled" from="EnsembleReglages/Qwerty" to="EnsembleReglages" method="on_qwerty_pressed"]

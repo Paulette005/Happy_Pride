@@ -42,3 +42,7 @@ func _process(delta):
 			$AudioStreamPlayer.playing = true
 	else:
 		$AudioStreamPlayer.playing = false
+
+
+
+

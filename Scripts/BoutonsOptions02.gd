@@ -51,8 +51,8 @@ func _on_Reglages_pressed():
 	gestionLangues.visible = false
 
 func _on_CheckButton_toggled(button_pressed):
-	OS.window_maximized = button_pressed
 	OS.center_window()
+	OS.window_fullscreen = button_pressed
 
 func _on_Musique_value_changed(value):
 	get_node("/root/Singleton").volume = value

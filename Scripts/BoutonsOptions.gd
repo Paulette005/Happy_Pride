@@ -10,6 +10,7 @@ var volume
 
 func _ready():
 	langues = singleton.langues
+
 	
 func _on_Langues_pressed():
 	gestionLangues.visible = true
@@ -47,9 +48,10 @@ func _on_Reglages_pressed():
 	gestionLangues.visible = false
 
 func _on_CheckButton_toggled(button_pressed):
-	OS.window_maximized = button_pressed
 	OS.center_window()
+	OS.window_fullscreen = button_pressed
 
 func _on_Musique_value_changed(value):
 	get_node("/root/Singleton").volume = value
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), log(get_node("/root/Singleton").volume)*10)
+

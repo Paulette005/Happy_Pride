@@ -139,7 +139,7 @@ func parle():
 		index_dialogueArray = 0
 		if interactionPNJ == false:
 			singleton.set_fragment_zine(zine)
-			singleton.comptefragmentsZine += 1
+			#singleton.comptefragmentsZine += 1
 			interactionPNJ = true
 			#consultationZine.chargementPages()
 

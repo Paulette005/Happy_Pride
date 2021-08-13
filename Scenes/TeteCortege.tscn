@@ -1,9 +1,10 @@
-[gd_scene load_steps=202 format=2]
+[gd_scene load_steps=203 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/ZIndexMusique.gd" type="Script" id=5]
 [ext_resource path="res://Shaders/sol.tres" type="Material" id=6]
 [ext_resource path="res://Assets/decor/fond-uni.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/sol.gd" type="Script" id=8]
@@ -1309,6 +1310,7 @@ position = Vector2( -2602.98, -517.061 )
 [node name="Char01" parent="Chars" instance=ExtResource( 64 )]
 position = Vector2( 4991.92, 210.884 )
 z_index = -2000
+script = ExtResource( 5 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Chars/Char01"]
 
@@ -1349,6 +1351,7 @@ position = Vector2( 1392.37, 175.141 )
 [node name="Char02" parent="Chars" instance=ExtResource( 66 )]
 position = Vector2( -1180.26, 136.478 )
 z_index = -1
+script = ExtResource( 5 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Chars/Char02"]
 
