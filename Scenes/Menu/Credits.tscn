@@ -50,8 +50,8 @@ __meta__ = {
 [node name="nom" type="Label" parent="HBoxContainer/paulette"]
 margin_right = 300.0
 margin_bottom = 53.0
-custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 7 )
 text = "Paulette"
 align = 1
 
@@ -68,8 +68,8 @@ __meta__ = {
 margin_top = 383.0
 margin_right = 300.0
 margin_bottom = 515.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "programmation 
 game design
 narration"
@@ -80,8 +80,8 @@ visible = false
 margin_top = 518.0
 margin_right = 300.0
 margin_bottom = 650.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "programming
 game design
 narration"
@@ -100,8 +100,8 @@ __meta__ = {
 [node name="nom" type="Label" parent="HBoxContainer/Axell"]
 margin_right = 300.0
 margin_bottom = 53.0
-custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 7 )
 text = "Axell Boué"
 align = 1
 
@@ -118,8 +118,8 @@ __meta__ = {
 margin_top = 383.0
 margin_right = 300.0
 margin_bottom = 515.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "graphisme
 animation
 soutien programmation"
@@ -130,8 +130,8 @@ visible = false
 margin_top = 518.0
 margin_right = 309.0
 margin_bottom = 650.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "art
 animation
 some programming"
@@ -150,8 +150,8 @@ __meta__ = {
 [node name="nom" type="Label" parent="HBoxContainer/Rose"]
 margin_right = 300.0
 margin_bottom = 53.0
-custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 7 )
 text = "Rrrrrose Azerty"
 align = 1
 
@@ -168,8 +168,8 @@ __meta__ = {
 margin_top = 383.0
 margin_right = 300.0
 margin_bottom = 425.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "musiques"
 align = 1
 
@@ -178,19 +178,19 @@ visible = false
 margin_top = 428.0
 margin_right = 300.0
 margin_bottom = 470.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "musics"
 align = 1
 
 [node name="merci" type="Label" parent="."]
-margin_left = 328.662
+margin_left = 276.662
 margin_top = 614.56
-margin_right = 950.662
+margin_right = 1006.66
 margin_bottom = 746.56
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Merci à Gabion, Dilz, Erwan et Léa pour leur aide"
+custom_fonts/font = ExtResource( 6 )
+text = "Merci à Gabion, Dilz, Erwan, Léa et Gaëlle  pour leur aide"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -219,8 +219,8 @@ margin_left = -101.888
 margin_top = -26.25
 margin_right = 98.1123
 margin_bottom = 26.25
-custom_fonts/normal_font = ExtResource( 6 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 6 )
 bbcode_enabled = true
 bbcode_text = "[center]Retour[/center]"
 text = "Retour"

@@ -19,7 +19,7 @@ func set_langue():
 		get_node(path + "HBoxContainer/Axell/role en").visible = true
 		get_node(path + "HBoxContainer/Rose/role fr").visible = false
 		get_node(path + "HBoxContainer/Rose/role en").visible = true
-		get_node(path + "merci").text = "Thanks to Gabion, Dilz, Erwan and Léa for their help"
+		get_node(path + "merci").text = "Thanks to Gabion, Dilz, Erwan, Léa and Gaëlle for their help"
 		$retour/retour.bbcode_text= "[center]Back[/center]"
 	else :
 		get_node(path + "HBoxContainer/paulette/role fr").visible = true
@@ -28,7 +28,7 @@ func set_langue():
 		get_node(path + "HBoxContainer/Axell/role en").visible = false
 		get_node(path + "HBoxContainer/Rose/role fr").visible = true
 		get_node(path + "HBoxContainer/Rose/role en").visible = false
-		get_node(path + "merci").text = "Merci à Gabion, Dilz, Erwan et Léa pour leur aide"
+		get_node(path + "merci").text = "Merci à Gabion, Dilz, Erwan, Léa et Gaëlle  pour leur aide"
 
 func retour():
 	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")

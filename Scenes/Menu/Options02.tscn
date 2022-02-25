@@ -258,6 +258,7 @@ focus_neighbour_bottom = NodePath("../../VBoxContainer/Reglages")
 [connection signal="pressed" from="GestionLangues/Francais" to="VBoxContainer/Langues" method="_on_Francais_pressed"]
 [connection signal="pressed" from="GestionLangues/Anglais" to="VBoxContainer/Langues" method="_on_Anglais_pressed"]
 [connection signal="pressed" from="GestionLangues/Retour2" to="VBoxContainer/Langues" method="_on_Retour2_pressed"]
+[connection signal="value_changed" from="EnsembleReglages/Musique" to="VBoxContainer/Langues" method="_on_Musique_value_changed"]
 
 [editable path="EnsembleReglages"]
 [editable path="EnsembleReglages2"]

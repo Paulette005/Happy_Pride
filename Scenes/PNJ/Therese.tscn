@@ -21,6 +21,7 @@ animations = [ {
 script = ExtResource( 5 )
 prenomPNJ = "Therese"
 zine = 3
+Zone = "A"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 material = ExtResource( 7 )

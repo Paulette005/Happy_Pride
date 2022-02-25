@@ -11,6 +11,7 @@ var paillettes
 var dansedanse = false
 var indicationDirection
 var proche_pnj = false
+var proche_sorie = false
 var is_dancing = false
 var verif = false
 
@@ -43,7 +44,7 @@ func get_input():
 		velocite = velocite.normalized() * vitesse
 
 func _input(event):
-	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && Dialogues.visible == false && proche_pnj == false :
+	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && Dialogues.visible == false && proche_pnj == false && proche_sorie == false:
 		lancerpaillettes()
 
 func _physics_process(delta):

@@ -2,6 +2,7 @@ extends Node2D
 
 var prenomPNJ
 var zine
+var Zone
 var index_dialogueArray = 0
 var numArray = 0
 var nbframe = 0
@@ -37,15 +38,19 @@ func on_body_entered(body):
 		playerZone = true
 		Interactions.visible = true
 		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
+		print(prenomPNJ)
 		
 func on_body_exited(body):
+	if singleton.comptefragmentsZine == 12 && messagefin == 0:
+		afficher_message_fin()
+	if singleton.zoneA == 4:
+		afficher_message_fin()
 	if body.name == "Player":
 		Player.proche_pnj = false
 		playerZone = false
 		Interactions.visible = false
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
-		if singleton.comptefragmentsZine == 12 && messagefin == 0:
-			afficher_message_fin()
+
 		if Dialogues.visible == true:
 			if messagefin == 0:
 				sortie_dialogues_imprevue()
@@ -138,10 +143,17 @@ func parle():
 		Dialogues.visible = false
 		index_dialogueArray = 0
 		if interactionPNJ == false:
+			if Zone == "A":
+				singleton.zoneA =+ 4
+			elif Zone == "B":
+				singleton.zoneB =+ 1
+			else:
+				singleton.zoneC =+1
 			singleton.set_fragment_zine(zine)
 			#singleton.comptefragmentsZine += 1
 			interactionPNJ = true
 			#consultationZine.chargementPages()
+			print(singleton.zoneA)
 
 		if Dialogues.visible == false && messagefin == 1:
 			singleton.set_fragment_zine(zine)

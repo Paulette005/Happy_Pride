@@ -10,6 +10,9 @@ var comptefragmentsZine = 0
 var pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 var fullScreen = false
 
+var zoneA = 0
+var zoneB = 0
+var zoneC = 0
 #pour le changement de scene
 var loader
 var wait_frame
