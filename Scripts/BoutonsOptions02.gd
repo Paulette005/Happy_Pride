@@ -5,6 +5,7 @@ onready var Options = get_node("/root/Node2D/CanvasLayer/Options")
 
 onready var gestionLangues = get_node("/root/Node2D/CanvasLayer/Options/GestionLangues")
 onready var ensembleReglages = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
+onready var ensembleReglages2 = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages2")
 onready var singleton = get_node("/root/Singleton")
 
 var langues
@@ -23,6 +24,7 @@ func _on_Langues_pressed():
 		get_node("/root/Node2D/CanvasLayer/Options/GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
+	ensembleReglages2.visible = false
 	
 func _on_Francais_pressed():
 	langues = 0
@@ -34,6 +36,7 @@ func _on_Anglais_pressed():
 	
 func enregistrementLangues():
 	get_node("/root/Singleton").langues = langues
+	Options._set_langue()
 	
 func _on_Retour2_pressed():
 	gestionLangues.visible = false
@@ -42,12 +45,14 @@ func _on_Retour2_pressed():
 func _on_Retour_pressed():
 	gestionLangues.visible = true
 	ensembleReglages.visible = false
+	ensembleReglages2.visible = false
 	Options.visible = false
 	Pause.visible = true
 	get_node("/root/Node2D/CanvasLayer/Pause/Pause/Reprendre").grab_focus()
 
 func _on_Reglages_pressed():
 	ensembleReglages.visible = true
+	ensembleReglages2.visible = true
 	gestionLangues.visible = false
 
 func _on_CheckButton_toggled(button_pressed):

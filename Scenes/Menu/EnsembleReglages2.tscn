@@ -1,0 +1,147 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=1]
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/UI/barre_son00.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/bouton_audio00.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/bouton_audio01.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/rectangle-menu-selected.png" type="Texture" id=6]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 432, 17 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 0 )
+border_color = Color( 1, 1, 1, 0 )
+corner_detail = 1
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 1, 1, 1, 0 )
+
+[node name="EnsembleReglages2" type="VBoxContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 34.6511
+margin_top = -152.045
+margin_right = 528.651
+margin_bottom = 229.955
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Contraste" type="Label" parent="."]
+margin_right = 493.0
+margin_bottom = 42.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Contraste :"
+
+[node name="contraste" type="HSlider" parent="."]
+margin_top = 46.0
+margin_right = 493.0
+margin_bottom = 99.0
+focus_neighbour_bottom = NodePath("../Saturation")
+custom_icons/grabber_disabled = ExtResource( 5 )
+custom_icons/grabber_highlight = ExtResource( 5 )
+custom_icons/grabber = ExtResource( 4 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+min_value = 0.4
+max_value = 6.0
+step = 0.2
+value = 1.0
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="saturation" type="Label" parent="."]
+margin_top = 103.0
+margin_right = 493.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Saturation :"
+
+[node name="Saturation" type="HSlider" parent="."]
+margin_top = 149.0
+margin_right = 493.0
+margin_bottom = 202.0
+focus_neighbour_top = NodePath("../contraste")
+focus_neighbour_bottom = NodePath("../Teinte")
+custom_icons/grabber_disabled = ExtResource( 5 )
+custom_icons/grabber_highlight = ExtResource( 5 )
+custom_icons/grabber = ExtResource( 4 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+max_value = 3.0
+step = 0.2
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teinte" type="Label" parent="."]
+margin_top = 206.0
+margin_right = 493.0
+margin_bottom = 248.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Teinte :"
+
+[node name="Teinte" type="HSlider" parent="."]
+margin_top = 252.0
+margin_right = 493.0
+margin_bottom = 305.0
+focus_neighbour_top = NodePath("../Saturation")
+focus_neighbour_bottom = NodePath("../btonReinitialiser")
+custom_icons/grabber_disabled = ExtResource( 5 )
+custom_icons/grabber_highlight = ExtResource( 5 )
+custom_icons/grabber = ExtResource( 4 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+max_value = 360.0
+step = 2.0
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btonReinitialiser" type="TextureButton" parent="."]
+pause_mode = 2
+margin_top = 309.0
+margin_right = 493.0
+margin_bottom = 382.0
+focus_neighbour_top = NodePath("../Teinte")
+texture_normal = ExtResource( 1 )
+texture_focused = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="reinitialiser" type="RichTextLabel" parent="btonReinitialiser"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -241.0
+margin_top = -26.5
+margin_right = 99.0
+margin_bottom = 26.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Réinitialiser les couleurs"
+text = "Réinitialiser les couleurs"
+__meta__ = {
+"_edit_use_anchors_": false
+}

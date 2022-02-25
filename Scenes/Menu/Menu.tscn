@@ -74,8 +74,8 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Commencer"
 text = "Commencer"
@@ -102,8 +102,8 @@ margin_left = -100.0
 margin_top = -26.25
 margin_right = 100.0
 margin_bottom = 26.25
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Options"
 text = "Options"
@@ -130,8 +130,8 @@ margin_left = -100.0
 margin_top = -26.25
 margin_right = 100.0
 margin_bottom = 26.25
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Crédits"
 text = "Crédits"
@@ -157,8 +157,8 @@ margin_left = -100.0
 margin_top = -26.25
 margin_right = 100.0
 margin_bottom = 26.25
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Quitter"
 text = "Quitter"
@@ -183,7 +183,7 @@ __meta__ = {
 position = Vector2( 296.405, 164.393 )
 scale = Vector2( 0.838592, 0.838592 )
 frames = SubResource( 1 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -221,8 +221,8 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "[center] Retour [/center]"
 text = " Retour "
@@ -232,6 +232,7 @@ __meta__ = {
 
 [node name="Options" parent="." instance=ExtResource( 10 )]
 visible = false
+
 [connection signal="pressed" from="VBoxContainer/Commencer" to="VBoxContainer/Commencer" method="_on_Commencer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Options" method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="VBoxContainer/Credits" method="_on_Credits_pressed"]

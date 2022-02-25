@@ -4,13 +4,19 @@ var volume
 onready var singleton = get_node("/root/Singleton")
 onready var Options = get_node("/root/Node2D/CanvasLayer/Options/EnsembleReglages")
 
-func ready():
-	volume = singleton.volume
-	
-func _process(delta):
+func _ready():
 	volume = singleton.volume
 	$EnsembleReglages/Musique.value = volume
+	_set_langue()
+	
+func _process(delta):
+	if Options.visible == true:
+		if $AudioStreamPlayer.playing == false:
+			$AudioStreamPlayer.playing = true
+	else:
+		$AudioStreamPlayer.playing = false
 
+func _set_langue():
 	if singleton.langues == 0:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Langues[/center]"
 		$VBoxContainer/Reglages/Reglages.bbcode_text = "[center]Réglages[/center]"
@@ -23,6 +29,12 @@ func _process(delta):
 		$EnsembleReglages/CheckButton.text = "Plein Écran"
 		$EnsembleReglages/Azerty.text = "Clavier AZERTY"
 		$EnsembleReglages/Qwerty.text = "Clavier QWERTY"
+		
+		$EnsembleReglages/luminosite.text = "Luminosité :"
+		$EnsembleReglages2/Contraste.text = "Contraste :"
+		$EnsembleReglages2/saturation.text = "Saturation :"
+		$EnsembleReglages2/teinte.text = "Teinte :"
+		$EnsembleReglages2/btonReinitialiser/reinitialiser.bbcode_text = "Réinitialiser les couleurs"
 		
 	else:
 		$VBoxContainer/Langues/Langues.bbcode_text = "[center]Languages[/center]"
@@ -37,11 +49,12 @@ func _process(delta):
 		$EnsembleReglages/Azerty.text = "AZERTY keyboard"
 		$EnsembleReglages/Qwerty.text = "QWERTY keyboard"
 		
-	if Options.visible == true:
-		if $AudioStreamPlayer.playing == false:
-			$AudioStreamPlayer.playing = true
-	else:
-		$AudioStreamPlayer.playing = false
+		$EnsembleReglages/luminosite.text = "Brightness :"
+		$EnsembleReglages2/Contraste.text = "Contrast :"
+		$EnsembleReglages2/saturation.text = "Saturation :"
+		$EnsembleReglages2/teinte.text = "Hue :"
+		$EnsembleReglages2/btonReinitialiser/reinitialiser.bbcode_text = "Reset color settings"
+	
 
 
 
