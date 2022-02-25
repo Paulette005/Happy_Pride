@@ -2,6 +2,7 @@ extends TextureButton
 
 onready var gestionLangues = get_node("/root/Control/Options/GestionLangues")
 onready var ensembleReglages = get_node("/root/Control/Options/EnsembleReglages")
+onready var ensembleReglages2 = get_node("/root/Control/Options/EnsembleReglages2")
 onready var gestionOptions = get_node("/root/Control/Options/VBoxContainer")
 onready var singleton = get_node("/root/Singleton")
 
@@ -20,6 +21,7 @@ func _on_Langues_pressed():
 		get_node("/root/Control/Options//GestionLangues/Anglais").grab_focus()
 			
 	ensembleReglages.visible = false
+	ensembleReglages2.visible = false
 	
 func _on_Francais_pressed():
 	langues = 0
@@ -31,7 +33,7 @@ func _on_Anglais_pressed():
 	
 func enregistrementLangues():
 	get_node("/root/Singleton").langues = langues
-	get_node("/root/Control/Options").set_langue()
+	get_node("/root/Control/Options")._set_langue()
 	
 func _on_Retour2_pressed():
 	gestionLangues.visible = false
@@ -40,11 +42,13 @@ func _on_Retour2_pressed():
 func _on_Retour_pressed():
 	gestionLangues.visible = true
 	ensembleReglages.visible = false
+	ensembleReglages2.visible = false
 	get_node("/root/Control/Options").visible = false
 	get_node("/root/Control/VBoxContainer/Commencer").grab_focus()
 
 func _on_Reglages_pressed():
 	ensembleReglages.visible = true
+	ensembleReglages2.visible = true
 	gestionLangues.visible = false
 
 func _on_CheckButton_toggled(button_pressed):

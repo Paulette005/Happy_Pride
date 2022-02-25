@@ -1,0 +1,149 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Fonts/Menu.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/ReglagesClavier.gd" type="Script" id=2]
+[ext_resource path="res://Assets/UI/barre_son00.png" type="Texture" id=3]
+[ext_resource path="res://Assets/UI/bouton_audio00.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/bouton_audio01.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/bonton_on_plein_ecran02.png" type="Texture" id=6]
+[ext_resource path="res://Assets/UI/bonton_off_plein_ecran02.png" type="Texture" id=7]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 432, 17 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 0 )
+border_color = Color( 1, 1, 1, 0 )
+corner_detail = 1
+
+[sub_resource type="StyleBoxLine" id=3]
+color = Color( 1, 1, 1, 0 )
+
+[node name="EnsembleReglages" type="VBoxContainer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -516.638
+margin_top = -152.045
+margin_right = -22.6377
+margin_bottom = 217.955
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckButton" type="CheckButton" parent="."]
+margin_right = 494.0
+margin_bottom = 52.0
+focus_neighbour_top = NodePath("../../VBoxContainer/Reglages")
+focus_neighbour_bottom = NodePath("../Musique")
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+custom_icons/off = ExtResource( 7 )
+custom_icons/on = ExtResource( 6 )
+pressed = true
+keep_pressed_outside = true
+text = "Plein Ecran"
+
+[node name="Volume" type="Label" parent="."]
+margin_top = 56.0
+margin_right = 494.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Volume :"
+
+[node name="Musique" type="HSlider" parent="."]
+margin_top = 102.0
+margin_right = 494.0
+margin_bottom = 155.0
+focus_neighbour_top = NodePath("../CheckButton")
+focus_neighbour_bottom = NodePath("../Azerty")
+custom_icons/grabber_disabled = ExtResource( 5 )
+custom_icons/grabber_highlight = ExtResource( 5 )
+custom_icons/grabber = ExtResource( 4 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+max_value = 1.0
+step = 0.1
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Azerty" type="CheckButton" parent="."]
+margin_top = 159.0
+margin_right = 494.0
+margin_bottom = 211.0
+focus_neighbour_top = NodePath("../Musique")
+focus_neighbour_bottom = NodePath("../Qwerty")
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+custom_icons/off = ExtResource( 7 )
+custom_icons/on = ExtResource( 6 )
+pressed = true
+keep_pressed_outside = true
+text = "Clavier AZERTY"
+
+[node name="Qwerty" type="CheckButton" parent="."]
+margin_top = 215.0
+margin_right = 494.0
+margin_bottom = 267.0
+focus_neighbour_top = NodePath("../Azerty")
+focus_neighbour_bottom = NodePath("../lum")
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+custom_icons/off = ExtResource( 7 )
+custom_icons/on = ExtResource( 6 )
+keep_pressed_outside = true
+text = "ClavierQWERTY"
+
+[node name="luminosite" type="Label" parent="."]
+margin_top = 271.0
+margin_right = 494.0
+margin_bottom = 313.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Luminosité :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lum" type="HSlider" parent="."]
+margin_top = 317.0
+margin_right = 494.0
+margin_bottom = 370.0
+focus_neighbour_top = NodePath("../Qwerty")
+custom_icons/grabber_disabled = ExtResource( 5 )
+custom_icons/grabber_highlight = ExtResource( 5 )
+custom_icons/grabber = ExtResource( 4 )
+custom_styles/slider = SubResource( 1 )
+custom_styles/grabber_area_highlight = SubResource( 2 )
+custom_styles/grabber_area = SubResource( 3 )
+min_value = -1.0
+max_value = 1.0
+step = 0.1
+scrollable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="toggled" from="Azerty" to="." method="on_azerty_pressed"]
+[connection signal="toggled" from="Qwerty" to="." method="on_qwerty_pressed"]
+[connection signal="value_changed" from="lum" to="." method="_luminosite_slider"]

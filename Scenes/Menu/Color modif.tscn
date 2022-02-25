@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Shaders/couleur_options_mat.tres" type="Material" id=1]
+
+[node name="Color modif" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+position = Vector2( 640.926, 359.188 )
+scale = Vector2( 6.48884, 3.71636 )
+copy_mode = 2
+
+[node name="color_shader" type="ColorRect" parent="."]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
