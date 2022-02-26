@@ -9,7 +9,7 @@ func _ready():
 	$EnsembleReglages/Musique.value = volume
 	_set_langue()
 	
-func _process(delta):
+func _process(_delta):
 	if Options.visible == true:
 		if $AudioStreamPlayer.playing == false:
 			$AudioStreamPlayer.playing = true

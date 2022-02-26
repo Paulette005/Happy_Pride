@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav-8d0eef30e429c56bf13d8dc7c68e6acd.sample"
+
+[deps]
+
+source_file="res://Audio/Musiques/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav"
+dest_files=[ "res://.import/Loyalty Freak Music - ROLLER DISCO DANCE DANCE - 02 Dance Robot ACTIVATE.wav-8d0eef30e429c56bf13d8dc7c68e6acd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

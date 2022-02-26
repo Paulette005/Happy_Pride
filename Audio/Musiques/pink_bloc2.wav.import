@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pink_bloc2.wav-4a950bba060f3e97d3194e726cee1f94.sample"
+
+[deps]
+
+source_file="res://Audio/Musiques/pink_bloc2.wav"
+dest_files=[ "res://.import/pink_bloc2.wav-4a950bba060f3e97d3194e726cee1f94.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

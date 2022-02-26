@@ -184,9 +184,9 @@ text = "musics"
 align = 1
 
 [node name="merci" type="Label" parent="."]
-margin_left = 276.662
+margin_left = 234.662
 margin_top = 614.56
-margin_right = 1006.66
+margin_right = 964.662
 margin_bottom = 746.56
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 6 )

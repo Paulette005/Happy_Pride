@@ -46,8 +46,7 @@ func _input(event):
 				charge_pages()
 				gere_couvertures()
 			
-func _process(delta):
-	pass
+
 
 func add_fragment():
 	if (numPageCourant%2 == 1 && numPageCourant < fragmentsZine.fragmentsZine) || (numPageCourant%2 == 0 && numPageCourant <= fragmentsZine.fragmentsZine) :

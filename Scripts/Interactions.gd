@@ -41,16 +41,15 @@ func on_body_entered(body):
 		print(prenomPNJ)
 		
 func on_body_exited(body):
-	if singleton.comptefragmentsZine == 12 && messagefin == 0:
-		afficher_message_fin()
-	if singleton.zoneA == 4:
-		afficher_message_fin()
 	if body.name == "Player":
 		Player.proche_pnj = false
 		playerZone = false
 		Interactions.visible = false
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
-
+		if singleton.comptefragmentsZine == 12 && messagefin == 0:
+			afficher_message_fin()
+		if singleton.zoneA == 4:
+			afficher_message_fin()
 		if Dialogues.visible == true:
 			if messagefin == 0:
 				sortie_dialogues_imprevue()
@@ -144,7 +143,7 @@ func parle():
 		index_dialogueArray = 0
 		if interactionPNJ == false:
 			if Zone == "A":
-				singleton.zoneA =+ 4
+				singleton.zoneA =+ 1
 			elif Zone == "B":
 				singleton.zoneB =+ 1
 			else:

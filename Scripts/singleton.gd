@@ -46,7 +46,7 @@ func change_scene(var path):
 	wait_frame = 1
 	set_process(true)
 	
-func _process(delta):
+func _process(_delta):
 	if loader == null:
 		set_process(false)
 		return

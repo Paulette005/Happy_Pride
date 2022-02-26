@@ -59,8 +59,8 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Reprendre"
 text = "Reprendre"
@@ -88,8 +88,8 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Options"
 text = "Options"
@@ -117,8 +117,8 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Retour"
 text = "Retour"
@@ -145,14 +145,15 @@ margin_right = 100.0
 margin_bottom = 26.25
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 7 )
 bbcode_enabled = true
 bbcode_text = "Quitter"
 text = "Quitter"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="Pause/Reprendre" to="." method="_on_Reprendre_pressed"]
 [connection signal="pressed" from="Pause/Options" to="." method="_on_Options_pressed"]
 [connection signal="pressed" from="Pause/Retour" to="." method="_on_Retour_pressed"]

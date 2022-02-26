@@ -10,7 +10,7 @@ func _ready():
 	#singleton.samplePlayer
 	_set_langue()
 
-func _process(delta):
+func _process(_delta):
 	volume = singleton.volume
 
 func _set_langue():

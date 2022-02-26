@@ -47,7 +47,7 @@ func _input(event):
 	if event.is_action_pressed("ui_accept") && consultationZine.visible == false && Dialogues.visible == false && proche_pnj == false && proche_sorie == false:
 		lancerpaillettes()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if !gestionAnimations:
 		get_input()
 		velocite = move_and_slide(velocite)

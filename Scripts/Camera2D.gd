@@ -7,7 +7,7 @@ var go = false
 func _ready():
 	target = get_node("/root/"+Perso)
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	global_position = target.global_position
 	if go == true:
 		if offset.y >= -235:

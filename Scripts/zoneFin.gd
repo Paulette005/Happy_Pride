@@ -39,17 +39,17 @@ func _input(event):
 		lancement_dialogue()
 		
 func lancement_dialogue():
-	if singleton.zoneA == 3 || singleton.zoneB == 3:
+	if singleton.zoneA <= 3 || singleton.zoneB <= 3 || singleton.zoneC <= 3:
 		if singleton.langues == 0:
 			BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
 		else:
 			BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomFin].Dial[numArray]
 			
-	else:
-		if singleton.langues == 0:
-			BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
-		else:
-			BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomFin].Dial[numArray]
+	#else:
+	#	if singleton.langues == 0:
+	#		BoiteDialogues.DialoguesArray = ImportData.dialogues_data[prenomFin].Dial[numArray]
+	#	else:
+	#		BoiteDialogues.DialoguesArray = ImportData.dialogues_dataEN[prenomFin].Dial[numArray]
 			
 	parle()
 	

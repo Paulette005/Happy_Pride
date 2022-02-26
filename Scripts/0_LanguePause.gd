@@ -7,7 +7,7 @@ onready var singleton = get_node("/root/Singleton")
 func _ready():
 	pass
 	
-func _process(delta):
+func _process(_delta):
 	if singleton.langues == 0:
 		$Pause/Reprendre/Reprendre.bbcode_text = "[center]Reprendre[/center]"
 		$Pause/Options/Options.bbcode_text = "[center]Options[/center]"
@@ -35,4 +35,11 @@ func _on_Options_pressed():
 func _on_Retour_pressed():
 	Pause.visible = false
 	get_tree().paused = false
+	singleton.fragmentsZine = -1
+	singleton.comptefragmentsZine = 0
+	singleton.pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
+	singleton.posPlayerSingleton = Vector2 (7967.333, -472.342)
+	singleton.zoneA = 0
+	singleton.zoneB = 0
+	singleton.zoneC = 0
 	get_tree().change_scene("res://Scenes/Menu/Menu.tscn")

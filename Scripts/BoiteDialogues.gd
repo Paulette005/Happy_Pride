@@ -11,7 +11,7 @@ onready var singleton = get_node("/root/Singleton")
 func _ready():
 	chargement_dialogue()
 	
-func _process(delta):
+func _process(_delta):
 	$AnimatedSprite.visible = mouvTriange
 	
 func chargement_dialogue():

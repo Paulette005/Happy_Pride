@@ -224,16 +224,18 @@ script = ExtResource( 28 )
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 1 )]
 visible = false
 
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
+pause_mode = 2
+visible = false
+margin_top = -0.000427246
+margin_bottom = -0.000427246
+
 [node name="Partir" parent="CanvasLayer" instance=ExtResource( 194 )]
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
 visible = false
 
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 2 )]
-visible = false
-
-[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
-pause_mode = 2
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
@@ -261,6 +263,9 @@ scale = Vector2( 0.72, 1 )
 [node name="zoneFin" parent="Zones_specifiques" instance=ExtResource( 193 )]
 position = Vector2( 8694.07, 113.826 )
 
+[node name="chemise verte" parent="Zones_specifiques" instance=ExtResource( 193 )]
+position = Vector2( -5214.83, 38.1697 )
+
 [node name="ChangementScene" type="Area2D" parent="Zones_specifiques"]
 script = ExtResource( 179 )
 posX = 6075
@@ -271,6 +276,10 @@ scale = Vector2( 1, 1.25805 )
 polygon = PoolVector2Array( -744.737, -806.172, -810.895, 955.031, -463.549, 943.027, -477.769, -806.172 )
 
 [node name="decor" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="decor"]
 position = Vector2( 0, -1003.24 )
@@ -426,6 +435,11 @@ position = Vector2( -20.8734, 3.7922 )
 scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
+[node name="dechets11" type="Sprite" parent="decor/sol"]
+position = Vector2( -277.437, 185.271 )
+scale = Vector2( 0.0398996, 0.208977 )
+texture = ExtResource( 155 )
+
 [node name="dechets5" type="Sprite" parent="decor/sol"]
 position = Vector2( -66.7717, 130.316 )
 scale = Vector2( 0.0398996, 0.208977 )
@@ -433,6 +447,11 @@ texture = ExtResource( 155 )
 
 [node name="dechets9" type="Sprite" parent="decor/sol"]
 position = Vector2( -66.7717, 130.316 )
+scale = Vector2( 0.0398996, 0.208977 )
+texture = ExtResource( 155 )
+
+[node name="dechets10" type="Sprite" parent="decor/sol"]
+position = Vector2( -286.727, -33.4501 )
 scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
@@ -447,7 +466,7 @@ scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
 [node name="dechets8" type="Sprite" parent="decor/sol"]
-position = Vector2( -234.649, 109.518 )
+position = Vector2( -221.728, 135.748 )
 scale = Vector2( 0.0398996, 0.208977 )
 texture = ExtResource( 155 )
 
@@ -1292,9 +1311,6 @@ position = Vector2( -5891.69, -760.047 )
 
 [node name="Boby" parent="Foule/cortege 2" instance=ExtResource( 27 )]
 position = Vector2( -5904.4, -658.338 )
-
-[node name="chemise verte" parent="Foule/cortege 2" instance=ExtResource( 193 )]
-position = Vector2( -6487.96, 87.4571 )
 
 [node name="tatoo girl" parent="Foule/cortege 2" instance=ExtResource( 196 )]
 position = Vector2( -5435.43, 886.444 )
