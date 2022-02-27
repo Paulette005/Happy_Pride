@@ -1,4 +1,4 @@
-[gd_scene load_steps=203 format=2]
+[gd_scene load_steps=204 format=2]
 
 [ext_resource path="res://Scenes/Interactions.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/BoiteDialogues.tscn" type="PackedScene" id=2]
@@ -196,6 +196,7 @@
 [ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=194]
 [ext_resource path="res://Scenes/zoneFin2.tscn" type="PackedScene" id=195]
 [ext_resource path="res://Scenes/foule/PNJ avancent/chemise verte.tscn" type="PackedScene" id=196]
+[ext_resource path="res://Scenes/Menu/Color modif.tscn" type="PackedScene" id=197]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2950.03, 246.181 )
@@ -239,6 +240,8 @@ visible = false
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
+
+[node name="Color modif" parent="CanvasLayer" instance=ExtResource( 197 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

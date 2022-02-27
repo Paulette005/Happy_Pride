@@ -1,4 +1,4 @@
-[gd_scene load_steps=105 format=2]
+[gd_scene load_steps=106 format=2]
 
 [ext_resource path="res://Scenes/foule/PNJ pink block/PB nos corps nos choix.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb bretelles.tscn" type="PackedScene" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://Assets/decor/bande blanche.png" type="Texture" id=41]
 [ext_resource path="res://Scenes/foule/PNJ pink block/pb sono.tscn" type="PackedScene" id=42]
 [ext_resource path="res://Scripts/singleton.gd" type="Script" id=43]
+[ext_resource path="res://Scenes/Menu/Color modif.tscn" type="PackedScene" id=44]
 [ext_resource path="res://Scenes/effets/pop notes.tscn" type="PackedScene" id=47]
 [ext_resource path="res://Scenes/foule/PNJ avancent/interFauteuilRoux.tscn" type="PackedScene" id=48]
 [ext_resource path="res://Scenes/foule/PNJ pancarte/inter afro.tscn" type="PackedScene" id=49]
@@ -131,6 +132,8 @@ visible = false
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 80 )]
+
+[node name="Color modif" parent="CanvasLayer" instance=ExtResource( 44 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

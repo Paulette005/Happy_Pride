@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/BoutonsMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/UI/rectangle-menu.png" type="Texture" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre_fond.png" type="Texture" id=12]
 [ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre01.png" type="Texture" id=13]
 [ext_resource path="res://Assets/UI/titre_godot/Happy_Pride_Ecrantitre00.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/Menu/Color modif.tscn" type="PackedScene" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -232,6 +233,8 @@ __meta__ = {
 
 [node name="Options" parent="." instance=ExtResource( 10 )]
 visible = false
+
+[node name="Color modif" parent="." instance=ExtResource( 15 )]
 
 [connection signal="pressed" from="VBoxContainer/Commencer" to="VBoxContainer/Commencer" method="_on_Commencer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer/Options" method="_on_Options_pressed"]

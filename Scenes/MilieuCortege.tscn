@@ -1,4 +1,4 @@
-[gd_scene load_steps=185 format=2]
+[gd_scene load_steps=186 format=2]
 
 [ext_resource path="res://Scripts/ZIndexMusique.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -180,6 +180,7 @@
 [ext_resource path="res://Scenes/foule/PNJ avancent/sac etoiles.tscn" type="PackedScene" id=178]
 [ext_resource path="res://Scenes/Partir.tscn" type="PackedScene" id=179]
 [ext_resource path="res://Scenes/zoneFin2.tscn" type="PackedScene" id=180]
+[ext_resource path="res://Scenes/Menu/Color modif.tscn" type="PackedScene" id=181]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 40.0
@@ -216,6 +217,8 @@ visible = false
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 166 )]
+
+[node name="Color modif" parent="CanvasLayer" instance=ExtResource( 181 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
