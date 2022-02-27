@@ -38,7 +38,7 @@ func on_body_entered(body):
 		playerZone = true
 		Interactions.visible = true
 		$AnimatedSprite.get_material().set_shader_param("width", 4.0)
-		print(prenomPNJ)
+		#print(prenomPNJ)
 		
 func on_body_exited(body):
 	if body.name == "Player":
@@ -48,8 +48,8 @@ func on_body_exited(body):
 		$AnimatedSprite.get_material().set_shader_param("width", 0.0)
 		if singleton.comptefragmentsZine == 12 && messagefin == 0:
 			afficher_message_fin()
-		if singleton.zoneA == 4:
-			afficher_message_fin()
+		#if singleton.zoneA == 4:
+		#	afficher_message_fin()
 		if Dialogues.visible == true:
 			if messagefin == 0:
 				sortie_dialogues_imprevue()
@@ -94,6 +94,13 @@ func _input(event):
 		
 	if event.is_action_pressed("ui_accept") && Partir.visible == true:
 		if singleton.comptefragmentsZine == 13:
+			singleton.fragmentsZine = -1
+			singleton.comptefragmentsZine = 0
+			singleton.pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
+			singleton.posPlayerSingleton = Vector2 (7967.333, -472.342)
+			singleton.zoneA = 0
+			singleton.zoneB = 0
+			singleton.zoneC = 0
 			get_tree().change_scene("res://Scenes/Menu/merci.tscn")
 	
 func afficher_message_fin():
@@ -141,18 +148,18 @@ func parle():
 	else:
 		Dialogues.visible = false
 		index_dialogueArray = 0
-		if interactionPNJ == false:
-			if Zone == "A":
-				singleton.zoneA =+ 1
-			elif Zone == "B":
-				singleton.zoneB =+ 1
-			else:
-				singleton.zoneC =+1
-			singleton.set_fragment_zine(zine)
-			#singleton.comptefragmentsZine += 1
-			interactionPNJ = true
-			#consultationZine.chargementPages()
-			print(singleton.zoneA)
+		#if interactionPNJ == false:
+		#	if Zone == "A":
+		#		singleton.zoneA =+ 1
+		#	elif Zone == "B":
+		#		singleton.zoneB =+ 1
+		#	else:
+		#		singleton.zoneC =+1
+		singleton.set_fragment_zine(zine)
+		#singleton.comptefragmentsZine += 1
+		interactionPNJ = true
+		#consultationZine.chargementPages()
+		#print(singleton.zoneA)
 
 		if Dialogues.visible == false && messagefin == 1:
 			singleton.set_fragment_zine(zine)
