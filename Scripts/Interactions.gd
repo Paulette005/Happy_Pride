@@ -59,7 +59,7 @@ func chang_directions():
 	if Dialogues.visible == false:
 		rdm.randomize()
 		nbframe = rdm.randi_range(0, 3)
-		randomTemps = rdm.randi_range(2,6)
+		randomTemps = rdm.randi_range(1,4)
 	
 		$Timer.start(randomTemps)
 		$AnimatedSprite.set_frame(nbframe)

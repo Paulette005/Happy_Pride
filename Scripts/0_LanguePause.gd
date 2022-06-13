@@ -38,7 +38,7 @@ func _on_Retour_pressed():
 	singleton.fragmentsZine = -1
 	singleton.comptefragmentsZine = 0
 	singleton.pages_eues = [false,false,false,false,false,false,false,false,false,false,false,false,false]
-	singleton.posPlayerSingleton = Vector2 (7967.333, -472.342)
+	singleton.posPlayerSingleton = Vector2 (7905, -508)
 	singleton.zoneA = 0
 	singleton.zoneB = 0
 	singleton.zoneC = 0

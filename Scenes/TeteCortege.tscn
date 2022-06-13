@@ -225,12 +225,6 @@ script = ExtResource( 28 )
 [node name="Interactions" parent="CanvasLayer" instance=ExtResource( 1 )]
 visible = false
 
-[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
-pause_mode = 2
-visible = false
-margin_top = -0.000427246
-margin_bottom = -0.000427246
-
 [node name="Partir" parent="CanvasLayer" instance=ExtResource( 194 )]
 
 [node name="Zine" parent="CanvasLayer" instance=ExtResource( 85 )]
@@ -240,6 +234,12 @@ visible = false
 visible = false
 
 [node name="Options" parent="CanvasLayer" instance=ExtResource( 192 )]
+
+[node name="Pause" parent="CanvasLayer" instance=ExtResource( 191 )]
+pause_mode = 2
+visible = false
+margin_top = -0.000427246
+margin_bottom = -0.000427246
 
 [node name="Color modif" parent="CanvasLayer" instance=ExtResource( 197 )]
 
@@ -255,7 +255,7 @@ editor_draw_limits = true
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7967.33, -472.342 )
+position = Vector2( 7905, -508 )
 
 [node name="Zones_specifiques" type="Node2D" parent="."]
 
@@ -668,7 +668,7 @@ position = Vector2( -757.631, 936.395 )
 [node name="PNJ" type="Node2D" parent="."]
 
 [node name="Kim" parent="PNJ" instance=ExtResource( 91 )]
-position = Vector2( 7589.1, -455.846 )
+position = Vector2( 7606.05, -455.846 )
 script = ExtResource( 10 )
 
 [node name="Assa" parent="PNJ" instance=ExtResource( 9 )]

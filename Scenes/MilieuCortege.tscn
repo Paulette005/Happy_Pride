@@ -995,10 +995,10 @@ position = Vector2( 0, 32.0361 )
 position = Vector2( -1341.09, 536.814 )
 
 [node name="farandole" parent="foule/cortege 2" instance=ExtResource( 16 )]
-position = Vector2( -829.026, -359.032 )
+position = Vector2( -896.023, -287.881 )
 
 [node name="PB ace crie" parent="foule/cortege 2" instance=ExtResource( 53 )]
-position = Vector2( -539.889, -164.186 )
+position = Vector2( -534.736, -120.284 )
 
 [node name="cheveux bleus" parent="foule/cortege 2" instance=ExtResource( 73 )]
 position = Vector2( -1240.02, -545.211 )
@@ -1007,7 +1007,7 @@ position = Vector2( -1240.02, -545.211 )
 position = Vector2( -451.464, 787.904 )
 
 [node name="pancarte trans" parent="foule/cortege 2" instance=ExtResource( 46 )]
-position = Vector2( -377.445, -221.893 )
+position = Vector2( -314.791, -148.615 )
 
 [node name="banderole handi" parent="foule/cortege 2" instance=ExtResource( 111 )]
 position = Vector2( 52.0056, 382.057 )
@@ -1019,7 +1019,7 @@ position = Vector2( -579.079, 188.967 )
 position = Vector2( -570.057, 350.331 )
 
 [node name="pancarte binarite" parent="foule/cortege 2" instance=ExtResource( 48 )]
-position = Vector2( -218.637, -102.128 )
+position = Vector2( -212.974, -15.2916 )
 
 [node name="pma pour toustes" parent="foule/cortege 2" instance=ExtResource( 51 )]
 position = Vector2( -138.246, 136.363 )
@@ -1028,7 +1028,7 @@ position = Vector2( -138.246, 136.363 )
 position = Vector2( -358.23, 110.363 )
 
 [node name="mme short a fleurs" parent="foule/cortege 2" instance=ExtResource( 52 )]
-position = Vector2( -374.23, 250.363 )
+position = Vector2( -774.255, -24.2574 )
 
 [node name="soeur en blanc" parent="foule/cortege 2" instance=ExtResource( 39 )]
 position = Vector2( -173.614, 523.978 )
@@ -1228,7 +1228,7 @@ script = null
 [node name="PNJ" type="Node2D" parent="."]
 
 [node name="Judith" parent="PNJ" instance=ExtResource( 169 )]
-position = Vector2( -740.229, -50.9568 )
+position = Vector2( -474.003, -561.564 )
 script = ExtResource( 167 )
 
 [node name="Agathe" parent="PNJ" instance=ExtResource( 171 )]
